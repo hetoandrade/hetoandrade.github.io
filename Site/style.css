@@ -645,6 +645,8 @@ body::before {
 .mp-icon {
   font-size: 60px;
   line-height: 1;
+  text-align: center;
+  width: 100%;
 }
 
 .mp-text {
@@ -687,6 +689,8 @@ body::before {
 .pp-icon {
   font-size: 60px;
   line-height: 1;
+  text-align: center;
+  width: 100%;
 }
 
 .pp-text {

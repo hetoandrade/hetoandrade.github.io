@@ -638,21 +638,18 @@ body::before {
 
 .btn-paypal {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2px;
-  padding: 24px 40px;
-  background: linear-gradient(135deg, #0070ba, #003087);
-  color: white;
+  justify-content: center;
+  padding: 12px;
+  background: white;
   border: none;
   border-radius: 14px;
   cursor: pointer;
   transition: all 0.3s;
   text-decoration: none;
-  box-shadow: 0 4px 20px rgba(0, 112, 186, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   width: 180px;
   height: 180px;
-  justify-content: center;
 }
 
 .btn-paypal:hover {
@@ -660,24 +657,9 @@ body::before {
   box-shadow: 0 8px 30px rgba(0, 112, 186, 0.4);
 }
 
-.pp-label {
-  font-size: 12px;
-  font-weight: 600;
-  opacity: 0.8;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.pp-icon {
-  font-size: 60px;
-  line-height: 1;
-  text-align: center;
-  width: 100%;
-}
-
-.pp-text {
-  font-size: 16px;
-  font-weight: 700;
+.pp-logo {
+  width: 140px;
+  height: auto;
 }
 
 /* ─── Contato ─── */

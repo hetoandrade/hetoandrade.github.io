@@ -612,21 +612,18 @@ body::before {
 
 .btn-mercadopago {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 2px;
-  padding: 24px 40px;
-  background: linear-gradient(135deg, #00b1ea, #009ee3);
-  color: white;
+  justify-content: center;
+  padding: 12px;
+  background: white;
   border: none;
   border-radius: 14px;
   cursor: pointer;
   transition: all 0.3s;
   text-decoration: none;
-  box-shadow: 0 4px 20px rgba(0, 177, 234, 0.3);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   width: 180px;
   height: 180px;
-  justify-content: center;
 }
 
 .btn-mercadopago:hover {
@@ -634,24 +631,9 @@ body::before {
   box-shadow: 0 8px 30px rgba(0, 177, 234, 0.4);
 }
 
-.mp-label {
-  font-size: 12px;
-  font-weight: 600;
-  opacity: 0.8;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-}
-
-.mp-icon {
-  font-size: 60px;
-  line-height: 1;
-  text-align: center;
-  width: 100%;
-}
-
-.mp-text {
-  font-size: 16px;
-  font-weight: 700;
+.mp-logo {
+  width: 140px;
+  height: auto;
 }
 
 .btn-paypal {

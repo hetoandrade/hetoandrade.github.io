@@ -149,7 +149,6 @@
         sem tocar no teclado. Um balão flutuante na tela mostra o status da gravação — e você pode
         arrastá-lo para qualquer posição que preferir. Simples, rápido e sem complicação.
       </p>
-      <div id="versao-hero" class="hero-version"></div>
       <div class="hero-actions">
         <a href="https://github.com/hetoandrade/VozDigitadaUpdate/releases/download/v1.04.14.019/VozDigitada_Setup.exe" class="btn-primary">
           <span>⬇️</span> Download Grátis — Windows
@@ -157,6 +156,12 @@
         <a href="#" class="btn-secondary">
           <span>▶️</span> Ver no YouTube
         </a>
+      </div>
+      <div class="hero-meta">
+        <span id="versao-hero">Carregando versão...</span>
+        <span>🖥️ Windows 10 e 11 (64-bit)</span>
+        <span>🆓 Gratuito</span>
+        <span>🔄 Atualização Automática</span>
       </div>
     </section>
 
@@ -262,33 +267,32 @@
     <section class="section" id="download">
       <div class="section-title">Download</div>
       <div class="download-card">
-        <div class="download-info">
-          <h3>⬇️ VozDigitada para Windows</h3>
-          <p>Compatível com Windows 10 e 11 (64-bit)</p>
-          <div class="download-meta">
-            <span id="versao-download">📦 Carregando versão...</span>
-            <span>💾 ~15 MB</span>
-            <span>🆓 Gratuito</span>
+        <div class="download-row">
+          <div class="download-info">
+            <h3>⬇️ VozDigitada para Windows</h3>
+            <p>Compatível com Windows 10 e 11 (64-bit)</p>
+            <div class="download-meta">
+              <span id="versao-download">📦 Carregando versão...</span>
+              <span>🆓 Gratuito</span>
+            </div>
           </div>
+          <a href="https://github.com/hetoandrade/VozDigitadaUpdate/releases/download/v1.04.14.019/VozDigitada_Setup.exe" class="btn-primary btn-download">
+            ⬇️ Baixar Instalador — Windows
+          </a>
         </div>
-        <a href="https://github.com/hetoandrade/VozDigitadaUpdate/releases/download/v1.04.14.019/VozDigitada_Setup.exe" class="btn-primary btn-download">
-          ⬇️ Baixar Instalador — Windows
-        </a>
-      </div>
-
-      <div class="version-info">
-        <div class="version-tag">
-          <span class="label">Requisitos</span>
-          Windows 10/11 x64
-        </div>
-        <div class="version-tag">
-          <span class="label">Licença</span>
-          Gratuito
-        </div>
-        <div class="version-tag">
-          <span class="label">Atualização</span>
-          Automática
-        </div>
+        <div class="version-info">
+          <div class="version-tag">
+            <span class="label">Requisitos</span>
+            Windows 10/11 x64
+          </div>
+          <div class="version-tag">
+            <span class="label">Licença</span>
+            Gratuito
+          </div>
+          <div class="version-tag">
+            <span class="label">Atualização</span>
+            Automática
+          </div>
       </div>
     </section>
 
@@ -401,11 +405,12 @@ fetch('https://raw.githubusercontent.com/hetoandrade/VozDigitadaUpdate/main/vers
   .then(function(data) {
     var v = data.version;
     document.getElementById('versao-badge').textContent = 'Versão ' + v + ' disponível';
-    document.getElementById('versao-hero').textContent = 'Versão ' + v;
+    document.getElementById('versao-hero').textContent = '📦 Versão ' + v;
     document.getElementById('versao-download').textContent = '📦 Versão ' + v;
   })
   .catch(function() {
     document.getElementById('versao-badge').textContent = 'Download disponível';
+    document.getElementById('versao-hero').textContent = '📦 Versão mais recente';
     document.getElementById('versao-download').textContent = '📦 Versão mais recente';
   });
 </script>

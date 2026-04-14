@@ -615,7 +615,7 @@ body::before {
   align-items: center;
   justify-content: center;
   padding: 12px;
-  background: white;
+  background: #d6eef8;
   border: none;
   border-radius: 14px;
   cursor: pointer;
@@ -629,6 +629,7 @@ body::before {
 .btn-mercadopago:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(0, 177, 234, 0.4);
+  background: #c0e4f3;
 }
 
 .mp-logo {
@@ -641,7 +642,7 @@ body::before {
   align-items: center;
   justify-content: center;
   padding: 12px;
-  background: white;
+  background: #dce5f0;
   border: none;
   border-radius: 14px;
   cursor: pointer;
@@ -655,6 +656,7 @@ body::before {
 .btn-paypal:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 30px rgba(0, 112, 186, 0.4);
+  background: #c8d4e3;
 }
 
 .pp-logo {

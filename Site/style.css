@@ -555,7 +555,7 @@ body::before {
 
 .donation-methods {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 24px;
 }
@@ -634,12 +634,62 @@ body::before {
   box-shadow: 0 8px 30px rgba(0, 177, 234, 0.4);
 }
 
+.mp-label {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
 .mp-icon {
   font-size: 60px;
   line-height: 1;
 }
 
 .mp-text {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-paypal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 24px 40px;
+  background: linear-gradient(135deg, #0070ba, #003087);
+  color: white;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+  box-shadow: 0 4px 20px rgba(0, 112, 186, 0.3);
+  width: 180px;
+  height: 180px;
+  justify-content: center;
+}
+
+.btn-paypal:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0, 112, 186, 0.4);
+}
+
+.pp-label {
+  font-size: 12px;
+  font-weight: 600;
+  opacity: 0.8;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.pp-icon {
+  font-size: 60px;
+  line-height: 1;
+}
+
+.pp-text {
   font-size: 16px;
   font-weight: 700;
 }

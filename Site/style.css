@@ -707,6 +707,20 @@ body::before {
   transition: opacity 0.3s;
 }
 
+/* Barra contador rodapé */
+.footer-counter {
+  width: 100%;
+  padding: 14px 0;
+  text-align: center;
+  background: var(--bg-secondary);
+  border-top: 1px solid var(--border);
+  font-family: 'Inter', monospace;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: var(--text-muted);
+}
+
 .pix-copiado.show {
   opacity: 1;
 }

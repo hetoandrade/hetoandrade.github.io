@@ -353,6 +353,11 @@
 
 </main>
 
+<!-- Barra contador no rodapé -->
+<footer class="footer-counter">
+  <span id="footer-count">0.000.000</span>
+</footer>
+
 <!-- Lightbox -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
   <span class="lightbox-close">&times;</span>
@@ -403,6 +408,13 @@ function copiarChavePix() {
   });
 }
 
+// Formatar número com pontos: 1 → 0.000.001, 1500 → 0.001.500
+function formatarContador(n) {
+  var s = String(n);
+  while (s.length < 7) s = '0' + s;
+  return s.replace(/(\d)(?=(\d{3})+$)/g, '$1.');
+}
+
 // Buscar contador de downloads via GitHub Releases API
 fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases', { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
@@ -413,10 +425,13 @@ fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases',
         if (asset.name.indexOf('Setup') !== -1) total += asset.download_count;
       });
     });
-    document.getElementById('download-count').textContent = total;
+    var fmt = formatarContador(total);
+    document.getElementById('download-count').textContent = fmt;
+    document.getElementById('footer-count').textContent = fmt;
   })
   .catch(function() {
     document.getElementById('download-count').textContent = '-';
+    document.getElementById('footer-count').textContent = '0.000.000';
   });
 
 // Buscar versão do GitHub em tempo real

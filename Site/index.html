@@ -347,6 +347,9 @@
 
   <div style="height: 60px;"></div>
 
+  <footer style="text-align: center; padding: 12px 0; font-size: 11px; color: #475e73; letter-spacing: 0.5px;">
+    &copy; 2026 HetoAndrade Software &nbsp;&middot;&nbsp; <span id="footer-count">0.000.000</span>
+  </footer>
 
 </main>
 
@@ -401,6 +404,26 @@ function copiarChavePix() {
   });
 }
 
+// Contador de downloads via GitHub Releases API
+function formatarContador(n) {
+  var s = String(n);
+  while (s.length < 7) s = '0' + s;
+  return s.replace(/(\d)(?=(\d{3})+$)/g, '$1.');
+}
+fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases', { cache: 'no-cache' })
+  .then(function(r) { return r.json(); })
+  .then(function(releases) {
+    var total = 0;
+    releases.forEach(function(release) {
+      release.assets.forEach(function(asset) {
+        if (asset.name.indexOf('Setup') !== -1) total += asset.download_count;
+      });
+    });
+    document.getElementById('footer-count').textContent = formatarContador(total);
+  })
+  .catch(function() {
+    document.getElementById('footer-count').textContent = '0.000.000';
+  });
 
 // Buscar versão do GitHub em tempo real
 fetch('https://hetoandrade.github.io/version.json', { cache: 'no-cache' })

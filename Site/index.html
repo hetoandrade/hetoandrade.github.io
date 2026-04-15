@@ -284,6 +284,10 @@
             <span class="label">Atualização</span>
             Automática
           </div>
+          <div class="version-tag">
+            <span class="label">Downloads</span>
+            <span id="download-count">...</span>
+          </div>
       </div>
     </section>
 
@@ -398,6 +402,22 @@ function copiarChavePix() {
     setTimeout(function() { el.classList.remove('show'); }, 2000);
   });
 }
+
+// Buscar contador de downloads via GitHub Releases API
+fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases', { cache: 'no-cache' })
+  .then(function(r) { return r.json(); })
+  .then(function(releases) {
+    var total = 0;
+    releases.forEach(function(release) {
+      release.assets.forEach(function(asset) {
+        if (asset.name.indexOf('Setup') !== -1) total += asset.download_count;
+      });
+    });
+    document.getElementById('download-count').textContent = total;
+  })
+  .catch(function() {
+    document.getElementById('download-count').textContent = '-';
+  });
 
 // Buscar versão do GitHub em tempo real
 fetch('https://hetoandrade.github.io/version.json', { cache: 'no-cache' })

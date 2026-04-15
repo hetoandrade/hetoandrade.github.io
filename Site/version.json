@@ -1,5 +1,5 @@
 {
-  "version": "1.04.14.021",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.14.021/VozDigitada_Update.zip",
-  "changelog": "Fix System.Drawing.Common para .NET 10"
+  "version": "1.04.15.001",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.15.001/VozDigitada_Update.zip",
+  "changelog": "Dicionário multi-palavra, histórico persistente, exportar/importar, backup automático, fix silêncio prolongado"
 }

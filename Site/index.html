@@ -44,8 +44,8 @@
   },
   "description": "Aplicativo gratuito que captura sua voz e digita automaticamente em qualquer programa. Reconhecimento de voz em tempo real, comandos de voz, enter autom&#225;tico e bal&#227;o flutuante.",
   "url": "https://hetoandrade.github.io/",
-  "downloadUrl": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.001/VozDigitada_Setup.exe",
-  "softwareVersion": "1.04.15.001",
+  "downloadUrl": "https://hetoandrade.github.io/#download",
+  "softwareVersion": "latest",
   "author": {
     "@type": "Person",
     "name": "HetoAndrade"
@@ -150,7 +150,7 @@
         arrastá-lo para qualquer posição que preferir. Simples, rápido e sem complicação.
       </p>
       <div class="hero-actions">
-        <a href="https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.001/VozDigitada_Setup.exe" class="btn-primary">
+        <a id="btn-download-hero" href="#download" class="btn-primary">
           <span>⬇️</span> Download Grátis — Windows
         </a>
         <a href="#" class="btn-secondary">
@@ -276,7 +276,7 @@
               <span id="versao-download">📦 Carregando versão...</span>
             </div>
           </div>
-          <a href="https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.001/VozDigitada_Setup.exe" class="btn-primary btn-download">
+          <a id="btn-download-section" href="#download" class="btn-primary btn-download">
             ⬇️ Baixar Instalador — Windows
           </a>
         </div>
@@ -434,14 +434,17 @@ fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases',
     document.getElementById('footer-count').textContent = '0.000.000';
   });
 
-// Buscar versão do GitHub em tempo real
+// Buscar versão do GitHub em tempo real e montar links de download
 fetch('https://hetoandrade.github.io/version.json', { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(data) {
     var v = data.version;
+    var setupUrl = 'https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v' + v + '/VozDigitada_Setup.exe';
     document.getElementById('versao-badge').textContent = 'Versão ' + v + ' disponível';
     document.getElementById('versao-hero').textContent = '📦 Versão ' + v;
     document.getElementById('versao-download').textContent = '📦 Versão ' + v;
+    document.getElementById('btn-download-hero').href = setupUrl;
+    document.getElementById('btn-download-section').href = setupUrl;
   })
   .catch(function() {
     document.getElementById('versao-badge').textContent = 'Download disponível';

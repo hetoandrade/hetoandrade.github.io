@@ -1,5 +1,5 @@
 {
-  "version": "1.04.16.008",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.008/VozDigitada_Update.zip",
-  "changelog": "Fix loop infinito de update (robocopy + espera processo), preparação Microsoft Store"
+  "version": "1.04.16.009",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.009/VozDigitada_Update.zip",
+  "changelog": "Update automático ao abrir (sem clicar), fix loop infinito, preparação Microsoft Store"
 }

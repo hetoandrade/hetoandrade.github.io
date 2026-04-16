@@ -1,5 +1,5 @@
 {
-  "version": "1.04.16.002",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.002/VozDigitada_Update.zip",
-  "changelog": "Correção textos configuração, reordenação recursos site"
+  "version": "1.04.16.003",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.003/VozDigitada_Update.zip",
+  "changelog": "Fix: bigrams no dicionário agora ficam verdes no histórico"
 }

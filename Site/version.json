@@ -1,5 +1,5 @@
 {
-  "version": "1.04.17.001",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.001/VozDigitada_Update.zip",
-  "changelog": "Fix crash ao usar atalho, proteção robusta em todos os hotkeys e hooks"
+  "version": "1.04.17.011",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.011/VozDigitada_Update.zip",
+  "changelog": "Fix crash ao usar atalho/microfone, verificação de idioma, proteção global"
 }

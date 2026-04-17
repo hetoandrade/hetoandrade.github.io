@@ -1,5 +1,5 @@
 {
-  "version": "1.04.16.009",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.16.009/VozDigitada_Update.zip",
-  "changelog": "Update automático ao abrir (sem clicar), fix loop infinito, preparação Microsoft Store"
+  "version": "1.04.17.010",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.010/VozDigitada_Update.zip",
+  "changelog": "Fix crash ao usar atalho, proteção robusta em todos os hotkeys e hooks"
 }

@@ -1,6 +1,6 @@
 {
-  "version": "1.04.17.013",
+  "version": "1.04.17.014",
   "dataPublicacao": "2026-04-17T23:59:59",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.013/VozDigitada_Update.zip",
-  "changelog": "Log fallback na pasta do exe, proteção crash WinUI"
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.014/VozDigitada_Update.zip",
+  "changelog": "Pasta LOG (não LOGS), fallback log na pasta do exe"
 }

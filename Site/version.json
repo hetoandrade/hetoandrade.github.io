@@ -1,5 +1,5 @@
 {
-  "version": "1.04.17.011",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.011/VozDigitada_Update.zip",
-  "changelog": "Fix crash ao usar atalho/microfone, verificação de idioma, proteção global"
+  "version": "1.04.17.012",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.012/VozDigitada_Update.zip",
+  "changelog": "Novo ícone, proteção crash WinUI UnhandledException"
 }

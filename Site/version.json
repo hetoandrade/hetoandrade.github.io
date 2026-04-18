@@ -1,6 +1,6 @@
 {
-  "version": "1.04.18.002",
-  "dataPublicacao": "2026-04-18T14:15:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.18.002/VozDigitada_Update.zip",
-  "changelog": "Fix auto-update versao local, detecção microfone desativado"
+  "version": "1.04.18.003",
+  "dataPublicacao": "2026-04-18T15:00:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.18.003/VozDigitada_Update.zip",
+  "changelog": "Fix loop auto-update (mesma versão não dispara update)"
 }

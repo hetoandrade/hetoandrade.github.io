@@ -1,6 +1,6 @@
 {
-  "version": "1.04.18.005",
-  "dataPublicacao": "2026-04-18T17:00:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.18.005/VozDigitada_Update.zip",
-  "changelog": "Fix loop startup: ignora update pendente se versão igual"
+  "version": "1.04.18.006",
+  "dataPublicacao": "2026-04-18T18:00:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.18.006/VozDigitada_Update.zip",
+  "changelog": "Teste auto-update v005 → v006"
 }

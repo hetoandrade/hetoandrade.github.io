@@ -1,6 +1,6 @@
 {
-  "version": "1.04.17.019",
-  "dataPublicacao": "2026-04-17T21:05:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.019/VozDigitada_Update.zip",
-  "changelog": "Janelas trazem ao topo, download com progresso MB"
+  "version": "1.04.18.001",
+  "dataPublicacao": "2026-04-18T14:00:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.18.001/VozDigitada_Update.zip",
+  "changelog": "Detecção microfone desativado, MicrofoneWindow, MsgBox fallback"
 }

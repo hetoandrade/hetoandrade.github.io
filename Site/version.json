@@ -1,6 +1,6 @@
 {
-  "version": "1.04.18.003",
-  "dataPublicacao": "2026-04-18T15:00:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.18.003/VozDigitada_Update.zip",
-  "changelog": "Nova lógica auto-update: compara dataPublicacao do assembly (sem versao_local.json)"
+  "version": "1.04.18.004",
+  "dataPublicacao": "2026-04-18T16:00:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.18.004/VozDigitada_Update.zip",
+  "changelog": "Fix auto-update: compara versão do assembly (sem loop)"
 }

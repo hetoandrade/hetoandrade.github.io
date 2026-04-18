@@ -1,6 +1,6 @@
 {
-  "version": "1.04.17.018",
-  "dataPublicacao": "2026-04-17T23:59:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.018/VozDigitada_Update.zip",
-  "changelog": "Log na pasta do exe, speech privacy auto-ativação, debug removido"
+  "version": "1.04.17.019",
+  "dataPublicacao": "2026-04-17T21:05:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.17.019/VozDigitada_Update.zip",
+  "changelog": "Janelas trazem ao topo, download com progresso MB"
 }

@@ -1,6 +1,6 @@
 {
-  "version": "1.04.20.001",
-  "dataPublicacao": "2026-04-20T09:40:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.20.001/VozDigitada_Update.zip",
-  "changelog": "Fix ícones MSIX Store + fix progresso download MB"
+  "version": "1.04.20.002",
+  "dataPublicacao": "2026-04-20T18:00:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.20.002/VozDigitada_Update.zip",
+  "changelog": "Dicionário: suporte a trigram (correção de 3 palavras)"
 }

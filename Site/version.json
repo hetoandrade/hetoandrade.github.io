@@ -1,6 +1,6 @@
 {
-  "version": "1.04.20.002",
-  "dataPublicacao": "2026-04-20T18:00:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.20.002/VozDigitada_Update.zip",
-  "changelog": "Dicionário: suporte a trigram (correção de 3 palavras)"
+  "version": "1.04.22.003",
+  "dataPublicacao": "2026-04-22T14:00:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v1.04.22.003/VozDigitada_Update.zip",
+  "changelog": "Confiança mínima: máximo reduzido para 60%"
 }

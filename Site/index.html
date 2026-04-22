@@ -54,6 +54,25 @@
 }
 </script>
 
+
+<!-- Schema.org FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "O VozDigitada funciona em qualquer programa?", "acceptedAnswer": {"@type": "Answer", "text": "Sim! O VozDigitada digita no campo ativo de qualquer programa do Windows."}},
+    {"@type": "Question", "name": "Precisa de internet para funcionar?", "acceptedAnswer": {"@type": "Answer", "text": "N\u00e3o. Usa o Windows Speech Recognition, que funciona 100% offline."}},
+    {"@type": "Question", "name": "\u00c9 realmente gratuito?", "acceptedAnswer": {"@type": "Answer", "text": "100% gratuito, sem limite de palavras, sem assinatura, sem an\u00fancios."}},
+    {"@type": "Question", "name": "Como funciona o Enter autom\u00e1tico?", "acceptedAnswer": {"@type": "Answer", "text": "Configure um atalho que grava, para e envia (Enter autom\u00e1tico). Ideal para chat e campos de busca."}},
+    {"@type": "Question", "name": "O que \u00e9 o Microfone Sempre Ligado?", "acceptedAnswer": {"@type": "Answer", "text": "Modo onde o microfone fica permanentemente ativo, aguardando comandos de voz."}},
+    {"@type": "Question", "name": "O que \u00e9 o Dicion\u00e1rio Inteligente?", "acceptedAnswer": {"@type": "Answer", "text": "Cadastre corre\u00e7\u00f5es e o app aprende. Funciona com frases de at\u00e9 3 palavras."}},
+    {"@type": "Question", "name": "Funciona em portugu\u00eas?", "acceptedAnswer": {"@type": "Answer", "text": "Sim! Feito focado em portugu\u00eas brasileiro. Tamb\u00e9m suporta outros idiomas."}},
+    {"@type": "Question", "name": "\u00c9 seguro? Coleta dados?", "acceptedAnswer": {"@type": "Answer", "text": "N\u00e3o coleta dados, n\u00e3o envia \u00e1udio para servidores, processamento 100% local."}}
+  ]
+}
+</script>
+
 <!-- Tema e ícones -->
 <meta name="theme-color" content="#0a0f1a">
 <meta name="msapplication-TileColor" content="#0a0f1a">
@@ -91,6 +110,10 @@
     <a class="nav-item" href="#historia" data-page="vozdigitada">
       <span class="icon">💡</span>
       A Historia
+    </a>
+    <a class="nav-item" href="#faq" data-page="vozdigitada">
+      <span class="icon">❓</span>
+      Perguntas Frequentes
     </a>
     <a class="nav-item" href="#download" data-page="vozdigitada">
       <span class="icon">⬇️</span>
@@ -256,6 +279,85 @@
           <div class="historia-destaque">
             <span class="destaque-icon">💡</span>
             <span>O VozDigitada &#233; <strong>100% gratuito</strong> — sem limites de palavras, sem assinatura, sem per&#237;odo de teste.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section" id="faq">
+      <div class="section-title">Perguntas Frequentes</div>
+      <div class="faq-container">
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>O VozDigitada funciona em qualquer programa?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim! O VozDigitada digita no campo ativo de qualquer programa do Windows — navegadores, editores de texto, WhatsApp Web, Excel, e-mail, ERPs, terminais e mais. Basta o cursor estar posicionado em um campo de texto.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Precisa de internet para funcionar?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Não. O VozDigitada usa o Windows Speech Recognition, que funciona 100% offline. Todo o processamento de voz acontece localmente no seu computador — nenhum áudio é enviado para a internet.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>É realmente gratuito? Tem limite de uso?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>100% gratuito, sem limite de palavras, sem assinatura, sem período de teste e sem anúncios. Você pode usar o quanto quiser, para sempre.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Como funciona o Enter automático?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Você configura dois atalhos: um para gravar/parar normalmente, e outro que grava, para e envia (pressiona Enter automaticamente). Ideal para chat, WhatsApp Web e campos de busca — fale e envie sem tocar no teclado.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>O que é o "Microfone Sempre Ligado"?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>É um modo onde o microfone fica permanentemente ativo, aguardando comandos de voz. Você controla tudo falando: "Voz gravar", "Voz parar", "Voz enviar" — sem precisar tocar no teclado em momento algum.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>O que é o Dicionário Inteligente?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Quando o reconhecimento de voz erra uma palavra, você cadastra a correção no dicionário. Na próxima vez, o app corrige automaticamente. Funciona com palavras individuais e frases de até 3 palavras. Você pode exportar, importar e fazer backup automático.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Funciona em português?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>Sim! O VozDigitada foi feito focado em português brasileiro. Também funciona em outros idiomas que o Windows Speech Recognition suporta (inglês, espanhol, etc.), configurável nas opções.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>É seguro? Coleta dados?</span>
+            <span class="faq-arrow">&#x25BC;</span>
+          </div>
+          <div class="faq-answer">
+            <p>O VozDigitada não coleta nenhum dado pessoal, não envia áudio para servidores e não possui telemetria. Todo o processamento é local. O código é transparente e o app está disponível na Microsoft Store.</p>
           </div>
         </div>
       </div>
@@ -447,6 +549,13 @@ fetch('https://hetoandrade.com.br/version.json', { cache: 'no-cache' })
     document.getElementById('versao-hero').textContent = '📦 Versão mais recente';
     document.getElementById('versao-download').textContent = '📦 Versão mais recente';
   });
+
+
+// FAQ toggle
+function toggleFaq(el) {
+  var item = el.parentElement;
+  item.classList.toggle('active');
+}
 </script>
 
 </body>

@@ -68,7 +68,10 @@ body::before {
   align-items: center;
   gap: 12px;
   text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s;
 }
+.logo:hover { opacity: 0.8; }
 
 .logo-icon-img {
   width: 40px; height: 40px;
@@ -355,6 +358,26 @@ body::before {
   transform: translateY(-2px);
 }
 
+.btn-store {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 28px;
+  background: rgba(255,255,255,0.06);
+  color: var(--text);
+  font-size: 15px;
+  font-weight: 600;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-decoration: none;
+}
+.btn-store:hover {
+  background: rgba(255,255,255,0.1);
+  transform: translateY(-2px);
+}
+
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }
   to { opacity: 1; transform: translateY(0); }
@@ -508,6 +531,11 @@ body::before {
   gap: 6px;
 }
 
+.download-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
 .btn-download {
   white-space: nowrap;
 }
@@ -882,4 +910,72 @@ body::before {
   .historia-content { grid-template-columns: 1fr; }
   .historia-card { padding: 24px; }
   .historia-img { margin-top: 16px; }
+}
+
+/* ─── FAQ ─── */
+.faq-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.faq-item {
+  background: var(--bg-glass);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden;
+  backdrop-filter: blur(10px);
+  transition: border-color 0.3s;
+}
+
+.faq-item:hover {
+  border-color: rgba(59,130,246,0.3);
+}
+
+.faq-item.active {
+  border-color: rgba(59,130,246,0.4);
+}
+
+.faq-question {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 24px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  transition: background 0.2s;
+}
+
+.faq-question:hover {
+  background: rgba(255,255,255,0.03);
+}
+
+.faq-arrow {
+  font-size: 12px;
+  color: var(--text-subtle);
+  transition: transform 0.3s;
+}
+
+.faq-item.active .faq-arrow {
+  transform: rotate(180deg);
+  color: var(--accent-light);
+}
+
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+  max-height: 300px;
+  padding: 0 24px 18px;
+}
+
+.faq-answer p {
+  font-size: 14px;
+  color: var(--text-muted);
+  line-height: 1.7;
 }

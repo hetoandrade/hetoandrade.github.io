@@ -534,7 +534,7 @@ body::before {
 .download-buttons {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 16px;
 }
 .btn-download {
   white-space: nowrap;

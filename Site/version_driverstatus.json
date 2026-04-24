@@ -1,6 +1,6 @@
 {
-  "version": "1.04.23.023",
-  "dataPublicacao": "2026-04-23T14:00:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.04.23.023/DriverStatus_Setup.exe",
-  "changelog": "Primeira versão com auto-atualização"
+  "version": "1.04.24.024",
+  "dataPublicacao": "2026-04-24T12:00:00",
+  "url": "https://github.com/hetoandrade/ProjetosERP/releases/download/driverstatus-v1.04.24.024/DriverStatus_v1.04.24.024.zip",
+  "changelog": "Backup: escolher pasta + salvar entre sessões. Badge de atualização no menu."
 }

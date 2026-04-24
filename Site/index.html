@@ -819,7 +819,7 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
   .then(function(r) { return r.json(); })
   .then(function(data) {
     var v = data.version;
-    var setupUrl = data.url || '#driver-download';
+    var setupUrl = data.urlInstalador || data.url || '#driver-download';
     document.getElementById('driver-versao-badge').textContent = 'Versão ' + v + ' disponível';
     document.getElementById('driver-versao-download').textContent = '📦 Versão ' + v;
     if (setupUrl !== '#driver-download') {

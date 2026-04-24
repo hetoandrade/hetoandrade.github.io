@@ -2,5 +2,6 @@
   "version": "1.04.24.025",
   "dataPublicacao": "2026-04-24T16:30:00",
   "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.04.24.025/DriverStatus_v1.04.24.025.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.04.24.025/DriverStatus_Setup.exe",
   "changelog": "Backup: escolher pasta + salvar entre sessões. Auto-update com progresso em tempo real."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.04.24.026",
-  "dataPublicacao": "2026-04-24T17:00:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.04.24.026/DriverStatus_v1.04.24.026.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.04.24.026/DriverStatus_Setup.exe",
-  "changelog": "Instância única + backup escolher pasta + auto-update com progresso"
+  "version": "1.04.25.001",
+  "dataPublicacao": "2026-04-25T09:30:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.04.25.001/DriverStatus_v1.04.25.001.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.04.25.001/DriverStatus_Setup.exe",
+  "changelog": "Ícones emoji no Suporte + enumeração SetupAPI"
 }

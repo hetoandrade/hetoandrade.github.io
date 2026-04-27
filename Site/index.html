@@ -811,7 +811,7 @@ fetch('https://hetoandrade.com.br/version.json', { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(data) {
     var v = data.version;
-    var setupUrl = 'https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v' + v + '/VozDigitada_Setup.exe';
+    var setupUrl = 'https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v' + v + '/VozDigitada_Setup_v' + v + '.exe';
     document.getElementById('versao-badge').textContent = 'Disponível · v' + v;
     document.getElementById('versao-hero').textContent = '📦 v' + v;
     document.getElementById('versao-download').textContent = '📦 v' + v;

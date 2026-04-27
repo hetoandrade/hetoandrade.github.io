@@ -790,12 +790,13 @@ function formatarContador(n) {
   while (s.length < 7) s = '0' + s;
   return s.replace(/(\d)(?=(\d{3})+$)/g, '$1.');
 }
-fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases', { cache: 'no-cache' })
+fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases?per_page=100', { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(releases) {
+    if (!Array.isArray(releases)) return;
     var voz = 0, driver = 0;
     releases.forEach(function(release) {
-      release.assets.forEach(function(asset) {
+      (release.assets || []).forEach(function(asset) {
         if (asset.name.indexOf('VozDigitada_Setup') !== -1) voz += asset.download_count;
         if (asset.name.indexOf('DriverStatus_Setup') !== -1) driver += asset.download_count;
       });
@@ -803,10 +804,7 @@ fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases',
     document.getElementById('footer-count-voz').textContent = formatarContador(voz);
     document.getElementById('footer-count-driver').textContent = formatarContador(driver);
   })
-  .catch(function() {
-    document.getElementById('footer-count-voz').textContent = '0.000.000';
-    document.getElementById('footer-count-driver').textContent = '0.000.000';
-  });
+  .catch(function() {});
 
 // ─── Versao VozDigitada ───
 fetch('https://hetoandrade.com.br/version.json', { cache: 'no-cache' })

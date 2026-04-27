@@ -729,7 +729,7 @@
   <div style="height: 60px;"></div>
 
   <footer style="text-align: center; padding: 12px 0; font-size: 11px; color: #475e73; letter-spacing: 0.5px;">
-    &copy; 2026 HetoAndrade Software &nbsp;&middot;&nbsp; <span id="footer-count">0.000.000</span>
+    &copy; 2026 HetoAndrade Software &nbsp;&middot;&nbsp; <span id="footer-count-voz">0.000.000</span> &middot; <span id="footer-count-driver">0.000.000</span>
   </footer>
 
 </main>
@@ -793,16 +793,19 @@ function formatarContador(n) {
 fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases', { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(releases) {
-    var total = 0;
+    var voz = 0, driver = 0;
     releases.forEach(function(release) {
       release.assets.forEach(function(asset) {
-        if (asset.name.indexOf('Setup') !== -1) total += asset.download_count;
+        if (asset.name.indexOf('VozDigitada_Setup') !== -1) voz += asset.download_count;
+        if (asset.name.indexOf('DriverStatus_Setup') !== -1) driver += asset.download_count;
       });
     });
-    document.getElementById('footer-count').textContent = formatarContador(total);
+    document.getElementById('footer-count-voz').textContent = formatarContador(voz);
+    document.getElementById('footer-count-driver').textContent = formatarContador(driver);
   })
   .catch(function() {
-    document.getElementById('footer-count').textContent = '0.000.000';
+    document.getElementById('footer-count-voz').textContent = '0.000.000';
+    document.getElementById('footer-count-driver').textContent = '0.000.000';
   });
 
 // ─── Versao VozDigitada ───

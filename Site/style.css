@@ -238,7 +238,7 @@ body::before {
 .app-icon.driver { background: linear-gradient(135deg, rgba(34,197,94,0.2), rgba(14,165,233,0.2)); }
 .app-icon.soon { background: rgba(255,255,255,0.05); }
 
-.app-icon img { width: 60px; height: 60px; border-radius: 10px; }
+.app-icon img { width: 60px; height: 60px; border-radius: 0; }
 
 .app-card-title { display: flex; flex-direction: column; gap: 4px; }
 .app-card-title h3 { font-size: 20px; font-weight: 700; color: white; }

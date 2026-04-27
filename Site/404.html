@@ -46,10 +46,24 @@
     box-shadow: 0 4px 20px rgba(59,130,246,0.3);
   }
   .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(59,130,246,0.4); }
+  .logo {
+    display: flex; align-items: center; gap: 10px;
+    justify-content: center; margin-bottom: 40px; text-decoration: none;
+  }
+  .logo img { width: 36px; height: 36px; border-radius: 8px; }
+  .logo-name { font-size: 16px; font-weight: 700; color: #e2e8f0; }
+  .logo-sub { font-size: 11px; color: #64748b; text-transform: uppercase; letter-spacing: 1px; }
 </style>
 </head>
 <body>
   <div class="container">
+    <a href="/" class="logo">
+      <img src="/Imagems/ha_icon_v4.png" alt="HA">
+      <div style="text-align:left;">
+        <div class="logo-name">HetoAndrade</div>
+        <div class="logo-sub">Software</div>
+      </div>
+    </a>
     <div class="error-code">404</div>
     <h1>Página não encontrada</h1>
     <p>A página que você procura não existe ou foi movida.</p>

@@ -118,7 +118,7 @@
     <div class="nav-section">Aplicativos</div>
 
     <a class="nav-item" href="#" onclick="showPage('vozdigitada'); return false;" id="nav-voz">
-      <img src="Imagems/voz_digitada.png" alt="" class="nav-icon-img">
+      <img src="Imagems/vozdigitada.png" alt="" class="nav-icon-img">
       VozDigitada
       <span class="badge">Novo</span>
     </a>
@@ -189,7 +189,7 @@
       <div class="app-card" onclick="showPage('vozdigitada')">
         <div class="app-card-header">
           <div class="app-icon voz">
-            <img src="Imagems/voz_digitada.png" alt="VozDigitada">
+            <img src="Imagems/vozdigitada.png" alt="VozDigitada">
           </div>
           <div class="app-card-title">
             <h3>VozDigitada</h3>
@@ -334,7 +334,7 @@
 
     <section class="hero">
       <div class="hero-badge blue">
-        <img src="Imagems/voz_digitada.png" alt="" class="badge-icon">
+        <img src="Imagems/vozdigitada.png" alt="" class="badge-icon">
         <span class="dot"></span>
         <span id="versao-badge">Carregando vers&#227;o...</span>
       </div>
@@ -812,9 +812,9 @@ fetch('https://hetoandrade.com.br/version.json', { cache: 'no-cache' })
   .then(function(data) {
     var v = data.version;
     var setupUrl = 'https://github.com/hetoandrade/hetoandrade.github.io/releases/download/v' + v + '/VozDigitada_Setup.exe';
-    document.getElementById('versao-badge').textContent = 'Versão ' + v + ' disponível';
-    document.getElementById('versao-hero').textContent = '📦 Versão ' + v;
-    document.getElementById('versao-download').textContent = '📦 Versão ' + v;
+    document.getElementById('versao-badge').textContent = 'Disponível · v' + v;
+    document.getElementById('versao-hero').textContent = '📦 v' + v;
+    document.getElementById('versao-download').textContent = '📦 v' + v;
     document.getElementById('btn-download-hero').href = setupUrl;
     document.getElementById('btn-download-section').href = setupUrl;
   })
@@ -830,8 +830,8 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
   .then(function(data) {
     var v = data.version;
     var setupUrl = data.urlInstalador || data.url || '#driver-download';
-    document.getElementById('driver-versao-badge').textContent = 'Versão ' + v + ' disponível';
-    document.getElementById('driver-versao-download').textContent = '📦 Versão ' + v;
+    document.getElementById('driver-versao-badge').textContent = 'Disponível · v' + v;
+    document.getElementById('driver-versao-download').textContent = '📦 v' + v;
     if (setupUrl !== '#driver-download') {
       document.getElementById('btn-driver-download-hero').href = setupUrl;
       document.getElementById('btn-driver-download-section').href = setupUrl;

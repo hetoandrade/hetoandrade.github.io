@@ -1,0 +1,7 @@
+{
+  "version": "1.5.1201",
+  "dataPublicacao": "2026-05-12T16:00:00",
+  "url": "https://github.com/hetoandrade/hetoandrade/releases/download/vozdigitada-v1.5.1201/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade/releases/download/vozdigitada-v1.5.1201/VozDigitada_Setup_v1.5.1201.exe",
+  "changelog": "Pacote de Fala: detecção, instalação via UAC, toggle sotaques. Layout 3 colunas."
+}

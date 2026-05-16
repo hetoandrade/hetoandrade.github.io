@@ -1,7 +1,7 @@
 {
   "version": "1.5.1201",
   "dataPublicacao": "2026-05-12T14:30:00",
-  "url": "https://github.com/hetoandrade/hetoandrade/releases/download/driverstatus-v1.5.1201/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade/releases/download/driverstatus-v1.5.1201/DriverStatus_Setup_v1.5.1201.exe",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.5.1201/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.5.1201/DriverStatus_Setup_v1.5.1201.exe",
   "changelog": "Nova página Especificações do PC com detalhes de cada componente (CPU, RAM, GPU, Discos, Placa-mãe)"
 }

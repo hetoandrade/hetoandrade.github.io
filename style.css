@@ -185,7 +185,7 @@ body::before {
 
 /* ─── HOME ─── */
 .home-hero {
-  padding: 80px 40px 40px;
+  padding: 40px 40px 40px;
   max-width: 900px;
 }
 .home-hero h1 {

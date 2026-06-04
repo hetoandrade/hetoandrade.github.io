@@ -1,7 +1,7 @@
 {
-  "version": "1.6.0102",
-  "dataPublicacao": "2026-06-01T11:11:08",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.0102/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.0102/VozDigitada_Setup_v1.6.0102.exe",
-  "changelog": "Adicionados logs de diagnóstico e item de último erro no menu da bandeja (código + opção de copiar), para investigar travamentos do reconhecimento de fala."
+  "version": "1.6.0201",
+  "dataPublicacao": "2026-06-02T13:37:34",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.0201/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.0201/VozDigitada_Setup_v1.6.0201.exe",
+  "changelog": "Fix no encerramento: corrigida condição de corrida no ExitApp — agora aguarda parar a escuta antes de fechar, evitando processo zumbi."
 }

@@ -711,8 +711,8 @@ body::before { display: none; }
   box-shadow: inset 3px 0 0 #fff;
   padding-left: 9px;
 }
-.nav-item .badge { background: #fff; color: var(--h-azul-escuro); }
-.nav-item .badge.green { background: #fff; color: #15803d; }
+.nav-item .badge { background: linear-gradient(135deg, #e3f2fd, #90caf9); color: #0d47a1; }
+.nav-item .badge.green { background: linear-gradient(135deg, #e3f2fd, #90caf9); color: #0d47a1; }
 
 .painel {
   background: #fff;
@@ -799,9 +799,9 @@ body::before { display: none; }
 .app-tag.soon { background: #fef3c7; color: #a16207; }
 
 .app-icon.voz {
-  background: linear-gradient(135deg, rgba(66,165,245,.18), rgba(139,92,246,.18));
-  border: 2px solid var(--h-azul-mais-claro);
-  box-shadow: 0 2px 8px rgba(13,71,161,.12);
+  background: linear-gradient(135deg, rgba(251,140,0,.18), rgba(230,81,0,.18));
+  border: 2px solid #ffcc80;
+  box-shadow: 0 2px 8px rgba(230,81,0,.12);
 }
 .app-icon.driver {
   background: linear-gradient(135deg, rgba(168,85,247,.18), rgba(109,40,217,.18));

@@ -373,31 +373,31 @@
     <section class="section" id="voz-screenshots">
       <div class="section-title">O aplicativo</div>
       <div class="screenshots-grid">
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/gravando...e digitando.jpg')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/gravando...e digitando.jpg', 'voz')">
           <img src="Prints/VozDigitada/gravando...e digitando.jpg" alt="VozDigitada gravando e digitando">
           <div class="screenshot-label">Gravando e digitando em tempo real</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/aguardando comandos.jpg')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/aguardando comandos.jpg', 'voz')">
           <img src="Prints/VozDigitada/aguardando comandos.jpg" alt="VozDigitada aguardando">
           <div class="screenshot-label">Indicador flutuante &#8212; aguardando</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/configuracao.jpg')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/configuracao.jpg', 'voz')">
           <img src="Prints/VozDigitada/configuracao.jpg" alt="Tela de configura&#231;&#227;o">
           <div class="screenshot-label">Configura&#231;&#227;o completa &#8212; atalhos, dicion&#225;rio e backup</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/Dicionario.jpg')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/Dicionario.jpg', 'voz')">
           <img src="Prints/VozDigitada/Dicionario.jpg" alt="Dicion&#225;rio inteligente">
           <div class="screenshot-label">Dicion&#225;rio &#8212; corrija erros e o app aprende</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/comando de voz.jpg')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/comando de voz.jpg', 'voz')">
           <img src="Prints/VozDigitada/comando de voz.jpg" alt="Comandos de voz">
           <div class="screenshot-label">Comandos de voz dispon&#237;veis</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/menu.png')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/menu.png', 'voz')">
           <img src="Prints/VozDigitada/menu.png" alt="Menu do sistema">
           <div class="screenshot-label">Menu da bandeja do sistema</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/LojaWindows.png')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/LojaWindows.png', 'voz')">
           <img src="Prints/VozDigitada/LojaWindows.png" alt="VozDigitada na Microsoft Store">
           <div class="screenshot-label">Dispon&#237;vel na Microsoft Store</div>
         </div>
@@ -597,19 +597,19 @@
     <section class="section" id="driver-screenshots">
       <div class="section-title">O aplicativo</div>
       <div class="screenshots-grid">
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/TelaPrincipal.png')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/TelaPrincipal.png', 'driver')">
           <img src="Prints/DriverStatus/TelaPrincipal.png" alt="DriverStatus tela principal">
           <div class="screenshot-label">Tela principal &#8212; diagn&#243;stico completo dos drivers</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/Gemini.png')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/Gemini.png', 'driver')">
           <img src="Prints/DriverStatus/Gemini.png" alt="Assist&#234;ncia por IA com Gemini">
           <div class="screenshot-label">Assist&#234;ncia por IA &#8212; an&#225;lise inteligente via Gemini</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/Sobre.png')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/Sobre.png', 'driver')">
           <img src="Prints/DriverStatus/Sobre.png" alt="Tela Sobre">
           <div class="screenshot-label">Sobre o aplicativo</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/LojaWindows.png')">
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/LojaWindows.png', 'driver')">
           <img src="Prints/DriverStatus/LojaWindows.png" alt="DriverStatus na Microsoft Store">
           <div class="screenshot-label">Dispon&#237;vel na Microsoft Store</div>
         </div>
@@ -754,28 +754,280 @@
 
 <!-- Lightbox -->
 <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-  <span class="lightbox-close">&times;</span>
-  <img id="lightbox-img" src="" alt="">
+  <button class="lightbox-prev" type="button" onclick="event.stopPropagation(); lightboxPrev();" aria-label="Foto anterior">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <polyline points="15,6 9,12 15,18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
+  <button class="lightbox-close" type="button" onclick="event.stopPropagation(); closeLightbox();" aria-label="Fechar">&times;</button>
+  <img id="lightbox-img" src="" alt="" onclick="event.stopPropagation();">
+  <button class="lightbox-next" type="button" onclick="event.stopPropagation(); lightboxNext();" aria-label="Proxima foto">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <polyline points="9,6 15,12 9,18" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </button>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
 <script>
 // ─── Lightbox ───
-function openLightbox(src) {
-  var lb = document.getElementById('lightbox');
+var lightboxGroups = {
+  voz: [
+    'Prints/VozDigitada/gravando...e digitando.jpg',
+    'Prints/VozDigitada/aguardando comandos.jpg',
+    'Prints/VozDigitada/configuracao.jpg',
+    'Prints/VozDigitada/Dicionario.jpg',
+    'Prints/VozDigitada/comando de voz.jpg',
+    'Prints/VozDigitada/menu.png',
+    'Prints/VozDigitada/LojaWindows.png'
+  ],
+  driver: [
+    'Prints/DriverStatus/TelaPrincipal.png',
+    'Prints/DriverStatus/Gemini.png',
+    'Prints/DriverStatus/Sobre.png',
+    'Prints/DriverStatus/LojaWindows.png'
+  ]
+};
+var currentGroup = null;
+var currentIndex = 0;
+var lightboxScale = 1;
+var lightboxTranslateX = 0;
+var lightboxTranslateY = 0;
+var LIGHTBOX_MIN_SCALE = 1;
+var LIGHTBOX_MAX_SCALE = 5;
+var LIGHTBOX_SCALE_STEP = 0.25;
+
+function applyLightboxTransform() {
   var img = document.getElementById('lightbox-img');
-  img.src = src;
+  img.style.transform = 'translate(' + lightboxTranslateX + 'px, ' + lightboxTranslateY + 'px) scale(' + lightboxScale + ')';
+  if (lightboxScale > 1) img.classList.add('zoomed');
+  else img.classList.remove('zoomed');
+}
+
+function clampLightboxPan() {
+  // Limita o pan pra que o centro da imagem nao saia da viewport
+  var img = document.getElementById('lightbox-img');
+  if (lightboxScale <= 1) {
+    lightboxTranslateX = 0;
+    lightboxTranslateY = 0;
+    return;
+  }
+  var maxX = (lightboxScale - 1) * img.clientWidth / 2;
+  var maxY = (lightboxScale - 1) * img.clientHeight / 2;
+  if (lightboxTranslateX > maxX) lightboxTranslateX = maxX;
+  if (lightboxTranslateX < -maxX) lightboxTranslateX = -maxX;
+  if (lightboxTranslateY > maxY) lightboxTranslateY = maxY;
+  if (lightboxTranslateY < -maxY) lightboxTranslateY = -maxY;
+}
+
+function resetLightboxZoom() {
+  lightboxScale = 1;
+  lightboxTranslateX = 0;
+  lightboxTranslateY = 0;
+  applyLightboxTransform();
+}
+
+function openLightbox(src, group) {
+  currentGroup = group || null;
+  currentIndex = (currentGroup && lightboxGroups[currentGroup])
+    ? lightboxGroups[currentGroup].indexOf(src)
+    : -1;
+  resetLightboxZoom();
+  document.getElementById('lightbox-img').src = src;
+  var lb = document.getElementById('lightbox');
   lb.classList.add('active');
   document.body.style.overflow = 'hidden';
+  // Esconde setas se nao tiver grupo ou se o grupo tiver so 1 foto
+  var hasNav = currentGroup && lightboxGroups[currentGroup] && lightboxGroups[currentGroup].length > 1;
+  lb.querySelector('.lightbox-prev').style.display = hasNav ? 'flex' : 'none';
+  lb.querySelector('.lightbox-next').style.display = hasNav ? 'flex' : 'none';
 }
 function closeLightbox() {
   var lb = document.getElementById('lightbox');
   lb.classList.remove('active');
   document.body.style.overflow = '';
+  resetLightboxZoom();
+}
+function lightboxPrev() {
+  if (!currentGroup) return;
+  var arr = lightboxGroups[currentGroup];
+  currentIndex = (currentIndex - 1 + arr.length) % arr.length;
+  resetLightboxZoom();
+  document.getElementById('lightbox-img').src = arr[currentIndex];
+}
+function lightboxNext() {
+  if (!currentGroup) return;
+  var arr = lightboxGroups[currentGroup];
+  currentIndex = (currentIndex + 1) % arr.length;
+  resetLightboxZoom();
+  document.getElementById('lightbox-img').src = arr[currentIndex];
 }
 document.addEventListener('keydown', function(e) {
+  var lb = document.getElementById('lightbox');
+  if (!lb.classList.contains('active')) return;
   if (e.key === 'Escape') closeLightbox();
+  else if (e.key === 'ArrowLeft') lightboxPrev();
+  else if (e.key === 'ArrowRight') lightboxNext();
 });
+// Zoom (scroll) + Pan (clique e segurar)
+(function() {
+  var lbImg = document.getElementById('lightbox-img');
+  if (!lbImg) return;
+
+  // Zoom com scroll do mouse
+  lbImg.addEventListener('wheel', function(e) {
+    e.preventDefault();
+    if (e.deltaY < 0) {
+      lightboxScale = Math.min(LIGHTBOX_MAX_SCALE, lightboxScale + LIGHTBOX_SCALE_STEP);
+    } else {
+      lightboxScale = Math.max(LIGHTBOX_MIN_SCALE, lightboxScale - LIGHTBOX_SCALE_STEP);
+    }
+    clampLightboxPan();
+    applyLightboxTransform();
+  }, { passive: false });
+
+  // Pan: clique + segurar + arrastar (so quando ampliado)
+  var isDragging = false;
+  var dragStartX = 0, dragStartY = 0;
+  var dragStartTX = 0, dragStartTY = 0;
+
+  lbImg.addEventListener('mousedown', function(e) {
+    if (lightboxScale <= 1) return;
+    if (e.button !== 0) return; // somente botao esquerdo
+    e.preventDefault();
+    e.stopPropagation();
+    isDragging = true;
+    dragStartX = e.clientX;
+    dragStartY = e.clientY;
+    dragStartTX = lightboxTranslateX;
+    dragStartTY = lightboxTranslateY;
+    lbImg.classList.add('dragging');
+    lbImg.style.transition = 'none';
+  });
+
+  window.addEventListener('mousemove', function(e) {
+    if (!isDragging) return;
+    lightboxTranslateX = dragStartTX + (e.clientX - dragStartX);
+    lightboxTranslateY = dragStartTY + (e.clientY - dragStartY);
+    clampLightboxPan();
+    applyLightboxTransform();
+  });
+
+  window.addEventListener('mouseup', function() {
+    if (!isDragging) return;
+    isDragging = false;
+    lbImg.classList.remove('dragging');
+    lbImg.style.transition = '';
+  });
+
+  // Impede que clique no img feche o lightbox quando ja segurou (drag)
+  lbImg.addEventListener('click', function(e) {
+    e.stopPropagation();
+  });
+
+  // ─── Touch: pinch zoom + pan + swipe ───
+  var touchMode = null; // 'pan' | 'pinch' | 'swipe' | null
+  var touchStartX = 0, touchStartY = 0;
+  var touchStartTX = 0, touchStartTY = 0;
+  var touchStartScale = 1;
+  var touchStartDist = 0;
+  var swipeMoved = false;
+  var SWIPE_THRESHOLD = 60; // px pra trocar foto
+
+  function getTouchDistance(touches) {
+    var dx = touches[0].clientX - touches[1].clientX;
+    var dy = touches[0].clientY - touches[1].clientY;
+    return Math.sqrt(dx * dx + dy * dy);
+  }
+
+  lbImg.addEventListener('touchstart', function(e) {
+    e.stopPropagation();
+    if (e.touches.length === 2) {
+      e.preventDefault();
+      touchMode = 'pinch';
+      touchStartDist = getTouchDistance(e.touches);
+      touchStartScale = lightboxScale;
+      lbImg.style.transition = 'none';
+    } else if (e.touches.length === 1) {
+      var t = e.touches[0];
+      touchStartX = t.clientX;
+      touchStartY = t.clientY;
+      if (lightboxScale > 1) {
+        e.preventDefault();
+        touchMode = 'pan';
+        touchStartTX = lightboxTranslateX;
+        touchStartTY = lightboxTranslateY;
+        lbImg.classList.add('dragging');
+        lbImg.style.transition = 'none';
+      } else {
+        touchMode = 'swipe';
+        swipeMoved = false;
+      }
+    }
+  }, { passive: false });
+
+  lbImg.addEventListener('touchmove', function(e) {
+    if (!touchMode) return;
+    if (touchMode === 'pinch' && e.touches.length === 2) {
+      e.preventDefault();
+      var dist = getTouchDistance(e.touches);
+      var ratio = dist / touchStartDist;
+      lightboxScale = Math.min(
+        LIGHTBOX_MAX_SCALE,
+        Math.max(LIGHTBOX_MIN_SCALE, touchStartScale * ratio)
+      );
+      clampLightboxPan();
+      applyLightboxTransform();
+    } else if (touchMode === 'pan' && e.touches.length === 1) {
+      e.preventDefault();
+      var t = e.touches[0];
+      lightboxTranslateX = touchStartTX + (t.clientX - touchStartX);
+      lightboxTranslateY = touchStartTY + (t.clientY - touchStartY);
+      clampLightboxPan();
+      applyLightboxTransform();
+    } else if (touchMode === 'swipe' && e.touches.length === 1) {
+      var ts = e.touches[0];
+      var dx = ts.clientX - touchStartX;
+      var dy = ts.clientY - touchStartY;
+      if (Math.abs(dx) > Math.abs(dy) && Math.abs(dx) > 10) {
+        e.preventDefault();
+        swipeMoved = true;
+      }
+    }
+  }, { passive: false });
+
+  lbImg.addEventListener('touchend', function(e) {
+    if (touchMode === 'swipe' && swipeMoved && e.changedTouches.length > 0) {
+      var t = e.changedTouches[0];
+      var dx = t.clientX - touchStartX;
+      if (dx <= -SWIPE_THRESHOLD) lightboxNext();
+      else if (dx >= SWIPE_THRESHOLD) lightboxPrev();
+    }
+    lbImg.classList.remove('dragging');
+    lbImg.style.transition = '';
+    if (e.touches.length === 0) {
+      touchMode = null;
+    } else if (e.touches.length === 1 && touchMode === 'pinch') {
+      // Saiu de pinch pra 1 dedo — vira pan se ampliado
+      var t = e.touches[0];
+      touchStartX = t.clientX;
+      touchStartY = t.clientY;
+      if (lightboxScale > 1) {
+        touchMode = 'pan';
+        touchStartTX = lightboxTranslateX;
+        touchStartTY = lightboxTranslateY;
+      } else {
+        touchMode = null;
+      }
+    }
+  });
+
+  lbImg.addEventListener('touchcancel', function() {
+    touchMode = null;
+    lbImg.classList.remove('dragging');
+    lbImg.style.transition = '';
+  });
+})();
 
 // ─── Pix QR Code ───
 var PIX_PAYLOAD = '00020126580014BR.GOV.BCB.PIX01363d74fd0c-8f54-473c-b37a-3a3e48ddef6e5204000053039865802BR5925Humberto Andrade Goncalve6009SAO PAULO62140510BPUdbDkRLX63045596';

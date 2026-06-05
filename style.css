@@ -551,20 +551,18 @@ body::before {
   display: flex; align-items: center; justify-content: center;
   padding: 12px; background: #dce5f0; border: none; border-radius: 14px;
   cursor: pointer; transition: all 0.3s; text-decoration: none;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   width: 180px; height: 180px;
 }
-.btn-mercadopago:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0, 177, 234, 0.4); background: #c8d4e3; }
+.btn-mercadopago:hover { transform: translateY(-2px); background: #c8d4e3; }
 .mp-logo { width: 140px; height: auto; }
 
 .btn-paypal {
   display: flex; align-items: center; justify-content: center;
   padding: 12px; background: #c9dff5; border: none; border-radius: 14px;
   cursor: pointer; transition: all 0.3s; text-decoration: none;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   width: 180px; height: 180px;
 }
-.btn-paypal:hover { transform: translateY(-2px); box-shadow: 0 8px 30px rgba(0, 112, 186, 0.4); background: #b3d1ef; }
+.btn-paypal:hover { transform: translateY(-2px); background: #b3d1ef; }
 .pp-logo { width: 140px; height: auto; }
 
 /* ─── Contato ─── */
@@ -582,9 +580,8 @@ body::before {
   background: linear-gradient(135deg, var(--accent), #2563eb);
   color: white; font-size: 15px; font-weight: 600;
   border-radius: 12px; text-decoration: none; transition: all 0.3s;
-  box-shadow: 0 4px 20px var(--accent-glow);
 }
-.contato-email:hover { transform: translateY(-2px); box-shadow: 0 8px 30px var(--accent-glow); }
+.contato-email:hover { transform: translateY(-2px); }
 
 /* ─── Lightbox ─── */
 .lightbox {
@@ -953,7 +950,6 @@ body::before { display: none; }
 .pix-key {
   background: var(--h-degrade);
   color: #fff;
-  box-shadow: 0 4px 14px rgba(13,71,161,.25);
 }
 .pix-key:hover { background: var(--h-degrade); color: #fff; transform: translateY(-2px); }
 .donation-desc { color: var(--erp-txt-subtle) !important; }
@@ -961,12 +957,10 @@ body::before { display: none; }
 .btn-mercadopago, .btn-paypal {
   background: #f8fafd;
   border: 1.5px solid var(--erp-border);
-  box-shadow: 0 4px 14px rgba(13,71,161,.08);
 }
 .btn-mercadopago:hover, .btn-paypal:hover {
   background: var(--h-azul-hover);
   border-color: var(--h-azul);
-  box-shadow: 0 8px 24px rgba(13,71,161,.18);
 }
 
 .contato-card {
@@ -980,9 +974,7 @@ body::before { display: none; }
 .contato-email {
   background: var(--h-degrade);
   color: #fff;
-  box-shadow: 0 4px 16px rgba(13,71,161,.28);
 }
-.contato-email:hover { box-shadow: 0 8px 24px rgba(13,71,161,.38); }
 
 .download-card {
   background: #f8fafd;

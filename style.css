@@ -378,9 +378,10 @@ body::before {
   border: 1px solid var(--border); border-radius: 8px;
   color: var(--text-subtle); font-size: 13px; font-weight: 500;
   cursor: pointer; transition: all 0.2s; text-decoration: none;
-  margin: 40px 40px 0;
+  margin: 16px 40px 0;
 }
 .btn-back:hover { background: rgba(255,255,255,0.08); color: var(--text-muted); }
+.btn-back-bottom { margin: 24px 40px 40px; }
 
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(20px); }

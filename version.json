@@ -1,7 +1,7 @@
-{
-  "version": "1.6.0201",
-  "dataPublicacao": "2026-06-02T13:37:34",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.0201/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.0201/VozDigitada_Setup_v1.6.0201.exe",
-  "changelog": "Fix no encerramento: corrigida condição de corrida no ExitApp — agora aguarda parar a escuta antes de fechar, evitando processo zumbi."
+﻿{
+    "version":  "1.6.1101",
+    "dataPublicacao":  "2026-06-11T14:29:01",
+    "url":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.1101/VozDigitada_Update.zip",
+    "urlInstalador":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.6.1101/VozDigitada_Setup_v1.6.1101.exe",
+    "changelog":  "Logs internos de diagnostico: cada ativacao/desativacao do modo microfone sempre ligado agora registra a origem (menu, comando de voz, configuracao ou config persistido) para investigar ativacoes inesperadas."
 }

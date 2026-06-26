@@ -1072,3 +1072,7 @@ body::before { display: none; }
   .painel { margin: 16px 20px; }
   .painel > .home-hero, .painel > .hero { padding: 28px 22px 28px 34px; }
 }
+
+.btn-primary.azul {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+}

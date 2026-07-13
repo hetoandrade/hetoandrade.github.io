@@ -253,6 +253,7 @@ body::before {
 .app-icon.soon { background: rgba(255,255,255,0.05); }
 
 .app-icon img { width: 60px; height: 60px; border-radius: 0; transition: transform 0.3s ease; }
+.app-icon.lightshot img { width: 72px; height: 72px; }
 .app-card:hover .app-icon img { transform: scale(1.15); }
 
 .app-card-title { display: flex; flex-direction: column; gap: 4px; }

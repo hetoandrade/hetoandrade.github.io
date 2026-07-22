@@ -1,7 +1,7 @@
 {
-  "version": "1.7.2201",
-  "dataPublicacao": "2026-07-22T11:50:09",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2201/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2201/DriverStatus_Setup_v1.7.2201.exe",
-  "changelog": "Nova aba Serviços para cadastrar e controlar serviços do Windows, com iniciar e parar, configuração de inicialização, consumo de memória e escolha da tela inicial."
+  "version": "1.7.2202",
+  "dataPublicacao": "2026-07-22T12:56:53",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2202/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2202/DriverStatus_Setup_v1.7.2202.exe",
+  "changelog": "Nova aba Inicialização para visualizar e controlar os programas que abrem com o Windows, com ícones reais e impacto estimado."
 }

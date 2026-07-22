@@ -1,7 +1,7 @@
 {
-  "version": "1.5.1201",
-  "dataPublicacao": "2026-05-12T14:30:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.5.1201/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.5.1201/DriverStatus_Setup_v1.5.1201.exe",
-  "changelog": "Nova página Especificações do PC com detalhes de cada componente (CPU, RAM, GPU, Discos, Placa-mãe)"
+  "version": "1.7.2201",
+  "dataPublicacao": "2026-07-22T11:50:09",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2201/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2201/DriverStatus_Setup_v1.7.2201.exe",
+  "changelog": "Nova aba Serviços para cadastrar e controlar serviços do Windows, com iniciar e parar, configuração de inicialização, consumo de memória e escolha da tela inicial."
 }

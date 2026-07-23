@@ -1,7 +1,7 @@
 {
-  "version": "1.7.2302",
-  "dataPublicacao": "2026-07-23T15:16:01",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2302/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2302/DriverStatus_Setup_v1.7.2302.exe",
-  "changelog": "Adiciona Limpeza de Dispositivos e Limpeza de Drivers com proteção para itens em uso, backup obrigatório, exclusão em lote e acompanhamento de progresso. Melhora o diagnóstico de dispositivos, filtros, análise por IA e o destaque visual dos botões."
+  "version": "1.7.2303",
+  "dataPublicacao": "2026-07-23T18:41:41",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2303/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2303/DriverStatus_Setup_v1.7.2303.exe",
+  "changelog": "Adiciona Limpeza Rápida segura com seleção por categoria, confirmação, progresso, cancelamento, informações corretas da RAM e proteção de arquivos pessoais."
 }

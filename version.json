@@ -1,7 +1,7 @@
-{
-  "version": "1.7.2320",
-  "dataPublicacao": "2026-07-23T14:36:53",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2320/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2320/VozDigitada_Setup_v1.7.2320.exe",
-  "changelog": "Novo dicionário seguro com edição de correções, sincronização automática entre a pasta do sistema e o Google Drive, indicação da origem em uso, seletor de pasta aprimorado e aviso visível quando os atalhos de gravação estiverem desativados."
+﻿{
+    "version":  "1.7.2322",
+    "dataPublicacao":  "2026-07-23T18:08:38",
+    "url":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2322/VozDigitada_Update.zip",
+    "urlInstalador":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2322/VozDigitada_Setup_v1.7.2322.exe",
+    "changelog":  "Corrige o seletor do Google Drive para mostrar somente pastas e abrir diretamente no local já configurado."
 }

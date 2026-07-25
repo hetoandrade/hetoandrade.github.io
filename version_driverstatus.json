@@ -1,7 +1,7 @@
 {
-  "version": "1.7.2303",
-  "dataPublicacao": "2026-07-23T18:41:41",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2303/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2303/DriverStatus_Setup_v1.7.2303.exe",
-  "changelog": "Adiciona Limpeza Rápida segura com seleção por categoria, confirmação, progresso, cancelamento, informações corretas da RAM e proteção de arquivos pessoais."
+  "version": "1.7.2501",
+  "dataPublicacao": "2026-07-25T16:05:38",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2501/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2501/DriverStatus_Setup_v1.7.2501.exe",
+  "changelog": "A Limpeza Rápida agora mantém todos os dados dos navegadores totalmente fora da exclusão, protegendo senhas, preenchimento automático, cookies, sessões, histórico, favoritos e preferências."
 }

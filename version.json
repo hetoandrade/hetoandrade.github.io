@@ -1,7 +1,7 @@
-﻿{
-    "version":  "1.7.2702",
-    "dataPublicacao":  "2026-07-27T14:04:51",
-    "url":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2702/VozDigitada_Update.zip",
-    "urlInstalador":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2702/VozDigitada_Setup_v1.7.2702.exe",
-    "changelog":  "Corrige o atalho que às vezes exigia dois toques, estabiliza as sessões de reconhecimento e restaura automaticamente o ícone após reinício do Explorer."
+{
+  "version": "1.7.2703",
+  "dataPublicacao": "2026-07-27T20:29:17",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2703/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.7.2703/VozDigitada_Setup_v1.7.2703.exe",
+  "changelog": "Corrige o início automático com o Windows e mantém a configuração sincronizada com a tarefa real de inicialização."
 }

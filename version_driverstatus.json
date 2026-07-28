@@ -1,7 +1,7 @@
-﻿{
-    "version":  "1.7.2702",
-    "dataPublicacao":  "2026-07-27T11:34:38",
-    "url":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2702/DriverStatus_Update.zip",
-    "urlInstalador":  "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2702/DriverStatus_Setup_v1.7.2702.exe",
-    "changelog":  "A aba Serviços agora permite ocultar itens da lista e restaurá-los em Ver ocultos, sem alterar os serviços do Windows."
+{
+  "version": "1.7.2801",
+  "dataPublicacao": "2026-07-28T09:00:48",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2801/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.7.2801/DriverStatus_Setup_v1.7.2801.exe",
+  "changelog": "Agora o DriverStatus abre com um único clique no ícone da bandeja, e a versão no menu de contexto aparece ativa e colorida. 🖱️🎨"
 }

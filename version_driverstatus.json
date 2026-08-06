@@ -1,7 +1,7 @@
 {
-  "version": "1.8.0643",
-  "dataPublicacao": "2026-08-06T16:39:15",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.0643/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.0643/DriverStatus_Setup_v1.8.0643.exe",
-  "changelog": "Serviços com favoritos, ícones e adição inline; pesquisa e controle aprimorado de tarefas agendadas; cópia organizada das especificações do computador."
+  "version": "1.8.0645",
+  "dataPublicacao": "2026-08-06T17:30:54",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.0645/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.0645/DriverStatus_Setup_v1.8.0645.exe",
+  "changelog": "Padroniza o alinhamento à esquerda das colunas nos cartões de todas as telas com listas do DriverStatus."
 }

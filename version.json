@@ -1,7 +1,7 @@
 {
-  "version": "1.8.1101",
-  "dataPublicacao": "2026-08-11T15:03:10",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1101/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1101/VozDigitada_Setup_v1.8.1101.exe",
-  "changelog": "Protege a digitação no campo original ao alternar entre aplicativos, preserva o texto pendente e melhora a recuperação automática do reconhecimento de voz."
+  "version": "1.8.1201",
+  "dataPublicacao": "2026-08-12T14:13:09",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1201/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1201/VozDigitada_Setup_v1.8.1201.exe",
+  "changelog": "Protege a digitação pelo aplicativo de origem, pausa ao alternar entre aplicativos e amplia a compatibilidade com campos personalizados como o WhatsApp. 🎙️🛡️"
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.8.1002",
-  "dataPublicacao": "2026-08-10T11:16:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.1002/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.1002/DriverStatus_Setup_v1.8.1002.exe",
-  "changelog": "Separação visual entre itens ativos e inativos nas abas Inicialização e Tarefas agendadas, com ajuste do painel de não favoritos em Serviços."
+  "version": "1.8.1701",
+  "dataPublicacao": "2026-08-17T11:12:44",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.1701/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.1701/DriverStatus_Setup_v1.8.1701.exe",
+  "changelog": "Serviços adicionados ao monitoramento agora entram automaticamente como favoritos, sem o botão de favorito no formulário de inclusão."
 }

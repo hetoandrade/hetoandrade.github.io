@@ -69,7 +69,7 @@
   "operatingSystem": "Windows 10, Windows 11",
   "applicationCategory": "UtilitiesApplication",
   "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
-  "description": "Diagnostica drivers do PC, identifica problemas, integra Windows Update, backup de drivers e assistência por IA.",
+  "description": "Diagnostica dispositivos e reúne manutenção segura do Windows: drivers opcionais, limpeza, serviços, inicialização, tarefas, backup e restauração.",
   "url": "https://hetoandrade.com.br/",
   "author": { "@type": "Person", "name": "HetoAndrade" }
 }
@@ -81,13 +81,13 @@
   "@type": "FAQPage",
   "mainEntity": [
     {"@type": "Question", "name": "O VozDigitada funciona em qualquer programa?", "acceptedAnswer": {"@type": "Answer", "text": "Sim! O VozDigitada digita no campo ativo de qualquer programa do Windows."}},
-    {"@type": "Question", "name": "Precisa de internet para funcionar?", "acceptedAnswer": {"@type": "Answer", "text": "Não. Usa o Windows Speech Recognition, que funciona 100% offline."}},
+    {"@type": "Question", "name": "Precisa de internet para funcionar?", "acceptedAnswer": {"@type": "Answer", "text": "O ditado pode funcionar offline depois que os componentes de fala do Windows estiverem instalados. Internet é necessária para baixar pacotes e atualizações."}},
     {"@type": "Question", "name": "O VozDigitada é gratuito?", "acceptedAnswer": {"@type": "Answer", "text": "Atualmente, o VozDigitada é gratuito, sem limite de palavras, sem assinatura e sem anúncios."}},
     {"@type": "Question", "name": "Como funciona o Enter automático?", "acceptedAnswer": {"@type": "Answer", "text": "Configure um atalho que grava, para e envia (Enter automático). Ideal para qualquer programa."}},
     {"@type": "Question", "name": "Quais comandos de voz estão disponíveis?", "acceptedAnswer": {"@type": "Answer", "text": "Durante a gravação, diga Voz parar para encerrar ou Voz enviar para encerrar e pressionar Enter."}},
-    {"@type": "Question", "name": "O que é o Dicionário Inteligente?", "acceptedAnswer": {"@type": "Answer", "text": "Cadastre correções e o app aprende. Funciona com frases de até 3 palavras."}},
+    {"@type": "Question", "name": "O que é o Dicionário Inteligente?", "acceptedAnswer": {"@type": "Answer", "text": "Cadastre correções de palavras ou pequenas frases. O dicionário também pode ser exportado, importado ou sincronizado em uma pasta escolhida."}},
     {"@type": "Question", "name": "Funciona em português?", "acceptedAnswer": {"@type": "Answer", "text": "Sim! Funciona em português brasileiro."}},
-    {"@type": "Question", "name": "É seguro? Coleta dados?", "acceptedAnswer": {"@type": "Answer", "text": "Não coleta dados, não envia áudio para servidores, processamento 100% local."}}
+    {"@type": "Question", "name": "É seguro? Coleta dados?", "acceptedAnswer": {"@type": "Answer", "text": "O reconhecimento usa os componentes de fala do Windows no computador. Downloads e atualizações só acessam a internet quando necessários."}}
   ]
 }
 </script>
@@ -265,7 +265,7 @@
           <h3>De problemas reais, nascem solu&#231;&#245;es reais</h3>
           <p>Sou programador e crio ferramentas que eu mesmo uso no dia a dia. Quando encontro um problema que n&#227;o tem boa solu&#231;&#227;o gratuita, eu construo uma.</p>
           <p><em>O <strong>VozDigitada</strong> nasceu porque eu precisava ditar texto sem pagar assinatura &#8212; um app simples que transforma voz em texto em qualquer programa, com Enter autom&#225;tico e comandos de voz.</em></p>
-          <p><em>O <strong>DriverStatus</strong> nasceu porque diagnosticar drivers no Windows &#233; frustrante &#8212; um app que escaneia o hardware, identifica problemas e facilita a busca pela solu&#231;&#227;o certa, inclusive com IA.</em></p>
+          <p><em>O <strong>DriverStatus</strong> nasceu porque diagnosticar e cuidar do Windows pode ser confuso &#8212; um app que reúne dispositivos, drivers, limpeza, serviços, inicialização, tarefas, backup e restauração em uma interface clara.</em></p>
           <p>O <strong>VozDigitada</strong> e o <strong>DriverStatus</strong> s&#227;o gratuitos. Outros aplicativos podem ter condi&#231;&#245;es pr&#243;prias, sempre informadas claramente em suas p&#225;ginas.</p>
           <div class="historia-destaque">
             <span class="destaque-icon">&#128161;</span>
@@ -351,9 +351,9 @@
           instantaneamente.
         </h1>
         <p>
-          O <strong>VozDigitada</strong> transforma sua voz em texto no campo ativo de qualquer programa.
-          Pressione um atalho para gravar e o texto aparece em tempo real. Tem Enter autom&#225;tico,
-          comandos de voz durante a grava&#231;&#227;o, dicion&#225;rio inteligente e um bal&#227;o flutuante que mostra o status.
+          O <strong>VozDigitada</strong> transforma sua voz em texto no campo ativo de outros aplicativos.
+          Use atalhos configuráveis, Enter automático ou os comandos “Voz parar” e “Voz enviar”.
+          O dicionário aprende correções e o pequeno balão acima da barra de tarefas mostra cada etapa da gravação.
         </p>
         <div class="hero-actions">
           <a id="btn-download-hero" href="#voz-download" class="btn-primary">
@@ -379,24 +379,48 @@
     <section class="section" id="voz-screenshots">
       <div class="section-title">O aplicativo</div>
       <div class="screenshots-grid">
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/interface-configuracoes.png', 'voz')">
-          <img src="Prints/VozDigitada/interface-configuracoes.png" alt="Interface ilustrativa da tela de configurações do VozDigitada" loading="lazy">
-          <div class="screenshot-label">Configura&#231;&#245;es &#8212; atalhos, dicion&#225;rio e pacotes de reconhecimento de fala</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/gravando-bloco-notas-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/gravando-bloco-notas-v2.webp" alt="Interface ilustrativa do VozDigitada gravando e digitando no Bloco de Notas" loading="lazy">
+          <div class="screenshot-label">Gravando no Bloco de Notas — o pequeno balão vermelho fica logo acima da barra de tarefas</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/interface-dicionario.png', 'voz')">
-          <img src="Prints/VozDigitada/interface-dicionario.png" alt="Interface ilustrativa do dicionário de correções do VozDigitada" loading="lazy">
-          <div class="screenshot-label">Dicion&#225;rio de corre&#231;&#245;es &#8212; consulte e gerencie o hist&#243;rico de palavras corrigidas</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/balao-volte-aplicativo.webp', 'voz')">
+          <img src="Prints/VozDigitada/balao-volte-aplicativo.webp" alt="Interface ilustrativa do aviso para voltar ao aplicativo onde iniciou a gravação" loading="lazy">
+          <div class="screenshot-label">Volte para o app — o balão roxo avisa quando é preciso retornar ao campo onde a gravação começou</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/gravando-bloco-notas-v2.png', 'voz')">
-          <img src="Prints/VozDigitada/gravando-bloco-notas-v2.png" alt="Interface ilustrativa do VozDigitada gravando e digitando no Bloco de Notas" loading="lazy">
-          <div class="screenshot-label">Gravando e digitando &#8212; acompanhe o texto aparecer no Bloco de Notas enquanto o bal&#227;o vermelho est&#225; ativo</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/interface-configuracoes-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/interface-configuracoes-v2.webp" alt="Interface ilustrativa das configurações atuais do VozDigitada" loading="lazy">
+          <div class="screenshot-label">Configurações — atalhos, reconhecimento, microfone, dicionário, balão e inicialização com o Windows</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/balao-volte-aplicativo.png', 'voz')">
-          <img src="Prints/VozDigitada/balao-volte-aplicativo.png" alt="Interface ilustrativa do aviso para voltar ao aplicativo onde iniciou a gravação" loading="lazy">
-          <div class="screenshot-label">Volte ao aplicativo &#8212; o aviso roxo mostra onde concluir a digita&#231;&#227;o</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/interface-dicionario-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/interface-dicionario-v2.webp" alt="Interface ilustrativa do dicionário de correções do VozDigitada" loading="lazy">
+          <div class="screenshot-label">Dicionário — histórico do dia, pesquisa e cadastro de correções de palavras ou pequenas frases</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/comandos-de-voz-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/comandos-de-voz-v2.webp" alt="Interface ilustrativa dos comandos de voz do VozDigitada" loading="lazy">
+          <div class="screenshot-label">Comandos de voz — “Voz parar” encerra e “Voz enviar” encerra e pressiona Enter</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/menu-bandeja-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/menu-bandeja-v2.webp" alt="Interface ilustrativa do menu do VozDigitada na bandeja do Windows" loading="lazy">
+          <div class="screenshot-label">Menu da bandeja — acesso rápido à gravação, ao balão, ao dicionário, às configurações e ao suporte</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/microfone-desativado-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/microfone-desativado-v2.webp" alt="Interface ilustrativa do aviso de permissão do microfone" loading="lazy">
+          <div class="screenshot-label">Permissão do microfone — orientação direta para ativar o acesso nas configurações do Windows</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/atualizacao-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/atualizacao-v2.webp" alt="Interface ilustrativa da atualização do VozDigitada" loading="lazy">
+          <div class="screenshot-label">Atualização — verificação de nova versão e instalação guiada</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/sobre-suporte-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/sobre-suporte-v2.webp" alt="Interface ilustrativa da tela Sobre e Suporte do VozDigitada" loading="lazy">
+          <div class="screenshot-label">Sobre e suporte — versão, informações do aplicativo e canais de ajuda</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/atalhos-desativados-v2.webp', 'voz')">
+          <img src="Prints/VozDigitada/atalhos-desativados-v2.webp" alt="Interface ilustrativa do aviso de atalhos temporariamente desativados" loading="lazy">
+          <div class="screenshot-label">Proteção de atalhos — durante a configuração eles ficam temporariamente desativados</div>
         </div>
       </div>
-      <p class="screenshots-note">Imagens ilustrativas baseadas nas funcionalidades atuais do VozDigitada.</p>
+      <p class="screenshots-note">Imagens ilustrativas individuais, baseadas nas telas e funcionalidades atuais do VozDigitada.</p>
     </section>
 
     <!-- Features VozDigitada -->
@@ -405,48 +429,63 @@
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon blue">&#127908;</div>
-          <h3>Reconhecimento de Voz</h3>
-          <p>Captura sua voz e digita automaticamente no campo ativo de qualquer programa com precis&#227;o.</p>
+          <h3>Ditado no Campo Ativo</h3>
+          <p>Reconhece sua fala com os componentes do Windows e insere o texto no aplicativo em uso.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon purple">&#9000;&#65039;</div>
-          <h3>Atalhos de Teclado</h3>
-          <p>Um atalho para gravar e parar, outro para gravar, parar e enviar (Enter autom&#225;tico). Totalmente configur&#225;vel.</p>
+          <h3>Quatro Atalhos</h3>
+          <p>Personalize as quatro combinações de teclado disponíveis diretamente nas configurações.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#9166;</div>
+          <h3>Enter Automático</h3>
+          <p>Use o modo que encerra a gravação e envia o texto, sem precisar tocar no teclado novamente.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon cyan">&#128172;</div>
           <h3>Comandos de Voz</h3>
-          <p>Durante a grava&#231;&#227;o, diga "Voz parar" para encerrar ou "Voz enviar" para encerrar e pressionar Enter.</p>
+          <p>Durante a gravação, diga “Voz parar” para encerrar ou “Voz enviar” para encerrar e pressionar Enter.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon green">&#128266;</div>
-          <h3>Reconhecimento Ajust&#225;vel</h3>
-          <p>Escolha a confian&#231;a m&#237;nima, configure o microfone e ative o reconhecimento de sotaques n&#227;o nativos.</p>
+          <h3>Reconhecimento Ajustável</h3>
+          <p>Escolha a confiança mínima, o idioma, o microfone e o reconhecimento de sotaques não nativos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">&#129504;</div>
+          <h3>Pacotes de Fala</h3>
+          <p>Consulte e instale componentes Básico ou Aprimorado para adequar o reconhecimento ao computador.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon purple">&#128214;</div>
-          <h3>Dicion&#225;rio Inteligente</h3>
-          <p>Corrija palavras que o reconhecimento erra e o app aprende. Exportar, importar e backup autom&#225;tico na nuvem.</p>
+          <h3>Dicionário de Correções</h3>
+          <p>Cadastre palavras ou pequenas frases, consulte o histórico e edite ou exclua cada correção.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon cyan">&#128193;</div>
+          <h3>Exportação e Sincronização</h3>
+          <p>Exporte, importe ou escolha uma pasta sincronizada para manter uma cópia do dicionário.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon orange">&#127919;</div>
-          <h3>Bal&#227;o Flutuante M&#243;vel</h3>
-          <p>Um bal&#227;o na tela indica o status da grava&#231;&#227;o. Arraste para qualquer posi&#231;&#227;o &#8212; ele lembra onde voc&#234; deixou.</p>
+          <h3>Balão de Status</h3>
+          <p>O pequeno indicador fica acima da barra de tarefas, mostra gravação ou retorno ao app e pode ser reposicionado.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon pink">&#128204;</div>
+          <h3>Bandeja do Windows</h3>
+          <p>O aplicativo permanece discreto na bandeja, com menu para todas as ações e opção de iniciar com o Windows.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon green">&#128260;</div>
-          <h3>Atualiza&#231;&#227;o Autom&#225;tica</h3>
-          <p>O app verifica e baixa atualiza&#231;&#245;es automaticamente. Sempre na &#250;ltima vers&#227;o dispon&#237;vel.</p>
+          <h3>Atualizações</h3>
+          <p>Verifique novas versões pelo próprio menu e acompanhe o processo de instalação.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon red">&#9881;&#65039;</div>
-          <h3>Configura&#231;&#227;o Completa</h3>
-          <p>Personalize atalhos, idioma, sensibilidade do reconhecimento e comportamento do bal&#227;o indicador.</p>
-        </div>
-        <div class="feature-card">
-          <div class="feature-icon pink">&#128640;</div>
-          <h3>Inicia com Windows</h3>
-          <p>Configure o aplicativo para iniciar automaticamente com o Windows e ficar pronto para seus atalhos.</p>
+          <h3>Proteção Durante a Configuração</h3>
+          <p>Os atalhos ficam temporariamente bloqueados enquanto a janela de configuração está aberta.</p>
         </div>
       </div>
     </section>
@@ -460,14 +499,14 @@
             <span>O VozDigitada funciona em qualquer programa?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>Sim! O VozDigitada digita no campo ativo de qualquer programa do Windows &#8212; navegadores, editores de texto, Excel, e-mail, ERPs, terminais e mais. Basta o cursor estar posicionado em um campo de texto.</p></div>
+          <div class="faq-answer"><p>Ele foi criado para digitar no campo ativo de aplicativos do Windows, como navegadores, editores, e-mail, ERPs e campos de busca. Basta posicionar o cursor antes de iniciar; as permissões do próprio Windows continuam valendo.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>Precisa de internet para funcionar?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>N&#227;o. O VozDigitada usa o Windows Speech Recognition, que funciona 100% offline. Todo o processamento de voz acontece localmente no seu computador &#8212; nenhum &#225;udio &#233; enviado para a internet.</p></div>
+          <div class="faq-answer"><p>O ditado usa os componentes de fala instalados no Windows e pode funcionar offline. A internet é necessária para baixar componentes de fala, consultar ou instalar atualizações.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
@@ -478,38 +517,45 @@
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
-            <span>Como funciona o Enter autom&#225;tico?</span>
+            <span>Como funcionam os atalhos e o Enter automático?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>Voc&#234; configura dois atalhos: um para gravar/parar normalmente, e outro que grava, para e envia (pressiona Enter automaticamente). Ideal para Visual Studio Code, Microsoft Teams, Bloco de Notas, campos de busca e qualquer programa &#8212; fale e envie sem tocar no teclado.</p></div>
+          <div class="faq-answer"><p>A tela de configurações oferece quatro atalhos personalizáveis. Entre os modos disponíveis há gravação normal e gravação com envio por Enter, útil em conversas, buscas e outros campos de texto.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>Quais comandos de voz est&#227;o dispon&#237;veis?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>Durante a grava&#231;&#227;o, diga "Voz parar" para encerrar ou "Voz enviar" para encerrar e pressionar Enter automaticamente. O texto falado antes do comando &#233; digitado normalmente.</p></div>
+          <div class="faq-answer"><p>Durante a gravação, diga “Voz parar” para encerrar ou “Voz enviar” para encerrar e pressionar Enter. Não existe comando “Voz gravar”: a gravação começa pelos atalhos configurados.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>O que &#233; o Dicion&#225;rio Inteligente?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>Quando o reconhecimento de voz erra uma palavra, voc&#234; cadastra a corre&#231;&#227;o no dicion&#225;rio. Na pr&#243;xima vez, o app corrige automaticamente. Funciona com palavras individuais e frases de at&#233; 3 palavras. Voc&#234; pode exportar, importar e fazer backup autom&#225;tico.</p></div>
+          <div class="faq-answer"><p>Quando o reconhecimento erra uma palavra ou pequena frase, você cadastra a forma correta. Também é possível pesquisar o histórico, editar, excluir, exportar, importar e escolher uma pasta sincronizada para o dicionário.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
-            <span>Funciona em portugu&#234;s?</span>
+            <span>O que são os pacotes de reconhecimento?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>Sim! O VozDigitada funciona em portugu&#234;s brasileiro.</p></div>
+          <div class="faq-answer"><p>São componentes de fala do Windows usados pelo aplicativo. Nas configurações você pode consultar as opções Básico e Aprimorado, o idioma português do Brasil e o reconhecimento de sotaques não nativos.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>O que significa “Volte para o app”?</span>
+            <span class="faq-arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>O balão roxo aparece quando o foco saiu do aplicativo em que a gravação foi iniciada. Volte ao campo original para o VozDigitada concluir a ação no lugar correto.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>&#201; seguro? Coleta dados?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>O VozDigitada n&#227;o coleta nenhum dado pessoal, n&#227;o envia &#225;udio para servidores e n&#227;o possui telemetria. Todo o processamento &#233; local. O c&#243;digo &#233; transparente e o app est&#225; dispon&#237;vel na Microsoft Store.</p></div>
+          <div class="faq-answer"><p>O reconhecimento usa os componentes de fala do Windows no seu computador. Acesso à internet ocorre apenas em funções que precisam dele, como download de componentes e atualização do aplicativo.</p></div>
         </div>
       </div>
     </section>
@@ -569,9 +615,9 @@
           em segundos.
         </h1>
         <p>
-          O <strong>DriverStatus</strong> escaneia todo o hardware do seu PC, identifica dispositivos com problemas
-          e sugere a melhor solu&#231;&#227;o: Windows Update, driver oficial ou pesquisa online.
-          Faz backup de drivers, cria pontos de restaura&#231;&#227;o e facilita a intera&#231;&#227;o com a IA.
+          O <strong>DriverStatus</strong> reúne diagnóstico de dispositivos e manutenção segura do Windows:
+          drivers opcionais, arquivos temporários, serviços, inicialização, tarefas agendadas, registros desconectados,
+          pacotes antigos, backup, ponto de restauração e especificações do computador.
         </p>
         <div class="hero-actions">
           <a id="btn-driver-download-hero" href="#driver-download" class="btn-primary green">
@@ -594,23 +640,68 @@
     <section class="section" id="driver-screenshots">
       <div class="section-title">O aplicativo</div>
       <div class="screenshots-grid">
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/TelaPrincipal.png', 'driver')">
-          <img src="Prints/DriverStatus/TelaPrincipal.png" alt="DriverStatus tela principal">
-          <div class="screenshot-label">Tela principal &#8212; diagn&#243;stico completo dos drivers</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/dispositivos-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/dispositivos-v2.webp" alt="Interface ilustrativa da página Dispositivos do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Dispositivos — diagnóstico, situação do driver, detalhes técnicos e caminhos para encontrar uma solução</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/Gemini.png', 'driver')">
-          <img src="Prints/DriverStatus/Gemini.png" alt="Assist&#234;ncia por IA com Gemini">
-          <div class="screenshot-label">Assist&#234;ncia por IA &#8212; an&#225;lise inteligente via Gemini</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/windows-update-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/windows-update-v2.webp" alt="Interface ilustrativa da página Windows Update do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Windows Update — drivers opcionais disponíveis para instalar individualmente ou em conjunto</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/Sobre.png', 'driver')">
-          <img src="Prints/DriverStatus/Sobre.png" alt="Tela Sobre">
-          <div class="screenshot-label">Sobre o aplicativo</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/limpeza-rapida-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/limpeza-rapida-v2.webp" alt="Interface ilustrativa da página Limpeza Rápida do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Limpeza Rápida — remoção conservadora de arquivos temporários antigos e atalhos para ferramentas do Windows</div>
         </div>
-        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/LojaWindows.png', 'driver')">
-          <img src="Prints/DriverStatus/LojaWindows.png" alt="DriverStatus na Microsoft Store">
-          <div class="screenshot-label">Dispon&#237;vel na Microsoft Store</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/servicos-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/servicos-v2.webp" alt="Interface ilustrativa da página Serviços do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Serviços — acompanhe serviços escolhidos e altere estado ou modo de inicialização quando permitido</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/inicializacao-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/inicializacao-v2.webp" alt="Interface ilustrativa da página Inicialização do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Inicialização — habilite ou desabilite programas e consulte uma estimativa local de impacto</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/tarefas-agendadas-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/tarefas-agendadas-v2.webp" alt="Interface ilustrativa da página Tarefas Agendadas do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Tarefas agendadas — ações editáveis separadas das tarefas protegidas do Windows</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/dispositivos-desconectados-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/dispositivos-desconectados-v2.webp" alt="Interface ilustrativa da página Limpeza de Dispositivos do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Limpeza de Dispositivos — gerencie registros de hardware que não está conectado no momento</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/limpeza-drivers-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/limpeza-drivers-v2.webp" alt="Interface ilustrativa da página Limpeza de Drivers do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Limpeza de Drivers — somente pacotes de terceiros sem dispositivo ou serviço ativo, com backup obrigatório</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/backup-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/backup-v2.webp" alt="Interface ilustrativa da página Backup do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Backup — exporte os drivers instalados para uma pasta escolhida</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/restauracao-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/restauracao-v2.webp" alt="Interface ilustrativa da página Restauração do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Restauração — crie um ponto de restauração do Windows antes de mudanças importantes</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/especificacoes-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/especificacoes-v2.webp" alt="Interface ilustrativa da página Especificações do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Especificações — visão organizada dos principais componentes e informações do computador</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/configuracoes-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/configuracoes-v2.webp" alt="Interface ilustrativa da página Configurações do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Configurações — defina a página inicial e a inicialização minimizada na bandeja do Windows</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/sobre-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/sobre-v2.webp" alt="Interface ilustrativa da página Sobre do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Sobre — versão e informações principais do DriverStatus</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/suporte-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/suporte-v2.webp" alt="Interface ilustrativa da página Suporte do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Suporte — canais de ajuda e informações para atendimento</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/DriverStatus/atualizacao-v2.webp', 'driver')">
+          <img src="Prints/DriverStatus/atualizacao-v2.webp" alt="Interface ilustrativa da página Verificar Atualização do DriverStatus" loading="lazy">
+          <div class="screenshot-label">Verificar Atualização — consulte e instale a versão mais recente do aplicativo</div>
         </div>
       </div>
+      <p class="screenshots-note">Imagens ilustrativas individuais, baseadas nas 15 páginas atuais do DriverStatus.</p>
     </section>
 
     <!-- Features DriverStatus -->
@@ -619,48 +710,78 @@
       <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon green">&#128270;</div>
-          <h3>Scan Completo</h3>
-          <p>Escaneia todo o hardware do PC via WMI. Identifica dispositivos sem driver, com falha ou com problemas.</p>
+          <h3>Diagnóstico de Dispositivos</h3>
+          <p>Escaneia o hardware via WMI e separa dispositivos funcionando, sem driver, desativados ou problemáticos.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon blue">&#128259;</div>
-          <h3>Windows Update</h3>
-          <p>Busca drivers dispon&#237;veis no Windows Update e instala com um clique. Cria ponto de restaura&#231;&#227;o automaticamente.</p>
+          <h3>Drivers do Windows Update</h3>
+          <p>Lista drivers opcionais e permite instalar um item ou todos os selecionados, com aviso quando for preciso reiniciar.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon cyan">&#128218;</div>
-          <h3>Base de Conhecimento</h3>
-          <p>Identifica dispositivos por VID/PID e sugere a melhor solu&#231;&#227;o: driver oficial, Windows Update ou download direto.</p>
+          <div class="feature-icon cyan">&#129529;</div>
+          <h3>Limpeza Rápida</h3>
+          <p>Remove arquivos temporários antigos de forma conservadora, sem apagar dados de navegadores ou forçar limpeza de memória.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon purple">&#129302;</div>
-          <h3>Assist&#234;ncia por IA</h3>
-          <p>Copia informa&#231;&#245;es do dispositivo e abre o Google Gemini para an&#225;lise inteligente. Sem custo de API.</p>
+          <div class="feature-icon purple">&#9881;&#65039;</div>
+          <h3>Serviços do Windows</h3>
+          <p>Monitore serviços escolhidos e, quando permitido, inicie, pare ou ajuste o modo de inicialização.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">&#128640;</div>
+          <h3>Programas de Inicialização</h3>
+          <p>Habilite ou desabilite entradas sem desinstalar programas e consulte uma estimativa local de impacto.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">&#128197;</div>
+          <h3>Tarefas Agendadas</h3>
+          <p>Gerencie tarefas editáveis; itens protegidos do Windows são identificados e permanecem somente para consulta.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon cyan">&#128268;</div>
+          <h3>Dispositivos Desconectados</h3>
+          <p>Oculta ou remove registros de hardware ausente. Essa limpeza não apaga o pacote do driver.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon red">&#128465;</div>
+          <h3>Limpeza Protegida de Drivers</h3>
+          <p>Mostra somente pacotes de terceiros sem dispositivo ou serviço ativo e exige backup antes da exclusão.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon orange">&#128190;</div>
           <h3>Backup de Drivers</h3>
-          <p>Exporte todos os drivers instalados para uma pasta. Restaure quando precisar com um clique.</p>
+          <p>Exporta os drivers instalados com a ferramenta oficial do Windows para a pasta que você escolher.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon red">&#128260;</div>
-          <h3>Ponto de Restaura&#231;&#227;o</h3>
-          <p>Crie pontos de restaura&#231;&#227;o do Windows antes de qualquer altera&#231;&#227;o. Seguran&#231;a antes de tudo.</p>
+          <h3>Ponto de Restauração</h3>
+          <p>Oferece uma página própria para criar um ponto de restauração do sistema antes de mudanças importantes.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon green">&#127760;</div>
-          <h3>Consulta Online</h3>
-          <p>Busca em bases USB e PCI internacionais para identificar dispositivos desconhecidos automaticamente.</p>
+          <div class="feature-icon green">&#128187;</div>
+          <h3>Especificações do PC</h3>
+          <p>Organiza informações do Windows, processador, memória, placa-mãe, vídeo, armazenamento e rede.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon blue">&#128270;</div>
-          <h3>Pesquisa Google</h3>
-          <p>Gera pesquisa autom&#225;tica no Google com o nome do dispositivo e vers&#227;o do Windows para encontrar o driver.</p>
+          <div class="feature-icon pink">&#128204;</div>
+          <h3>Configurações e Bandeja</h3>
+          <p>Escolha a página exibida ao abrir e, se quiser, inicie o aplicativo com o Windows minimizado na bandeja.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon pink">&#128274;</div>
-          <h3>100% Local e Seguro</h3>
-          <p>N&#227;o coleta dados, n&#227;o envia informa&#231;&#245;es. Todo o processamento acontece no seu computador.</p>
+          <div class="feature-icon purple">&#129302;</div>
+          <h3>Pesquisa e Assistência por IA</h3>
+          <p>Prepara informações técnicas e abre ChatGPT, Gemini, Google ou a origem oficial para ajudar na investigação.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#128737;</div>
+          <h3>Proteções nas Ações Sensíveis</h3>
+          <p>Itens ativos ou protegidos não são oferecidos para exclusão, e o Windows solicita elevação quando necessário.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">&#128260;</div>
+          <h3>Atualização e Suporte</h3>
+          <p>Consulte novas versões pelo aplicativo e acesse os canais de suporte em páginas dedicadas.</p>
         </div>
       </div>
     </section>
@@ -674,35 +795,63 @@
             <span>O DriverStatus substitui o Gerenciador de Dispositivos?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>Ele complementa. O DriverStatus faz um diagn&#243;stico mais profundo, identifica dispositivos problem&#225;ticos, consulta bases online e sugere solu&#231;&#245;es &#8212; algo que o Gerenciador de Dispositivos n&#227;o faz.</p></div>
+          <div class="faq-answer"><p>Ele complementa. O DriverStatus reúne o diagnóstico dos dispositivos com atalhos de pesquisa e várias ferramentas de manutenção em uma interface mais orientada. O Gerenciador de Dispositivos continua sendo uma ferramenta do Windows.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>Precisa de acesso de administrador?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>O scan b&#225;sico funciona sem admin. Recursos avan&#231;ados como Windows Update, backup de drivers e pontos de restaura&#231;&#227;o pedem eleva&#231;&#227;o de privil&#233;gios automaticamente quando necess&#225;rio.</p></div>
+          <div class="faq-answer"><p>O diagnóstico básico não precisa manter o aplicativo sempre como administrador. Quando uma ação protegida exige mais permissão — por exemplo, alterar serviços, tarefas ou drivers — o Windows solicita elevação.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>&#201; seguro instalar drivers por ele?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>O DriverStatus usa o pr&#243;prio Windows Update para instalar drivers &#8212; a mesma fonte que o Windows usa. Al&#233;m disso, cria ponto de restaura&#231;&#227;o antes de qualquer altera&#231;&#227;o.</p></div>
+          <div class="faq-answer"><p>A instalação usa os drivers opcionais oferecidos pelo próprio Windows Update. Confira o item antes de instalar; o aplicativo também oferece uma ferramenta separada para criar um ponto de restauração.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
-            <span>Como funciona a assist&#234;ncia por IA?</span>
+            <span>O que a Limpeza Rápida remove?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>O app copia as informa&#231;&#245;es do dispositivo e abre o Google Gemini no navegador. Voc&#234; cola com Ctrl+V e a IA analisa o problema. Sem custo de API, sem conta obrigat&#243;ria.</p></div>
+          <div class="faq-answer"><p>Ela procura arquivos temporários antigos em locais seguros. Não limpa dados dos navegadores e não promete “liberar RAM”; também oferece atalhos para ferramentas oficiais de armazenamento do Windows.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Qual é a diferença entre limpar dispositivos e limpar drivers?</span>
+            <span class="faq-arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>A limpeza de dispositivos trata registros de hardware desconectado e não apaga o pacote do driver. A limpeza de drivers trata pacotes de terceiros sem dispositivo ou serviço ativo e exige um backup antes da exclusão.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>O aplicativo protege serviços e tarefas importantes?</span>
+            <span class="faq-arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>As tarefas protegidas do Windows aparecem somente para consulta. Nos programas de inicialização, desabilitar uma entrada não desinstala nem fecha o aplicativo. Ainda assim, revise qualquer mudança antes de confirmar.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Como funciona a assistência por IA?</span>
+            <span class="faq-arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>O DriverStatus prepara as informações técnicas e abre o ChatGPT ou o Gemini no navegador. Você decide se vai colar e enviar o conteúdo; não há análise automática escondida dentro do aplicativo.</p></div>
+        </div>
+        <div class="faq-item">
+          <div class="faq-question" onclick="toggleFaq(this)">
+            <span>Backup de drivers e ponto de restauração são a mesma coisa?</span>
+            <span class="faq-arrow">&#9660;</span>
+          </div>
+          <div class="faq-answer"><p>Não. O backup exporta os drivers instalados para uma pasta. O ponto de restauração registra o estado do Windows para recuperação do sistema. São proteções diferentes e complementares.</p></div>
         </div>
         <div class="faq-item">
           <div class="faq-question" onclick="toggleFaq(this)">
             <span>Coleta algum dado do meu PC?</span>
             <span class="faq-arrow">&#9660;</span>
           </div>
-          <div class="faq-answer"><p>N&#227;o. O DriverStatus &#233; 100% local. N&#227;o envia nenhuma informa&#231;&#227;o para servidores, n&#227;o tem telemetria e n&#227;o coleta dados pessoais.</p></div>
+          <div class="faq-answer"><p>O diagnóstico é processado no computador. Funções online só são abertas quando você escolhe pesquisar, consultar atualização ou usar um serviço externo; nesse caso, valem as regras do site aberto no navegador.</p></div>
         </div>
       </div>
     </section>
@@ -954,16 +1103,33 @@
 // ─── Lightbox ───
 var lightboxGroups = {
   voz: [
-    'Prints/VozDigitada/interface-configuracoes.png',
-    'Prints/VozDigitada/interface-dicionario.png',
-    'Prints/VozDigitada/gravando-bloco-notas-v2.png',
-    'Prints/VozDigitada/balao-volte-aplicativo.png'
+    'Prints/VozDigitada/gravando-bloco-notas-v2.webp',
+    'Prints/VozDigitada/balao-volte-aplicativo.webp',
+    'Prints/VozDigitada/interface-configuracoes-v2.webp',
+    'Prints/VozDigitada/interface-dicionario-v2.webp',
+    'Prints/VozDigitada/comandos-de-voz-v2.webp',
+    'Prints/VozDigitada/menu-bandeja-v2.webp',
+    'Prints/VozDigitada/microfone-desativado-v2.webp',
+    'Prints/VozDigitada/atualizacao-v2.webp',
+    'Prints/VozDigitada/sobre-suporte-v2.webp',
+    'Prints/VozDigitada/atalhos-desativados-v2.webp'
   ],
   driver: [
-    'Prints/DriverStatus/TelaPrincipal.png',
-    'Prints/DriverStatus/Gemini.png',
-    'Prints/DriverStatus/Sobre.png',
-    'Prints/DriverStatus/LojaWindows.png'
+    'Prints/DriverStatus/dispositivos-v2.webp',
+    'Prints/DriverStatus/windows-update-v2.webp',
+    'Prints/DriverStatus/limpeza-rapida-v2.webp',
+    'Prints/DriverStatus/servicos-v2.webp',
+    'Prints/DriverStatus/inicializacao-v2.webp',
+    'Prints/DriverStatus/tarefas-agendadas-v2.webp',
+    'Prints/DriverStatus/dispositivos-desconectados-v2.webp',
+    'Prints/DriverStatus/limpeza-drivers-v2.webp',
+    'Prints/DriverStatus/backup-v2.webp',
+    'Prints/DriverStatus/restauracao-v2.webp',
+    'Prints/DriverStatus/especificacoes-v2.webp',
+    'Prints/DriverStatus/configuracoes-v2.webp',
+    'Prints/DriverStatus/sobre-v2.webp',
+    'Prints/DriverStatus/suporte-v2.webp',
+    'Prints/DriverStatus/atualizacao-v2.webp'
   ]
 };
 var currentGroup = null;

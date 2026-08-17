@@ -1,7 +1,7 @@
 {
-  "version": "1.8.1502",
-  "dataPublicacao": "2026-08-15T09:49:58",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1502/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1502/VozDigitada_Setup_v1.8.1502.exe",
-  "changelog": "Melhora a recuperação de foco e dos atalhos durante o ditado, preservando a fala quando o reconhecimento é interrompido antes do resultado final."
+  "version": "1.8.1701",
+  "dataPublicacao": "2026-08-17T10:29:30",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1701/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1701/VozDigitada_Setup_v1.8.1701.exe",
+  "changelog": "Corrige a parada da gravação pelo Enter, evita disparos duplicados ao manter a tecla pressionada e impede recuperações antigas de reativarem o reconhecimento após o usuário parar."
 }

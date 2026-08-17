@@ -379,11 +379,24 @@
     <section class="section" id="voz-screenshots">
       <div class="section-title">O aplicativo</div>
       <div class="screenshots-grid">
-        <div class="screenshot-card screenshot-card-wide" onclick="openLightbox('Prints/VozDigitada/interface-ilustrativa.png', 'voz')">
-          <img src="Prints/VozDigitada/interface-ilustrativa.png" alt="Interface ilustrativa do VozDigitada com configurações, dicionário e balão de gravação">
-          <div class="screenshot-label">Interface ilustrativa &#8212; configura&#231;&#245;es, dicion&#225;rio e estados do bal&#227;o de grava&#231;&#227;o</div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/interface-configuracoes.png', 'voz')">
+          <img src="Prints/VozDigitada/interface-configuracoes.png" alt="Interface ilustrativa da tela de configurações do VozDigitada" loading="lazy">
+          <div class="screenshot-label">Configura&#231;&#245;es &#8212; atalhos, dicion&#225;rio e pacotes de reconhecimento de fala</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/interface-dicionario.png', 'voz')">
+          <img src="Prints/VozDigitada/interface-dicionario.png" alt="Interface ilustrativa do dicionário de correções do VozDigitada" loading="lazy">
+          <div class="screenshot-label">Dicion&#225;rio de corre&#231;&#245;es &#8212; consulte e gerencie o hist&#243;rico de palavras corrigidas</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/balao-gravando.png', 'voz')">
+          <img src="Prints/VozDigitada/balao-gravando.png" alt="Interface ilustrativa do balão vermelho enquanto o VozDigitada está gravando" loading="lazy">
+          <div class="screenshot-label">Gravando &#8212; o bal&#227;o vermelho indica que o microfone est&#225; capturando sua voz</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/VozDigitada/balao-volte-aplicativo.png', 'voz')">
+          <img src="Prints/VozDigitada/balao-volte-aplicativo.png" alt="Interface ilustrativa do aviso para voltar ao aplicativo onde iniciou a gravação" loading="lazy">
+          <div class="screenshot-label">Volte ao aplicativo &#8212; o aviso roxo mostra onde concluir a digita&#231;&#227;o</div>
         </div>
       </div>
+      <p class="screenshots-note">Imagens ilustrativas baseadas nas funcionalidades atuais do VozDigitada.</p>
     </section>
 
     <!-- Features VozDigitada -->
@@ -941,7 +954,10 @@
 // ─── Lightbox ───
 var lightboxGroups = {
   voz: [
-    'Prints/VozDigitada/interface-ilustrativa.png'
+    'Prints/VozDigitada/interface-configuracoes.png',
+    'Prints/VozDigitada/interface-dicionario.png',
+    'Prints/VozDigitada/balao-gravando.png',
+    'Prints/VozDigitada/balao-volte-aplicativo.png'
   ],
   driver: [
     'Prints/DriverStatus/TelaPrincipal.png',

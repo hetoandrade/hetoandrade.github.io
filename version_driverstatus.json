@@ -1,7 +1,7 @@
 {
-  "version": "1.8.2102",
-  "dataPublicacao": "2026-08-21T15:36:07",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2102/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2102/DriverStatus_Setup_v1.8.2102.exe",
-  "changelog": "Adiciona pesquisa às listas compatíveis e impede a abertura simultânea de duas instâncias do DriverStatus."
+  "version": "1.8.2103",
+  "dataPublicacao": "2026-08-21T15:45:22",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2103/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2103/DriverStatus_Setup_v1.8.2103.exe",
+  "changelog": "Recompilação de manutenção do DriverStatus, sem alterações funcionais."
 }

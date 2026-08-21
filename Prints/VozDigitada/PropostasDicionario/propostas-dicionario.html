@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;overflow:hidden;font-family:"Segoe UI",Arial,sans-serif;background:#071d35;color:#e6edf5}
+body{padding:18px;background:radial-gradient(circle at 50% 10%,#123a60 0,#071d35 58%,#041528 100%)}
+.window{height:864px;border:1px solid #65809b;border-radius:15px;overflow:hidden;background:#4e6b88;box-shadow:0 18px 60px #0008}
+.titlebar{height:40px;background:#f5f5f5;color:#3a3a3a;display:flex;align-items:center;padding:0 14px;font-size:15px}
+.logo{background:#df2e2e;color:#fff;font-weight:800;font-size:10px;padding:4px;border-radius:3px;margin-right:8px}.winclose{margin-left:auto;font-size:22px;color:#5b6470}
+.surface{height:824px;padding:20px;display:flex;flex-direction:column;gap:16px}
+h1{margin:0;text-align:center;color:#75d5ff;font-size:27px;line-height:34px}
+.content{flex:1;min-height:0;display:grid;gap:14px}.panel{background:#304b65;border:1px solid #58738b;border-radius:12px;padding:14px;min-height:0;overflow:hidden}
+.section-title{font-size:14px;color:#75d5ff;font-weight:800;text-transform:uppercase;margin:0 0 10px}
+.hint{font-size:12px;line-height:1.45;color:#c4d1de;font-style:italic;margin:6px 0 12px}.search-row{display:flex;gap:7px;margin-bottom:10px}
+.search{height:40px;flex:1;background:#4a6580;border:0;border-bottom:1px solid #cad7e3;border-radius:5px;padding:0 13px;color:#fff;font-size:13px;display:flex;align-items:center}
+.refresh,.iconbtn{width:40px;height:40px;border:1px solid #5e7a94;border-radius:6px;background:#405e79;display:flex;align-items:center;justify-content:center;color:#d7e4ef}
+.history{height:calc(100% - 64px);overflow:hidden;display:flex;flex-direction:column;gap:7px}
+.message{background:#3a5671;border:1px solid #55728e;border-radius:8px;padding:9px 11px;font-size:13px;line-height:1.35;color:#f2f6fa;white-space:normal}
+.message.selected{border-color:#65d2ff;box-shadow:inset 3px 0 #65d2ff;background:#405f7c}
+.selected-text{background:#29455f;border-radius:8px;padding:16px;font-size:17px;line-height:1.55;margin-bottom:10px}.mark{color:#ffd64f;font-weight:650}
+.correction{background:#38556e;border-radius:10px;padding:14px;margin-top:14px}.label{font-size:12px;color:#cad6e2;margin:8px 0 6px}
+.field{height:40px;background:#2c4963;border:1px solid #506e89;border-radius:6px;display:flex;align-items:center;padding:0 12px;font-size:14px}.field.error{color:#ff6b6b;font-family:Consolas,monospace}.field.placeholder{color:#fff;font-family:Consolas,monospace}
+.field-row{display:flex;gap:7px}.field-row .field{flex:1}.save{height:40px;margin-top:10px;background:#2567e8;border-radius:8px;display:flex;justify-content:center;align-items:center;color:#fff;font-size:14px}
+.dict-list{display:flex;flex-direction:column;gap:3px;overflow:hidden}.dict-row{height:27px;display:grid;grid-template-columns:1fr 30px 30px;gap:4px;align-items:center;font-family:Consolas,monospace;font-size:12px}
+.pair{white-space:nowrap;overflow:hidden}.wrong{color:#ff6969}.arrow{color:#aabccc;padding:0 8px}.right{color:#55e6a1}.tiny{height:25px;border:1px solid #56718a;border-radius:5px;display:flex;align-items:center;justify-content:center;color:#ffd64f}.del{color:#879bad}
+.count{text-align:right;color:#becad6;font-size:11px;margin-top:7px}.close-btn{height:42px;width:240px;margin:0 auto;border-radius:8px;background:#2c465f;display:flex;align-items:center;justify-content:center;font-size:15px;flex:0 0 auto}
+.left,.center,.rightcol,.conversation,.lower,.side{min-height:0}.footer-note{display:none}
+body[data-option="1"] .content{grid-template-columns:42fr 30fr 28fr}
+body[data-option="1"] .history .message{flex:0 0 auto}
+body[data-option="1"] .message{padding:10px 11px}
+body[data-option="2"] .content{grid-template-rows:270px 1fr}
+body[data-option="2"] .conversation{grid-column:1/-1}.conversation .history{display:grid;grid-template-columns:1fr 1fr;grid-auto-rows:min-content;height:auto;gap:8px}
+body[data-option="2"] .conversation .message{padding:9px 11px}
+body[data-option="2"] .lower{display:grid;grid-template-columns:1fr 1fr;gap:14px;min-height:0}
+body[data-option="2"] .lower .panel{height:100%}
+body[data-option="2"] .selected-text{padding:12px;margin-bottom:4px}
+body[data-option="2"] .correction{margin-top:8px}
+body[data-option="2"] .editor .hint{margin:3px 0 7px;font-size:10px}
+body[data-option="2"] .editor .correction{padding:10px}
+body[data-option="2"] .editor .label{margin:4px 0}
+body[data-option="2"] .editor .field,body[data-option="2"] .editor .iconbtn{height:34px}
+body[data-option="2"] .editor .save{height:34px;margin-top:7px}
+body[data-option="2"] .dictionary .dict-row:nth-child(n+9){display:none}
+body[data-option="3"] .content{grid-template-columns:58fr 42fr}
+body[data-option="3"] .side{display:grid;grid-template-rows:310px 1fr;gap:14px;min-height:0}
+body[data-option="3"] .message{padding:12px;font-size:14px}
+body[data-option="3"] .selected-text{padding:10px;margin-bottom:3px}
+body[data-option="3"] .editor .hint{margin:3px 0 6px;font-size:10px;line-height:1.25}
+body[data-option="3"] .editor .correction{margin-top:5px;padding:9px}
+body[data-option="3"] .editor .label{margin:3px 0}
+body[data-option="3"] .editor .field,body[data-option="3"] .editor .iconbtn{height:32px}
+body[data-option="3"] .editor .save{height:32px;margin-top:6px}
+body[data-option="3"] .dictionary .hint{margin:4px 0 8px}
+body[data-option="3"] .dictionary .search-row{margin-bottom:6px}
+body[data-option="3"] .dictionary .dict-row:nth-child(n+8){display:none}
+</style>
+</head>
+<body>
+<div class="window">
+  <div class="titlebar"><span class="logo">VOZ</span>Dicionário — VozDigitada<span class="winclose">×</span></div>
+  <div class="surface">
+    <h1>DICIONÁRIO DE CORREÇÕES</h1>
+    <div class="content" id="content"></div>
+    <div class="close-btn">×&nbsp;&nbsp;Fechar</div>
+  </div>
+</div>
+<template id="history">
+  <section class="panel conversation">
+    <div class="section-title">Histórico de hoje</div>
+    <div class="search-row"><div class="search">Pesquisar...</div><div class="refresh">↻</div></div>
+    <div class="history">
+      <div class="message selected">vai ter que trabalhar é vai ter que todo mundo cortar mas</div>
+      <div class="message">retira ali é uma qualidade não sei o que é pequenininha lembra aquele que te comprou uma vez que é gigantesco é 20 horas</div>
+      <div class="message">control que é que chova 2 pra só pra você na Quadra 2 aquilo e da reais 2</div>
+      <div class="message">então acho que é algo que você tem que fazer o que ali comprar ali e cortar pra fazer igual à cortar o cara não sabe cortar compra tudo como cortadinha vamos lá vamos lá</div>
+      <div class="message">Olga é aonde se encontra</div>
+      <div class="message">Mas é automático né eu não preciso colocar o nome da skill antes não você sabe que é pra criar imagem já usa esquilo certo e com isso é quando lisa touch é isso</div>
+    </div>
+  </section>
+</template>
+<template id="editor">
+  <section class="panel editor">
+    <div class="section-title">Selecione a palavra para correção</div>
+    <div class="selected-text">vai ter que <span class="mark">trabalhar é</span> vai ter que todo mundo cortar mas</div>
+    <div class="hint">Clique na palavra errada para selecionar. Você pode selecionar até três palavras. Palavras verdes já foram corrigidas pelo dicionário.</div>
+    <div class="correction">
+      <div class="section-title">Correção</div>
+      <div class="label">Errado:</div>
+      <div class="field-row"><div class="field error">trabalhar é</div><div class="iconbtn">×</div></div>
+      <div class="label">Correto:</div>
+      <div class="field placeholder">Digite a correção...</div>
+      <div class="save">+ Adicionar ao dicionário</div>
+    </div>
+  </section>
+</template>
+<template id="dictionary">
+  <section class="panel dictionary">
+    <div class="section-title">Dicionário salvo</div>
+    <div class="hint">Palavras e frases corrigidas que o VozDigitada aprenderá e lembrará para você.</div>
+    <div class="search-row"><div class="search">Pesquisar...</div></div>
+    <div class="dict-list">
+      <div class="dict-row"><div class="pair"><span class="wrong">endereço de ímpeto</span><span class="arrow">→</span><span class="right">endereço de IP</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">Ethos of</span><span class="arrow">→</span><span class="right">Hetosoft</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">exec</span><span class="arrow">→</span><span class="right">exe</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">Ezequiel</span><span class="arrow">→</span><span class="right">EXE</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">gancho</span><span class="arrow">→</span><span class="right">Branch</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">gene</span><span class="arrow">→</span><span class="right">Gemini</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">Goethe hub</span><span class="arrow">→</span><span class="right">Github</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">Grite hub</span><span class="arrow">→</span><span class="right">GitHub</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">grite rubi</span><span class="arrow">→</span><span class="right">GitHub</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+      <div class="dict-row"><div class="pair"><span class="wrong">hit hub</span><span class="arrow">→</span><span class="right">Github</span></div><div class="tiny">✎</div><div class="tiny del">×</div></div>
+    </div>
+    <div class="count">93 correções salvas</div>
+  </section>
+</template>
+<script>
+const option=new URLSearchParams(location.search).get("opcao")||"1";
+document.body.dataset.option=option;
+const clone=id=>document.getElementById(id).content.cloneNode(true);
+const content=document.getElementById("content");
+if(option==="1"){
+  const h=clone("history"),e=clone("editor"),d=clone("dictionary");
+  content.append(h,e,d);
+}else if(option==="2"){
+  content.append(clone("history"));
+  const lower=document.createElement("div");lower.className="lower";
+  lower.append(clone("editor"),clone("dictionary"));content.append(lower);
+}else{
+  content.append(clone("history"));
+  const side=document.createElement("div");side.className="side";
+  side.append(clone("editor"),clone("dictionary"));content.append(side);
+}
+</script>
+</body>
+</html>

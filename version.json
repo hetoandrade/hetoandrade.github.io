@@ -1,7 +1,7 @@
 {
-  "version": "1.8.1701",
-  "dataPublicacao": "2026-08-17T10:29:30",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1701/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.1701/VozDigitada_Setup_v1.8.1701.exe",
-  "changelog": "Corrige a parada da gravação pelo Enter, evita disparos duplicados ao manter a tecla pressionada e impede recuperações antigas de reativarem o reconhecimento após o usuário parar."
+  "version": "1.8.2101",
+  "dataPublicacao": "2026-08-21T10:24:45",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2101/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2101/VozDigitada_Setup_v1.8.2101.exe",
+  "changelog": "Reorganiza a janela do dicionário para facilitar a consulta e a correção de palavras, e melhora a recuperação do reconhecimento para manter a gravação ativa após falhas."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.8.2608",
-  "dataPublicacao": "2026-08-26T17:47:01",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2608/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2608/DriverStatus_Setup_v1.8.2608.exe",
-  "changelog": "Adiciona desinstalação individual interativa, confirmação pelo catálogo do Windows e atualização segura da lista após a remoção."
+  "version": "1.8.2609",
+  "dataPublicacao": "2026-08-26T17:59:25",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2609/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2609/DriverStatus_Setup_v1.8.2609.exe",
+  "changelog": "Nova compilação para envio à Microsoft Store, mantendo a desinstalação individual interativa e a confirmação pelo catálogo do Windows."
 }

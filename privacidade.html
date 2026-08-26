@@ -34,15 +34,15 @@
 </head>
 <body>
     <h1>Politica de Privacidade - VozDigitada</h1>
-    <p class="updated">Ultima atualizacao: 16 de abril de 2026</p>
+    <p class="updated">Ultima atualizacao: 24 de agosto de 2026</p>
 
     <h2>Resumo</h2>
-    <p>O VozDigitada respeita sua privacidade. O aplicativo processa sua voz localmente no seu computador usando o reconhecimento de fala nativo do Windows. Nenhum dado de voz e enviado para servidores externos.</p>
+    <p>O VozDigitada respeita sua privacidade. Ele tenta primeiro o reconhecimento nativo do Windows, que pode usar o servico online de fala da Microsoft conforme as configuracoes do sistema. Se esse servico nao entregar o texto, o aplicativo usa uma contingencia processada localmente.</p>
 
     <h2>Dados coletados</h2>
-    <p><strong>Nenhum dado pessoal e coletado, armazenado ou transmitido.</strong></p>
+    <p><strong>O VozDigitada nao cria cadastro, nao usa analytics e nao armazena gravacoes de voz.</strong></p>
     <ul>
-        <li><strong>Audio/Voz:</strong> Processado localmente pelo Windows Speech Recognition. Nenhum audio e gravado ou enviado para servidores.</li>
+        <li><strong>Audio/Voz:</strong> O reconhecimento nativo do Windows pode processar a fala pelo servico online da Microsoft. Em paralelo, a contingencia do VozDigitada mantem uma copia temporaria somente na memoria; essa copia nao e salva em disco nem enviada a servidores.</li>
         <li><strong>Dicionario:</strong> Suas correcoes personalizadas sao salvas localmente no seu computador (pasta AppData). Nao sao sincronizadas com nenhum servidor.</li>
         <li><strong>Configuracoes:</strong> Salvas localmente no seu computador.</li>
     </ul>
@@ -52,8 +52,9 @@
     <ul>
         <li>Verificar se ha atualizacoes disponiveis (consulta um arquivo JSON no GitHub).</li>
         <li>Baixar atualizacoes quando disponiveis.</li>
+        <li>Baixar uma unica vez o modelo local de reconhecimento de fala, quando ele ainda nao estiver instalado.</li>
     </ul>
-    <p>Nenhum dado pessoal e transmitido nessas conexoes.</p>
+    <p>O download do modelo nao transmite audio nem dados pessoais. O tratamento feito pelo reconhecimento nativo do Windows segue as configuracoes e a politica de privacidade da Microsoft.</p>
 
     <h2>Permissoes</h2>
     <ul>
@@ -62,7 +63,7 @@
     </ul>
 
     <h2>Terceiros</h2>
-    <p>O VozDigitada nao compartilha dados com terceiros. Nao utiliza analytics, rastreamento ou publicidade.</p>
+    <p>O arquivo do modelo local pode ser baixado da infraestrutura publica do projeto Whisper.net/whisper.cpp. O reconhecimento nativo do Windows e fornecido pela Microsoft e pode usar seu servico online de fala. O aplicativo nao utiliza analytics, rastreamento ou publicidade.</p>
 
     <h2>Contato</h2>
     <p>Em caso de duvidas: <a href="mailto:hetoandrade@gmail.com">hetoandrade@gmail.com</a></p>

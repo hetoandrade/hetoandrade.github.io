@@ -1,7 +1,7 @@
 {
-  "version": "1.8.2102",
-  "dataPublicacao": "2026-08-21T17:06:11",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2102/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2102/VozDigitada_Setup_v1.8.2102.exe",
-  "changelog": "Impede a abertura de uma segunda instância e restaura a janela já aberta; reorganiza os atalhos, permite escolher quais aparecem no indicador e ajusta a opção de finalizar a gravação com Enter; reforça a recuperação automática do reconhecimento."
+  "version": "1.8.2610",
+  "dataPublicacao": "2026-08-26T22:06:41",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2610/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2610/VozDigitada_Setup_v1.8.2610.exe",
+  "changelog": "Novo motor Whisper local e offline com idioma fixo selecionável, pré-análise em memória para entrega mais rápida, filtro de ruídos e integração preservada com o dicionário. Novos estados Ouvindo, Gravando, Mudo e Digitando, proteção por aplicativo e finalização segura com Enter ou atalho, aguardando toda a entrega antes de pausar."
 }

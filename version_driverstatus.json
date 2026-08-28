@@ -1,7 +1,7 @@
 {
-  "version": "1.8.2805",
-  "dataPublicacao": "2026-08-28T11:41:50",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2805/DriverStatus_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2805/DriverStatus_Setup_v1.8.2805.exe",
-  "changelog": "Gerenciamento de aplicativos mais seguro: atualizações e desinstalações individuais agora usam modo interativo, com termos explícitos e opção para rever ou revogar o aceite. A opção Atualizar todos foi removida."
+  "version": "1.8.2807",
+  "dataPublicacao": "2026-08-28T12:00:27",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2807/DriverStatus_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.8.2807/DriverStatus_Setup_v1.8.2807.exe",
+  "changelog": "Termo de atualização revisado para explicar operações individuais, sem atualização automática ou em lote, fechamento do aplicativo selecionado e execução interativa do instalador."
 }

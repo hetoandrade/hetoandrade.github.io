@@ -1,7 +1,7 @@
 {
-  "version": "1.8.2811",
-  "dataPublicacao": "2026-08-28T13:44:58",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2811/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2811/VozDigitada_Setup_v1.8.2811.exe",
-  "changelog": "Salvamento automático nas Configurações, ativação manual entre CPU, DirectML e CUDA disponíveis, estados Silencioso/Ouvindo, entrega ordenada no aplicativo original e filtro de marcações de som ambiente entre colchetes."
+  "version": "1.8.2816",
+  "dataPublicacao": "2026-08-28T15:47:01",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2816/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.2816/VozDigitada_Setup_v1.8.2816.exe",
+  "changelog": "Corrige a verificação dos motores CPU, DirectML e CUDA, elimina a janela técnica do Windows, melhora a instalação do CUDA e recupera automaticamente o balão quando ele desaparecer."
 }

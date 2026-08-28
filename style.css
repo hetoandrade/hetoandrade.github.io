@@ -1171,9 +1171,8 @@ body::before { display: none; }
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  align-self: flex-start;
+  align-self: center;
   flex-shrink: 0;
-  margin-left: auto;
   padding: 6px 10px;
   border-radius: 7px;
   background: var(--copieecole-gradient);
@@ -1231,9 +1230,6 @@ body::before { display: none; }
 
 @media (max-width: 600px) {
   .app-card.featured-site .card-direct-link {
-    position: absolute;
-    top: 32px;
-    right: 12px;
     padding: 5px 7px;
     font-size: 10px;
   }

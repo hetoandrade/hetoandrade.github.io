@@ -6,8 +6,8 @@
 
 <!-- SEO -->
 <title>HetoAndrade Software — Ferramentas inteligentes para Windows | Download grátis</title>
-<meta name="description" content="Aplicativos gratuitos para Windows que resolvem problemas reais. VozDigitada: ditado por voz em qualquer programa. DriverStatus: diagnóstico de drivers do PC. Download grátis, sem anúncios, sem coleta de dados.">
-<meta name="keywords" content="voz digitada, VozDigitada, digitar com a voz, reconhecimento de voz, voz para texto, speech to text, ditado por voz, DriverStatus, driver status, diagnóstico drivers, atualizar drivers, drivers windows, backup drivers, windows update drivers, HetoAndrade, software gratuito, aplicativo gratuito windows, download grátis, Windows 10, Windows 11, enter automatico, comando de voz, microfone sempre ligado">
+<meta name="description" content="Aplicativos gratuitos que resolvem problemas reais. Baixe VozDigitada e DriverStatus e conheça os próximos projetos: TelaDesk, AjusteHD e CopieECole.">
+<meta name="keywords" content="voz digitada, VozDigitada, digitar com a voz, reconhecimento de voz, voz para texto, speech to text, ditado por voz, DriverStatus, driver status, diagnóstico drivers, atualizar drivers, drivers windows, backup drivers, windows update drivers, TelaDesk, acesso remoto, alternativa ao AnyDesk, AjusteHD, gerenciador de partições, CopieECole, comunicação entre dispositivos, HetoAndrade, software gratuito, aplicativo gratuito windows, download grátis, Windows 10, Windows 11, enter automatico, comando de voz, microfone sempre ligado">
 <meta name="author" content="HetoAndrade Software">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://hetoandrade.com.br/">
@@ -15,7 +15,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="HetoAndrade Software — Ferramentas inteligentes para Windows">
-<meta property="og:description" content="Aplicativos gratuitos que resolvem problemas reais do dia a dia. VozDigitada (ditado por voz) e DriverStatus (diagnóstico de drivers). Download grátis para Windows.">
+<meta property="og:description" content="Aplicativos gratuitos que resolvem problemas reais do dia a dia. Baixe VozDigitada e DriverStatus e conheça TelaDesk, AjusteHD e CopieECole, em desenvolvimento.">
 <meta property="og:url" content="https://hetoandrade.com.br/">
 <meta property="og:site_name" content="HetoAndrade Software">
 <meta property="og:locale" content="pt_BR">
@@ -135,7 +135,25 @@
       <span class="badge">Novo</span>
     </a>
 
-    <a class="nav-item disabled" href="#">
+    <a class="nav-item" href="#" onclick="showPage('teladesk'); return false;" id="nav-teladesk">
+      <img src="Imagems/teladesk.png" alt="" class="nav-icon-img">
+      TelaDesk
+      <span class="badge soon">Em desenvolvimento</span>
+    </a>
+
+    <a class="nav-item" href="#" onclick="showPage('ajustehd'); return false;" id="nav-ajustehd">
+      <img src="Imagems/ajustehd.png" alt="" class="nav-icon-img">
+      AjusteHD
+      <span class="badge soon">Em desenvolvimento</span>
+    </a>
+
+    <a class="nav-item" href="#" onclick="showPage('copieecole'); return false;" id="nav-copieecole">
+      <img src="Imagems/copieecole.png" alt="" class="nav-icon-img copieecole">
+      CopieECole
+      <span class="badge soon">Em desenvolvimento</span>
+    </a>
+
+    <a class="nav-item disabled" href="#" aria-disabled="true" tabindex="-1">
       <span class="icon">&#128295;</span>
       Em breve...
     </a>
@@ -186,7 +204,7 @@
         </h1>
         <p>
           Aplicativos gratuitos que resolvem problemas reais do dia a dia.
-          Feitos por quem usa, para quem precisa.
+          Conhe&#231;a tamb&#233;m TelaDesk, AjusteHD e CopieECole, em desenvolvimento.
         </p>
       </section>
     </div>
@@ -238,8 +256,77 @@
         <div class="app-card-arrow">&#8594;</div>
       </div>
 
+      <!-- TelaDesk Card -->
+      <div class="app-card upcoming" onclick="showPage('teladesk')">
+        <div class="app-card-header">
+          <div class="app-icon teladesk">
+            <img src="Imagems/teladesk.png" alt="TelaDesk">
+          </div>
+          <div class="app-card-title">
+            <h3>TelaDesk</h3>
+            <span class="app-tag soon">Em desenvolvimento</span>
+          </div>
+        </div>
+        <p>
+          Uma alternativa ao AnyDesk para acesso remoto protegido pela rede local ou internet,
+          com conex&#227;o por c&#243;digo ou convite, controle da tela e transfer&#234;ncia de arquivos.
+        </p>
+        <div class="app-card-footer">
+          <span>&#128421; Acesso remoto</span>
+          <span>&#129695; Windows</span>
+          <span>&#128679; Em desenvolvimento</span>
+        </div>
+        <div class="app-card-arrow">&#8594;</div>
+      </div>
+
+      <!-- AjusteHD Card -->
+      <div class="app-card upcoming" onclick="showPage('ajustehd')">
+        <div class="app-card-header">
+          <div class="app-icon ajustehd">
+            <img src="Imagems/ajustehd.png" alt="AjusteHD">
+          </div>
+          <div class="app-card-title">
+            <h3>AjusteHD</h3>
+            <span class="app-tag soon">Em desenvolvimento</span>
+          </div>
+        </div>
+        <p>
+          Organize o espa&#231;o dos discos com vis&#227;o do antes e depois.
+          Transfira espa&#231;o, reduza, crie ou remova parti&#231;&#245;es com prote&#231;&#245;es e confirma&#231;&#227;o.
+        </p>
+        <div class="app-card-footer">
+          <span>&#128189; Parti&#231;&#245;es</span>
+          <span>&#129695; Windows</span>
+          <span>&#128679; Em desenvolvimento</span>
+        </div>
+        <div class="app-card-arrow">&#8594;</div>
+      </div>
+
+      <!-- CopieECole Card -->
+      <div class="app-card upcoming" onclick="showPage('copieecole')">
+        <div class="app-card-header">
+          <div class="app-icon copieecole">
+            <img src="Imagems/copieecole.png" alt="CopieECole">
+          </div>
+          <div class="app-card-title">
+            <h3>CopieECole</h3>
+            <span class="app-tag soon">Em desenvolvimento</span>
+          </div>
+        </div>
+        <p>
+          Um WhatsApp para seus dispositivos, n&#227;o para pessoas.
+          Envie textos, links, fotos e arquivos entre computadores, celulares e tablets pelo navegador.
+        </p>
+        <div class="app-card-footer">
+          <span>&#128172; Dispositivos</span>
+          <span>&#127760; Navegador</span>
+          <span>&#128679; Em desenvolvimento</span>
+        </div>
+        <div class="app-card-arrow">&#8594;</div>
+      </div>
+
       <!-- Em Breve Card -->
-      <div class="app-card coming-soon">
+      <div class="app-card coming-soon" aria-disabled="true">
         <div class="app-card-header">
           <div class="app-icon soon">&#128295;</div>
           <div class="app-card-title">
@@ -754,6 +841,274 @@
           <div class="version-tag"><span class="label">Licen&#231;a</span> Gratuito</div>
           <div class="version-tag"><span class="label">Tamanho</span> Leve</div>
         </div>
+      </div>
+    </section>
+
+    <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+
+  </div>
+
+
+  <!-- ═══════════════ TELADESK ═══════════════ -->
+  <div id="page-teladesk" class="page">
+
+    <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+
+    <div class="painel">
+      <section class="hero">
+        <div class="hero-badge development teladesk">
+          <img src="Imagems/teladesk.png" alt="" class="badge-icon">
+          <span class="dot"></span>
+          <span>Em desenvolvimento</span>
+        </div>
+        <h1>
+          Acesso remoto <span class="gradient-teladesk">simples e protegido</span><br>
+          para seus computadores.
+        </h1>
+        <p>
+          O <strong>TelaDesk</strong> est&#225; sendo criado como uma alternativa pr&#243;pria ao AnyDesk:
+          conecte por c&#243;digo ou convite, pela rede local ou internet, com permiss&#245;es claras
+          para controlar a tela, copiar textos e transferir arquivos.
+        </p>
+        <div class="hero-meta">
+          <span>&#128421; Windows</span>
+          <span>&#127760; Rede local ou internet</span>
+          <span>&#128679; Em desenvolvimento</span>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="section-title">Pr&#233;via do aplicativo</div>
+      <div class="upcoming-preview-grid">
+        <div class="upcoming-preview-card" onclick="openLightbox('Prints/TelaDesk/previa-ilustrativa.png')">
+          <img src="Prints/TelaDesk/previa-ilustrativa.png" alt="Pr&#233;via ilustrativa da tela inicial do TelaDesk">
+          <div class="upcoming-preview-caption">
+            <strong>Pr&#233;via ilustrativa</strong>
+            <span>Representa a interface atual planejada a partir do c&#243;digo do aplicativo.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">O que o TelaDesk vai oferecer</div>
+      <div class="upcoming-features-grid">
+        <div class="feature-card">
+          <div class="feature-icon blue">&#128273;</div>
+          <h3>Acesso por C&#243;digo</h3>
+          <p>Digite o c&#243;digo do outro computador para iniciar uma conex&#227;o de forma simples.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon cyan">&#9993;&#65039;</div>
+          <h3>Convites Tempor&#225;rios</h3>
+          <p>Crie um convite de uso &#250;nico para prestar ou receber ajuda sem acesso permanente.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#127760;</div>
+          <h3>Local ou Internet</h3>
+          <p>Encontre computadores na rede local ou acesse de outro lugar quando precisar.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">&#128196;</div>
+          <h3>Sess&#245;es em Abas</h3>
+          <p>Organize diferentes computadores e visualiza&#231;&#245;es em uma &#250;nica janela.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">&#128737;&#65039;</div>
+          <h3>Permiss&#245;es Claras</h3>
+          <p>Escolha separadamente o controle de teclado e mouse, textos e arquivos.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon pink">&#128194;</div>
+          <h3>Textos e Arquivos</h3>
+          <p>Copie textos entre os computadores e transfira arquivos durante a sess&#227;o.</p>
+        </div>
+      </div>
+      <div class="development-note">
+        <span>&#128679;</span>
+        <p><strong>Em desenvolvimento.</strong> A interface e os recursos ainda podem mudar. O TelaDesk &#233; um produto independente e n&#227;o possui v&#237;nculo com o AnyDesk.</p>
+      </div>
+    </section>
+
+    <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+
+  </div>
+
+
+  <!-- ═══════════════ AJUSTEHD ═══════════════ -->
+  <div id="page-ajustehd" class="page">
+
+    <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+
+    <div class="painel">
+      <section class="hero">
+        <div class="hero-badge development ajustehd">
+          <img src="Imagems/ajustehd.png" alt="" class="badge-icon">
+          <span class="dot"></span>
+          <span>Em desenvolvimento</span>
+        </div>
+        <h1>
+          Organize o espa&#231;o do seu disco<br>
+          com <span class="gradient-ajustehd">clareza e prote&#231;&#227;o</span>.
+        </h1>
+        <p>
+          O <strong>AjusteHD</strong> mostra como os discos e parti&#231;&#245;es est&#227;o organizados
+          antes de qualquer altera&#231;&#227;o. Transfira espa&#231;o, reduza, crie ou remova parti&#231;&#245;es
+          com revis&#227;o do resultado e confirma&#231;&#245;es em cada etapa.
+        </p>
+        <div class="hero-meta">
+          <span>&#128189; Discos e parti&#231;&#245;es</span>
+          <span>&#128421; Windows</span>
+          <span>&#128679; Em desenvolvimento</span>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="section-title">Pr&#233;via do aplicativo</div>
+      <div class="upcoming-preview-grid">
+        <div class="upcoming-preview-card" onclick="openLightbox('Prints/AjusteHD/previa-ilustrativa.png')">
+          <img src="Prints/AjusteHD/previa-ilustrativa.png" alt="Pr&#233;via ilustrativa da tela inicial do AjusteHD">
+          <div class="upcoming-preview-caption">
+            <strong>Pr&#233;via ilustrativa</strong>
+            <span>Representa as quatro opera&#231;&#245;es encontradas na interface atual do aplicativo.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">O que o AjusteHD vai oferecer</div>
+      <div class="upcoming-features-grid">
+        <div class="feature-card">
+          <div class="feature-icon green">&#128200;</div>
+          <h3>Vis&#227;o dos Discos</h3>
+          <p>Veja a organiza&#231;&#227;o real dos discos, parti&#231;&#245;es e espa&#231;os n&#227;o alocados.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">&#8596;&#65039;</div>
+          <h3>Transferir Espa&#231;o</h3>
+          <p>Diminua uma parti&#231;&#227;o e aumente outra compat&#237;vel imediatamente ao lado.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon cyan">&#128207;</div>
+          <h3>Somente Diminuir</h3>
+          <p>Reduza uma parti&#231;&#227;o e deixe o espa&#231;o n&#227;o alocado para usar depois.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">&#10133;</div>
+          <h3>Criar Parti&#231;&#227;o</h3>
+          <p>Crie uma nova unidade escolhendo tamanho, nome, letra e formato.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon red">&#128465;&#65039;</div>
+          <h3>Remo&#231;&#227;o Protegida</h3>
+          <p>Remova parti&#231;&#245;es de dados enquanto Windows, EFI e Recupera&#231;&#227;o permanecem bloqueados.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">&#128737;&#65039;</div>
+          <h3>Revis&#227;o Antes de Aplicar</h3>
+          <p>Compare o antes e o depois e confirme explicitamente cada opera&#231;&#227;o.</p>
+        </div>
+      </div>
+      <div class="development-note">
+        <span>&#128679;</span>
+        <p><strong>Em desenvolvimento.</strong> A interface e os recursos ainda podem mudar antes do lan&#231;amento.</p>
+      </div>
+    </section>
+
+    <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+
+  </div>
+
+
+  <!-- ═══════════════ COPIEECOLE ═══════════════ -->
+  <div id="page-copieecole" class="page">
+
+    <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+
+    <div class="painel">
+      <section class="hero">
+        <div class="hero-badge development copieecole">
+          <img src="Imagems/copieecole.png" alt="" class="badge-icon">
+          <span class="dot"></span>
+          <span>Em desenvolvimento</span>
+        </div>
+        <h1>
+          Uma conversa entre <span class="gradient-copieecole">seus dispositivos</span>,<br>
+          n&#227;o entre pessoas.
+        </h1>
+        <p>
+          O <strong>CopieECole</strong> &#233; como um WhatsApp para os seus pr&#243;prios dispositivos:
+          entre na mesma conversa pelo navegador e envie textos, links, fotos e arquivos
+          para continuar no computador, celular ou tablet que estiver usando.
+        </p>
+        <div class="hero-meta">
+          <span>&#128172; Conversas por dispositivo</span>
+          <span>&#127760; Acesso pelo navegador</span>
+          <span>&#128679; Em desenvolvimento</span>
+        </div>
+      </section>
+    </div>
+
+    <section class="section">
+      <div class="section-title">Conceito do aplicativo</div>
+      <div class="upcoming-preview-grid">
+        <div class="upcoming-preview-card" onclick="openLightbox('Prints/CopieECole/entrada-conceitual.png')">
+          <img class="concept-image" src="Prints/CopieECole/entrada-conceitual.png" alt="Conceito da entrada em uma conversa do CopieECole">
+          <div class="upcoming-preview-caption">
+            <strong>Imagem conceitual &#8212; interface em desenvolvimento</strong>
+            <span>Entrada na conversa usando a mesma combina&#231;&#227;o em qualquer dispositivo.</span>
+          </div>
+        </div>
+        <div class="upcoming-preview-card" onclick="openLightbox('Prints/CopieECole/conversa-conceitual.png')">
+          <img class="concept-image" src="Prints/CopieECole/conversa-conceitual.png" alt="Conceito da conversa entre dispositivos no CopieECole">
+          <div class="upcoming-preview-caption">
+            <strong>Imagem conceitual &#8212; interface em desenvolvimento</strong>
+            <span>Conversa em que textos, c&#243;digos, imagens e arquivos ficam prontos para usar no outro aparelho.</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="section-title">O que o CopieECole vai oferecer</div>
+      <div class="upcoming-features-grid">
+        <div class="feature-card">
+          <div class="feature-icon cyan">&#128421;</div>
+          <h3>Conversas por Dispositivo</h3>
+          <p>Use uma conversa como ponto de encontro para seus computadores, celulares e tablets.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">&#128203;</div>
+          <h3>Textos e C&#243;digos</h3>
+          <p>Envie um texto ou trecho de c&#243;digo e copie no outro dispositivo com rapidez.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">&#128279;</div>
+          <h3>Links</h3>
+          <p>Compartilhe endere&#231;os para continuar a navega&#231;&#227;o em outra tela.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon pink">&#128247;</div>
+          <h3>Fotos</h3>
+          <p>Cole ou envie imagens para abrir e usar em outro aparelho.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">&#128194;</div>
+          <h3>Arquivos</h3>
+          <p>Transfira documentos e outros arquivos dentro da conversa.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#127760;</div>
+          <h3>Pelo Navegador</h3>
+          <p>Acesse a conversa em diferentes tipos de dispositivo sem depender de uma &#250;nica plataforma.</p>
+        </div>
+      </div>
+      <div class="development-note">
+        <span>&#128679;</span>
+        <p><strong>Em desenvolvimento.</strong> As imagens representam o conceito atual e a interface ainda pode mudar. O CopieECole &#233; um produto independente e n&#227;o possui v&#237;nculo com o WhatsApp.</p>
       </div>
     </section>
 
@@ -1327,13 +1682,16 @@ function showPage(page) {
 
   document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('active'); });
 
-  if (page === 'vozdigitada') {
-    document.getElementById('nav-voz').classList.add('active');
-  } else if (page === 'driverstatus') {
-    document.getElementById('nav-driver').classList.add('active');
-  } else if (page === 'terceiros') {
-    document.getElementById('nav-terceiros').classList.add('active');
-  }
+  var navByPage = {
+    vozdigitada: 'nav-voz',
+    driverstatus: 'nav-driver',
+    teladesk: 'nav-teladesk',
+    ajustehd: 'nav-ajustehd',
+    copieecole: 'nav-copieecole',
+    terceiros: 'nav-terceiros'
+  };
+  var navId = navByPage[page];
+  if (navId) document.getElementById(navId).classList.add('active');
 
   // Fechar menu mobile
   document.getElementById('sidebar').classList.remove('mobile-open');

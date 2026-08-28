@@ -1077,3 +1077,196 @@ body::before { display: none; }
 .btn-primary.azul {
   background: linear-gradient(135deg, #3b82f6, #2563eb);
 }
+
+/* ════════════════════════════════════════════════════════════════
+   APLICATIVOS EM DESENVOLVIMENTO
+   ════════════════════════════════════════════════════════════════ */
+
+.nav-item .badge.soon {
+  background: #fef3c7;
+  color: #92400e;
+  padding-inline: 5px;
+  font-size: 8px;
+  white-space: nowrap;
+}
+
+.nav-icon-img.copieecole,
+.app-icon.copieecole img {
+  border-radius: 10px;
+}
+
+.app-card-footer {
+  flex-wrap: wrap;
+  row-gap: 8px;
+}
+
+.app-card.upcoming {
+  cursor: pointer;
+}
+
+.app-card.upcoming p {
+  padding-right: 32px;
+}
+
+.app-icon.teladesk {
+  background: linear-gradient(135deg, #dbeafe, #bfdbfe);
+  border: 2px solid #93c5fd;
+  box-shadow: 0 2px 8px rgba(37,99,235,.14);
+}
+
+.app-icon.ajustehd {
+  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
+  border: 2px solid #86efac;
+  box-shadow: 0 2px 8px rgba(21,128,61,.14);
+}
+
+.app-icon.copieecole {
+  background: linear-gradient(135deg, #cffafe, #bae6fd);
+  border: 2px solid #67e8f9;
+  box-shadow: 0 2px 8px rgba(8,145,178,.16);
+}
+
+.hero-badge.development {
+  background: #fef3c7;
+  border-color: #fcd34d;
+  color: #92400e;
+}
+
+.hero-badge.development .dot {
+  background: #f59e0b;
+}
+
+.hero-badge.development.teladesk {
+  background: #dbeafe;
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+.hero-badge.development.ajustehd {
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.hero-badge.development.copieecole {
+  background: #cffafe;
+  border-color: #67e8f9;
+  color: #0e7490;
+}
+
+.hero h1 .gradient-teladesk {
+  background: linear-gradient(135deg, #42a5f5, #1565c0);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h1 .gradient-ajustehd {
+  background: linear-gradient(135deg, #22c55e, #166534);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero h1 .gradient-copieecole {
+  background: linear-gradient(135deg, #06b6d4, #0369a1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.upcoming-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 24px;
+}
+
+.upcoming-preview-card {
+  background: #f8fafd;
+  border: 1px solid var(--erp-border);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(13,71,161,.08);
+  cursor: pointer;
+  transition: transform .3s ease, border-color .3s ease, box-shadow .3s ease;
+}
+
+.upcoming-preview-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--h-azul);
+  box-shadow: 0 10px 30px rgba(13,71,161,.16);
+}
+
+.upcoming-preview-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-bottom: 1px solid var(--erp-border);
+}
+
+.upcoming-preview-card img.concept-image {
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.upcoming-preview-caption {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  padding: 15px 18px;
+  color: var(--erp-txt-muted);
+  font-size: 13px;
+}
+
+.upcoming-preview-caption strong {
+  color: var(--h-azul-escuro);
+}
+
+.upcoming-features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.development-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 17px 18px;
+  background: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 12px;
+  color: #78350f;
+}
+
+.development-note > span {
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.development-note p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .upcoming-features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .upcoming-features-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .upcoming-preview-caption {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+}

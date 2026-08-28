@@ -1196,28 +1196,37 @@ body::before { display: none; }
 }
 
 .app-icon.ajustehd {
-  background: var(--ajustehd-gradient);
-  border: 2px solid var(--ajustehd-gold);
-  box-shadow: 0 2px 8px rgba(var(--ajustehd-gold-dark-rgb), .24);
+  background: var(--ajustehd-gold-surface);
+  border: 2px solid var(--ajustehd-gold-light);
+  box-shadow: 0 2px 8px rgba(var(--ajustehd-gold-dark-rgb), .18);
 }
 
 .app-icon.copieecole {
-  width: 68px;
-  height: 68px;
-  border-radius: 15px;
   background: var(--copieecole-green-surface);
   border: 2px solid var(--copieecole-green-light);
   box-shadow: 0 2px 8px rgba(var(--copieecole-green-dark-rgb), .18);
 }
 
+.app-icon.ajustehd,
+.app-icon.copieecole {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
+}
+
+.app-icon.ajustehd img,
 .app-icon.copieecole img {
-  width: 50px;
-  height: 50px;
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+.app-icon.copieecole img {
   border-radius: 8px;
 }
 
 .app-card.featured-site .app-card-header {
-  gap: 28px;
+  gap: 16px;
 }
 
 @media (max-width: 600px) {

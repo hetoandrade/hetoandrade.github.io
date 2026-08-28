@@ -18,6 +18,16 @@
   --green: #22c55e;
   --orange: #f97316;
   --purple: #8b5cf6;
+  --copieecole-green-light: #25d366;
+  --copieecole-green-dark: #075e54;
+  --copieecole-green-surface: #e8f8ee;
+  --copieecole-green-rgb: 37, 211, 102;
+  --copieecole-green-dark-rgb: 7, 94, 84;
+  --copieecole-gradient:
+    linear-gradient(
+      180deg,
+      var(--copieecole-green-light) 0%,
+      var(--copieecole-green-dark) 100%);
 }
 
 html { scroll-behavior: smooth; }
@@ -1115,8 +1125,8 @@ body::before { display: none; }
 
 .app-card.featured-site {
   cursor: pointer;
-  border: 2px solid #67e8f9;
-  box-shadow: 0 10px 30px rgba(8,145,178,.14);
+  border: 2px solid var(--copieecole-green-light);
+  box-shadow: 0 10px 30px rgba(var(--copieecole-green-dark-rgb), .16);
 }
 
 .app-card.featured-site::before {
@@ -1124,21 +1134,26 @@ body::before { display: none; }
   position: absolute;
   inset: 0 0 auto;
   height: 4px;
-  background: linear-gradient(90deg, #0891b2, #06b6d4, #22d3ee);
+  background: var(--copieecole-gradient);
 }
 
 .app-card.featured-site:hover {
-  border-color: #06b6d4;
-  box-shadow: 0 14px 34px rgba(8,145,178,.22);
+  border-color: var(--copieecole-green-dark);
+  box-shadow: 0 14px 34px rgba(var(--copieecole-green-dark-rgb), .24);
 }
 
 .app-card.featured-site p {
   padding-right: 32px;
 }
 
+.app-card.featured-site .app-card-title h3,
+.app-card.featured-site .app-card-meta span {
+  color: var(--copieecole-green-dark);
+}
+
 .app-tag.web {
-  background: #cffafe;
-  color: #0e7490;
+  background: var(--copieecole-green-surface);
+  color: var(--copieecole-green-dark);
 }
 
 .card-direct-link {
@@ -1149,7 +1164,7 @@ body::before { display: none; }
   margin-top: 16px;
   padding: 9px 14px;
   border-radius: 9px;
-  background: linear-gradient(135deg, #0f766e, #0891b2);
+  background: var(--copieecole-gradient);
   color: #fff;
   font-size: 12.5px;
   font-weight: 700;
@@ -1159,7 +1174,7 @@ body::before { display: none; }
 
 .card-direct-link:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 18px rgba(8,145,178,.24);
+  box-shadow: 0 8px 18px rgba(var(--copieecole-green-dark-rgb), .28);
 }
 
 .app-icon.teladesk {
@@ -1175,9 +1190,14 @@ body::before { display: none; }
 }
 
 .app-icon.copieecole {
-  background: linear-gradient(135deg, #cffafe, #bae6fd);
-  border: 2px solid #67e8f9;
-  box-shadow: 0 2px 8px rgba(8,145,178,.16);
+  background: var(--copieecole-green-surface);
+  border: 2px solid var(--copieecole-green-light);
+  box-shadow: 0 2px 8px rgba(var(--copieecole-green-dark-rgb), .18);
+}
+
+.feature-icon.copieecole {
+  background: var(--copieecole-green-surface);
+  color: var(--copieecole-green-dark);
 }
 
 .hero-badge.development {
@@ -1203,17 +1223,17 @@ body::before { display: none; }
 }
 
 .hero-badge.available.copieecole {
-  background: #dcfce7;
-  border-color: #86efac;
-  color: #166534;
+  background: var(--copieecole-green-surface);
+  border-color: var(--copieecole-green-light);
+  color: var(--copieecole-green-dark);
 }
 
 .hero-badge.available.copieecole .dot {
-  background: #22c55e;
+  background: var(--copieecole-green-light);
 }
 
 .btn-primary.copieecole {
-  background: linear-gradient(135deg, #0f766e, #0891b2);
+  background: var(--copieecole-gradient);
 }
 
 .hero h1 .gradient-teladesk {
@@ -1231,10 +1251,43 @@ body::before { display: none; }
 }
 
 .hero h1 .gradient-copieecole {
-  background: linear-gradient(135deg, #06b6d4, #0369a1);
+  background: var(--copieecole-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+#page-copieecole .painel {
+  box-shadow:
+    inset 5px 0 0 var(--copieecole-green-dark),
+    0 8px 28px rgba(var(--copieecole-green-dark-rgb), .12);
+}
+
+#page-copieecole .hero h1,
+#page-copieecole .section-title {
+  color: var(--copieecole-green-dark);
+}
+
+#page-copieecole .btn-back {
+  color: var(--copieecole-green-dark);
+  border-color: rgba(var(--copieecole-green-dark-rgb), .22);
+}
+
+#page-copieecole .btn-back:hover {
+  background: var(--copieecole-green-surface);
+  color: var(--copieecole-green-dark);
+  border-color: var(--copieecole-green-light);
+}
+
+#page-copieecole .upcoming-preview-card:hover {
+  border-color: var(--copieecole-green-light);
+  box-shadow: 0 10px 30px rgba(var(--copieecole-green-dark-rgb), .16);
+}
+
+#page-copieecole .availability-note {
+  background: var(--copieecole-green-surface);
+  border-color: var(--copieecole-green-light);
+  color: var(--copieecole-green-dark);
 }
 
 .upcoming-preview-grid {

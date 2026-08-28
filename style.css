@@ -1079,7 +1079,7 @@ body::before { display: none; }
 }
 
 /* ════════════════════════════════════════════════════════════════
-   APLICATIVOS EM DESENVOLVIMENTO
+   SOLUÇÕES DA VITRINE
    ════════════════════════════════════════════════════════════════ */
 
 .nav-item .badge.soon {
@@ -1088,6 +1088,11 @@ body::before { display: none; }
   padding-inline: 5px;
   font-size: 8px;
   white-space: nowrap;
+}
+
+.nav-item .badge.available {
+  background: #dcfce7;
+  color: #166534;
 }
 
 .nav-icon-img.copieecole,
@@ -1106,6 +1111,55 @@ body::before { display: none; }
 
 .app-card.upcoming p {
   padding-right: 32px;
+}
+
+.app-card.featured-site {
+  cursor: pointer;
+  border: 2px solid #67e8f9;
+  box-shadow: 0 10px 30px rgba(8,145,178,.14);
+}
+
+.app-card.featured-site::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto;
+  height: 4px;
+  background: linear-gradient(90deg, #0891b2, #06b6d4, #22d3ee);
+}
+
+.app-card.featured-site:hover {
+  border-color: #06b6d4;
+  box-shadow: 0 14px 34px rgba(8,145,178,.22);
+}
+
+.app-card.featured-site p {
+  padding-right: 32px;
+}
+
+.app-tag.web {
+  background: #cffafe;
+  color: #0e7490;
+}
+
+.card-direct-link {
+  display: inline-flex;
+  align-items: center;
+  align-self: flex-start;
+  gap: 7px;
+  margin-top: 16px;
+  padding: 9px 14px;
+  border-radius: 9px;
+  background: linear-gradient(135deg, #0f766e, #0891b2);
+  color: #fff;
+  font-size: 12.5px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card-direct-link:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(8,145,178,.24);
 }
 
 .app-icon.teladesk {
@@ -1148,10 +1202,18 @@ body::before { display: none; }
   color: #166534;
 }
 
-.hero-badge.development.copieecole {
-  background: #cffafe;
-  border-color: #67e8f9;
-  color: #0e7490;
+.hero-badge.available.copieecole {
+  background: #dcfce7;
+  border-color: #86efac;
+  color: #166534;
+}
+
+.hero-badge.available.copieecole .dot {
+  background: #22c55e;
+}
+
+.btn-primary.copieecole {
+  background: linear-gradient(135deg, #0f766e, #0891b2);
 }
 
 .hero h1 .gradient-teladesk {
@@ -1253,6 +1315,41 @@ body::before { display: none; }
   line-height: 1.6;
 }
 
+.availability-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: 22px;
+  padding: 17px 18px;
+  background: #f0fdf4;
+  border: 1px solid #86efac;
+  border-radius: 12px;
+  color: #166534;
+}
+
+.availability-note > span {
+  flex-shrink: 0;
+  font-size: 20px;
+}
+
+.availability-note p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.page-end-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  margin: 8px 32px 0;
+}
+
+.page-end-actions .btn-back-bottom {
+  margin: 0;
+}
+
 @media (max-width: 900px) {
   .upcoming-features-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -1268,5 +1365,15 @@ body::before { display: none; }
     align-items: flex-start;
     flex-direction: column;
     gap: 4px;
+  }
+
+  .page-end-actions {
+    align-items: stretch;
+    flex-direction: column;
+    margin-inline: 20px;
+  }
+
+  .page-end-actions .btn-primary {
+    justify-content: center;
   }
 }

@@ -1201,7 +1201,11 @@ body::before { display: none; }
 }
 
 .app-icon.copieecole {
-  background: var(--copieecole-green-surface);
+  background:
+    linear-gradient(
+      135deg,
+      rgba(var(--copieecole-green-rgb), .18),
+      rgba(var(--copieecole-green-dark-rgb), .18));
   border: 2px solid var(--copieecole-green-light);
   box-shadow: 0 2px 8px rgba(var(--copieecole-green-dark-rgb), .18);
 }

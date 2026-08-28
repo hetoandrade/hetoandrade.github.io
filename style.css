@@ -18,6 +18,17 @@
   --green: #22c55e;
   --orange: #f97316;
   --purple: #8b5cf6;
+  --ajustehd-gold-light: #f7c948;
+  --ajustehd-gold: #d49a00;
+  --ajustehd-gold-dark: #7a5100;
+  --ajustehd-gold-surface: #fff8e1;
+  --ajustehd-gold-rgb: 212, 154, 0;
+  --ajustehd-gold-dark-rgb: 122, 81, 0;
+  --ajustehd-gradient:
+    linear-gradient(
+      180deg,
+      var(--ajustehd-gold-light) 0%,
+      var(--ajustehd-gold-dark) 100%);
   --copieecole-green-light: #25d366;
   --copieecole-green-dark: #075e54;
   --copieecole-green-surface: #e8f8ee;
@@ -1185,15 +1196,38 @@ body::before { display: none; }
 }
 
 .app-icon.ajustehd {
-  background: linear-gradient(135deg, #dcfce7, #bbf7d0);
-  border: 2px solid #86efac;
-  box-shadow: 0 2px 8px rgba(21,128,61,.14);
+  background: var(--ajustehd-gradient);
+  border: 2px solid var(--ajustehd-gold);
+  box-shadow: 0 2px 8px rgba(var(--ajustehd-gold-dark-rgb), .24);
 }
 
 .app-icon.copieecole {
+  width: 68px;
+  height: 68px;
+  border-radius: 15px;
   background: var(--copieecole-green-surface);
   border: 2px solid var(--copieecole-green-light);
   box-shadow: 0 2px 8px rgba(var(--copieecole-green-dark-rgb), .18);
+}
+
+.app-icon.copieecole img {
+  width: 50px;
+  height: 50px;
+  border-radius: 8px;
+}
+
+.app-card.featured-site .app-card-header {
+  gap: 28px;
+}
+
+@media (max-width: 600px) {
+  .app-card.featured-site .card-direct-link {
+    position: absolute;
+    top: 32px;
+    right: 12px;
+    padding: 5px 7px;
+    font-size: 10px;
+  }
 }
 
 .feature-icon.copieecole {
@@ -1218,9 +1252,13 @@ body::before { display: none; }
 }
 
 .hero-badge.development.ajustehd {
-  background: #dcfce7;
-  border-color: #86efac;
-  color: #166534;
+  background: var(--ajustehd-gold-surface);
+  border-color: var(--ajustehd-gold);
+  color: #3a2700;
+}
+
+.hero-badge.development.ajustehd .dot {
+  background: var(--ajustehd-gold);
 }
 
 .hero-badge.available.copieecole {
@@ -1245,10 +1283,36 @@ body::before { display: none; }
 }
 
 .hero h1 .gradient-ajustehd {
-  background: linear-gradient(135deg, #22c55e, #166534);
+  background: var(--ajustehd-gradient);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+#page-ajustehd .painel {
+  box-shadow:
+    inset 5px 0 0 var(--ajustehd-gold),
+    0 8px 28px rgba(var(--ajustehd-gold-dark-rgb), .14);
+}
+
+#page-ajustehd .section-title {
+  color: var(--ajustehd-gold-light);
+}
+
+#page-ajustehd .btn-back {
+  color: var(--ajustehd-gold-light);
+  border-color: rgba(var(--ajustehd-gold-rgb), .34);
+}
+
+#page-ajustehd .btn-back:hover {
+  background: rgba(var(--ajustehd-gold-rgb), .12);
+  color: var(--ajustehd-gold-light);
+  border-color: var(--ajustehd-gold);
+}
+
+#page-ajustehd .upcoming-preview-card:hover {
+  border-color: var(--ajustehd-gold);
+  box-shadow: 0 10px 30px rgba(var(--ajustehd-gold-dark-rgb), .22);
 }
 
 .hero h1 .gradient-copieecole {

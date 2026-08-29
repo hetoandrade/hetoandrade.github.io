@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: https://www.paypalobjects.com; connect-src 'self' https://api.github.com; upgrade-insecure-requests">
+<meta name="referrer" content="no-referrer">
 
 <!-- SEO -->
 <title>HetoAndrade Software — Sites e aplicativos que resolvem problemas reais</title>
@@ -87,7 +89,7 @@
     {"@type": "Question", "name": "O que é o Microfone Sempre Ligado?", "acceptedAnswer": {"@type": "Answer", "text": "Modo onde o microfone fica permanentemente ativo, aguardando comandos de voz."}},
     {"@type": "Question", "name": "O que é o Dicionário Inteligente?", "acceptedAnswer": {"@type": "Answer", "text": "Cadastre correções e o app aprende. Funciona com frases de até 3 palavras."}},
     {"@type": "Question", "name": "Funciona em português?", "acceptedAnswer": {"@type": "Answer", "text": "Sim! Funciona em português brasileiro."}},
-    {"@type": "Question", "name": "É seguro? Coleta dados?", "acceptedAnswer": {"@type": "Answer", "text": "Não coleta dados, não envia áudio para servidores, processamento 100% local."}}
+    {"@type": "Question", "name": "É seguro? Coleta dados?", "acceptedAnswer": {"@type": "Answer", "text": "O app não cria cadastro nem armazena gravações. O reconhecimento nativo do Windows pode usar o serviço de fala da Microsoft conforme as configurações do sistema; a contingência do VozDigitada é processada localmente."}}
   ]
 }
 </script>
@@ -376,17 +378,17 @@
           <!-- Pix -->
           <div class="donation-method">
             <h4>Pix</h4>
-            <div id="pix-qr" class="pix-qr"></div>
-            <div class="pix-key" onclick="copiarChavePix()" title="Clique para copiar a chave Pix">
+            <p class="donation-desc">Use o Pix copia e cola pelo botão abaixo.</p>
+            <button type="button" class="pix-key" onclick="copiarChavePix()" title="Clique para copiar a chave Pix">
               &#128203; Copiar chave Pix
-            </div>
+            </button>
             <div id="pix-copiado" class="pix-copiado">&#9989; Chave copiada!</div>
           </div>
 
           <!-- Cartao -->
           <div class="donation-method">
             <h4>Cart&#227;o de Cr&#233;dito / D&#233;bito</h4>
-            <a href="https://link.mercadopago.com.br/hetoandrade" target="_blank" class="btn-mercadopago">
+            <a href="https://link.mercadopago.com.br/hetoandrade" target="_blank" rel="noopener noreferrer" class="btn-mercadopago">
               <img src="img/mercadopago.png" alt="Mercado Pago" class="mp-logo">
             </a>
             <p class="donation-desc">Pagamento seguro via Mercado Pago.<br>Voc&#234; ser&#225; redirecionado para o site oficial.</p>
@@ -395,7 +397,7 @@
           <!-- PayPal -->
           <div class="donation-method">
             <h4>PayPal</h4>
-            <a href="https://www.paypal.com/donate/?business=P7TV4GXEUGVE4&no_recurring=0&item_name=Meu+objetivo+%C3%A9+criar+ferramentas+que+melhorem+seu+dia+a+dia.&currency_code=BRL" target="_blank" class="btn-paypal">
+            <a href="https://www.paypal.com/donate/?business=P7TV4GXEUGVE4&no_recurring=0&item_name=Meu+objetivo+%C3%A9+criar+ferramentas+que+melhorem+seu+dia+a+dia.&currency_code=BRL" target="_blank" rel="noopener noreferrer" class="btn-paypal">
               <img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-150px.png" alt="PayPal" class="pp-logo">
             </a>
             <p class="donation-desc">Pagamento seguro via PayPal.<br>Voc&#234; ser&#225; redirecionado para o site oficial.</p>
@@ -449,11 +451,11 @@
           <a id="btn-download-hero" href="#voz-download" class="btn-primary">
             <span>&#11015;&#65039;</span> Baixar Instalador
           </a>
-          <a href="https://apps.microsoft.com/detail/9PM8RFDR4KWN?hl=pt-br&gl=BR" target="_blank" class="btn-store">
+          <a href="https://apps.microsoft.com/detail/9PM8RFDR4KWN?hl=pt-br&gl=BR" target="_blank" rel="noopener noreferrer" class="btn-store">
             <svg width="18" height="18" viewBox="0 0 21 21" fill="currentColor"><path d="M0 0h10v10H0z" fill="#f25022"/><path d="M11 0h10v10H11z" fill="#7fba00"/><path d="M0 11h10v10H0z" fill="#00a4ef"/><path d="M11 11h10v10H11z" fill="#ffb900"/></svg>
             Microsoft Store
           </a>
-          <a href="https://youtu.be/s047-3gXwVw" target="_blank" class="btn-secondary">
+          <a href="https://youtu.be/s047-3gXwVw" target="_blank" rel="noopener noreferrer" class="btn-secondary">
             <span>&#9654;&#65039;</span> Ver no YouTube
           </a>
         </div>
@@ -634,7 +636,7 @@
             <a id="btn-download-section" href="#voz-download" class="btn-primary btn-download">
               &#11015;&#65039; Baixar Instalador
             </a>
-            <a href="https://apps.microsoft.com/detail/9PM8RFDR4KWN?hl=pt-br&gl=BR" target="_blank" class="btn-store btn-download">
+            <a href="https://apps.microsoft.com/detail/9PM8RFDR4KWN?hl=pt-br&gl=BR" target="_blank" rel="noopener noreferrer" class="btn-store btn-download">
               <svg width="18" height="18" viewBox="0 0 21 21" fill="currentColor"><path d="M0 0h10v10H0z" fill="#f25022"/><path d="M11 0h10v10H11z" fill="#7fba00"/><path d="M0 11h10v10H0z" fill="#00a4ef"/><path d="M11 11h10v10H11z" fill="#ffb900"/></svg>
               Microsoft Store
             </a>
@@ -678,7 +680,7 @@
           <a id="btn-driver-download-hero" href="#driver-download" class="btn-primary green">
             <span>&#11015;&#65039;</span> Baixar Instalador
           </a>
-          <a href="https://apps.microsoft.com/detail/9NJZLPS5F9PS?hl=pt-br&gl=BR" target="_blank" class="btn-store">
+          <a href="https://apps.microsoft.com/detail/9NJZLPS5F9PS?hl=pt-br&gl=BR" target="_blank" rel="noopener noreferrer" class="btn-store">
             <svg width="18" height="18" viewBox="0 0 21 21" fill="currentColor"><path d="M0 0h10v10H0z" fill="#f25022"/><path d="M11 0h10v10H11z" fill="#7fba00"/><path d="M0 11h10v10H0z" fill="#00a4ef"/><path d="M11 11h10v10H11z" fill="#ffb900"/></svg>
             Microsoft Store
           </a>
@@ -833,7 +835,7 @@
           </div>
           <div class="download-buttons">
             <a id="btn-driver-download-section" href="#driver-download" class="btn-primary green btn-download">&#11015;&#65039; Baixar Instalador</a>
-            <a href="https://apps.microsoft.com/detail/9NJZLPS5F9PS?hl=pt-br&gl=BR" target="_blank" class="btn-store btn-download">
+            <a href="https://apps.microsoft.com/detail/9NJZLPS5F9PS?hl=pt-br&gl=BR" target="_blank" rel="noopener noreferrer" class="btn-store btn-download">
               <svg width="18" height="18" viewBox="0 0 21 21" fill="currentColor"><path d="M0 0h10v10H0z" fill="#f25022"/><path d="M11 0h10v10H11z" fill="#7fba00"/><path d="M0 11h10v10H0z" fill="#00a4ef"/><path d="M11 11h10v10H11z" fill="#ffb900"/></svg>
               Microsoft Store
             </a>
@@ -1173,7 +1175,7 @@
           <span>&#128421; Windows 10/11</span>
           <span>&#127382; Gr&aacute;tis (pessoal)</span>
         </div>
-        <a href="https://anydesk.com/pt/downloads/windows" target="_blank" class="btn-primary azul" style="margin-top:16px;">
+        <a href="https://anydesk.com/pt/downloads/windows" target="_blank" rel="noopener noreferrer" class="btn-primary azul" style="margin-top:16px;">
           <span>&#11015;&#65039;</span> Baixar do site oficial
         </a>
       </div>
@@ -1198,7 +1200,7 @@
           <span>&#128421; Windows 10/11</span>
           <span>&#127382; Gr&aacute;tis</span>
         </div>
-        <a href="https://www.7-zip.org/download.html" target="_blank" class="btn-primary azul" style="margin-top:16px;">
+        <a href="https://www.7-zip.org/download.html" target="_blank" rel="noopener noreferrer" class="btn-primary azul" style="margin-top:16px;">
           <span>&#11015;&#65039;</span> Baixar do site oficial
         </a>
       </div>
@@ -1224,7 +1226,7 @@
           <span>&#128421; Windows 10/11</span>
           <span>&#127382; Open Source</span>
         </div>
-        <a href="https://notepad-plus-plus.org/downloads/" target="_blank" class="btn-primary azul" style="margin-top:16px;">
+        <a href="https://notepad-plus-plus.org/downloads/" target="_blank" rel="noopener noreferrer" class="btn-primary azul" style="margin-top:16px;">
           <span>&#11015;&#65039;</span> Baixar do site oficial
         </a>
       </div>
@@ -1275,7 +1277,7 @@
           <span>&#128421; Windows 10/11</span>
           <span>&#127382; Open Source</span>
         </div>
-        <a href="https://www.pgadmin.org/download/pgadmin-4-windows/" target="_blank" class="btn-primary azul" style="margin-top:16px;">
+        <a href="https://www.pgadmin.org/download/pgadmin-4-windows/" target="_blank" rel="noopener noreferrer" class="btn-primary azul" style="margin-top:16px;">
           <span>&#11015;&#65039;</span> Baixar do site oficial
         </a>
       </div>
@@ -1336,7 +1338,6 @@
   </button>
 </div>
 
-<script src="https://cdn.jsdelivr.net/npm/qrcode-generator@1.4.4/qrcode.min.js"></script>
 <script>
 // ─── Lightbox ───
 var lightboxGroups = {
@@ -1599,21 +1600,8 @@ document.addEventListener('keydown', function(e) {
   });
 })();
 
-// ─── Pix QR Code ───
+// ─── Pix copia e cola ───
 var PIX_PAYLOAD = '00020126580014BR.GOV.BCB.PIX01363d74fd0c-8f54-473c-b37a-3a3e48ddef6e5204000053039865802BR5925Humberto Andrade Goncalve6009SAO PAULO62140510BPUdbDkRLX63045596';
-
-var qr = qrcode(0, 'M');
-qr.addData(PIX_PAYLOAD);
-qr.make();
-document.getElementById('pix-qr').innerHTML = qr.createSvgTag({ cellSize: 4, margin: 4, scalable: true });
-var svgEl = document.querySelector('#pix-qr svg');
-if (svgEl) {
-  var rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-  rect.setAttribute('width', '100%');
-  rect.setAttribute('height', '100%');
-  rect.setAttribute('fill', '#ffffff');
-  svgEl.insertBefore(rect, svgEl.firstChild);
-}
 
 function copiarChavePix() {
   navigator.clipboard.writeText(PIX_PAYLOAD).then(function() {

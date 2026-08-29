@@ -551,19 +551,13 @@ body::before {
 .donation-method h4 { font-size: 16px; font-weight: 600; color: white; }
 .donation-desc { font-size: 13px !important; color: var(--text-muted); text-align: center; line-height: 1.6; margin-bottom: 8px !important; }
 
-.pix-qr {
-  width: 180px; height: 180px; background: white;
-  border-radius: 12px; display: flex; align-items: center;
-  justify-content: center; padding: 8px;
-}
-.pix-qr svg { width: 100%; height: 100%; }
-
 .pix-key {
   font-size: 13px; color: var(--text-muted);
   background: rgba(255,255,255,0.05);
   padding: 10px 20px; border-radius: 8px;
   display: inline-block; font-family: 'Inter', monospace;
   letter-spacing: 0.5px; cursor: pointer; transition: all 0.2s;
+  border: 0;
 }
 .pix-key:hover { background: rgba(255,255,255,0.1); color: white; }
 
@@ -1011,7 +1005,6 @@ body::before { display: none; }
 .pix-card h3 { color: var(--h-azul-escuro); }
 .pix-card > p { color: var(--erp-txt-muted); }
 .donation-method h4 { color: var(--h-azul-escuro); }
-.pix-qr { background: #fff; border: 1.5px solid var(--erp-border); }
 .pix-key {
   background: var(--h-degrade);
   color: #fff;

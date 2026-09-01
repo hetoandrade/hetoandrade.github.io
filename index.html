@@ -1053,11 +1053,18 @@
           <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole">
             <span>&#127760;</span> Abrir o chat
           </a>
+          <a id="btn-copieecole-download"
+             href="#"
+             class="btn-secondary copieecole-download is-disabled"
+             aria-disabled="true">
+            <span>&#11015;&#65039;</span> Baixar para Windows
+          </a>
         </div>
         <div class="hero-meta">
           <span>&#127760; Site</span>
           <span>&#128241; Computador, celular ou tablet</span>
           <span>&#9989; Dispon&#237;vel no navegador</span>
+          <span id="copieecole-versao-desktop">&#128187; Windows &#183; preparando download</span>
         </div>
       </section>
     </div>
@@ -1112,13 +1119,13 @@
         </div>
         <div class="feature-card">
           <div class="feature-icon copieecole">&#127760;</div>
-          <h3>Pelo Navegador</h3>
-          <p>Acesse a conversa em diferentes tipos de dispositivo sem depender de uma &#250;nica plataforma.</p>
+          <h3 id="copieecole-plataformas-titulo">Pelo Navegador</h3>
+          <p id="copieecole-plataformas-texto">Acesse a conversa em diferentes tipos de dispositivo sem depender de uma &#250;nica plataforma.</p>
         </div>
       </div>
       <div class="availability-note">
         <span>&#9989;</span>
-        <p><strong>Dispon&#237;vel agora.</strong> Acesse o CopieECole diretamente pelo navegador. O CopieECole &#233; um produto independente e n&#227;o possui v&#237;nculo com o WhatsApp.</p>
+        <p id="copieecole-disponibilidade"><strong>Dispon&#237;vel agora.</strong> Acesse o CopieECole diretamente pelo navegador. O CopieECole &#233; um produto independente e n&#227;o possui v&#237;nculo com o WhatsApp.</p>
       </div>
     </section>
 
@@ -1669,6 +1676,67 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
     document.getElementById('driver-versao-download').textContent = '📦 Versão mais recente';
   });
 
+// ─── Versao CopieECole Desktop ───
+(function() {
+  var downloadButton = document.getElementById('btn-copieecole-download');
+  var versionLabel = document.getElementById('copieecole-versao-desktop');
+  var platformsTitle = document.getElementById('copieecole-plataformas-titulo');
+  var platformsText = document.getElementById('copieecole-plataformas-texto');
+  var availabilityText = document.getElementById('copieecole-disponibilidade');
+  if (!downloadButton || !versionLabel) return;
+
+  downloadButton.addEventListener('click', function(event) {
+    if (downloadButton.getAttribute('aria-disabled') === 'true') {
+      event.preventDefault();
+    }
+  });
+
+  fetch('version_copieecole.json', { cache: 'no-cache' })
+    .then(function(response) {
+      if (!response.ok) throw new Error('Manifesto indisponível');
+      return response.json();
+    })
+    .then(function(data) {
+      var version = String(data.version || '').trim();
+      var installerUrl = String(data.urlInstalador || '').trim();
+      var parsedUrl = new URL(installerUrl);
+      var expectedPath =
+        '/hetoandrade/hetoandrade.github.io/releases/download/' +
+        'copieecole-v' + version + '/CopieECole_Setup_v' + version + '.exe';
+
+      if (!version ||
+          !/^\d+\.\d{1,2}\.\d{4}$/.test(version) ||
+          parsedUrl.protocol !== 'https:' ||
+          parsedUrl.hostname !== 'github.com' ||
+          parsedUrl.pathname !== expectedPath) {
+        throw new Error('Manifesto inválido');
+      }
+
+      downloadButton.href = parsedUrl.href;
+      downloadButton.classList.remove('is-disabled');
+      downloadButton.removeAttribute('aria-disabled');
+      versionLabel.textContent = '💻 Windows · v' + version;
+      if (platformsTitle) {
+        platformsTitle.textContent = 'Navegador ou Windows';
+      }
+      if (platformsText) {
+        platformsText.textContent =
+          'Acesse pelo navegador ou instale o aplicativo no computador para abrir como programa.';
+      }
+      if (availabilityText) {
+        availabilityText.innerHTML =
+          '<strong>Disponível agora.</strong> Acesse pelo navegador ou instale a versão para Windows. ' +
+          'O CopieECole é um produto independente e não possui vínculo com o WhatsApp.';
+      }
+    })
+    .catch(function() {
+      downloadButton.href = '#';
+      downloadButton.classList.add('is-disabled');
+      downloadButton.setAttribute('aria-disabled', 'true');
+      versionLabel.textContent = '💻 Windows · download indisponível';
+    });
+})();
+
 // ─── FAQ toggle ───
 function toggleFaq(el) {
   el.parentElement.classList.toggle('active');
@@ -1697,8 +1765,22 @@ function showPage(page) {
   // Fechar menu mobile
   document.getElementById('sidebar').classList.remove('mobile-open');
 
+  if (page === 'driverstatus') {
+    history.replaceState(null, '', '#' + page);
+  } else {
+    history.replaceState(null, '', window.location.pathname + window.location.search);
+  }
+
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
+
+function showPageFromHash() {
+  var page = window.location.hash.substring(1).toLowerCase();
+  if (page === 'driverstatus') showPage(page);
+}
+
+window.addEventListener('hashchange', showPageFromHash);
+showPageFromHash();
 </script>
 
 </body>

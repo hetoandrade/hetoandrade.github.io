@@ -1,7 +1,7 @@
 {
-  "version": "1.8.3106",
-  "dataPublicacao": "2026-08-31T11:17:07",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.3106/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.8.3106/VozDigitada_Setup_v1.8.3106.exe",
-  "changelog": "Corrige o carregamento da GPU genérica/DirectML no pacote Microsoft Store e refaz automaticamente a avaliação do processador após a atualização."
+  "version": "1.9.0101",
+  "dataPublicacao": "2026-09-01T11:10:37",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0101/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0101/VozDigitada_Setup_v1.9.0101.exe",
+  "changelog": "Estabiliza a revisão da digitação e preserva o final do texto falado, mostra o progresso da instalação inicial e adiciona controle para ocultar a prévia quando o motor estiver ocioso."
 }

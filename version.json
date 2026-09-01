@@ -1,7 +1,7 @@
 {
-  "version": "1.9.0102",
-  "dataPublicacao": "2026-09-01T12:45:23",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0102/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0102/VozDigitada_Setup_v1.9.0102.exe",
-  "changelog": "Corrige a medição de desempenho da CUDA no modo Turbo, separando a inicialização do modelo da inferência aquecida."
+  "version": "1.9.0103",
+  "dataPublicacao": "2026-09-01T18:35:25",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0103/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0103/VozDigitada_Setup_v1.9.0103.exe",
+  "changelog": "Corrige a disponibilidade do motor Turbo em computadores com NVIDIA e isola os runtimes do reconhecimento de voz para evitar conflitos no pacote da Microsoft Store."
 }

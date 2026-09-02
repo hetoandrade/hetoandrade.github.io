@@ -1490,12 +1490,68 @@ body::before { display: none; }
 }
 
 @media (max-width: 900px) {
+  .painel {
+    width: calc(100% - 40px);
+    max-width: none;
+  }
+
+  .painel > .home-hero,
+  .painel > .hero,
+  .hero-actions,
+  .hero-meta,
+  .section,
+  .screenshots-grid,
+  .features-grid,
+  .faq-container,
+  .download-row,
+  .version-info {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .section {
+    width: 100%;
+  }
+
+  .screenshot-card,
+  .feature-card,
+  .faq-item {
+    min-width: 0;
+  }
+
+  .screenshot-card img {
+    max-width: 100%;
+  }
+
   .upcoming-features-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 600px) {
+  .hero h1,
+  .home-hero h1 {
+    font-size: 28px;
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions > a,
+  .download-buttons > a,
+  .version-tag {
+    max-width: 100%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .download-buttons {
+    width: 100%;
+  }
+
+  .download-buttons > a {
+    width: 100%;
+    justify-content: center;
+  }
+
   .upcoming-features-grid {
     grid-template-columns: 1fr;
   }

@@ -1,7 +1,7 @@
 {
-  "version": "1.9.0117",
-  "dataPublicacao": "2026-09-01T22:06:43-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0117/CopieECole_Setup_v1.9.0117.exe",
-  "sha256": "46F46F3D3BF5F5123509CB9EBCADA61380F8334F82FD0E096B65773834F86D11",
-  "changelog": "Apresenta a nova comunicação do CopieECole, identifica claramente a versão web e exibe a versão atual do aplicativo no site."
+  "version": "1.9.0118",
+  "dataPublicacao": "2026-09-01T22:29:12-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0118/CopieECole_Setup_v1.9.0118.exe",
+  "sha256": "A5BF5F492C5056F3BE6B8C4192A9E41F3A966F56291B9A724765F97F9728CBAB",
+  "changelog": "Atualiza a identidade visual do CopieECole com o novo ícone aprovado no aplicativo Windows, instalador, Web/PWA e site institucional."
 }

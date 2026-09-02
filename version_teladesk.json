@@ -1,7 +1,7 @@
 {
-  "version": "1.8.1512",
-  "dataPublicacao": "2026-08-15T12:00:00-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.8.1512/TelaDesk_Setup_v1.8.1512.exe",
-  "sha256": "0000000000000000000000000000000000000000000000000000000000000000",
-  "changelog": "Estrutura inicial do instalador e do serviço protegido do TelaDesk."
+  "version": "1.9.0208",
+  "dataPublicacao": "2026-09-02T19:59:38-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.0208/TelaDesk-Setup-1.9.0208.exe",
+  "sha256": "2bccdeb43d2dd563367b4b2bc54ff9cae49ebd040b55b68c44383969dcb6fbcc",
+  "changelog": "Primeira versão pública do TelaDesk no site, com acesso remoto por código ou convite, permissões por sessão, arquivos, área de transferência e acesso não assistido."
 }

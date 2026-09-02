@@ -67,6 +67,40 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "name": "TelaDesk",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+  "softwareVersion": "1.9.0208",
+  "description": "Acesso remoto gratuito com conexão por código, convites temporários, permissões explícitas e transferência de arquivos.",
+  "url": "https://hetoandrade.com.br/#teladesk",
+  "downloadUrl": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.0208/TelaDesk-Setup-1.9.0208.exe",
+  "author": { "@type": "Person", "name": "HetoAndrade" },
+  "image": "https://hetoandrade.com.br/Imagems/teladesk.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "AjusteHD",
+  "operatingSystem": "Windows 10, Windows 11",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+  "softwareVersion": "1.9.0203",
+  "description": "Gerenciador gratuito para visualizar, redimensionar, criar e remover partições com revisão antes de aplicar.",
+  "url": "https://hetoandrade.com.br/#ajustehd",
+  "downloadUrl": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.0203/AjusteHD_Setup_v1.9.0203.exe",
+  "author": { "@type": "Person", "name": "HetoAndrade" },
+  "image": "https://hetoandrade.com.br/Imagems/ajustehd.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
   "name": "DriverStatus",
   "operatingSystem": "Windows 10, Windows 11",
   "applicationCategory": "UtilitiesApplication",
@@ -90,6 +124,40 @@
     {"@type": "Question", "name": "O que é o Dicionário Inteligente?", "acceptedAnswer": {"@type": "Answer", "text": "Cadastre correções e o app aprende. Funciona com frases de até 3 palavras."}},
     {"@type": "Question", "name": "Funciona em português?", "acceptedAnswer": {"@type": "Answer", "text": "Sim! Funciona em português brasileiro."}},
     {"@type": "Question", "name": "É seguro? Coleta dados?", "acceptedAnswer": {"@type": "Answer", "text": "O app não cria cadastro nem armazena gravações. O reconhecimento nativo do Windows pode usar o serviço de fala da Microsoft conforme as configurações do sistema; a contingência do VozDigitada é processada localmente."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Como conecto a outro computador com o TelaDesk?","acceptedAnswer":{"@type":"Answer","text":"Use o código exibido no outro computador ou um convite temporário. A pessoa que recebe a solicitação revisa e aceita as permissões antes da sessão."}},
+    {"@type":"Question","name":"O TelaDesk funciona fora da mesma rede?","acceptedAnswer":{"@type":"Answer","text":"Sim. Ele funciona pela rede local ou internet, tenta uma conexão direta P2P e pode usar relay quando necessário."}},
+    {"@type":"Question","name":"Quem decide as permissões no TelaDesk?","acceptedAnswer":{"@type":"Answer","text":"O computador que recebe a conexão escolhe as permissões da sessão, incluindo controle, área de transferência e arquivos."}},
+    {"@type":"Question","name":"O que é a palavra de segurança do TelaDesk?","acceptedAnswer":{"@type":"Answer","text":"É uma confirmação visual que pode ser comparada nos dois computadores para reduzir o risco de aceitar a sessão errada."}},
+    {"@type":"Question","name":"O TelaDesk transfere arquivos e textos?","acceptedAnswer":{"@type":"Answer","text":"Sim, quando as permissões correspondentes forem autorizadas durante a sessão."}},
+    {"@type":"Question","name":"O TelaDesk tem acesso não assistido?","acceptedAnswer":{"@type":"Answer","text":"Sim. Ele pode ser configurado no computador remoto e protegido por credencial."}},
+    {"@type":"Question","name":"O TelaDesk registra as sessões?","acceptedAnswer":{"@type":"Answer","text":"O aplicativo pode manter logs técnicos, mas não grava automaticamente o vídeo da tela nem o conteúdo dos arquivos transferidos."}},
+    {"@type":"Question","name":"Existe versão do TelaDesk na Microsoft Store?","acceptedAnswer":{"@type":"Answer","text":"A versão da Microsoft Store está planejada, mas ainda não foi publicada. Por enquanto, está disponível o instalador direto."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Quais operações o AjusteHD realiza?","acceptedAnswer":{"@type":"Answer","text":"Transferir espaço, aumentar uma partição, somente diminuir, criar uma nova partição e remover uma partição de dados."}},
+    {"@type":"Question","name":"Posso conferir o resultado antes de aplicar no AjusteHD?","acceptedAnswer":{"@type":"Answer","text":"Sim. O aplicativo apresenta o mapa atual e uma previsão do resultado antes da confirmação final."}},
+    {"@type":"Question","name":"O AjusteHD pode remover a partição do Windows?","acceptedAnswer":{"@type":"Answer","text":"Não pelo fluxo normal de remoção. Partições do sistema, EFI, recuperação e outras estruturas protegidas ficam bloqueadas."}},
+    {"@type":"Question","name":"Por que o AjusteHD pode exigir reinicialização?","acceptedAnswer":{"@type":"Answer","text":"Volumes em uso nem sempre podem ser alterados durante a sessão. Nesses casos, o aplicativo prepara o processamento para a reinicialização ou ambiente PreOS."}},
+    {"@type":"Question","name":"O AjusteHD precisa de acesso de administrador?","acceptedAnswer":{"@type":"Answer","text":"Sim. Alterar discos e partições exige elevação administrativa do Windows."}},
+    {"@type":"Question","name":"O AjusteHD envia meus arquivos para a internet?","acceptedAnswer":{"@type":"Answer","text":"Não. O mapa dos discos e as operações são processados localmente. A internet é usada apenas para atualizações."}},
+    {"@type":"Question","name":"Preciso fazer backup antes de usar o AjusteHD?","acceptedAnswer":{"@type":"Answer","text":"Sim. Qualquer alteração de partições envolve risco em caso de falha de energia, defeito no disco ou interrupção."}},
+    {"@type":"Question","name":"Como recebo novas versões do AjusteHD?","acceptedAnswer":{"@type":"Answer","text":"O aplicativo verifica se existe uma versão mais recente e baixa o pacote oficial quando o usuário autoriza a atualização."}}
   ]
 }
 </script>
@@ -146,13 +214,13 @@
     <a class="nav-item" href="#" onclick="showPage('teladesk'); return false;" id="nav-teladesk">
       <img src="Imagems/teladesk.png" alt="" class="nav-icon-img">
       TelaDesk
-      <span class="badge soon">Em desenvolvimento</span>
+      <span class="badge soon" id="nav-teladesk-badge">Verificando</span>
     </a>
 
     <a class="nav-item" href="#" onclick="showPage('ajustehd'); return false;" id="nav-ajustehd">
       <img src="Imagems/ajustehd.png" alt="" class="nav-icon-img">
       AjusteHD
-      <span class="badge soon">Em desenvolvimento</span>
+      <span class="badge soon" id="nav-ajustehd-badge">Verificando</span>
     </a>
 
     <a class="nav-item disabled" href="#" aria-disabled="true" tabindex="-1">
@@ -205,8 +273,8 @@
           para seus dispositivos.
         </h1>
         <p>
-          Aplicativos gratuitos que ajudam no dia a dia.
-          O CopieECole j&#225; est&#225; dispon&#237;vel; TelaDesk e AjusteHD est&#227;o em desenvolvimento.
+          Aplicativos gratuitos que ajudam no dia a dia, da produtividade ao acesso remoto
+          e ao gerenciamento seguro do espa&#231;o dos seus discos.
         </p>
       </section>
     </div>
@@ -285,14 +353,14 @@
       </div>
 
       <!-- TelaDesk Card -->
-      <div class="app-card upcoming" onclick="showPage('teladesk')">
+      <div class="app-card" onclick="showPage('teladesk')">
         <div class="app-card-header">
           <div class="app-icon teladesk">
             <img src="Imagems/teladesk.png" alt="TelaDesk">
           </div>
           <div class="app-card-title">
             <h3>TelaDesk</h3>
-            <span class="app-tag soon">Em desenvolvimento</span>
+            <span class="app-tag soon" id="card-teladesk-tag">Verificando disponibilidade</span>
           </div>
         </div>
         <p>
@@ -302,20 +370,20 @@
         <div class="app-card-footer">
           <span>&#128421; Acesso remoto</span>
           <span>&#129695; Windows</span>
-          <span>&#128679; Em desenvolvimento</span>
+          <span id="card-teladesk-status">&#8987; Verificando download</span>
         </div>
         <div class="app-card-arrow">&#8594;</div>
       </div>
 
       <!-- AjusteHD Card -->
-      <div class="app-card upcoming" onclick="showPage('ajustehd')">
+      <div class="app-card" onclick="showPage('ajustehd')">
         <div class="app-card-header">
           <div class="app-icon ajustehd">
             <img src="Imagems/ajustehd.png" alt="AjusteHD">
           </div>
           <div class="app-card-title">
             <h3>AjusteHD</h3>
-            <span class="app-tag soon">Em desenvolvimento</span>
+            <span class="app-tag soon" id="card-ajustehd-tag">Verificando disponibilidade</span>
           </div>
         </div>
         <p>
@@ -325,7 +393,7 @@
         <div class="app-card-footer">
           <span>&#128189; Parti&#231;&#245;es</span>
           <span>&#129695; Windows</span>
-          <span>&#128679; Em desenvolvimento</span>
+          <span id="card-ajustehd-status">&#8987; Verificando download</span>
         </div>
         <div class="app-card-arrow">&#8594;</div>
       </div>
@@ -861,78 +929,156 @@
 
     <div class="painel">
       <section class="hero">
-        <div class="hero-badge development teladesk">
+        <div class="hero-badge available teladesk">
           <img src="Imagems/teladesk.png" alt="" class="badge-icon">
           <span class="dot"></span>
-          <span>Em desenvolvimento</span>
+          <span id="teladesk-versao-badge">Verificando download...</span>
         </div>
         <h1>
           Acesso remoto <span class="gradient-teladesk">simples e protegido</span><br>
           para seus computadores.
         </h1>
         <p>
-          O <strong>TelaDesk</strong> est&#225; sendo criado como uma alternativa pr&#243;pria ao AnyDesk:
-          conecte por c&#243;digo ou convite, pela rede local ou internet, com permiss&#245;es claras
-          para controlar a tela, copiar textos e transferir arquivos.
+          O <strong>TelaDesk</strong> conecta computadores por c&#243;digo ou convite tempor&#225;rio,
+          pela rede local ou internet. Voc&#234; decide as permiss&#245;es de cada sess&#227;o e pode
+          controlar a tela, compartilhar a &#225;rea de transfer&#234;ncia e enviar arquivos.
         </p>
+        <div class="hero-actions">
+          <a id="btn-teladesk-download-hero" href="#teladesk-download" class="btn-primary teladesk is-disabled" aria-disabled="true" tabindex="-1">
+            <span>&#11015;&#65039;</span> Verificando download...
+          </a>
+          <a id="btn-teladesk-store-hero" href="#teladesk-download" class="btn-store is-disabled" aria-disabled="true" tabindex="-1">
+            <svg width="18" height="18" viewBox="0 0 21 21" fill="currentColor"><path d="M0 0h10v10H0z" fill="#f25022"/><path d="M11 0h10v10H11z" fill="#7fba00"/><path d="M0 11h10v10H0z" fill="#00a4ef"/><path d="M11 11h10v10H11z" fill="#ffb900"/></svg>
+            Microsoft Store &#8212; em breve
+          </a>
+          <a href="privacidade-teladesk.html" class="btn-secondary teladesk">&#128274; Privacidade</a>
+        </div>
         <div class="hero-meta">
-          <span>&#128421; Windows</span>
+          <span>&#128421; Windows 10 e 11 (64-bit)</span>
           <span>&#127760; Rede local ou internet</span>
-          <span>&#128679; Em desenvolvimento</span>
+          <span>&#127382; Gratuito</span>
         </div>
       </section>
     </div>
 
-    <section class="section">
-      <div class="section-title">Pr&#233;via do aplicativo</div>
-      <div class="upcoming-preview-grid">
-        <div class="upcoming-preview-card" onclick="openLightbox('Prints/TelaDesk/previa-ilustrativa.png')">
-          <img src="Prints/TelaDesk/previa-ilustrativa.png" alt="Pr&#233;via ilustrativa da tela inicial do TelaDesk">
-          <div class="upcoming-preview-caption">
-            <strong>Pr&#233;via ilustrativa</strong>
-            <span>Representa a interface atual planejada a partir do c&#243;digo do aplicativo.</span>
-          </div>
+    <section class="section" id="teladesk-screenshots">
+      <div class="section-title">Conhe&#231;a o TelaDesk</div>
+      <div class="screenshots-grid product-previews">
+        <div class="screenshot-card" onclick="openLightbox('Prints/TelaDesk/SiteRevisado/teladesk-01-inicio.png', 'teladesk')">
+          <img src="Prints/TelaDesk/SiteRevisado/teladesk-01-inicio.png" alt="Pr&#233;via ilustrativa do painel principal do TelaDesk">
+          <div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; painel principal e acesso por c&#243;digo</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/TelaDesk/SiteRevisado/teladesk-02-convites.png', 'teladesk')">
+          <img src="Prints/TelaDesk/SiteRevisado/teladesk-02-convites.png" alt="Pr&#233;via ilustrativa dos convites tempor&#225;rios do TelaDesk">
+          <div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; convites tempor&#225;rios de uso &#250;nico</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/TelaDesk/SiteRevisado/teladesk-03-permissoes.png', 'teladesk')">
+          <img src="Prints/TelaDesk/SiteRevisado/teladesk-03-permissoes.png" alt="Pr&#233;via ilustrativa das permiss&#245;es e palavra de seguran&#231;a do TelaDesk">
+          <div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; permiss&#245;es e palavra de seguran&#231;a</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/TelaDesk/SiteRevisado/teladesk-04-sessao-remota.png', 'teladesk')">
+          <img src="Prints/TelaDesk/SiteRevisado/teladesk-04-sessao-remota.png" alt="Pr&#233;via ilustrativa de uma sess&#227;o remota no TelaDesk">
+          <div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; sess&#227;o remota em andamento</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/TelaDesk/SiteRevisado/teladesk-05-arquivos.png', 'teladesk')">
+          <img src="Prints/TelaDesk/SiteRevisado/teladesk-05-arquivos.png" alt="Pr&#233;via ilustrativa da transfer&#234;ncia de arquivos e textos no TelaDesk">
+          <div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; arquivos e &#225;rea de transfer&#234;ncia</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/TelaDesk/SiteRevisado/teladesk-06-configuracoes.png', 'teladesk')">
+          <img src="Prints/TelaDesk/SiteRevisado/teladesk-06-configuracoes.png" alt="Pr&#233;via ilustrativa das configura&#231;&#245;es e acesso n&#227;o assistido do TelaDesk">
+          <div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; configura&#231;&#245;es e acesso n&#227;o assistido</div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-title">O que o TelaDesk vai oferecer</div>
-      <div class="upcoming-features-grid">
+    <section class="section" id="teladesk-features">
+      <div class="section-title">Recursos</div>
+      <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon blue">&#128273;</div>
           <h3>Acesso por C&#243;digo</h3>
-          <p>Digite o c&#243;digo do outro computador para iniciar uma conex&#227;o de forma simples.</p>
+          <p>Digite o c&#243;digo do outro computador e envie uma solicita&#231;&#227;o de conex&#227;o.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon cyan">&#9993;&#65039;</div>
           <h3>Convites Tempor&#225;rios</h3>
-          <p>Crie um convite de uso &#250;nico para prestar ou receber ajuda sem acesso permanente.</p>
+          <p>Crie um convite de uso &#250;nico, com validade limitada, para prestar ou receber ajuda.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon green">&#127760;</div>
-          <h3>Local ou Internet</h3>
-          <p>Encontre computadores na rede local ou acesse de outro lugar quando precisar.</p>
+          <h3>P2P com Relay</h3>
+          <p>A conex&#227;o tenta o caminho direto entre os computadores e usa relay quando necess&#225;rio.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon purple">&#128196;</div>
           <h3>Sess&#245;es em Abas</h3>
-          <p>Organize diferentes computadores e visualiza&#231;&#245;es em uma &#250;nica janela.</p>
+          <p>Organize diferentes computadores e sess&#245;es em uma &#250;nica janela.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon orange">&#128737;&#65039;</div>
-          <h3>Permiss&#245;es Claras</h3>
-          <p>Escolha separadamente o controle de teclado e mouse, textos e arquivos.</p>
+          <h3>Permiss&#245;es por Sess&#227;o</h3>
+          <p>Autorize separadamente tela, teclado e mouse, &#225;rea de transfer&#234;ncia e arquivos.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon pink">&#128194;</div>
           <h3>Textos e Arquivos</h3>
           <p>Copie textos entre os computadores e transfira arquivos durante a sess&#227;o.</p>
         </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">&#128272;</div>
+          <h3>Palavra de Seguran&#231;a</h3>
+          <p>Confirme a mesma palavra nos dois lados antes de aceitar uma sess&#227;o sens&#237;vel.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon red">&#128274;</div>
+          <h3>Acesso N&#227;o Assistido</h3>
+          <p>Proteja o acesso permanente com credenciais armazenadas de forma segura no Windows.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon green">&#128260;</div>
+          <h3>Atualiza&#231;&#227;o Autom&#225;tica</h3>
+          <p>Receba novas vers&#245;es pelo atualizador do aplicativo quando estiverem dispon&#237;veis.</p>
+        </div>
       </div>
-      <div class="development-note">
-        <span>&#128679;</span>
-        <p><strong>Em desenvolvimento.</strong> A interface e os recursos ainda podem mudar. O TelaDesk &#233; um produto independente e n&#227;o possui v&#237;nculo com o AnyDesk.</p>
+      <div class="availability-note teladesk-note">
+        <span>&#9989;</span>
+        <p id="teladesk-disponibilidade"><strong>Verificando o download.</strong> O TelaDesk &#233; um produto independente e n&#227;o possui v&#237;nculo com o AnyDesk.</p>
+      </div>
+    </section>
+
+    <section class="section" id="teladesk-faq">
+      <div class="section-title">Perguntas Frequentes</div>
+      <div class="faq-container">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Como conecto a outro computador?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Use o c&#243;digo exibido no outro computador ou um convite tempor&#225;rio. A pessoa que recebe a solicita&#231;&#227;o revisa e aceita as permiss&#245;es antes do in&#237;cio da sess&#227;o.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Funciona fora da mesma rede?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. O TelaDesk funciona pela rede local ou internet. Ele tenta uma conex&#227;o direta P2P e pode usar um servidor relay quando o caminho direto n&#227;o estiver dispon&#237;vel.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Quem decide o que pode ser controlado?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>O computador que recebe a conex&#227;o escolhe as permiss&#245;es da sess&#227;o, incluindo controle de teclado e mouse, &#225;rea de transfer&#234;ncia e arquivos.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>O que &#233; a palavra de seguran&#231;a?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>&#201; uma confirma&#231;&#227;o visual que pode ser comparada nos dois computadores para reduzir o risco de aceitar a sess&#227;o errada.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Posso transferir arquivos e textos?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim, quando essas permiss&#245;es forem autorizadas. Arquivos e conte&#250;do da &#225;rea de transfer&#234;ncia trafegam somente durante a opera&#231;&#227;o solicitada.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Tem acesso n&#227;o assistido?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. Ele pode ser configurado no computador remoto e protegido por credencial. Use esse modo apenas em dispositivos sob sua responsabilidade.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>O TelaDesk registra as sess&#245;es?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>O aplicativo pode manter logs t&#233;cnicos para funcionamento e diagn&#243;stico, mas n&#227;o grava automaticamente o v&#237;deo da tela nem o conte&#250;do dos arquivos transferidos.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Existe vers&#227;o na Microsoft Store?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>A vers&#227;o da Microsoft Store est&#225; planejada, mas ainda n&#227;o foi publicada. Por enquanto, use somente o instalador direto validado nesta p&#225;gina.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="teladesk-download">
+      <div class="section-title">Download</div>
+      <div class="download-card teladesk-theme">
+        <div class="download-row">
+          <div class="download-info">
+            <h3>&#11015;&#65039; TelaDesk para Windows</h3>
+            <div class="download-meta"><div class="hero-badge available teladesk" style="margin-bottom:0;"><img src="Imagems/teladesk.png" alt="" class="badge-icon"><span class="dot"></span><span id="teladesk-versao-download">Verificando download...</span></div></div>
+          </div>
+          <div class="download-buttons">
+            <a id="btn-teladesk-download-section" href="#teladesk-download" class="btn-primary teladesk btn-download is-disabled" aria-disabled="true" tabindex="-1">Verificando download...</a>
+            <a id="btn-teladesk-store-section" href="#teladesk-download" class="btn-store btn-download is-disabled" aria-disabled="true" tabindex="-1"><svg width="18" height="18" viewBox="0 0 21 21" fill="currentColor"><path d="M0 0h10v10H0z" fill="#f25022"/><path d="M11 0h10v10H11z" fill="#7fba00"/><path d="M0 11h10v10H0z" fill="#00a4ef"/><path d="M11 11h10v10H11z" fill="#ffb900"/></svg> Microsoft Store &#8212; em breve</a>
+          </div>
+        </div>
+        <div class="version-info">
+          <div class="version-tag"><span class="label">Requisitos</span> Windows 10/11 x64</div>
+          <div class="version-tag"><span class="label">Licen&#231;a</span> Gratuito</div>
+          <div class="version-tag"><span class="label">Atualiza&#231;&#227;o</span> Autom&#225;tica</div>
+          <a class="version-tag privacy-tag" href="privacidade-teladesk.html"><span class="label">Dados</span> Pol&#237;tica de privacidade</a>
+        </div>
       </div>
     </section>
 
@@ -948,10 +1094,10 @@
 
     <div class="painel">
       <section class="hero">
-        <div class="hero-badge development ajustehd">
+        <div class="hero-badge available ajustehd">
           <img src="Imagems/ajustehd.png" alt="" class="badge-icon">
           <span class="dot"></span>
-          <span>Em desenvolvimento</span>
+          <span id="ajustehd-versao-badge">Verificando download...</span>
         </div>
         <h1>
           Organize o espa&#231;o do seu disco<br>
@@ -962,30 +1108,33 @@
           antes de qualquer altera&#231;&#227;o. Transfira espa&#231;o, reduza, crie ou remova parti&#231;&#245;es
           com revis&#227;o do resultado e confirma&#231;&#245;es em cada etapa.
         </p>
+        <div class="hero-actions">
+          <a id="btn-ajustehd-download-hero" href="#ajustehd-download" class="btn-primary ajustehd is-disabled" aria-disabled="true" tabindex="-1"><span>&#11015;&#65039;</span> Verificando download...</a>
+          <a href="privacidade-ajustehd.html" class="btn-secondary ajustehd">&#128274; Privacidade</a>
+        </div>
         <div class="hero-meta">
           <span>&#128189; Discos e parti&#231;&#245;es</span>
-          <span>&#128421; Windows</span>
-          <span>&#128679; Em desenvolvimento</span>
+          <span>&#128421; Windows 10 e 11 (64-bit)</span>
+          <span>&#127382; Gratuito</span>
         </div>
       </section>
     </div>
 
-    <section class="section">
-      <div class="section-title">Pr&#233;via do aplicativo</div>
-      <div class="upcoming-preview-grid">
-        <div class="upcoming-preview-card" onclick="openLightbox('Prints/AjusteHD/previa-ilustrativa.png')">
-          <img src="Prints/AjusteHD/previa-ilustrativa.png" alt="Pr&#233;via ilustrativa da tela inicial do AjusteHD">
-          <div class="upcoming-preview-caption">
-            <strong>Pr&#233;via ilustrativa</strong>
-            <span>Representa as quatro opera&#231;&#245;es encontradas na interface atual do aplicativo.</span>
-          </div>
-        </div>
+    <section class="section" id="ajustehd-screenshots">
+      <div class="section-title">Conhe&#231;a o AjusteHD</div>
+      <div class="screenshots-grid product-previews">
+        <div class="screenshot-card" onclick="openLightbox('Prints/AjusteHD/SiteRevisado/ajustehd-01-inicio.png', 'ajustehd')"><img src="Prints/AjusteHD/SiteRevisado/ajustehd-01-inicio.png" alt="Pr&#233;via ilustrativa da tela inicial do AjusteHD"><div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; as cinco opera&#231;&#245;es dispon&#237;veis</div></div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/AjusteHD/SiteRevisado/ajustehd-02-mapa-discos-corrigido.png', 'ajustehd')"><img src="Prints/AjusteHD/SiteRevisado/ajustehd-02-mapa-discos-corrigido.png" alt="Pr&#233;via ilustrativa do mapa de discos do AjusteHD"><div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; mapa visual dos discos e parti&#231;&#245;es</div></div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/AjusteHD/SiteRevisado/ajustehd-03-antes-depois-corrigido.png', 'ajustehd')"><img src="Prints/AjusteHD/SiteRevisado/ajustehd-03-antes-depois-corrigido.png" alt="Pr&#233;via ilustrativa da compara&#231;&#227;o antes e depois do AjusteHD"><div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; compara&#231;&#227;o antes e depois</div></div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/AjusteHD/SiteRevisado/ajustehd-04-criar-particao-corrigido.png', 'ajustehd')"><img src="Prints/AjusteHD/SiteRevisado/ajustehd-04-criar-particao-corrigido.png" alt="Pr&#233;via ilustrativa da cria&#231;&#227;o de parti&#231;&#227;o no AjusteHD"><div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; cria&#231;&#227;o de uma nova parti&#231;&#227;o</div></div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/AjusteHD/SiteRevisado/ajustehd-05-remover-protegida-corrigido.png', 'ajustehd')"><img src="Prints/AjusteHD/SiteRevisado/ajustehd-05-remover-protegida-corrigido.png" alt="Pr&#233;via ilustrativa da remo&#231;&#227;o protegida no AjusteHD"><div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; remo&#231;&#227;o com parti&#231;&#245;es protegidas</div></div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/AjusteHD/SiteRevisado/ajustehd-06-execucao-final.png', 'ajustehd')"><img src="Prints/AjusteHD/SiteRevisado/ajustehd-06-execucao-final.png" alt="Pr&#233;via ilustrativa da execu&#231;&#227;o e reinicializa&#231;&#227;o no AjusteHD"><div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; execu&#231;&#227;o e reinicializa&#231;&#227;o quando necess&#225;ria</div></div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-title">O que o AjusteHD vai oferecer</div>
-      <div class="upcoming-features-grid">
+    <section class="section" id="ajustehd-features">
+      <div class="section-title">Recursos</div>
+      <div class="features-grid">
         <div class="feature-card">
           <div class="feature-icon green">&#128200;</div>
           <h3>Vis&#227;o dos Discos</h3>
@@ -995,6 +1144,11 @@
           <div class="feature-icon blue">&#8596;&#65039;</div>
           <h3>Transferir Espa&#231;o</h3>
           <p>Diminua uma parti&#231;&#227;o e aumente outra compat&#237;vel imediatamente ao lado.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon orange">&#128200;</div>
+          <h3>Aumentar Parti&#231;&#227;o</h3>
+          <p>Use um espa&#231;o n&#227;o alocado compat&#237;vel para expandir uma parti&#231;&#227;o existente.</p>
         </div>
         <div class="feature-card">
           <div class="feature-icon cyan">&#128207;</div>
@@ -1016,10 +1170,55 @@
           <h3>Revis&#227;o Antes de Aplicar</h3>
           <p>Compare o antes e o depois e confirme explicitamente cada opera&#231;&#227;o.</p>
         </div>
+        <div class="feature-card">
+          <div class="feature-icon blue">&#128737;&#65039;</div>
+          <h3>Execu&#231;&#227;o Protegida</h3>
+          <p>Opera&#231;&#245;es sens&#237;veis usam eleva&#231;&#227;o administrativa e valida&#231;&#245;es antes da altera&#231;&#227;o.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon purple">&#128260;</div>
+          <h3>Reinicializa&#231;&#227;o e PreOS</h3>
+          <p>Quando o volume est&#225; em uso, o AjusteHD orienta a reinicializa&#231;&#227;o e o processamento antes do Windows.</p>
+        </div>
       </div>
-      <div class="development-note">
-        <span>&#128679;</span>
-        <p><strong>Em desenvolvimento.</strong> A interface e os recursos ainda podem mudar antes do lan&#231;amento.</p>
+      <div class="availability-note ajustehd-note">
+        <span>&#9989;</span>
+        <p id="ajustehd-disponibilidade"><strong>Verificando o download.</strong> O AjusteHD n&#227;o envia o conte&#250;do dos discos para servidores. Fa&#231;a backup dos dados importantes antes de alterar parti&#231;&#245;es.</p>
+      </div>
+    </section>
+
+    <section class="section" id="ajustehd-faq">
+      <div class="section-title">Perguntas Frequentes</div>
+      <div class="faq-container">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Quais opera&#231;&#245;es o AjusteHD realiza?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Ele oferece cinco fluxos: transferir espa&#231;o, aumentar uma parti&#231;&#227;o, somente diminuir, criar uma nova parti&#231;&#227;o e remover uma parti&#231;&#227;o de dados.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Posso conferir o resultado antes de aplicar?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. O aplicativo apresenta o mapa atual e uma previs&#227;o do resultado para voc&#234; revisar antes da confirma&#231;&#227;o final.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>O AjusteHD pode remover a parti&#231;&#227;o do Windows?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>N&#227;o pelo fluxo normal de remo&#231;&#227;o. Parti&#231;&#245;es do sistema, EFI, recupera&#231;&#227;o e outras estruturas protegidas ficam bloqueadas.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Por que algumas opera&#231;&#245;es exigem reinicializa&#231;&#227;o?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Volumes em uso pelo Windows nem sempre podem ser alterados durante a sess&#227;o. Nesses casos, o aplicativo prepara o processamento para a reinicializa&#231;&#227;o ou ambiente PreOS.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Precisa de acesso de administrador?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. Alterar discos e parti&#231;&#245;es exige eleva&#231;&#227;o administrativa do Windows.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Meus arquivos s&#227;o enviados para a internet?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>N&#227;o. O mapa dos discos e as opera&#231;&#245;es s&#227;o processados localmente. A internet &#233; usada apenas para verificar e baixar atualiza&#231;&#245;es.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Preciso fazer backup antes?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. Embora o AjusteHD aplique valida&#231;&#245;es e confirma&#231;&#245;es, qualquer altera&#231;&#227;o de parti&#231;&#245;es envolve risco em caso de falha de energia, defeito no disco ou interrup&#231;&#227;o.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Como recebo novas vers&#245;es?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>O aplicativo verifica se existe uma vers&#227;o mais recente e baixa o pacote oficial quando voc&#234; autoriza a atualiza&#231;&#227;o.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="ajustehd-download">
+      <div class="section-title">Download</div>
+      <div class="download-card ajustehd-theme">
+        <div class="download-row">
+          <div class="download-info">
+            <h3>&#11015;&#65039; AjusteHD para Windows</h3>
+            <div class="download-meta"><div class="hero-badge available ajustehd" style="margin-bottom:0;"><img src="Imagems/ajustehd.png" alt="" class="badge-icon"><span class="dot"></span><span id="ajustehd-versao-download">Verificando download...</span></div></div>
+          </div>
+          <div class="download-buttons">
+            <a id="btn-ajustehd-download-section" href="#ajustehd-download" class="btn-primary ajustehd btn-download is-disabled" aria-disabled="true" tabindex="-1">Verificando download...</a>
+          </div>
+        </div>
+        <div class="version-info">
+          <div class="version-tag"><span class="label">Requisitos</span> Windows 10/11 x64</div>
+          <div class="version-tag"><span class="label">Licen&#231;a</span> Gratuito</div>
+          <div class="version-tag"><span class="label">Distribui&#231;&#227;o</span> Download direto</div>
+          <a class="version-tag privacy-tag" href="privacidade-ajustehd.html"><span class="label">Dados</span> Pol&#237;tica de privacidade</a>
+        </div>
       </div>
     </section>
 
@@ -1323,7 +1522,18 @@
 
   <footer class="site-footer">
     <div>&copy; 2026 HetoAndrade Software &mdash; Aplicativos que ajudam no dia a dia</div>
-    <div class="footer-counters"><span id="footer-count-voz">0.000.000</span> &middot; <span id="footer-count-driver">0.000.000</span></div>
+    <div class="footer-links">
+      <a href="privacidade.html">Privacidade VozDigitada</a>
+      <a href="privacidade-driverstatus.html">Privacidade DriverStatus</a>
+      <a href="privacidade-teladesk.html">Privacidade TelaDesk</a>
+      <a href="privacidade-ajustehd.html">Privacidade AjusteHD</a>
+    </div>
+    <div class="footer-counters">
+      VozDigitada <span id="footer-count-voz">0.000.000</span> &middot;
+      DriverStatus <span id="footer-count-driver">0.000.000</span> &middot;
+      TelaDesk <span id="footer-count-teladesk">0.000.000</span> &middot;
+      AjusteHD <span id="footer-count-ajustehd">0.000.000</span>
+    </div>
   </footer>
 
 </main>
@@ -1364,6 +1574,22 @@ var lightboxGroups = {
     'Prints/DriverStatus/Inicializacao.png',
     'Prints/DriverStatus/TarefasAgendadas.png',
     'Prints/DriverStatus/LojaWindows.png'
+  ],
+  teladesk: [
+    'Prints/TelaDesk/SiteRevisado/teladesk-01-inicio.png',
+    'Prints/TelaDesk/SiteRevisado/teladesk-02-convites.png',
+    'Prints/TelaDesk/SiteRevisado/teladesk-03-permissoes.png',
+    'Prints/TelaDesk/SiteRevisado/teladesk-04-sessao-remota.png',
+    'Prints/TelaDesk/SiteRevisado/teladesk-05-arquivos.png',
+    'Prints/TelaDesk/SiteRevisado/teladesk-06-configuracoes.png'
+  ],
+  ajustehd: [
+    'Prints/AjusteHD/SiteRevisado/ajustehd-01-inicio.png',
+    'Prints/AjusteHD/SiteRevisado/ajustehd-02-mapa-discos-corrigido.png',
+    'Prints/AjusteHD/SiteRevisado/ajustehd-03-antes-depois-corrigido.png',
+    'Prints/AjusteHD/SiteRevisado/ajustehd-04-criar-particao-corrigido.png',
+    'Prints/AjusteHD/SiteRevisado/ajustehd-05-remover-protegida-corrigido.png',
+    'Prints/AjusteHD/SiteRevisado/ajustehd-06-execucao-final.png'
   ]
 };
 var currentGroup = null;
@@ -1628,15 +1854,19 @@ fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases?p
   .then(function(r) { return r.json(); })
   .then(function(releases) {
     if (!Array.isArray(releases)) return;
-    var voz = 0, driver = 0;
+    var voz = 0, driver = 0, teladesk = 0, ajustehd = 0;
     releases.forEach(function(release) {
       (release.assets || []).forEach(function(asset) {
         if (asset.name.indexOf('VozDigitada_Setup') !== -1) voz += asset.download_count;
         if (asset.name.indexOf('DriverStatus_Setup') !== -1) driver += asset.download_count;
+        if (asset.name.indexOf('TelaDesk-Setup-') !== -1) teladesk += asset.download_count;
+        if (asset.name.indexOf('AjusteHD_Setup_v') !== -1) ajustehd += asset.download_count;
       });
     });
     document.getElementById('footer-count-voz').textContent = formatarContador(voz);
     document.getElementById('footer-count-driver').textContent = formatarContador(driver);
+    document.getElementById('footer-count-teladesk').textContent = formatarContador(teladesk);
+    document.getElementById('footer-count-ajustehd').textContent = formatarContador(ajustehd);
   })
   .catch(function() {});
 
@@ -1750,6 +1980,187 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
     });
 })();
 
+// ─── Downloads validados de TelaDesk e AjusteHD ───
+(function() {
+  var VERSION_PATTERN = /^\d+\.\d{1,2}\.\d{4}$/;
+  var SHA256_PATTERN = /^[a-fA-F0-9]{64}$/;
+
+  function element(id) {
+    return document.getElementById(id);
+  }
+
+  function hashValido(value) {
+    return SHA256_PATTERN.test(value) && !/^0{64}$/.test(value);
+  }
+
+  function configurarBotao(button, url, label) {
+    if (!button) return;
+    button.href = url;
+    button.textContent = label;
+    button.classList.remove('is-disabled');
+    button.removeAttribute('aria-disabled');
+    button.removeAttribute('tabindex');
+  }
+
+  function bloquearBotao(button, fallbackHash) {
+    if (!button) return;
+    button.href = fallbackHash;
+    button.textContent = 'Download temporariamente indisponível';
+    button.classList.add('is-disabled');
+    button.setAttribute('aria-disabled', 'true');
+    button.setAttribute('tabindex', '-1');
+  }
+
+  function atualizarBadgeNavegacao(id, disponivel) {
+    var badge = element(id);
+    if (!badge) return;
+    badge.textContent = disponivel ? 'Disponível' : 'Indisponível';
+    badge.classList.toggle('available', disponivel);
+    badge.classList.toggle('soon', !disponivel);
+  }
+
+  function validarReleaseGitHub(tag, assetName, installerUrl) {
+    var apiUrl = 'https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases/tags/' + encodeURIComponent(tag);
+    return fetch(apiUrl, { cache: 'no-cache' })
+      .then(function(response) {
+        if (!response.ok) throw new Error('Release indisponível');
+        return response.json();
+      })
+      .then(function(release) {
+        var asset = (release.assets || []).find(function(item) {
+          return item.name === assetName && item.browser_download_url === installerUrl && item.size > 0;
+        });
+        if (!asset) throw new Error('Artefato não encontrado na release');
+        return asset;
+      });
+  }
+
+  function prepararMicrosoftStore(data) {
+    var buttons = [element('btn-teladesk-store-hero'), element('btn-teladesk-store-section')];
+    var storeUrl = String(data.urlMicrosoftStore || '').trim();
+    if (!storeUrl) return;
+
+    var parsedUrl = new URL(storeUrl);
+    if (parsedUrl.protocol !== 'https:' || parsedUrl.hostname !== 'apps.microsoft.com') return;
+
+    buttons.forEach(function(button) {
+      if (!button) return;
+      button.href = parsedUrl.href;
+      button.innerHTML = '<svg width="18" height="18" viewBox="0 0 21 21" fill="currentColor"><path d="M0 0h10v10H0z" fill="#f25022"/><path d="M11 0h10v10H11z" fill="#7fba00"/><path d="M0 11h10v10H0z" fill="#00a4ef"/><path d="M11 11h10v10H11z" fill="#ffb900"/></svg> Microsoft Store';
+      button.classList.remove('is-disabled');
+      button.removeAttribute('aria-disabled');
+      button.removeAttribute('tabindex');
+      button.target = '_blank';
+      button.rel = 'noopener noreferrer';
+    });
+  }
+
+  function carregarProduto(config) {
+    var badge = element(config.badgeId);
+    var downloadBadge = element(config.downloadBadgeId);
+    var cardTag = element(config.cardTagId);
+    var cardStatus = element(config.cardStatusId);
+    var availability = element(config.availabilityId);
+    var buttons = config.buttonIds.map(element);
+
+    fetch(config.manifest, { cache: 'no-cache' })
+      .then(function(response) {
+        if (!response.ok) throw new Error('Manifesto indisponível');
+        return response.json();
+      })
+      .then(function(data) {
+        var version = String(data.version || '').trim();
+        var installerUrl = String(data.urlInstalador || '').trim();
+        var hash = String(data[config.hashField] || '').trim();
+        var parsedUrl = new URL(installerUrl);
+        var tag = config.tagPrefix + version;
+        var assetName = config.assetName(version);
+        var expectedPath = '/hetoandrade/hetoandrade.github.io/releases/download/' + tag + '/' + assetName;
+
+        if (!VERSION_PATTERN.test(version) ||
+            parsedUrl.protocol !== 'https:' ||
+            parsedUrl.hostname !== 'github.com' ||
+            parsedUrl.pathname !== expectedPath ||
+            !hashValido(hash)) {
+          throw new Error('Manifesto inválido');
+        }
+
+        if (config.prepareStore) prepararMicrosoftStore(data);
+
+        return validarReleaseGitHub(tag, assetName, parsedUrl.href).then(function() {
+          return { version: version, installerUrl: parsedUrl.href };
+        });
+      })
+      .then(function(release) {
+        var versionText = 'Disponível · v' + release.version;
+        if (badge) badge.textContent = versionText;
+        if (downloadBadge) downloadBadge.textContent = versionText;
+        if (cardTag) {
+          cardTag.textContent = versionText;
+          cardTag.classList.remove('soon');
+          cardTag.classList.add('released');
+        }
+        if (cardStatus) cardStatus.textContent = '✅ Download validado';
+        if (availability) availability.innerHTML = config.availableText;
+        atualizarBadgeNavegacao(config.navBadgeId, true);
+        buttons.forEach(function(button) {
+          configurarBotao(button, release.installerUrl, '⬇️ Baixar Instalador');
+        });
+      })
+      .catch(function() {
+        if (badge) badge.textContent = 'Download temporariamente indisponível';
+        if (downloadBadge) downloadBadge.textContent = 'Download temporariamente indisponível';
+        if (cardTag) {
+          cardTag.textContent = 'Temporariamente indisponível';
+          cardTag.classList.remove('released');
+          cardTag.classList.add('soon');
+        }
+        if (cardStatus) cardStatus.textContent = '⚠️ Download indisponível';
+        if (availability) availability.innerHTML = config.unavailableText;
+        atualizarBadgeNavegacao(config.navBadgeId, false);
+        buttons.forEach(function(button) {
+          bloquearBotao(button, config.fallbackHash);
+        });
+      });
+  }
+
+  carregarProduto({
+    manifest: 'version_teladesk.json',
+    badgeId: 'teladesk-versao-badge',
+    downloadBadgeId: 'teladesk-versao-download',
+    cardTagId: 'card-teladesk-tag',
+    cardStatusId: 'card-teladesk-status',
+    navBadgeId: 'nav-teladesk-badge',
+    availabilityId: 'teladesk-disponibilidade',
+    buttonIds: ['btn-teladesk-download-hero', 'btn-teladesk-download-section'],
+    hashField: 'sha256',
+    tagPrefix: 'teladesk-v',
+    assetName: function(version) { return 'TelaDesk-Setup-' + version + '.exe'; },
+    fallbackHash: '#teladesk-download',
+    prepareStore: true,
+    availableText: '<strong>Disponível para Windows.</strong> O TelaDesk é um produto independente e não possui vínculo com o AnyDesk.',
+    unavailableText: '<strong>Download temporariamente indisponível.</strong> O manifesto ou o instalador não passou na validação de segurança.'
+  });
+
+  carregarProduto({
+    manifest: 'version_ajustehd.json',
+    badgeId: 'ajustehd-versao-badge',
+    downloadBadgeId: 'ajustehd-versao-download',
+    cardTagId: 'card-ajustehd-tag',
+    cardStatusId: 'card-ajustehd-status',
+    navBadgeId: 'nav-ajustehd-badge',
+    availabilityId: 'ajustehd-disponibilidade',
+    buttonIds: ['btn-ajustehd-download-hero', 'btn-ajustehd-download-section'],
+    hashField: 'sha256Instalador',
+    tagPrefix: 'ajustehd-v',
+    assetName: function(version) { return 'AjusteHD_Setup_v' + version + '.exe'; },
+    fallbackHash: '#ajustehd-download',
+    prepareStore: false,
+    availableText: '<strong>Download direto validado.</strong> O AjusteHD processa os discos localmente. Faça backup dos dados importantes antes de alterar partições.',
+    unavailableText: '<strong>Download temporariamente indisponível.</strong> O manifesto ou o instalador não passou na validação de segurança.'
+  });
+})();
+
 // ─── FAQ toggle ───
 function toggleFaq(el) {
   el.parentElement.classList.toggle('active');
@@ -1778,18 +2189,16 @@ function showPage(page) {
   // Fechar menu mobile
   document.getElementById('sidebar').classList.remove('mobile-open');
 
-  if (page === 'driverstatus') {
-    history.replaceState(null, '', '#' + page);
-  } else {
-    history.replaceState(null, '', window.location.pathname + window.location.search);
-  }
+  var hash = page === 'home' ? '' : '#' + page;
+  history.replaceState(null, '', window.location.pathname + window.location.search + hash);
 
   window.scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function showPageFromHash() {
   var page = window.location.hash.substring(1).toLowerCase();
-  if (page === 'driverstatus') showPage(page);
+  var validPages = ['home', 'vozdigitada', 'driverstatus', 'teladesk', 'ajustehd', 'copieecole', 'terceiros'];
+  showPage(validPages.indexOf(page) !== -1 ? page : 'home');
 }
 
 window.addEventListener('hashchange', showPageFromHash);

@@ -1521,3 +1521,206 @@ body::before { display: none; }
     justify-content: center;
   }
 }
+
+/* ════════════════════════════════════════════════════════════════
+   TELADESK E AJUSTEHD — páginas completas
+   ════════════════════════════════════════════════════════════════ */
+
+.hero-badge.available.teladesk {
+  background: #dbeafe;
+  border-color: #60a5fa;
+  color: #1d4ed8;
+}
+
+.hero-badge.available.teladesk .dot {
+  background: #2563eb;
+}
+
+.hero-badge.available.ajustehd {
+  background: var(--ajustehd-gold-surface);
+  border-color: var(--ajustehd-gold);
+  color: var(--ajustehd-gold-dark);
+}
+
+.hero-badge.available.ajustehd .dot {
+  background: var(--ajustehd-gold);
+}
+
+.btn-primary.teladesk {
+  background: linear-gradient(135deg, #42a5f5, #1565c0);
+}
+
+.btn-primary.ajustehd {
+  background: linear-gradient(135deg, var(--ajustehd-gold-light), var(--ajustehd-gold-dark));
+  color: #fff;
+}
+
+.btn-secondary.teladesk {
+  border-color: #93c5fd;
+  color: #1d4ed8;
+}
+
+.btn-secondary.teladesk:hover {
+  background: #eff6ff;
+  border-color: #2563eb;
+  color: #1d4ed8;
+}
+
+.btn-secondary.ajustehd {
+  border-color: rgba(var(--ajustehd-gold-rgb), .55);
+  color: var(--ajustehd-gold-dark);
+}
+
+.btn-secondary.ajustehd:hover {
+  background: var(--ajustehd-gold-surface);
+  border-color: var(--ajustehd-gold);
+  color: var(--ajustehd-gold-dark);
+}
+
+.is-disabled,
+.is-disabled:hover,
+.is-disabled:active {
+  cursor: not-allowed;
+  opacity: .58;
+  pointer-events: none;
+  transform: none;
+  box-shadow: none;
+}
+
+.product-previews .screenshot-card img {
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
+}
+
+.product-previews .screenshot-label {
+  min-height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  line-height: 1.45;
+}
+
+#page-teladesk .product-previews .screenshot-label strong {
+  color: #1d4ed8;
+}
+
+#page-ajustehd .product-previews .screenshot-label strong {
+  color: var(--ajustehd-gold-dark);
+}
+
+#page-teladesk .painel {
+  box-shadow: inset 5px 0 0 #2563eb, 0 8px 28px rgba(37, 99, 235, .14);
+}
+
+#page-teladesk .screenshot-card:hover,
+#page-teladesk .feature-card:hover,
+#page-teladesk .faq-item:hover,
+#page-teladesk .faq-item.active {
+  border-color: #60a5fa;
+}
+
+#page-teladesk .feature-card::before {
+  background: linear-gradient(90deg, #60a5fa, #1d4ed8);
+}
+
+#page-teladesk .faq-item.active {
+  box-shadow: 0 4px 14px rgba(37, 99, 235, .18);
+}
+
+#page-teladesk .faq-arrow,
+#page-teladesk .faq-item.active .faq-arrow {
+  color: #2563eb;
+}
+
+.teladesk-note {
+  background: #eff6ff;
+  border-color: #93c5fd;
+  color: #1e3a8a;
+}
+
+#page-ajustehd .section-title {
+  color: var(--ajustehd-gold-dark);
+}
+
+#page-ajustehd .btn-back {
+  color: var(--ajustehd-gold-dark);
+}
+
+#page-ajustehd .screenshot-card:hover,
+#page-ajustehd .feature-card:hover,
+#page-ajustehd .faq-item:hover,
+#page-ajustehd .faq-item.active {
+  border-color: var(--ajustehd-gold);
+}
+
+#page-ajustehd .feature-card::before {
+  background: linear-gradient(90deg, var(--ajustehd-gold-light), var(--ajustehd-gold-dark));
+}
+
+#page-ajustehd .faq-item.active {
+  box-shadow: 0 4px 14px rgba(var(--ajustehd-gold-dark-rgb), .18);
+}
+
+#page-ajustehd .faq-arrow,
+#page-ajustehd .faq-item.active .faq-arrow {
+  color: var(--ajustehd-gold-dark);
+}
+
+.ajustehd-note {
+  background: var(--ajustehd-gold-surface);
+  border-color: var(--ajustehd-gold);
+  color: #513600;
+}
+
+.download-card.teladesk-theme::before {
+  background: linear-gradient(90deg, #60a5fa, #1d4ed8);
+}
+
+.download-card.ajustehd-theme::before {
+  background: linear-gradient(90deg, var(--ajustehd-gold-light), var(--ajustehd-gold-dark));
+}
+
+.privacy-tag {
+  text-decoration: none;
+  transition: border-color .2s ease, background .2s ease;
+}
+
+.privacy-tag:hover {
+  background: #fff;
+  border-color: var(--h-azul);
+}
+
+#page-ajustehd .privacy-tag:hover {
+  background: var(--ajustehd-gold-surface);
+  border-color: var(--ajustehd-gold);
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+}
+
+.footer-links a {
+  color: var(--h-azul-medio);
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  #page-teladesk .hero-actions > a,
+  #page-ajustehd .hero-actions > a {
+    flex: 1 1 100%;
+    justify-content: center;
+  }
+
+  .product-previews .screenshot-label {
+    min-height: 0;
+  }
+}

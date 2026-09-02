@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; upgrade-insecure-requests">
+    <meta name="referrer" content="no-referrer">
+    <title>Política de Privacidade - TelaDesk | HetoAndrade Software</title>
+    <meta name="description" content="Política de privacidade do TelaDesk: sessões remotas, convites, permissões, arquivos, área de transferência, credenciais e logs.">
+    <link rel="canonical" href="https://hetoandrade.com.br/privacidade-teladesk.html">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Política de Privacidade - TelaDesk">
+    <meta property="og:description" content="Entenda quais dados o TelaDesk usa para estabelecer e proteger sessões remotas.">
+    <meta property="og:url" content="https://hetoandrade.com.br/privacidade-teladesk.html">
+    <meta property="og:image" content="https://hetoandrade.com.br/Imagems/teladesk.png">
+    <meta name="robots" content="index, follow">
+    <link rel="icon" href="favicon.ico">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Política de Privacidade - TelaDesk",
+      "description": "Política de privacidade do aplicativo TelaDesk.",
+      "url": "https://hetoandrade.com.br/privacidade-teladesk.html",
+      "isPartOf": { "@type": "WebSite", "url": "https://hetoandrade.com.br/" }
+    }
+    </script>
+    <style>
+        :root { color-scheme: light; --blue: #1565c0; --blue-dark: #0d47a1; --line: #bfdbfe; --muted: #475569; }
+        * { box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: linear-gradient(180deg, #dbeafe, #eff6ff); color: #1e293b; margin: 0; line-height: 1.75; }
+        main { max-width: 860px; margin: 0 auto; padding: 48px 24px 72px; }
+        article { background: #fff; border: 1px solid var(--line); border-left: 5px solid var(--blue); border-radius: 18px; padding: 40px; box-shadow: 0 18px 50px rgba(13, 71, 161, .12); }
+        h1 { color: var(--blue-dark); line-height: 1.2; margin-top: 0; }
+        h2 { color: var(--blue); margin-top: 32px; line-height: 1.3; }
+        a { color: var(--blue); }
+        li { margin-bottom: 8px; }
+        .updated { color: var(--muted); font-size: 14px; }
+        .summary { background: #eff6ff; border: 1px solid var(--line); border-radius: 12px; padding: 16px 18px; }
+        .back { display: inline-flex; margin-bottom: 18px; font-weight: 600; text-decoration: none; }
+        @media (max-width: 600px) { main { padding: 24px 14px 48px; } article { padding: 26px 20px; } }
+    </style>
+</head>
+<body>
+<main>
+    <a class="back" href="./#teladesk">← Voltar ao TelaDesk</a>
+    <article>
+        <h1>Política de Privacidade - TelaDesk</h1>
+        <p class="updated">Última atualização: 2 de setembro de 2026</p>
+
+        <p class="summary"><strong>Resumo:</strong> o TelaDesk usa os dados técnicos necessários para localizar dispositivos, autorizar e transportar uma sessão remota. O conteúdo da tela, da área de transferência e dos arquivos trafega somente quando a função correspondente é usada e permitida.</p>
+
+        <h2>Dados usados para a conexão</h2>
+        <ul>
+            <li><strong>Dispositivo e presença:</strong> identificadores técnicos, versão, estado online e horários de atividade permitem localizar o computador e manter a sessão.</li>
+            <li><strong>Solicitações, convites e tickets:</strong> códigos, identificadores, permissões, estados e prazos de validade são usados para autorizar a conexão. Convites são temporários e de uso único; pedidos e tickets também expiram.</li>
+            <li><strong>Rede:</strong> endereços de rede e metadados de conexão podem ser processados para tentar uma ligação direta P2P ou encaminhar o tráfego por relay quando necessário.</li>
+        </ul>
+
+        <h2>Conteúdo da sessão remota</h2>
+        <p>De acordo com as permissões aceitas no computador remoto, a sessão pode transportar:</p>
+        <ul>
+            <li>imagem da tela e comandos de teclado e mouse;</li>
+            <li>texto ou arquivos copiados pela área de transferência;</li>
+            <li>arquivos selecionados para envio ou recebimento.</li>
+        </ul>
+        <p>O TelaDesk não grava automaticamente o vídeo da tela nem mantém uma cópia permanente do conteúdo dos arquivos transferidos. Quando a conexão direta não é possível, o tráfego necessário à sessão pode passar pela infraestrutura de relay.</p>
+
+        <h2>Permissões e acesso não assistido</h2>
+        <p>Quem recebe a conexão escolhe as permissões da sessão. No acesso não assistido, a credencial do dispositivo é protegida localmente pelo Windows com DPAPI. O servidor mantém somente a representação criptográfica necessária para validar o token, e não o segredo em texto legível.</p>
+
+        <h2>Configurações e logs</h2>
+        <p>Configurações e credenciais protegidas ficam no computador. Logs técnicos podem registrar identificadores, horários, estados da sessão, negociação P2P/relay, comandos e falhas para operação, segurança e diagnóstico. Eles não devem conter senhas, tokens em texto legível nem o conteúdo integral da tela ou dos arquivos. Os logs do servidor usam rotação e retenção limitada.</p>
+
+        <h2>Atualizações e registros comuns de servidor</h2>
+        <p>O aplicativo consulta a internet para registrar presença, criar ou usar convites, estabelecer sessões e verificar ou baixar atualizações. Como em qualquer serviço online, os provedores de hospedagem podem manter registros técnicos comuns, como endereço IP, data, horário, rota solicitada e agente do cliente, conforme suas práticas de segurança e retenção.</p>
+
+        <h2>Compartilhamento e publicidade</h2>
+        <p>O TelaDesk não vende dados pessoais e não usa publicidade nem rastreamento comportamental. Os dados técnicos são compartilhados somente com a infraestrutura necessária para entregar o serviço ou quando houver obrigação legal.</p>
+
+        <h2>Seus controles</h2>
+        <p>Você pode recusar uma solicitação, limitar permissões, cancelar convites, encerrar a sessão, desativar o acesso não assistido e remover as configurações locais ao desinstalar o aplicativo.</p>
+
+        <h2>Contato</h2>
+        <p>Em caso de dúvidas sobre privacidade: <a href="mailto:hetoandrade@gmail.com">hetoandrade@gmail.com</a>.</p>
+    </article>
+</main>
+</body>
+</html>

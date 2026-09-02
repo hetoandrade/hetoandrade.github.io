@@ -1,7 +1,9 @@
 {
-  "version": "1.8.1701",
-  "dataPublicacao": "2026-08-17T17:00:00",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.8.1701/AjusteHD_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.8.1701/AjusteHD_Setup_v1.8.1701.exe",
-  "changelog": "Primeira versão do Ajuste HD, com planejamento seguro de transferência de espaço entre partições adjacentes."
+  "version": "1.9.0203",
+  "dataPublicacao": "2026-09-02T19:59:38-03:00",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.0203/AjusteHD_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.0203/AjusteHD_Setup_v1.9.0203.exe",
+  "sha256": "9291ede7a0913fedc558985d821220ab7b38128f874afe51b3584dabf6064def",
+  "sha256Instalador": "791f811cd80179a88f7a90d91f4b6b3519a3d62982175dde0f7c98b1fcedfab2",
+  "changelog": "Primeira versão pública do AjusteHD no site, com cinco operações de particionamento, revisão antes de aplicar, proteções e processamento PreOS quando necessário."
 }

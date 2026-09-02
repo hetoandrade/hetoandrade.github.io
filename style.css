@@ -1166,6 +1166,7 @@ body::before { display: none; }
   justify-content: center;
   align-self: center;
   flex-shrink: 0;
+  white-space: nowrap;
   padding: 6px 10px;
   border-radius: 7px;
   background: var(--copieecole-gradient);

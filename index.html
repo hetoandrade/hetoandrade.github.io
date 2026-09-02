@@ -128,7 +128,7 @@
     <a class="nav-item" href="#" onclick="showPage('copieecole'); return false;" id="nav-copieecole">
       <img src="Imagems/copieecole-verde.png" alt="" class="nav-icon-img copieecole">
       CopieECole
-      <span class="badge available">Online</span>
+      <span class="badge">Novo</span>
     </a>
 
     <a class="nav-item" href="#" onclick="showPage('vozdigitada'); return false;" id="nav-voz">
@@ -219,16 +219,16 @@
             <img src="Imagems/copieecole-verde.png" alt="CopieECole">
           </div>
           <div class="app-card-title">
-            <a class="card-direct-link" href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Abrir o CopieECole em uma nova aba" onclick="event.stopPropagation();">
-              Abrir
+            <a class="card-direct-link" href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Acessar a vers&atilde;o web do CopieECole em uma nova aba" onclick="event.stopPropagation();">
+              &#127760; Vers&atilde;o web
             </a>
             <h3>CopieECole</h3>
-            <span class="app-tag web">Site dispon&#237;vel</span>
+            <span class="app-tag web" id="card-copieecole-tag">Site dispon&#237;vel</span>
           </div>
         </div>
         <p>
-          Um WhatsApp para seus dispositivos, n&#227;o para pessoas.
-          Envie textos, links, fotos e arquivos entre computadores, celulares e tablets pelo navegador.
+          Copie textos, links, fotos e arquivos em um dispositivo e acesse em qualquer outro
+          pelo navegador ou pelo aplicativo para Windows.
         </p>
         <div class="app-card-footer">
           <span>&#127760; Site</span>
@@ -1038,20 +1038,21 @@
         <div class="hero-badge available copieecole">
           <img src="Imagems/copieecole-verde.png" alt="" class="badge-icon">
           <span class="dot"></span>
-          <span>Dispon&#237;vel agora</span>
+          <span id="copieecole-versao-badge">Carregando vers&#227;o...</span>
         </div>
         <h1>
-          Uma conversa entre <span class="gradient-copieecole">seus dispositivos</span>,<br>
-          n&#227;o entre pessoas.
+          Uma conversa entre seus dispositivos.<br>
+          Copie em um dispositivo.<br>
+          Cole em <span class="gradient-copieecole">qualquer outro.</span>
         </h1>
         <p>
-          O <strong>CopieECole</strong> &#233; como um WhatsApp para os seus pr&#243;prios dispositivos:
-          entre na mesma conversa pelo navegador e envie textos, links, fotos e arquivos
-          para continuar no computador, celular ou tablet que estiver usando.
+          O <strong>CopieECole</strong> permite enviar textos, links, fotos e arquivos entre
+          computador, celular e tablet sem criar uma conta. Acesse a mesma conversa pelo
+          navegador ou pelo aplicativo para Windows.
         </p>
         <div class="hero-actions">
-          <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole">
-            <span>&#127760;</span> Abrir o chat
+          <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole" aria-label="Acessar a vers&atilde;o web do CopieECole em uma nova aba">
+            <span>&#127760;</span> Acessar vers&atilde;o web
           </a>
           <a id="btn-copieecole-download"
              href="#"
@@ -1125,14 +1126,14 @@
       </div>
       <div class="availability-note">
         <span>&#9989;</span>
-        <p id="copieecole-disponibilidade"><strong>Dispon&#237;vel agora.</strong> Acesse o CopieECole diretamente pelo navegador. O CopieECole &#233; um produto independente e n&#227;o possui v&#237;nculo com o WhatsApp.</p>
+        <p id="copieecole-disponibilidade"><strong>Dispon&#237;vel agora.</strong> Acesse pelo navegador ou instale a vers&atilde;o para Windows sem criar uma conta.</p>
       </div>
     </section>
 
     <div class="page-end-actions">
       <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar &#224;s solu&#231;&#245;es</a>
-      <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole">
-        <span>&#127760;</span> Abrir o chat
+      <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole" aria-label="Acessar a vers&atilde;o web do CopieECole em uma nova aba">
+        <span>&#127760;</span> Acessar vers&atilde;o web
       </a>
     </div>
 
@@ -1680,6 +1681,8 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
 (function() {
   var downloadButton = document.getElementById('btn-copieecole-download');
   var versionLabel = document.getElementById('copieecole-versao-desktop');
+  var versionBadge = document.getElementById('copieecole-versao-badge');
+  var cardTag = document.getElementById('card-copieecole-tag');
   var platformsTitle = document.getElementById('copieecole-plataformas-titulo');
   var platformsText = document.getElementById('copieecole-plataformas-texto');
   var availabilityText = document.getElementById('copieecole-disponibilidade');
@@ -1715,7 +1718,13 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
       downloadButton.href = parsedUrl.href;
       downloadButton.classList.remove('is-disabled');
       downloadButton.removeAttribute('aria-disabled');
-      versionLabel.textContent = '💻 Windows · v' + version;
+      versionLabel.textContent = '💻 Windows';
+      if (versionBadge) {
+        versionBadge.textContent = 'Disponível · v' + version;
+      }
+      if (cardTag) {
+        cardTag.textContent = 'Disponível · v' + version;
+      }
       if (platformsTitle) {
         platformsTitle.textContent = 'Navegador ou Windows';
       }
@@ -1725,8 +1734,7 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
       }
       if (availabilityText) {
         availabilityText.innerHTML =
-          '<strong>Disponível agora.</strong> Acesse pelo navegador ou instale a versão para Windows. ' +
-          'O CopieECole é um produto independente e não possui vínculo com o WhatsApp.';
+          '<strong>Disponível agora.</strong> Acesse pelo navegador ou instale a versão para Windows sem criar uma conta.';
       }
     })
     .catch(function() {
@@ -1734,6 +1742,12 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
       downloadButton.classList.add('is-disabled');
       downloadButton.setAttribute('aria-disabled', 'true');
       versionLabel.textContent = '💻 Windows · download indisponível';
+      if (versionBadge) {
+        versionBadge.textContent = 'Disponível no navegador';
+      }
+      if (cardTag) {
+        cardTag.textContent = 'Site disponível';
+      }
     });
 })();
 

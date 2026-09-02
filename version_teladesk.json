@@ -1,7 +1,7 @@
 {
-  "version": "1.9.0208",
-  "dataPublicacao": "2026-09-02T19:59:38-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.0208/TelaDesk-Setup-1.9.0208.exe",
-  "sha256": "2bccdeb43d2dd563367b4b2bc54ff9cae49ebd040b55b68c44383969dcb6fbcc",
-  "changelog": "Primeira versão pública do TelaDesk no site, com acesso remoto por código ou convite, permissões por sessão, arquivos, área de transferência e acesso não assistido."
+  "version": "1.9.0209",
+  "dataPublicacao": "2026-09-02T20:24:05-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.0209/TelaDesk-Setup-1.9.0209.exe",
+  "sha256": "a29b0738200f2ef5eb68f98e674ada4b498f8bb24fb6ed1cc245418d5f5382bd",
+  "changelog": "Remove o selo flutuante da conexão remota e valida o fluxo atual de envio de arquivos do TelaDesk."
 }

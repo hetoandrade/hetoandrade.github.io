@@ -233,7 +233,7 @@
         <div class="app-card-footer">
           <span>&#127760; Site</span>
           <span>&#128241; Qualquer dispositivo</span>
-          <span>&#9989; Dispon&#237;vel agora</span>
+          <span>&#128421; Windows 10/11</span>
         </div>
         <div class="app-card-arrow" aria-hidden="true">&#8594;</div>
       </div>
@@ -1064,8 +1064,7 @@
         <div class="hero-meta">
           <span>&#127760; Site</span>
           <span>&#128241; Computador, celular ou tablet</span>
-          <span>&#9989; Dispon&#237;vel no navegador</span>
-          <span id="copieecole-versao-desktop">&#128187; Windows &#183; preparando download</span>
+          <span id="copieecole-versao-desktop">&#128187; Windows 10/11 &#183; preparando download</span>
         </div>
       </section>
     </div>
@@ -1718,7 +1717,7 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
       downloadButton.href = parsedUrl.href;
       downloadButton.classList.remove('is-disabled');
       downloadButton.removeAttribute('aria-disabled');
-      versionLabel.textContent = '💻 Windows';
+      versionLabel.textContent = '💻 Windows 10/11';
       if (versionBadge) {
         versionBadge.textContent = 'Disponível · v' + version;
       }
@@ -1741,7 +1740,7 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
       downloadButton.href = '#';
       downloadButton.classList.add('is-disabled');
       downloadButton.setAttribute('aria-disabled', 'true');
-      versionLabel.textContent = '💻 Windows · download indisponível';
+      versionLabel.textContent = '💻 Windows 10/11 · download indisponível';
       if (versionBadge) {
         versionBadge.textContent = 'Disponível no navegador';
       }

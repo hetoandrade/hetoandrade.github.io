@@ -67,6 +67,23 @@
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
+  "name": "CopieECole",
+  "operatingSystem": "Web, Windows 10, Windows 11",
+  "applicationCategory": "UtilitiesApplication",
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "BRL" },
+  "softwareVersion": "1.9.0205",
+  "description": "Compartilhamento temporário de textos, links, fotos e arquivos entre dispositivos, sem cadastro.",
+  "url": "https://hetoandrade.com.br/#copieecole",
+  "downloadUrl": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0205/CopieECole_Setup_v1.9.0205.exe",
+  "author": { "@type": "Person", "name": "HetoAndrade" },
+  "image": "https://hetoandrade.com.br/Imagems/copieecole-verde.png"
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
   "name": "TelaDesk",
   "operatingSystem": "Windows 10, Windows 11",
   "applicationCategory": "UtilitiesApplication",
@@ -124,6 +141,23 @@
     {"@type": "Question", "name": "O que é o Dicionário Inteligente?", "acceptedAnswer": {"@type": "Answer", "text": "Cadastre correções e o app aprende. Funciona com frases de até 3 palavras."}},
     {"@type": "Question", "name": "Funciona em português?", "acceptedAnswer": {"@type": "Answer", "text": "Sim! Funciona em português brasileiro."}},
     {"@type": "Question", "name": "É seguro? Coleta dados?", "acceptedAnswer": {"@type": "Answer", "text": "O app não cria cadastro nem armazena gravações. O reconhecimento nativo do Windows pode usar o serviço de fala da Microsoft conforme as configurações do sistema; a contingência do VozDigitada é processada localmente."}}
+  ]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Preciso criar uma conta para usar o CopieECole?","acceptedAnswer":{"@type":"Answer","text":"Não. O acesso é feito com um identificador da conversa, um código de acesso e um apelido, sem cadastro de conta."}},
+    {"@type":"Question","name":"Para que servem o identificador e o código da conversa?","acceptedAnswer":{"@type":"Answer","text":"A mesma combinação identifica e protege a conversa em todos os dispositivos. Quem tiver os dois dados poderá acessá-la."}},
+    {"@type":"Question","name":"Por quanto tempo o conteúdo fica disponível?","acceptedAnswer":{"@type":"Answer","text":"Mensagens e arquivos são temporários e normalmente expiram em aproximadamente 24 horas. O serviço não oferece backup."}},
+    {"@type":"Question","name":"Quais arquivos posso compartilhar no CopieECole?","acceptedAnswer":{"@type":"Answer","text":"É possível compartilhar fotos, documentos, áudios, vídeos e outros arquivos, até 20 por seleção, com até 100 MB por arquivo e 500 MB ativos por conversa. Áudios e vídeos podem ser baixados, mas não são reproduzidos no aplicativo."}},
+    {"@type":"Question","name":"Posso usar o CopieECole no navegador e no Windows?","acceptedAnswer":{"@type":"Answer","text":"Sim. A conversa pode ser acessada pelo navegador em computador, celular ou tablet, ou pelo aplicativo para Windows."}},
+    {"@type":"Question","name":"Quantos dispositivos podem entrar na mesma conversa?","acceptedAnswer":{"@type":"Answer","text":"Até cinco dispositivos podem permanecer conectados simultaneamente à mesma conversa."}},
+    {"@type":"Question","name":"O CopieECole verifica os anexos com antivírus?","acceptedAnswer":{"@type":"Answer","text":"Não. Os anexos não passam por verificação antivírus. Baixe somente arquivos enviados por pessoas e dispositivos em que você confia."}},
+    {"@type":"Question","name":"Posso recuperar o código ou um conteúdo expirado?","acceptedAnswer":{"@type":"Answer","text":"Não. O código não pode ser recuperado e conteúdos expirados não possuem backup. Use outra combinação para iniciar uma nova conversa."}}
   ]
 }
 </script>
@@ -202,13 +236,11 @@
     <a class="nav-item" href="#" onclick="showPage('vozdigitada'); return false;" id="nav-voz">
       <img src="Imagems/vozdigitada.png" alt="" class="nav-icon-img">
       VozDigitada
-      <span class="badge">Novo</span>
     </a>
 
     <a class="nav-item" href="#" onclick="showPage('driverstatus'); return false;" id="nav-driver">
       <img src="Imagems/driverstatus.png" alt="" class="nav-icon-img">
       DriverStatus
-      <span class="badge">Novo</span>
     </a>
 
     <a class="nav-item" href="#" onclick="showPage('teladesk'); return false;" id="nav-teladesk">
@@ -1230,7 +1262,7 @@
   <!-- ═══════════════ COPIEECOLE ═══════════════ -->
   <div id="page-copieecole" class="page">
 
-    <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar &#224;s solu&#231;&#245;es</a>
+    <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
 
     <div class="painel">
       <section class="hero">
@@ -1253,12 +1285,14 @@
           <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole" aria-label="Acessar a vers&atilde;o web do CopieECole em uma nova aba">
             <span>&#127760;</span> Acessar vers&atilde;o web
           </a>
-          <a id="btn-copieecole-download"
-             href="#"
+          <a id="btn-copieecole-download-hero"
+             href="#copieecole-download"
              class="btn-secondary copieecole-download is-disabled"
-             aria-disabled="true">
-            <span>&#11015;&#65039;</span> Baixar para Windows
+             aria-disabled="true"
+             tabindex="-1">
+            <span>&#11015;&#65039;</span> Verificando download...
           </a>
+          <a href="privacidade-copieecole.html" class="btn-secondary copieecole-download">&#128274; Privacidade</a>
         </div>
         <div class="hero-meta">
           <span>&#128260; Compartilhamento</span>
@@ -1268,58 +1302,52 @@
       </section>
     </div>
 
-    <section class="section">
-      <div class="section-title">Veja como funciona</div>
-      <div class="upcoming-preview-grid">
-        <div class="upcoming-preview-card" onclick="openLightbox('Prints/CopieECole/entrada-atual.png')">
-          <img class="concept-image" src="Prints/CopieECole/entrada-atual.png" alt="Tela atual de entrada em uma conversa do CopieECole">
-          <div class="upcoming-preview-caption">
-            <strong>Tela atual de entrada</strong>
-            <span>Use o mesmo e-mail e c&#243;digo para acessar em qualquer dispositivo.</span>
-          </div>
+    <section class="section" id="copieecole-screenshots">
+      <div class="section-title">Conhe&#231;a o CopieECole</div>
+      <div class="screenshots-grid product-previews">
+        <div class="screenshot-card" onclick="openLightbox('Prints/CopieECole/entrada-atual.png', 'copieecole')">
+          <img src="Prints/CopieECole/entrada-atual.png" alt="Tela atual de entrada do CopieECole com reten&#231;&#227;o tempor&#225;ria de 24 horas">
+          <div class="screenshot-label"><strong>Tela atual</strong> &#8212; entrada sem cadastro e reten&#231;&#227;o tempor&#225;ria de 24 horas</div>
         </div>
-        <div class="upcoming-preview-card" onclick="openLightbox('Prints/CopieECole/conversa-conceitual.png')">
-          <img class="concept-image" src="Prints/CopieECole/conversa-conceitual.png" alt="Conversa entre dispositivos no CopieECole">
-          <div class="upcoming-preview-caption">
-            <strong>Conversa entre dispositivos</strong>
-            <span>Textos, c&#243;digos, imagens e arquivos ficam prontos para usar no outro aparelho.</span>
-          </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/CopieECole/conversa-conceitual.png', 'copieecole')">
+          <img src="Prints/CopieECole/conversa-conceitual.png" alt="Pr&#233;via ilustrativa de uma conversa entre dispositivos no CopieECole">
+          <div class="screenshot-label"><strong>Pr&#233;via ilustrativa</strong> &#8212; conversa com textos, c&#243;digos, imagens e arquivos</div>
         </div>
       </div>
     </section>
 
-    <section class="section">
-      <div class="section-title">O que o CopieECole oferece</div>
-      <div class="upcoming-features-grid">
+    <section class="section" id="copieecole-features">
+      <div class="section-title">Recursos</div>
+      <div class="features-grid">
         <div class="feature-card">
-          <div class="feature-icon copieecole">&#128421;</div>
+          <div class="feature-icon blue">&#128421;</div>
           <h3>Conversas por Dispositivo</h3>
-          <p>Use uma conversa como ponto de encontro para seus computadores, celulares e tablets.</p>
+          <p>Use uma conversa como ponto de encontro para at&#233; cinco computadores, celulares ou tablets ao mesmo tempo.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon copieecole">&#128337;</div>
+          <div class="feature-icon green">&#128337;</div>
           <h3>Sem Cadastro</h3>
-          <p>Entre com e-mail e c&#243;digo e mantenha um hist&#243;rico tempor&#225;rio de 12 horas.</p>
+          <p>Entre com identificador e c&#243;digo. O conte&#250;do &#233; tempor&#225;rio, dura aproximadamente 24 horas e n&#227;o possui backup.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon copieecole">&#128203;</div>
+          <div class="feature-icon purple">&#128203;</div>
           <h3>Textos e C&#243;digos</h3>
           <p>Envie um texto ou trecho de c&#243;digo e copie no outro dispositivo com rapidez.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon copieecole">&#128279;</div>
+          <div class="feature-icon cyan">&#128279;</div>
           <h3>Links</h3>
           <p>Compartilhe endere&#231;os para continuar a navega&#231;&#227;o em outra tela.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon copieecole">&#128194;</div>
+          <div class="feature-icon orange">&#128194;</div>
           <h3>Fotos e Arquivos</h3>
-          <p>Transfira imagens e arquivos de at&#233; 50 MB. V&#237;deos n&#227;o s&#227;o aceitos.</p>
+          <p>Envie at&#233; 20 arquivos por sele&#231;&#227;o, com at&#233; 100 MB cada e 500 MB ativos por conversa. &#193;udios e v&#237;deos podem ser baixados, mas n&#227;o s&#227;o reproduzidos.</p>
         </div>
         <div class="feature-card">
-          <div class="feature-icon copieecole">&#127760;</div>
-          <h3 id="copieecole-plataformas-titulo">Pelo Navegador</h3>
-          <p id="copieecole-plataformas-texto">Acesse a conversa em diferentes tipos de dispositivo sem depender de uma &#250;nica plataforma.</p>
+          <div class="feature-icon blue">&#127760;</div>
+          <h3>Navegador ou Windows</h3>
+          <p>Acesse pelo navegador ou instale o aplicativo no computador para abrir como programa.</p>
         </div>
       </div>
       <div class="availability-note">
@@ -1328,12 +1356,44 @@
       </div>
     </section>
 
-    <div class="page-end-actions">
-      <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar &#224;s solu&#231;&#245;es</a>
-      <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole" aria-label="Acessar a vers&atilde;o web do CopieECole em uma nova aba">
-        <span>&#127760;</span> Acessar vers&atilde;o web
-      </a>
-    </div>
+    <section class="section" id="copieecole-faq">
+      <div class="section-title">Perguntas Frequentes</div>
+      <div class="faq-container">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Preciso criar uma conta?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>N&#227;o. O acesso &#233; feito com um identificador da conversa, um c&#243;digo de acesso e um apelido, sem cadastro de conta.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Para que servem o identificador e o c&#243;digo?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>A mesma combina&#231;&#227;o identifica e protege a conversa em todos os dispositivos. Quem tiver os dois dados poder&#225; acess&#225;-la, por isso compartilhe-os somente com pessoas de confian&#231;a.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Por quanto tempo o conte&#250;do fica dispon&#237;vel?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Mensagens e arquivos s&#227;o tempor&#225;rios e normalmente expiram em aproximadamente 24 horas. O CopieECole n&#227;o oferece backup.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Quais arquivos e limites s&#227;o aceitos?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Fotos, documentos, &#225;udios, v&#237;deos e outros arquivos podem ser compartilhados. O limite &#233; de 20 arquivos por sele&#231;&#227;o, 100 MB por arquivo e 500 MB ativos por conversa. &#193;udios e v&#237;deos podem ser baixados, mas n&#227;o s&#227;o reproduzidos.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Posso usar pelo navegador e no Windows?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. A conversa funciona pelo navegador em computador, celular ou tablet e tamb&#233;m pelo aplicativo para Windows.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Quantos dispositivos podem entrar na conversa?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>At&#233; cinco dispositivos podem permanecer conectados simultaneamente &#224; mesma conversa.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Os anexos passam por antiv&#237;rus?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>N&#227;o. O CopieECole n&#227;o verifica anexos com antiv&#237;rus. Baixe somente arquivos enviados por pessoas e dispositivos em que voc&#234; confia.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Posso recuperar o c&#243;digo ou um conte&#250;do expirado?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>N&#227;o. O c&#243;digo n&#227;o pode ser recuperado e conte&#250;dos expirados n&#227;o possuem backup. Use outra combina&#231;&#227;o para iniciar uma nova conversa.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="copieecole-download">
+      <div class="section-title">Download</div>
+      <div class="download-card copieecole-theme">
+        <div class="download-row">
+          <div class="download-info">
+            <h3>&#128260; CopieECole no navegador ou Windows</h3>
+            <div class="download-meta"><div class="hero-badge available copieecole" style="margin-bottom:0;"><img src="Imagems/copieecole-verde.png" alt="" class="badge-icon"><span class="dot"></span><span id="copieecole-versao-download">Verificando download...</span></div></div>
+          </div>
+          <div class="download-buttons">
+            <a href="https://copieecole.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary copieecole btn-download" aria-label="Acessar a vers&atilde;o web do CopieECole em uma nova aba">&#127760; Acessar vers&atilde;o web</a>
+            <a id="btn-copieecole-download-section" href="#copieecole-download" class="btn-secondary copieecole-download btn-download is-disabled" aria-disabled="true" tabindex="-1">Verificando download...</a>
+          </div>
+        </div>
+        <div class="version-info">
+          <div class="version-tag" id="copieecole-versao-tag"><span class="label">Vers&#227;o</span> Verificando...</div>
+          <div class="version-tag"><span class="label">Requisitos</span> Navegador atual ou Windows 10/11 x64</div>
+          <div class="version-tag"><span class="label">Licen&#231;a</span> Gratuito</div>
+          <div class="version-tag"><span class="label">Reten&#231;&#227;o</span> Aproximadamente 24 horas</div>
+          <a class="version-tag privacy-tag" href="privacidade-copieecole.html"><span class="label">Dados</span> Pol&#237;tica de privacidade</a>
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
 
   </div>
 
@@ -1523,12 +1583,14 @@
   <footer class="site-footer">
     <div>&copy; 2026 HetoAndrade Software &mdash; Aplicativos que ajudam no dia a dia</div>
     <div class="footer-links">
+      <a href="privacidade-copieecole.html">Privacidade CopieECole</a>
       <a href="privacidade.html">Privacidade VozDigitada</a>
       <a href="privacidade-driverstatus.html">Privacidade DriverStatus</a>
       <a href="privacidade-teladesk.html">Privacidade TelaDesk</a>
       <a href="privacidade-ajustehd.html">Privacidade AjusteHD</a>
     </div>
     <div class="footer-counters">
+      CopieECole <span id="footer-count-copieecole">0.000.000</span> &middot;
       VozDigitada <span id="footer-count-voz">0.000.000</span> &middot;
       DriverStatus <span id="footer-count-driver">0.000.000</span> &middot;
       TelaDesk <span id="footer-count-teladesk">0.000.000</span> &middot;
@@ -1558,6 +1620,10 @@
 <script>
 // ─── Lightbox ───
 var lightboxGroups = {
+  copieecole: [
+    'Prints/CopieECole/entrada-atual.png',
+    'Prints/CopieECole/conversa-conceitual.png'
+  ],
   voz: [
     'Prints/VozDigitada/SiteRevisado/01-gravando-bloco-de-notas.png',
     'Prints/VozDigitada/SiteRevisado/02-voltar-ao-aplicativo.png',
@@ -1854,15 +1920,17 @@ fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases?p
   .then(function(r) { return r.json(); })
   .then(function(releases) {
     if (!Array.isArray(releases)) return;
-    var voz = 0, driver = 0, teladesk = 0, ajustehd = 0;
+    var copieecole = 0, voz = 0, driver = 0, teladesk = 0, ajustehd = 0;
     releases.forEach(function(release) {
       (release.assets || []).forEach(function(asset) {
         if (asset.name.indexOf('VozDigitada_Setup') !== -1) voz += asset.download_count;
         if (asset.name.indexOf('DriverStatus_Setup') !== -1) driver += asset.download_count;
         if (asset.name.indexOf('TelaDesk-Setup-') !== -1) teladesk += asset.download_count;
         if (asset.name.indexOf('AjusteHD_Setup_v') !== -1) ajustehd += asset.download_count;
+        if (asset.name.indexOf('CopieECole_Setup_v') !== -1) copieecole += asset.download_count;
       });
     });
+    document.getElementById('footer-count-copieecole').textContent = formatarContador(copieecole);
     document.getElementById('footer-count-voz').textContent = formatarContador(voz);
     document.getElementById('footer-count-driver').textContent = formatarContador(driver);
     document.getElementById('footer-count-teladesk').textContent = formatarContador(teladesk);
@@ -1871,7 +1939,7 @@ fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases?p
   .catch(function() {});
 
 // ─── Versao VozDigitada ───
-fetch('https://hetoandrade.com.br/version.json', { cache: 'no-cache' })
+fetch('version.json', { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(data) {
     var v = data.version;
@@ -1888,7 +1956,7 @@ fetch('https://hetoandrade.com.br/version.json', { cache: 'no-cache' })
   });
 
 // ─── Versao DriverStatus ───
-fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache' })
+fetch('version_driverstatus.json', { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(data) {
     var v = data.version;
@@ -1908,20 +1976,39 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
 
 // ─── Versao CopieECole Desktop ───
 (function() {
-  var downloadButton = document.getElementById('btn-copieecole-download');
+  var VERSION_PATTERN = /^\d+\.\d{1,2}\.\d{4}$/;
+  var SHA256_PATTERN = /^[a-fA-F0-9]{64}$/;
+  var downloadButtons = [
+    document.getElementById('btn-copieecole-download-hero'),
+    document.getElementById('btn-copieecole-download-section')
+  ];
   var versionLabel = document.getElementById('copieecole-versao-desktop');
   var versionBadge = document.getElementById('copieecole-versao-badge');
+  var downloadBadge = document.getElementById('copieecole-versao-download');
+  var versionTag = document.getElementById('copieecole-versao-tag');
   var cardTag = document.getElementById('card-copieecole-tag');
-  var platformsTitle = document.getElementById('copieecole-plataformas-titulo');
-  var platformsText = document.getElementById('copieecole-plataformas-texto');
   var availabilityText = document.getElementById('copieecole-disponibilidade');
-  if (!downloadButton || !versionLabel) return;
+  if (!downloadButtons[0] || !downloadButtons[1] || !versionLabel) return;
 
-  downloadButton.addEventListener('click', function(event) {
-    if (downloadButton.getAttribute('aria-disabled') === 'true') {
-      event.preventDefault();
-    }
-  });
+  function bloquearDownloads() {
+    downloadButtons.forEach(function(button) {
+      button.href = '#copieecole-download';
+      button.textContent = 'Download temporariamente indisponível';
+      button.classList.add('is-disabled');
+      button.setAttribute('aria-disabled', 'true');
+      button.setAttribute('tabindex', '-1');
+    });
+  }
+
+  function liberarDownloads(url) {
+    downloadButtons.forEach(function(button) {
+      button.href = url;
+      button.textContent = '⬇️ Baixar para Windows';
+      button.classList.remove('is-disabled');
+      button.removeAttribute('aria-disabled');
+      button.removeAttribute('tabindex');
+    });
+  }
 
   fetch('version_copieecole.json', { cache: 'no-cache' })
     .then(function(response) {
@@ -1931,35 +2018,54 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
     .then(function(data) {
       var version = String(data.version || '').trim();
       var installerUrl = String(data.urlInstalador || '').trim();
+      var hash = String(data.sha256 || '').trim().toLowerCase();
       var parsedUrl = new URL(installerUrl);
+      var tag = 'copieecole-v' + version;
+      var assetName = 'CopieECole_Setup_v' + version + '.exe';
       var expectedPath =
         '/hetoandrade/hetoandrade.github.io/releases/download/' +
-        'copieecole-v' + version + '/CopieECole_Setup_v' + version + '.exe';
+        tag + '/' + assetName;
 
-      if (!version ||
-          !/^\d+\.\d{1,2}\.\d{4}$/.test(version) ||
+      if (!VERSION_PATTERN.test(version) ||
           parsedUrl.protocol !== 'https:' ||
           parsedUrl.hostname !== 'github.com' ||
-          parsedUrl.pathname !== expectedPath) {
+          parsedUrl.pathname !== expectedPath ||
+          !SHA256_PATTERN.test(hash) ||
+          /^0{64}$/.test(hash)) {
         throw new Error('Manifesto inválido');
       }
 
-      downloadButton.href = parsedUrl.href;
-      downloadButton.classList.remove('is-disabled');
-      downloadButton.removeAttribute('aria-disabled');
-      versionLabel.textContent = '💻 Windows 10/11';
+      return fetch(
+        'https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases/tags/' + encodeURIComponent(tag),
+        { cache: 'no-cache' }
+      ).then(function(response) {
+        if (!response.ok) throw new Error('Release indisponível');
+        return response.json();
+      }).then(function(release) {
+        var asset = (release.assets || []).find(function(item) {
+          return item.name === assetName &&
+            item.browser_download_url === parsedUrl.href &&
+            item.size > 0 &&
+            String(item.digest || '').toLowerCase() === 'sha256:' + hash;
+        });
+        if (!asset) throw new Error('Instalador ou hash inválido');
+        return { version: version, installerUrl: parsedUrl.href };
+      });
+    })
+    .then(function(release) {
+      liberarDownloads(release.installerUrl);
+      versionLabel.textContent = '💻 Windows 10/11 · v' + release.version;
       if (versionBadge) {
-        versionBadge.textContent = 'Disponível · v' + version;
+        versionBadge.textContent = 'Disponível · v' + release.version;
+      }
+      if (downloadBadge) {
+        downloadBadge.textContent = 'Disponível · v' + release.version;
+      }
+      if (versionTag) {
+        versionTag.innerHTML = '<span class="label">Versão</span> ' + release.version;
       }
       if (cardTag) {
-        cardTag.textContent = 'Disponível · v' + version;
-      }
-      if (platformsTitle) {
-        platformsTitle.textContent = 'Navegador ou Windows';
-      }
-      if (platformsText) {
-        platformsText.textContent =
-          'Acesse pelo navegador ou instale o aplicativo no computador para abrir como programa.';
+        cardTag.textContent = 'Disponível · v' + release.version;
       }
       if (availabilityText) {
         availabilityText.innerHTML =
@@ -1967,15 +2073,23 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
       }
     })
     .catch(function() {
-      downloadButton.href = '#';
-      downloadButton.classList.add('is-disabled');
-      downloadButton.setAttribute('aria-disabled', 'true');
+      bloquearDownloads();
       versionLabel.textContent = '💻 Windows 10/11 · download indisponível';
       if (versionBadge) {
         versionBadge.textContent = 'Disponível no navegador';
       }
+      if (downloadBadge) {
+        downloadBadge.textContent = 'Navegador disponível · Windows indisponível';
+      }
+      if (versionTag) {
+        versionTag.innerHTML = '<span class="label">Versão</span> Web disponível';
+      }
       if (cardTag) {
         cardTag.textContent = 'Site disponível';
+      }
+      if (availabilityText) {
+        availabilityText.innerHTML =
+          '<strong>Versão web disponível.</strong> O download para Windows está temporariamente indisponível.';
       }
     });
 })();
@@ -2014,12 +2128,12 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
   function atualizarBadgeNavegacao(id, disponivel) {
     var badge = element(id);
     if (!badge) return;
-    badge.textContent = disponivel ? 'Disponível' : 'Indisponível';
+    badge.textContent = disponivel ? 'Novo' : 'Indisponível';
     badge.classList.toggle('available', disponivel);
     badge.classList.toggle('soon', !disponivel);
   }
 
-  function validarReleaseGitHub(tag, assetName, installerUrl) {
+  function validarReleaseGitHub(tag, assetName, installerUrl, hash) {
     var apiUrl = 'https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases/tags/' + encodeURIComponent(tag);
     return fetch(apiUrl, { cache: 'no-cache' })
       .then(function(response) {
@@ -2028,9 +2142,12 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
       })
       .then(function(release) {
         var asset = (release.assets || []).find(function(item) {
-          return item.name === assetName && item.browser_download_url === installerUrl && item.size > 0;
+          return item.name === assetName &&
+            item.browser_download_url === installerUrl &&
+            item.size > 0 &&
+            String(item.digest || '').toLowerCase() === 'sha256:' + hash.toLowerCase();
         });
-        if (!asset) throw new Error('Artefato não encontrado na release');
+        if (!asset) throw new Error('Artefato ou hash não encontrado na release');
         return asset;
       });
   }
@@ -2087,7 +2204,7 @@ fetch('https://hetoandrade.com.br/version_driverstatus.json', { cache: 'no-cache
 
         if (config.prepareStore) prepararMicrosoftStore(data);
 
-        return validarReleaseGitHub(tag, assetName, parsedUrl.href).then(function() {
+        return validarReleaseGitHub(tag, assetName, parsedUrl.href, hash).then(function() {
           return { version: version, installerUrl: parsedUrl.href };
         });
       })

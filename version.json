@@ -1,7 +1,8 @@
 {
-  "version": "1.9.0207",
-  "dataPublicacao": "2026-09-02T17:00:06",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0207/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0207/VozDigitada_Setup_v1.9.0207.exe",
-  "changelog": "Agora é possível parar e enviar automaticamente após 4 a 30 segundos de silêncio, usando 0 para desativar. A configuração fica integrada ao painel de Atalhos, sem barra de rolagem visível."
+  "version": "1.9.0402",
+  "dataPublicacao": "2026-09-04T15:50:42",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0402/VozDigitada_Update.zip",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0402/VozDigitada_Setup_v1.9.0402.exe",
+  "sha256": "7f333e883b78d259957fb1a3d5a5538315695ca4aa96b220c222805119f24db8",
+  "changelog": "O menu de bandeja foi reorganizado com novos ícones de voz, movimentação e atualização. O atualizador agora valida a integridade e a versão dos pacotes, mantém o aplicativo aberto durante a preparação e conclui a instalação na próxima inicialização."
 }

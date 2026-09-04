@@ -2032,7 +2032,7 @@ fetch('version_driverstatus.json', { cache: 'no-cache' })
     .then(function(data) {
       var version = String(data.version || '').trim();
       var installerUrl = String(data.urlInstalador || '').trim();
-      var hash = String(data.sha256 || '').trim().toLowerCase();
+      var hash = String(data.sha256Instalador || data.sha256 || '').trim().toLowerCase();
       var parsedUrl = new URL(installerUrl);
       var tag = 'copieecole-v' + version;
       var assetName = 'CopieECole_Setup_v' + version + '.exe';

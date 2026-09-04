@@ -1,7 +1,11 @@
 {
   "version": "1.9.0205",
   "dataPublicacao": "2026-09-02T17:02:45",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0205/DriverStatus_Update.zip",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0205/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "90a332604a6ef366c66db0c0f611a1cb990966ffa7e2400023cdf625a444da8a",
   "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0205/DriverStatus_Setup_v1.9.0205.exe",
+  "sha256Instalador": "c731a3407ce0775ae980dad9e4000ad54d1896dd8891088f4c83d6ca833d637c",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0205/DriverStatus_Update.zip",
+  "sha256": "90a332604a6ef366c66db0c0f611a1cb990966ffa7e2400023cdf625a444da8a",
   "changelog": "Adiciona atualização em lote de aplicativos, mantém os indicadores na mesma linha e prioriza os aplicativos que podem ser desinstalados entre os itens que não podem ser atualizados."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.9.0205",
-  "dataPublicacao": "2026-09-02T17:02:45",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0205/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "90a332604a6ef366c66db0c0f611a1cb990966ffa7e2400023cdf625a444da8a",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0205/DriverStatus_Setup_v1.9.0205.exe",
-  "sha256Instalador": "c731a3407ce0775ae980dad9e4000ad54d1896dd8891088f4c83d6ca833d637c",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0205/DriverStatus_Update.zip",
-  "sha256": "90a332604a6ef366c66db0c0f611a1cb990966ffa7e2400023cdf625a444da8a",
-  "changelog": "Adiciona atualização em lote de aplicativos, mantém os indicadores na mesma linha e prioriza os aplicativos que podem ser desinstalados entre os itens que não podem ser atualizados."
+  "version": "1.9.0704",
+  "dataPublicacao": "2026-09-07T11:41:39",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0704/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "4537f92ed2226c2e167a3329502327c6b260b41741dfe316202411c776c68be7",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0704/DriverStatus_Setup_v1.9.0704.exe",
+  "sha256Instalador": "db207fa270eb76289280447e16831b199fb32c0420be4ede201e48323c8b3c1d",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.0704/DriverStatus_Update.zip",
+  "sha256": "4537f92ed2226c2e167a3329502327c6b260b41741dfe316202411c776c68be7",
+  "changelog": "Edição Microsoft Store sem atualização externa automática ou manual do DriverStatus e sem a aba Aplicativos. Removidos os convites para obter outra edição pelo site. A edição desktop mantém suas atualizações e o gerenciamento de aplicativos. Validação do pacote Store reforçada. 🛡️🏪"
 }

@@ -1,8 +1,11 @@
 {
-  "version": "1.9.0404",
-  "dataPublicacao": "2026-09-04T18:04:13",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0404/VozDigitada_Update.zip",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0404/VozDigitada_Setup_v1.9.0404.exe",
-  "sha256": "423db0ba9979d6b26cdb92b9e9b9a66e9063e5329b89d0b84792cb339dd877f8",
-  "changelog": "Atualiza o ícone de Sobre e Suporte no menu da bandeja, com moldura arredondada e símbolo de informação mais nítido."
+  "version": "1.9.0705",
+  "dataPublicacao": "2026-09-07T11:36:51",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0705/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "b42bb3ad0d758bbf13dd4c227b4a18ec13ada9389bd3807f7191aa5d9f176a15",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0705/VozDigitada_Setup_v1.9.0705.exe",
+  "sha256Instalador": "15546e9f2a5d723a009dbeb4dfacf02eb650df61091cf2f608a856dacaabe704",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0705/VozDigitada_Update.zip",
+  "sha256": "b42bb3ad0d758bbf13dd4c227b4a18ec13ada9389bd3807f7191aa5d9f176a15",
+  "changelog": "A escolha do modelo de voz permanece salva entre atualizações e reinstalações. A configuração migra para JSON com cópia de segurança, e uma falha temporária do Turbo permite usar Small sem apagar sua preferência. A edição Microsoft Store exclui o atualizador externo; a edição normal mantém as atualizações automáticas e manuais."
 }

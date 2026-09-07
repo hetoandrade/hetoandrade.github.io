@@ -1,7 +1,11 @@
 {
-  "version": "1.9.0205",
-  "dataPublicacao": "2026-09-02T16:08:21-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0205/CopieECole_Setup_v1.9.0205.exe",
-  "sha256": "DB04AB5B84F0216BA394C5A7F96ACBCA68C625835A1609EE5486C3EB2A3F7F44",
-  "changelog": "Atualiza o ícone do CopieECole no aplicativo Windows, Web/PWA, site, instalador e Microsoft Store, usando a composição aprovada com melhor espaçamento."
+  "version": "1.9.0703",
+  "dataPublicacao": "2026-09-07T12:07:51-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0703/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "DEBDE0D240C4C784DA3BB4187A266736F983CA1F0D5D86CD3958CD29658F0737",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0703/CopieECole_Setup_v1.9.0703.exe",
+  "sha256Instalador": "D04F22B89EE472ED72AEC1C7CF74D564A79E03FA53C9EC27EC34D4725C594274",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0703/CopieECole_Update.zip",
+  "sha256": "DEBDE0D240C4C784DA3BB4187A266736F983CA1F0D5D86CD3958CD29658F0737",
+  "changelog": "Nova tela de atualização no padrão visual do AjusteHD, com progresso do download e resultado da preparação. A edição Microsoft Store não inclui o atualizador externo; a edição normal mantém a atualização automática e manual."
 }

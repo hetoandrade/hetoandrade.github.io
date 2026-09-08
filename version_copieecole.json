@@ -1,11 +1,11 @@
 {
-  "version": "1.9.0703",
-  "dataPublicacao": "2026-09-07T12:07:51-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0703/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "DEBDE0D240C4C784DA3BB4187A266736F983CA1F0D5D86CD3958CD29658F0737",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0703/CopieECole_Setup_v1.9.0703.exe",
-  "sha256Instalador": "D04F22B89EE472ED72AEC1C7CF74D564A79E03FA53C9EC27EC34D4725C594274",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0703/CopieECole_Update.zip",
-  "sha256": "DEBDE0D240C4C784DA3BB4187A266736F983CA1F0D5D86CD3958CD29658F0737",
-  "changelog": "Nova tela de atualização no padrão visual do AjusteHD, com progresso do download e resultado da preparação. A edição Microsoft Store não inclui o atualizador externo; a edição normal mantém a atualização automática e manual."
+  "version": "1.9.0803",
+  "dataPublicacao": "2026-09-08T14:41:42-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0803/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "1D25DA8B1D8644A5C798F7F5B06FD74CDEE52E5D220263A981A1D62E303F6D7B",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0803/CopieECole_Setup_v1.9.0803.exe",
+  "sha256Instalador": "4AB883397FE990D569836E2F10F48F73F96ED84F581E2329D30875F1CA4BFB35",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.0803/CopieECole_Update.zip",
+  "sha256": "1D25DA8B1D8644A5C798F7F5B06FD74CDEE52E5D220263A981A1D62E303F6D7B",
+  "changelog": "No aplicativo desktop, incluindo a versão da Microsoft Store, permite lembrar o código de acesso com proteção do Windows e entrar automaticamente ao abrir quando os dados estiverem completos. Lembrar o código exige lembrar o identificador; ao desmarcá-lo, o código salvo e a entrada automática são desativados. Opções indisponíveis aparecem em cinza claro. Mantém o ícone e o menu na bandeja do Windows. A versão Web mantém a entrada manual. 🔐🖥️🎨"
 }

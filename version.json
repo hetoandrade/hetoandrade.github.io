@@ -1,11 +1,11 @@
 {
-  "version": "1.9.0705",
-  "dataPublicacao": "2026-09-07T11:36:51",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0705/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "b42bb3ad0d758bbf13dd4c227b4a18ec13ada9389bd3807f7191aa5d9f176a15",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0705/VozDigitada_Setup_v1.9.0705.exe",
-  "sha256Instalador": "15546e9f2a5d723a009dbeb4dfacf02eb650df61091cf2f608a856dacaabe704",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0705/VozDigitada_Update.zip",
-  "sha256": "b42bb3ad0d758bbf13dd4c227b4a18ec13ada9389bd3807f7191aa5d9f176a15",
-  "changelog": "A escolha do modelo de voz permanece salva entre atualizações e reinstalações. A configuração migra para JSON com cópia de segurança, e uma falha temporária do Turbo permite usar Small sem apagar sua preferência. A edição Microsoft Store exclui o atualizador externo; a edição normal mantém as atualizações automáticas e manuais."
+  "version": "1.9.0802",
+  "dataPublicacao": "2026-09-08T10:29:11",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0802/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "d5dcac076790bafe483e10628371bbdd4d06eda7643825c927eaed7a6f19e2f8",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0802/VozDigitada_Setup_v1.9.0802.exe",
+  "sha256Instalador": "900947174f9f405ce4eaead4b5b11661079a7c436a52295df1973683f54097e1",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0802/VozDigitada_Update.zip",
+  "sha256": "d5dcac076790bafe483e10628371bbdd4d06eda7643825c927eaed7a6f19e2f8",
+  "changelog": "Corrigida a inicialização do Turbo em placas NVIDIA: o detector de fala agora carrega sua biblioteca corretamente, evitando a falha que fazia o aplicativo retornar ao Small ao abrir ou trocar o modelo nas configurações."
 }

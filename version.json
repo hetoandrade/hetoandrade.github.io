@@ -1,11 +1,11 @@
 {
-  "version": "1.9.0802",
-  "dataPublicacao": "2026-09-08T10:29:11",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0802/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "d5dcac076790bafe483e10628371bbdd4d06eda7643825c927eaed7a6f19e2f8",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0802/VozDigitada_Setup_v1.9.0802.exe",
-  "sha256Instalador": "900947174f9f405ce4eaead4b5b11661079a7c436a52295df1973683f54097e1",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0802/VozDigitada_Update.zip",
-  "sha256": "d5dcac076790bafe483e10628371bbdd4d06eda7643825c927eaed7a6f19e2f8",
-  "changelog": "Corrigida a inicialização do Turbo em placas NVIDIA: o detector de fala agora carrega sua biblioteca corretamente, evitando a falha que fazia o aplicativo retornar ao Small ao abrir ou trocar o modelo nas configurações."
+  "version": "1.9.0804",
+  "dataPublicacao": "2026-09-08T11:34:43",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0804/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "d00de75e861682cb01f19947f644c0cc71b6bcdad6a44ac5a8086707924ca8a3",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0804/VozDigitada_Setup_v1.9.0804.exe",
+  "sha256Instalador": "e0e812c880d5fb5aa2263f630abb569d41df103fb4a86747a8c974a047d151c0",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0804/VozDigitada_Update.zip",
+  "sha256": "d00de75e861682cb01f19947f644c0cc71b6bcdad6a44ac5a8086707924ca8a3",
+  "changelog": "Corrige a parada automática por silêncio: o prazo fica zerado durante a fala, o processamento e a digitação e começa inteiro após concluir a entrega do texto e voltar à escuta. Sem fala nem trabalho pendente, a parada continua respeitando o tempo configurado."
 }

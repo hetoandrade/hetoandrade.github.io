@@ -243,13 +243,14 @@
     <div class="nav-section">Soluções</div>
 
     <!-- NOTEZAP:NAV:BEGIN -->
-    <a class="nav-item" href="notezap.html" id="nav-notezap">
+    <a class="nav-item" href="#notezap" onclick="showPage('notezap'); return false;" id="nav-notezap">
       <img src="Imagems/notezap.png" alt="" class="nav-icon-img">
       NoteZap
       <span class="badge">Novo</span>
     </a>
     <!-- NOTEZAP:NAV:END -->
-<a class="nav-item" href="#" onclick="showPage('copieecole'); return false;" id="nav-copieecole">
+
+    <a class="nav-item" href="#" onclick="showPage('copieecole'); return false;" id="nav-copieecole">
       <img src="Imagems/copieecole-verde.png" alt="" class="nav-icon-img copieecole">
       CopieECole
       <span class="badge">Novo</span>
@@ -335,12 +336,12 @@
 
     <div class="apps-grid">
       <!-- NOTEZAP:CARD:BEGIN -->
-      <a class="app-card" href="notezap.html" style="text-decoration:none">
+      <a class="app-card" href="#notezap" onclick="showPage('notezap'); return false;" style="text-decoration:none">
         <div class="app-card-header">
           <div class="app-icon"><img src="Imagems/notezap.png" alt="NoteZap"></div>
           <div class="app-card-title">
             <h3>NoteZap</h3>
-            <span class="app-tag released">Windows e Web</span>
+            <span class="app-tag released" id="card-notezap-tag">Web disponível</span>
           </div>
         </div>
         <p>Organize suas anotações por assunto, escreva textos e guarde arquivos em uma interface de conversa. Acesse sua conta no computador ou pelo navegador.</p>
@@ -352,7 +353,8 @@
         <div class="app-card-arrow" aria-hidden="true">&#8594;</div>
       </a>
       <!-- NOTEZAP:CARD:END -->
-<!-- CopieECole Card Principal -->
+
+      <!-- CopieECole Card Principal -->
       <div class="app-card featured-site" onclick="showPage('copieecole')">
         <div class="app-card-header">
           <div class="app-icon copieecole">
@@ -1305,6 +1307,103 @@
   </div>
 
 
+  <!-- ═══════════════ NOTEZAP ═══════════════ -->
+  <div id="page-notezap" class="page">
+
+    <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+
+    <div class="painel">
+      <section class="hero">
+        <div class="hero-badge available notezap">
+          <img src="Imagems/notezap.png" alt="" class="badge-icon">
+          <span class="dot"></span>
+          <span id="notezap-versao-badge">Verificando versão para Windows...</span>
+        </div>
+        <h1>Suas anotações<br>em forma de <span class="gradient-notezap">conversa.</span></h1>
+        <p>O <strong>NoteZap</strong> organiza seus textos, códigos, imagens e arquivos por assunto.
+          Entre com sua conta Google e continue suas anotações no computador, celular ou navegador,
+          com o mesmo histórico entre seus dispositivos.</p>
+        <div class="hero-actions">
+          <a href="https://notezap.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary notezap" aria-label="Acessar a versão web do NoteZap em uma nova aba">
+            <span>&#127760;</span> Acessar versão web
+          </a>
+          <a href="#notezap-download" class="btn-secondary notezap-download is-disabled" data-notezap-download aria-disabled="true" tabindex="-1">Verificando download...</a>
+          <a href="privacidade-notezap.html" class="btn-secondary notezap-download">&#128274; Privacidade</a>
+        </div>
+        <div class="hero-meta">
+          <span>&#128221; Anotações por assunto</span>
+          <span>&#128241; Computador, celular ou tablet</span>
+          <span id="notezap-versao-desktop">&#128187; Windows 10/11 · preparando download</span>
+        </div>
+      </section>
+    </div>
+
+    <section class="section" id="notezap-screenshots">
+      <div class="section-title">Conheça o NoteZap</div>
+      <div class="screenshots-grid product-previews">
+        <div class="screenshot-card" role="button" tabindex="0" aria-label="Ampliar a prévia da entrada do NoteZap" onclick="openLightbox('Prints/NoteZap/entrada-ilustrativa.png', 'notezap')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+          <img src="Prints/NoteZap/entrada-ilustrativa.png" alt="Prévia ilustrativa da entrada do NoteZap com conta Google e acesso por e-mail cadastrado" loading="lazy" width="1440" height="1000">
+          <div class="screenshot-label"><strong>Prévia ilustrativa</strong> — entrada com sua conta Google</div>
+        </div>
+        <div class="screenshot-card" role="button" tabindex="0" aria-label="Ampliar a prévia das anotações do NoteZap" onclick="openLightbox('Prints/NoteZap/anotacoes-ilustrativas.png', 'notezap')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
+          <img src="Prints/NoteZap/anotacoes-ilustrativas.png" alt="Prévia ilustrativa do NoteZap com assuntos, anotações de texto e código, imagem e arquivo de exemplo" loading="lazy" width="1440" height="1000">
+          <div class="screenshot-label"><strong>Prévia ilustrativa</strong> — assuntos, textos, códigos e anexos</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="notezap-features">
+      <div class="section-title">Recursos</div>
+      <div class="features-grid">
+        <div class="feature-card"><div class="feature-icon blue">&#128194;</div><h3>Organização por Assuntos</h3><p>Crie um assunto com título e ícone para cada tema. Renomeie e organize suas anotações em conversas próprias.</p></div>
+        <div class="feature-card"><div class="feature-icon purple">&#128203;</div><h3>Textos e Códigos</h3><p>Escreva textos ou trechos de código. Copie, edite e exclua suas anotações quando precisar.</p></div>
+        <div class="feature-card"><div class="feature-icon cyan">&#128269;</div><h3>Pesquisa de Assuntos</h3><p>Encontre um assunto pelo título e abra seu histórico para continuar de onde parou.</p></div>
+        <div class="feature-card"><div class="feature-icon orange">&#128206;</div><h3>Imagens e Arquivos</h3><p>Guarde até dez anexos por conta, com até 20 MiB por arquivo. Excluir um anexo libera espaço para outro.</p></div>
+        <div class="feature-card"><div class="feature-icon blue">&#127760;</div><h3>Sincronização entre Dispositivos</h3><p>Acesse a mesma conta pelo navegador ou aplicativo Windows. Suas alterações são sincronizadas com conexão à internet.</p></div>
+        <div class="feature-card"><div class="feature-icon green">&#128337;</div><h3>Histórico sem Expiração</h3><p>As anotações não são apagadas automaticamente por idade. Você pode excluir notas ou assuntos no aplicativo.</p></div>
+      </div>
+      <div class="availability-note"><span>&#9989;</span><p id="notezap-disponibilidade"><strong>Versão web disponível.</strong> Entre com sua conta Google. O download para Windows está sendo verificado.</p></div>
+    </section>
+
+    <section class="section" id="notezap-faq">
+      <div class="section-title">Perguntas Frequentes</div>
+      <div class="faq-container">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Preciso de uma conta Google?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. O primeiro acesso usa uma conta Google. Seus assuntos, anotações e anexos ficam vinculados a essa conta, para você acessá-los nos seus dispositivos.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Posso entrar por e-mail?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Quando o envio de e-mails estiver habilitado, você poderá receber um código de oito números no e-mail já cadastrado pelo Google. Esse código não cria uma nova conta. Se a opção estiver indisponível, entre com o Google.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>O NoteZap precisa de internet?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Sim. O navegador e o aplicativo Windows precisam de conexão para acessar e sincronizar suas anotações. Use a mesma conta em cada dispositivo.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Minhas anotações expiram?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Não há expiração automática por idade. Você pode editar e excluir suas notas ou excluir um assunto com seu histórico. Essa permanência não substitui uma cópia própria de arquivos importantes.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Qual é o limite de anexos?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>São dez anexos por conta, somando imagens e arquivos de todos os assuntos, com até 20 MiB (20 × 1024 × 1024 bytes) cada. Textos e códigos não usam essas vagas. Excluir um anexo libera uma vaga. Os anexos não passam por verificação antivírus.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>O que preciso para usar no Windows?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Windows 10 ou 11 de 64 bits, conexão à internet e Microsoft Edge WebView2 Runtime. Baixe o instalador pelo botão Baixar para Windows. O login Google abre no navegador para você autorizar o aplicativo.</p></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="notezap-download">
+      <div class="section-title">Download</div>
+      <div class="download-card notezap-theme">
+        <div class="download-row">
+          <div class="download-info">
+            <h3>&#128221; NoteZap no navegador ou Windows</h3>
+            <div class="download-meta"><div class="hero-badge available notezap" style="margin-bottom:0;"><img src="Imagems/notezap.png" alt="" class="badge-icon"><span class="dot"></span><span id="notezap-versao-download">Verificando download...</span></div></div>
+          </div>
+          <div class="download-buttons">
+            <a href="https://notezap.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" class="btn-primary notezap btn-download" aria-label="Acessar a versão web do NoteZap em uma nova aba">&#127760; Acessar versão web</a>
+            <a href="#notezap-download" class="btn-secondary notezap-download btn-download is-disabled" data-notezap-download aria-disabled="true" tabindex="-1">Verificando download...</a>
+          </div>
+        </div>
+        <p id="notezap-status" role="status">Conferindo a versão disponível...</p>
+        <div class="version-info">
+          <div class="version-tag"><span class="label">Versão</span> <span id="notezap-versao-tag">Verificando...</span></div>
+          <div class="version-tag"><span class="label">Requisitos</span> Navegador atual ou Windows 10/11 x64</div>
+          <div class="version-tag"><span class="label">Windows</span> Microsoft Edge WebView2 Runtime</div>
+          <div class="version-tag"><span class="label">Conta</span> Google</div>
+          <a class="version-tag privacy-tag" href="privacidade-notezap.html"><span class="label">Dados</span> Política de privacidade</a>
+        </div>
+      </div>
+    </section>
+
+    <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+  </div>
+
   <!-- ═══════════════ COPIEECOLE ═══════════════ -->
   <div id="page-copieecole" class="page">
 
@@ -1553,7 +1652,7 @@
       <!-- WPS Office -->
       <div class="app-card">
         <div class="app-card-header">
-          <div class="app-icon">
+          <div class="app-icon wps">
             <img src="Imagems/terceiros/wps.svg" alt="Logomarca oficial do WPS Office">
           </div>
           <div class="app-card-title">
@@ -1663,6 +1762,7 @@
   <footer class="site-footer">
     <div>&copy; 2026 Hetoandrade Apps &mdash; Aplicativos que ajudam no dia a dia</div>
     <div class="footer-links">
+      <a href="privacidade-notezap.html">Privacidade NoteZap</a>
       <a href="privacidade-copieecole.html">Privacidade CopieECole</a>
       <a href="privacidade.html">Privacidade VozDigitada</a>
       <a href="privacidade-driverstatus.html">Privacidade DriverStatus</a>
@@ -1700,6 +1800,10 @@
 <script>
 // ─── Lightbox ───
 var lightboxGroups = {
+  notezap: [
+    'Prints/NoteZap/entrada-ilustrativa.png',
+    'Prints/NoteZap/anotacoes-ilustrativas.png'
+  ],
   copieecole: [
     'Prints/CopieECole/entrada-atual.png',
     'Prints/CopieECole/conversa-conceitual.png'
@@ -2373,6 +2477,7 @@ function showPage(page) {
   document.querySelectorAll('.nav-item').forEach(function(n) { n.classList.remove('active'); });
 
   var navByPage = {
+    notezap: 'nav-notezap',
     vozdigitada: 'nav-voz',
     driverstatus: 'nav-driver',
     teladesk: 'nav-teladesk',
@@ -2394,13 +2499,14 @@ function showPage(page) {
 
 function showPageFromHash() {
   var page = window.location.hash.substring(1).toLowerCase();
-  var validPages = ['home', 'vozdigitada', 'driverstatus', 'teladesk', 'ajustehd', 'copieecole', 'terceiros'];
+  var validPages = ['home', 'notezap', 'vozdigitada', 'driverstatus', 'teladesk', 'ajustehd', 'copieecole', 'terceiros'];
   showPage(validPages.indexOf(page) !== -1 ? page : 'home');
 }
 
 window.addEventListener('hashchange', showPageFromHash);
 showPageFromHash();
 </script>
+<script src="notezap-download.js"></script>
 
 </body>
 </html>

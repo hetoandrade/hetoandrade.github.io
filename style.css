@@ -275,6 +275,7 @@ body::before {
 
 .app-icon img { width: 60px; height: 60px; border-radius: 0; transition: transform 0.3s ease; }
 .app-icon.lightshot img { width: 72px; height: 72px; }
+.app-icon.wps img { width: 66px; height: 66px; }
 .app-card:hover .app-icon img { transform: scale(1.15); }
 
 .app-card-title { display: flex; flex-direction: column; gap: 4px; }
@@ -1393,6 +1394,87 @@ body::before { display: none; }
   color: var(--copieecole-green-dark);
 }
 
+#page-notezap {
+  --notezap-green: #00a17a;
+  --notezap-dark: #005f4d;
+  --notezap-surface: #edf7f4;
+  --notezap-gradient: linear-gradient(180deg, #00ac83 0%, #00a17a 50%, #00966f 100%);
+}
+
+#page-notezap .painel {
+  box-shadow: inset 5px 0 0 var(--notezap-dark), 0 8px 28px rgba(0, 95, 77, .12);
+}
+
+#page-notezap .hero h1,
+#page-notezap .section-title,
+#page-notezap .faq-arrow,
+#page-notezap .product-previews .screenshot-label strong {
+  color: var(--notezap-dark);
+}
+
+#page-notezap .hero h1 .gradient-notezap {
+  background: var(--notezap-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#page-notezap .hero-badge.notezap,
+#page-notezap .availability-note {
+  background: var(--notezap-surface);
+  border-color: var(--notezap-green);
+  color: var(--notezap-dark);
+}
+
+#page-notezap .hero-badge.notezap .dot { background: var(--notezap-green); }
+
+#page-notezap .btn-primary.notezap,
+#page-notezap .feature-card::before,
+#page-notezap .download-card.notezap-theme::before {
+  background: var(--notezap-gradient);
+}
+
+#page-notezap .btn-secondary.notezap-download {
+  background: #fff;
+  border-color: var(--notezap-green);
+  color: var(--notezap-dark);
+}
+
+#page-notezap .btn-back {
+  color: var(--notezap-dark);
+  border-color: rgba(0, 95, 77, .22);
+}
+
+#page-notezap .btn-back:hover,
+#page-notezap .btn-secondary.notezap-download:hover {
+  background: var(--notezap-surface);
+  border-color: var(--notezap-dark);
+  color: var(--notezap-dark);
+}
+
+#page-notezap .btn-secondary.notezap-download.is-disabled {
+  cursor: not-allowed;
+  opacity: .58;
+  pointer-events: none;
+}
+
+#page-notezap .screenshot-card:hover,
+#page-notezap .feature-card:hover,
+#page-notezap .faq-item:hover,
+#page-notezap .faq-item.active {
+  border-color: var(--notezap-green);
+  box-shadow: 0 10px 30px rgba(0, 95, 77, .16);
+}
+
+#page-notezap .download-card.notezap-theme {
+  background: #f8fafd;
+  border-color: var(--notezap-green);
+}
+
+#notezap-status { margin: 20px 0 0; color: var(--erp-txt-muted); overflow-wrap: anywhere; }
+
+#page-notezap .screenshot-card:focus-visible { outline: 3px solid var(--notezap-green); outline-offset: 3px; }
+
 .availability-note {
   display: flex;
   align-items: flex-start;
@@ -1476,7 +1558,8 @@ body::before { display: none; }
     justify-content: center;
   }
 
-  #page-copieecole .hero-actions > a {
+  #page-copieecole .hero-actions > a,
+  #page-notezap .hero-actions > a {
     flex: 1 1 100%;
     justify-content: center;
   }

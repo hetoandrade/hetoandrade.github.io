@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1103",
-  "dataPublicacao": "2026-09-11T13:15:26-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1103/TelaDesk-Setup-1.9.1103.exe",
-  "sha256": "B086CCBA99F469352B80B3519808B4C4EE6A861569023FB08126B711920B18B6",
-  "changelog": "Convites diretos de uso único válidos por 6 horas, botão Home na transferência de arquivos e melhorias no cadastro de acessos com senha."
+  "version": "1.9.1104",
+  "dataPublicacao": "2026-09-11T16:26:53-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1104/TelaDesk-Setup-1.9.1104.exe",
+  "sha256": "E0B0098E78FC140833256CDC45B67774C16C6315A9BDB3DF59BB73F2BF70FED8",
+  "changelog": "Adiciona a opção Reiniciar agora na janela Verificar atualização após concluir e validar o download. O aplicativo reinicia com a nova versão somente quando o usuário escolhe essa opção."
 }

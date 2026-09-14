@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1403",
-  "dataPublicacao": "2026-09-14T18:14:20Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1403/NoteZap_Setup_v1.9.1403.exe",
-  "sha256Instalador": "4EDDF39E01F0ECF5B3B8D39A57937F4FA0C74A96EFC8095632B6D37CE05F081F",
-  "changelog": "Mostra o progresso ao carregar dados, corrige e amplia os ícones de assuntos e permite colar imagens pelo menu nativo no desktop e no celular."
+  "version": "1.9.1405",
+  "dataPublicacao": "2026-09-14T18:45:54Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1405/NoteZap_Setup_v1.9.1405.exe",
+  "sha256Instalador": "0E7411C96C15A4FA66202141D8F3244254722316E800E233B031042AF99241B9",
+  "changelog": "Mostra o progresso ao carregar os dados, corrige a seleção e amplia os ícones profissionais dos assuntos, permite colar imagens pelos menus nativos no desktop e no celular e evita o zoom automático do compositor no iPhone, mantendo o campo visível com o teclado."
 }

@@ -494,6 +494,23 @@
       </div>
     </div>
 
+    <section class="download-all-section" aria-labelledby="download-all-title">
+      <div class="download-all-panel">
+        <div class="download-all-copy">
+          <span class="download-all-kicker">&#128421; Aplicativos para Windows</span>
+          <h2 id="download-all-title">Baixe todos os aplicativos de uma vez</h2>
+          <p>Receba os seis instaladores mais recentes em downloads individuais.</p>
+          <span class="download-all-apps">NoteZap &middot; CopieECole &middot; VozDigitada &middot; DriverStatus &middot; TelaDesk &middot; AjusteHD</span>
+        </div>
+        <div class="download-all-action">
+          <button type="button" class="download-all-button" id="btn-download-all" disabled aria-describedby="download-all-status">
+            Verificando instaladores...
+          </button>
+          <p id="download-all-status" role="status" aria-live="polite">Preparando os seis downloads.</p>
+        </div>
+      </div>
+    </section>
+
     <!-- Historia -->
     <section class="section" id="historia">
       <div class="section-title">Quem somos</div>
@@ -2516,6 +2533,7 @@ window.addEventListener('hashchange', showPageFromHash);
 showPageFromHash();
 </script>
 <script src="notezap-download.js"></script>
+<script src="download-all.js"></script>
 
 </body>
 </html>

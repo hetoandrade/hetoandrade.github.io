@@ -1124,11 +1124,6 @@ body::before { display: none; }
   white-space: nowrap;
 }
 
-.nav-item .badge.available {
-  background: #dcfce7;
-  color: #166534;
-}
-
 .nav-icon-img.copieecole,
 .app-icon.copieecole img {
   border-radius: 10px;

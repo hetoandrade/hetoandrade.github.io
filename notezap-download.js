@@ -14,7 +14,12 @@
     });
   });
 
-  fetch('version_notezap.json', { cache: 'no-cache' })
+  var manifestUrl = typeof window !== 'undefined' && window.HetoandradeSite &&
+    typeof window.HetoandradeSite.manifestUrl === 'function'
+    ? window.HetoandradeSite.manifestUrl('version_notezap.json')
+    : 'version_notezap.json';
+
+  fetch(manifestUrl, { cache: 'no-cache' })
     .then(function (response) {
       if (!response.ok) throw new Error('Manifesto indisponível');
       return response.json();

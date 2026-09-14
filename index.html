@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: https://www.paypalobjects.com; connect-src 'self' https://api.github.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: https://www.paypalobjects.com; connect-src 'self' https://hetoandrade.com.br https://api.github.com; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
 
 <!-- SEO -->
@@ -1349,7 +1349,7 @@
           <div class="screenshot-label"><strong>Prévia ilustrativa</strong> — entrada com sua conta Google</div>
         </div>
         <div class="screenshot-card" role="button" tabindex="0" aria-label="Ampliar a prévia das anotações do NoteZap" onclick="openLightbox('Prints/NoteZap/anotacoes-ilustrativas.png', 'notezap')" onkeydown="if(event.key === 'Enter' || event.key === ' ') { event.preventDefault(); this.click(); }">
-          <img src="Prints/NoteZap/anotacoes-ilustrativas.png" alt="Prévia ilustrativa do NoteZap com assuntos, anotações de texto e código, imagem e arquivo de exemplo" loading="lazy" width="1440" height="1000">
+          <img src="Prints/NoteZap/anotacoes-ilustrativas.png" alt="Prévia ilustrativa do NoteZap com assuntos, anotações de texto e código, imagem e arquivo de exemplo" loading="lazy" width="1392" height="960">
           <div class="screenshot-label"><strong>Prévia ilustrativa</strong> — assuntos, textos, códigos e anexos</div>
         </div>
       </div>
@@ -1800,7 +1800,13 @@
   </button>
 </div>
 
+<script src="manifest-source.js"></script>
 <script>
+var siteManifestUrl = window.HetoandradeSite &&
+  typeof window.HetoandradeSite.manifestUrl === 'function'
+  ? window.HetoandradeSite.manifestUrl
+  : function(fileName) { return fileName; };
+
 // ─── Lightbox ───
 var lightboxGroups = {
   notezap: [
@@ -2126,7 +2132,7 @@ fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases?p
   .catch(function() {});
 
 // ─── Versao VozDigitada ───
-fetch('version.json', { cache: 'no-cache' })
+fetch(siteManifestUrl('version.json'), { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(data) {
     var v = data.version;
@@ -2143,7 +2149,7 @@ fetch('version.json', { cache: 'no-cache' })
   });
 
 // ─── Versao DriverStatus ───
-fetch('version_driverstatus.json', { cache: 'no-cache' })
+fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
   .then(function(r) { return r.json(); })
   .then(function(data) {
     var v = data.version;
@@ -2197,7 +2203,7 @@ fetch('version_driverstatus.json', { cache: 'no-cache' })
     });
   }
 
-  fetch('version_copieecole.json', { cache: 'no-cache' })
+  fetch(siteManifestUrl('version_copieecole.json'), { cache: 'no-cache' })
     .then(function(response) {
       if (!response.ok) throw new Error('Manifesto indisponível');
       return response.json();
@@ -2367,7 +2373,7 @@ fetch('version_driverstatus.json', { cache: 'no-cache' })
     var availability = element(config.availabilityId);
     var buttons = config.buttonIds.map(element);
 
-    fetch(config.manifest, { cache: 'no-cache' })
+    fetch(siteManifestUrl(config.manifest), { cache: 'no-cache' })
       .then(function(response) {
         if (!response.ok) throw new Error('Manifesto indisponível');
         return response.json();

@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1001",
-  "dataPublicacao": "2026-09-10T16:47:43",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1001/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "a99d87e1a6c7cd1954b53e807422b0abf03c3ac8ff631fbee20e2e952e687047",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1001/DriverStatus_Setup_v1.9.1001.exe",
-  "sha256Instalador": "8ae85d8f44fcbab23bd824bf4896b03ea273aba39e25dd0c28028bb05d6164b6",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1001/DriverStatus_Update.zip",
-  "sha256": "a99d87e1a6c7cd1954b53e807422b0abf03c3ac8ff631fbee20e2e952e687047",
-  "changelog": "Corrige a leitura de VRAM das placas NVIDIA usando a memória física total informada pelo driver, incluindo a parcela reservada. Quando essa consulta não estiver disponível, mantém o valor obtido pelo DXGI. Preserva as consultas de placas AMD, Intel e outros fabricantes."
+  "version": "1.9.1402",
+  "dataPublicacao": "2026-09-14T19:10:09",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1402/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "a60138b51f79749dd9c513aaf68d0cd9272d91fe2312da476e191f6133f283f1",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1402/DriverStatus_Setup_v1.9.1402.exe",
+  "sha256Instalador": "32eb5cde5b8484c65467bf80de9aa7feac75a81e5357ec8cccfe0d1cac2b088e",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1402/DriverStatus_Update.zip",
+  "sha256": "a60138b51f79749dd9c513aaf68d0cd9272d91fe2312da476e191f6133f283f1",
+  "changelog": "Aprimora a atualização automática do DriverStatus, permitindo preparar a nova versão com reinício controlado do aplicativo e mantendo o registro da versão instalada."
 }

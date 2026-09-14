@@ -336,10 +336,13 @@
 
     <div class="apps-grid">
       <!-- NOTEZAP:CARD:BEGIN -->
-      <a class="app-card" href="#notezap" onclick="showPage('notezap'); return false;" style="text-decoration:none">
+      <div class="app-card has-direct-link" role="link" tabindex="0" onclick="showPage('notezap')" onkeydown="if (event.target === this && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); showPage('notezap'); }">
         <div class="app-card-header">
-          <div class="app-icon"><img src="Imagems/notezap.png" alt="NoteZap"></div>
+          <div class="app-icon notezap"><img src="Imagems/notezap.png" alt="NoteZap"></div>
           <div class="app-card-title">
+            <a class="card-direct-link notezap" href="https://notezap.hetoandrade.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Acessar a versão web do NoteZap em uma nova aba" onclick="event.stopPropagation();">
+              &#127760; Versão web
+            </a>
             <h3>NoteZap</h3>
             <span class="app-tag released" id="card-notezap-tag">Web disponível</span>
           </div>
@@ -351,11 +354,11 @@
           <span>&#128421; Windows 10/11</span>
         </div>
         <div class="app-card-arrow" aria-hidden="true">&#8594;</div>
-      </a>
+      </div>
       <!-- NOTEZAP:CARD:END -->
 
       <!-- CopieECole Card Principal -->
-      <div class="app-card featured-site" onclick="showPage('copieecole')">
+      <div class="app-card has-direct-link" role="link" tabindex="0" onclick="showPage('copieecole')" onkeydown="if (event.target === this && (event.key === 'Enter' || event.key === ' ')) { event.preventDefault(); showPage('copieecole'); }">
         <div class="app-card-header">
           <div class="app-icon copieecole">
             <img src="Imagems/copieecole-verde.png" alt="CopieECole">

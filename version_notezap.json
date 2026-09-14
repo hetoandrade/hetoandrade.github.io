@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1104",
-  "dataPublicacao": "2026-09-11T16:16:05Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1104/NoteZap_Setup_v1.9.1104.exe",
-  "sha256Instalador": "4D299263EC69CD87EA0A95542CFCC0805F6D6AF416DF4D130C95E90236168748",
-  "changelog": "NoteZap para Windows com instalador em português. Organize anotações e anexos por assunto, sincronize sua conta entre o computador e a versão Web e use a confirmação de exclusão padronizada. Esta versão disponibiliza o instalador pelo GitHub e pelo site."
+  "version": "1.9.1403",
+  "dataPublicacao": "2026-09-14T18:14:20Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1403/NoteZap_Setup_v1.9.1403.exe",
+  "sha256Instalador": "4EDDF39E01F0ECF5B3B8D39A57937F4FA0C74A96EFC8095632B6D37CE05F081F",
+  "changelog": "Mostra o progresso ao carregar dados, corrige e amplia os ícones de assuntos e permite colar imagens pelo menu nativo no desktop e no celular."
 }

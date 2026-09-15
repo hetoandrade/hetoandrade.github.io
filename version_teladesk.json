@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1404",
-  "dataPublicacao": "2026-09-14T21:44:22-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1404/TelaDesk-Setup-1.9.1404.exe",
-  "sha256": "0D82009F767408527CDA429932BBAE5B7664D595D8DBD129DE532ED8689D1A59",
-  "changelog": "Instalador recompilado com o TelaDeskService incorporado e provisionado pelo próprio setup."
+  "version": "1.9.1405",
+  "dataPublicacao": "2026-09-14T23:04:07-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1405/TelaDesk-Setup-1.9.1405.exe",
+  "sha256": "D516439A5C001642D454CD8910BA4A3DFF12C38655593143EF3DC8730FDA1DBB",
+  "changelog": "Corrige o recadastro seguro do TelaDesk após reinstalação, restaurando a conexão do serviço sem reutilizar credenciais antigas."
 }

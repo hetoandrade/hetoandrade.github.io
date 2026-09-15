@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1402",
-  "dataPublicacao": "2026-09-14T19:10:09",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1402/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "a60138b51f79749dd9c513aaf68d0cd9272d91fe2312da476e191f6133f283f1",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1402/DriverStatus_Setup_v1.9.1402.exe",
-  "sha256Instalador": "32eb5cde5b8484c65467bf80de9aa7feac75a81e5357ec8cccfe0d1cac2b088e",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1402/DriverStatus_Update.zip",
-  "sha256": "a60138b51f79749dd9c513aaf68d0cd9272d91fe2312da476e191f6133f283f1",
-  "changelog": "Aprimora a atualização automática do DriverStatus, permitindo preparar a nova versão com reinício controlado do aplicativo e mantendo o registro da versão instalada."
+  "version": "1.9.1512",
+  "dataPublicacao": "2026-09-15T11:57:51",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1512/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "6d9dbe685231e9f8d88161edb4788c29e6fffbdc0e25ded7c1355f49926f16b9",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1512/DriverStatus_Setup_v1.9.1512.exe",
+  "sha256Instalador": "33f57a702fb65363aed83ae6fb9522335f173f60d51bdab4cd8d745d7d01f012",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.1512/DriverStatus_Update.zip",
+  "sha256": "6d9dbe685231e9f8d88161edb4788c29e6fffbdc0e25ded7c1355f49926f16b9",
+  "changelog": "Aprimora a organização e as ações dos cards do Modo Jogo, preservando a seção de não favoritos e restringindo o monitoramento ao contexto correto."
 }

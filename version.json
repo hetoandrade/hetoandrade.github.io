@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1503",
-  "dataPublicacao": "2026-09-15T01:07:09",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1503/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "5439e1dda469c28f3d139809a37eced6a531e8b83a069dbca0841ca88ca6fa5b",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1503/VozDigitada_Setup_v1.9.1503.exe",
-  "sha256Instalador": "ff8f9b943abaf2b4db3655af28077ff7aad6eaec597d4e61cd18eb2671c81df9",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1503/VozDigitada_Update.zip",
-  "sha256": "5439e1dda469c28f3d139809a37eced6a531e8b83a069dbca0841ca88ca6fa5b",
-  "changelog": "Exibe os balões de gravação e Caps Lock em todos os monitores durante o ajuste, preserva uma única prévia de texto e recupera posições incompatíveis após troca de monitor ou resolução."
+  "version": "1.9.1507",
+  "dataPublicacao": "2026-09-15T10:24:55",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1507/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "658dbf6a05eb43e20b46d91ed7a049fcfe25f4e614ee8981ecbf7159ebbbad3a",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1507/VozDigitada_Setup_v1.9.1507.exe",
+  "sha256Instalador": "9d42dac6692b75981a26cc065912af8614edc5500728536549b289267f4ce913",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1507/VozDigitada_Update.zip",
+  "sha256": "658dbf6a05eb43e20b46d91ed7a049fcfe25f4e614ee8981ecbf7159ebbbad3a",
+  "changelog": "Persiste as posições dos balões de gravação e Caps Lock por monitor físico e resolução, usando o padrão inferior apenas em perfis novos."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1501",
-  "dataPublicacao": "2026-09-15T03:12:24Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1501/NoteZap_Setup_v1.9.1501.exe",
-  "sha256Instalador": "DE54968FB1AC6494A35D7CA6EC8D2A8D15D5C15E2BB6DD4F74697AA1F6FEC856",
-  "changelog": "Corrige a abertura no fim e estabiliza prévias de imagem com cache de sessão e WebP leve. 💬🖼️"
+  "version": "1.9.1503",
+  "dataPublicacao": "2026-09-15T03:25:12Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1503/NoteZap_Setup_v1.9.1503.exe",
+  "sha256Instalador": "508B55B682965402E545A7CEA4C97D352D4E94E9F9E53B9C016EEA0F74519D6A",
+  "changelog": "Amplia temporariamente a cota para 500 anexos por conta e migra bancos existentes sem perda de arquivos."
 }

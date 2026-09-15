@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1506",
-  "dataPublicacao": "2026-09-15T04:08:15Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1506/NoteZap_Setup_v1.9.1506.exe",
-  "sha256Instalador": "92491CB1C33D88771F23EC3D996544C3A4D6D6F32A92CACF5606212FC6B3ED02",
-  "changelog": "Adiciona a ação Backspace para limpar os cinco inputs de texto do NoteZap, incluindo o cancelamento da pesquisa global pendente."
+  "version": "1.9.1508",
+  "dataPublicacao": "2026-09-15T13:23:16Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1508/NoteZap_Setup_v1.9.1508.exe",
+  "sha256Instalador": "4773E2E055EBF1F445D21F868B6C2D19CA33AFFAE5E00BA7B8D59B0902CD2619",
+  "changelog": "Corrige o encerramento ao receber uma segunda abertura durante a inicialização do aplicativo."
 }

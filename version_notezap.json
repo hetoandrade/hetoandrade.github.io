@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1503",
-  "dataPublicacao": "2026-09-15T03:25:12Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1503/NoteZap_Setup_v1.9.1503.exe",
-  "sha256Instalador": "508B55B682965402E545A7CEA4C97D352D4E94E9F9E53B9C016EEA0F74519D6A",
-  "changelog": "Amplia temporariamente a cota para 500 anexos por conta e migra bancos existentes sem perda de arquivos."
+  "version": "1.9.1506",
+  "dataPublicacao": "2026-09-15T04:08:15Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1506/NoteZap_Setup_v1.9.1506.exe",
+  "sha256Instalador": "92491CB1C33D88771F23EC3D996544C3A4D6D6F32A92CACF5606212FC6B3ED02",
+  "changelog": "Adiciona a ação Backspace para limpar os cinco inputs de texto do NoteZap, incluindo o cancelamento da pesquisa global pendente."
 }

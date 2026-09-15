@@ -57,6 +57,10 @@
   --printcerto-cyan-rgb: 125, 211, 252;
   --printcerto-dark-rgb: 53, 77, 96;
   --printcerto-gradient: linear-gradient(135deg, #7dd3fc 0%, #4b6480 58%, #354d60 100%);
+  --printcerto-icon-light: #f3f4f6;
+  --printcerto-icon-mid: #d1d5db;
+  --printcerto-icon-border: #9ca3af;
+  --printcerto-icon-dark-rgb: 55, 65, 81;
 }
 
 html { scroll-behavior: smooth; }
@@ -1320,10 +1324,10 @@ body::before { display: none; }
   background:
     linear-gradient(
       135deg,
-      rgba(var(--printcerto-cyan-rgb), .22),
-      rgba(var(--printcerto-dark-rgb), .20));
-  border: 2px solid var(--printcerto-cyan);
-  box-shadow: 0 2px 8px rgba(var(--printcerto-dark-rgb), .18);
+      var(--printcerto-icon-light),
+      var(--printcerto-icon-mid));
+  border: 2px solid var(--printcerto-icon-border);
+  box-shadow: 0 2px 8px rgba(var(--printcerto-icon-dark-rgb), .18);
 }
 
 .app-icon.ajustehd,

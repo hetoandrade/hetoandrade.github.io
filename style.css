@@ -50,6 +50,13 @@
       #00ac83 0%,
       var(--notezap-green) 50%,
       #00966f 100%);
+  --printcerto-cyan: #7dd3fc;
+  --printcerto-blue: #4b6480;
+  --printcerto-dark: #354d60;
+  --printcerto-surface: #edf5fa;
+  --printcerto-cyan-rgb: 125, 211, 252;
+  --printcerto-dark-rgb: 53, 77, 96;
+  --printcerto-gradient: linear-gradient(135deg, #7dd3fc 0%, #4b6480 58%, #354d60 100%);
 }
 
 html { scroll-behavior: smooth; }
@@ -1309,9 +1316,20 @@ body::before { display: none; }
   box-shadow: 0 2px 8px rgba(var(--notezap-dark-rgb), .18);
 }
 
+.app-icon.printcerto {
+  background:
+    linear-gradient(
+      135deg,
+      rgba(var(--printcerto-cyan-rgb), .22),
+      rgba(var(--printcerto-dark-rgb), .20));
+  border: 2px solid var(--printcerto-cyan);
+  box-shadow: 0 2px 8px rgba(var(--printcerto-dark-rgb), .18);
+}
+
 .app-icon.ajustehd,
 .app-icon.copieecole,
-.app-icon.notezap {
+.app-icon.notezap,
+.app-icon.printcerto {
   width: 80px;
   height: 80px;
   border-radius: 18px;
@@ -1319,10 +1337,15 @@ body::before { display: none; }
 
 .app-icon.ajustehd img,
 .app-icon.copieecole img,
-.app-icon.notezap img {
+.app-icon.notezap img,
+.app-icon.printcerto img {
   width: 60px;
   height: 60px;
   object-fit: contain;
+}
+
+.app-icon.printcerto img {
+  border-radius: 12px;
 }
 
 .app-icon.copieecole img {
@@ -1646,15 +1669,108 @@ body::before { display: none; }
   }
 
   #page-copieecole .hero-actions > a,
-  #page-notezap .hero-actions > a {
+  #page-notezap .hero-actions > a,
+  #page-printcerto .hero-actions > a {
     flex: 1 1 100%;
     justify-content: center;
   }
 }
 
 /* ════════════════════════════════════════════════════════════════
-   TELADESK E AJUSTEHD — páginas completas
+   PRINTCERTO, TELADESK E AJUSTEHD — páginas completas
    ════════════════════════════════════════════════════════════════ */
+
+.hero h1 .gradient-printcerto {
+  background: var(--printcerto-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-badge.available.printcerto {
+  background: var(--printcerto-surface);
+  border-color: var(--printcerto-cyan);
+  color: var(--printcerto-dark);
+}
+
+.hero-badge.available.printcerto .dot {
+  background: var(--printcerto-cyan);
+}
+
+.btn-primary.printcerto {
+  background: var(--printcerto-gradient);
+}
+
+.btn-secondary.printcerto {
+  background: #fff;
+  border-color: var(--printcerto-cyan);
+  color: var(--printcerto-dark);
+}
+
+.btn-secondary.printcerto:hover {
+  background: var(--printcerto-surface);
+  border-color: var(--printcerto-dark);
+  color: var(--printcerto-dark);
+}
+
+#page-printcerto .painel {
+  box-shadow:
+    inset 5px 0 0 var(--printcerto-cyan),
+    0 8px 28px rgba(var(--printcerto-dark-rgb), .14);
+}
+
+#page-printcerto .hero h1,
+#page-printcerto .section-title,
+#page-printcerto .faq-arrow,
+#page-printcerto .faq-item.active .faq-arrow,
+#page-printcerto .product-previews .screenshot-label strong {
+  color: var(--printcerto-dark);
+}
+
+#page-printcerto .btn-back {
+  color: var(--printcerto-cyan);
+  border-color: rgba(var(--printcerto-cyan-rgb), .38);
+}
+
+#page-printcerto .btn-back:hover {
+  background: rgba(var(--printcerto-cyan-rgb), .12);
+  border-color: var(--printcerto-cyan);
+  color: var(--printcerto-cyan);
+}
+
+#page-printcerto .screenshot-card:hover,
+#page-printcerto .feature-card:hover,
+#page-printcerto .faq-item:hover,
+#page-printcerto .faq-item.active {
+  border-color: var(--printcerto-cyan);
+  box-shadow: 0 10px 30px rgba(var(--printcerto-dark-rgb), .16);
+}
+
+#page-printcerto .feature-card::before,
+.download-card.printcerto-theme::before {
+  background: var(--printcerto-gradient);
+}
+
+#page-printcerto .screenshot-card:focus-visible {
+  outline: 3px solid var(--printcerto-cyan);
+  outline-offset: 3px;
+}
+
+.printcerto-note {
+  background: var(--printcerto-surface);
+  border-color: var(--printcerto-cyan);
+  color: var(--printcerto-dark);
+}
+
+.download-card.printcerto-theme {
+  background: #f8fafd;
+  border-color: var(--printcerto-cyan);
+}
+
+#page-printcerto .privacy-tag:hover {
+  background: var(--printcerto-surface);
+  border-color: var(--printcerto-cyan);
+}
 
 .hero-badge.available.teladesk {
   background: #dbeafe;
@@ -1846,6 +1962,7 @@ body::before { display: none; }
 }
 
 @media (max-width: 600px) {
+  #page-printcerto .hero-actions > a,
   #page-teladesk .hero-actions > a,
   #page-ajustehd .hero-actions > a {
     flex: 1 1 100%;

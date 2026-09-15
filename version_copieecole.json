@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1403",
-  "dataPublicacao": "2026-09-14T18:23:22-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1403/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "6FBD4F61323A44FD622922EDC452E9DB330B1AAEDEBC0ED2F780E1E1106D78C4",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1403/CopieECole_Setup_v1.9.1403.exe",
-  "sha256Instalador": "F1EF14B4837A8C3ECE5ECC6D161A0304F04E37099670E082245E54542C8DDE3A",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1403/CopieECole_Update.zip",
-  "sha256": "6FBD4F61323A44FD622922EDC452E9DB330B1AAEDEBC0ED2F780E1E1106D78C4",
-  "changelog": "Adiciona colagem nativa de imagens, mantém o compositor visível sobre o teclado móvel, evita o zoom automático nos campos e torna a cópia de imagens no Windows resistente a bloqueios transitórios."
+  "version": "1.9.1404",
+  "dataPublicacao": "2026-09-14T21:38:44-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1404/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "7E0D1E247163E790165C002B44FBE4EC61C63582A5314326229A7D06C539A158",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1404/CopieECole_Setup_v1.9.1404.exe",
+  "sha256Instalador": "62BF2A77891DC340BB3FEA60DC9FA4206841CA0A75D139F88795B8BEA81806AB",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1404/CopieECole_Update.zip",
+  "sha256": "7E0D1E247163E790165C002B44FBE4EC61C63582A5314326229A7D06C539A158",
+  "changelog": "Corrige a duplicação de imagens ao colar com Ctrl+V."
 }

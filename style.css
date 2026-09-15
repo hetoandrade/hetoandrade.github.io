@@ -298,12 +298,6 @@ body::before {
 .app-icon img { width: 60px; height: 60px; border-radius: 0; transition: transform 0.3s ease; }
 .app-icon.lightshot img { width: 72px; height: 72px; }
 .app-icon.wps img { width: 66px; height: 66px; }
-.app-icon.obs {
-  background: linear-gradient(135deg, #eef2f7, #d8dee7);
-  border: 2px solid #aab4c0;
-  box-shadow: 0 2px 8px rgba(15,23,42,.18);
-}
-.app-icon.obs img { width: 72px; height: 72px; }
 .app-card:hover .app-icon img { transform: scale(1.15); }
 
 .app-card-title { display: flex; flex-direction: column; gap: 4px; }

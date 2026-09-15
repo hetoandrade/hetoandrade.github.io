@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1416",
-  "dataPublicacao": "2026-09-15T01:34:19Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1416/NoteZap_Setup_v1.9.1416.exe",
-  "sha256Instalador": "77AFFFB012B36330B4E172F8CF2430359AAECC7D071A7C22F1309D80657742A1",
-  "changelog": "As imagens coladas agora aparecem no chat por prévias leves e assíncronas, mantendo a resolução original disponível para abrir, copiar e baixar."
+  "version": "1.9.1501",
+  "dataPublicacao": "2026-09-15T03:12:24Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1501/NoteZap_Setup_v1.9.1501.exe",
+  "sha256Instalador": "DE54968FB1AC6494A35D7CA6EC8D2A8D15D5C15E2BB6DD4F74697AA1F6FEC856",
+  "changelog": "Corrige a abertura no fim e estabiliza prévias de imagem com cache de sessão e WebP leve. 💬🖼️"
 }

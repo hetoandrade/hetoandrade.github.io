@@ -1,11 +1,11 @@
 {
-  "version": "1.9.0804",
-  "dataPublicacao": "2026-09-08T11:34:43",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0804/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "d00de75e861682cb01f19947f644c0cc71b6bcdad6a44ac5a8086707924ca8a3",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0804/VozDigitada_Setup_v1.9.0804.exe",
-  "sha256Instalador": "e0e812c880d5fb5aa2263f630abb569d41df103fb4a86747a8c974a047d151c0",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.0804/VozDigitada_Update.zip",
-  "sha256": "d00de75e861682cb01f19947f644c0cc71b6bcdad6a44ac5a8086707924ca8a3",
-  "changelog": "Corrige a parada automática por silêncio: o prazo fica zerado durante a fala, o processamento e a digitação e começa inteiro após concluir a entrega do texto e voltar à escuta. Sem fala nem trabalho pendente, a parada continua respeitando o tempo configurado."
+  "version": "1.9.1503",
+  "dataPublicacao": "2026-09-15T01:07:09",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1503/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "5439e1dda469c28f3d139809a37eced6a531e8b83a069dbca0841ca88ca6fa5b",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1503/VozDigitada_Setup_v1.9.1503.exe",
+  "sha256Instalador": "ff8f9b943abaf2b4db3655af28077ff7aad6eaec597d4e61cd18eb2671c81df9",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.1503/VozDigitada_Update.zip",
+  "sha256": "5439e1dda469c28f3d139809a37eced6a531e8b83a069dbca0841ca88ca6fa5b",
+  "changelog": "Exibe os balões de gravação e Caps Lock em todos os monitores durante o ajuste, preserva uma única prévia de texto e recupera posições incompatíveis após troca de monitor ou resolução."
 }

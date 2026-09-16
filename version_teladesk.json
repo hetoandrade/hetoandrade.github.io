@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1502",
-  "dataPublicacao": "2026-09-15T11:13:30-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1502/TelaDesk-Setup-1.9.1502.exe",
-  "sha256": "ADC0DE9953F23A951743A7F2D0E73244B7CA308F75D9AA82BAEDB0DDDDAB2B2C",
-  "changelog": "Inicia com o Windows direto na bandeja e recupera automaticamente a identificação local recusada com validação segura do serviço."
+  "version": "1.9.1601",
+  "dataPublicacao": "2026-09-16T09:30:54-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1601/TelaDesk-Setup-1.9.1601.exe",
+  "sha256": "46D3CEF9AC1622D6A648DE50ED99711ADA549AE11A12D208D509341AC9A24F6B",
+  "changelog": "Corrige a inicialização em segundo plano e recupera automaticamente a identificação local recusada"
 }

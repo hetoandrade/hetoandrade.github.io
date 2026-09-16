@@ -6,6 +6,7 @@
   var RELEASES_PATH = '/hetoandrade/hetoandrade.github.io/releases/download/';
   var applications = [
     { name: 'NoteZap', manifest: 'version_notezap.json', tagPrefix: 'notezap-v', asset: function (version) { return 'NoteZap_Setup_v' + version + '.exe'; } },
+    { name: 'PrintCerto', manifest: 'version_printcerto.json', tagPrefix: 'printcerto-v', asset: function (version) { return 'PrintCerto_Setup_v' + version + '.exe'; } },
     { name: 'CopieECole', manifest: 'version_copieecole.json', tagPrefix: 'copieecole-v', asset: function (version) { return 'CopieECole_Setup_v' + version + '.exe'; } },
     { name: 'VozDigitada', manifest: 'version.json', tagPrefix: 'vozdigitada-v', asset: function (version) { return 'VozDigitada_Setup_v' + version + '.exe'; } },
     { name: 'DriverStatus', manifest: 'version_driverstatus.json', tagPrefix: 'driverstatus-v', asset: function (version) { return 'DriverStatus_Setup_v' + version + '.exe'; } },
@@ -82,7 +83,7 @@
       button.disabled = true;
       button.setAttribute('aria-busy', 'true');
       button.textContent = 'Verificando instaladores...';
-      status.textContent = 'Preparando os seis downloads.';
+      status.textContent = 'Preparando os sete downloads.';
     }
 
     function prepararDownloads(downloadAfterLoad) {
@@ -93,7 +94,7 @@
           button.disabled = false;
           button.removeAttribute('aria-busy');
           button.textContent = '⬇️ Baixar todos os instaladores';
-          status.textContent = '6 instaladores prontos · Windows 10/11';
+          status.textContent = '7 instaladores prontos · Windows 10/11';
           if (downloadAfterLoad) baixarTodos();
         })
         .catch(function () {
@@ -115,7 +116,7 @@
 
       downloadInProgress = true;
       button.disabled = true;
-      button.textContent = 'Iniciando os seis downloads...';
+      button.textContent = 'Iniciando os sete downloads...';
 
       try {
         iniciarDownloads(document, installers);

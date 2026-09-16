@@ -1,0 +1,11 @@
+{
+  "version": "1.9.1601",
+  "dataPublicacao": "2026-09-16T10:25:37-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1601/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "f44f838bce071f75680e46e65b35aca44cf61e3ba82935b5216c64fff21c3f63",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1601/PrintCerto_Setup_v1.9.1601.exe",
+  "sha256Instalador": "8f57c29c7636d6f217b62ffbb7565a445a9bfcbb1224472adcf30196e4049ff7",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1601/PrintCerto_Update.zip",
+  "sha256": "f44f838bce071f75680e46e65b35aca44cf61e3ba82935b5216c64fff21c3f63",
+  "changelog": "Adiciona atualização automática em segundo plano, aviso na bandeja, aplicação na próxima abertura e preservação da escolha de iniciar com o Windows."
+}

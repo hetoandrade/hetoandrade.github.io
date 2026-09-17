@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1521",
-  "dataPublicacao": "2026-09-15T21:19:10Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1521/NoteZap_Setup_v1.9.1521.exe",
-  "sha256Instalador": "AA90460BE372690E8ACAF8AB429DDF9539B568C99A6F2C91E13336098368B597",
-  "changelog": "Registra e exibe a data do item ao marcá-lo como concluído."
+  "version": "1.9.1612",
+  "dataPublicacao": "2026-09-17T11:49:53Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1612/NoteZap_Setup_v1.9.1612.exe",
+  "sha256Instalador": "2ACD983F4B52694B32032ABD52472E784DD2D6A191A1EB76DE81D68A13D8E853",
+  "changelog": "Padroniza o ícone de Configurações no menu da bandeja com a engrenagem vetorial usada nos demais aplicativos."
 }

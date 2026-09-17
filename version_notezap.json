@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1716",
-  "dataPublicacao": "2026-09-17T19:50:32Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1716/NoteZap_Setup_v1.9.1716.exe",
-  "sha256Instalador": "AD9561722214C92F2A6C3C452791EC5B10D65A07AECAB88CD1A763AB16502A3E",
-  "changelog": "Adiciona responder, compartilhar e tornar anotações mais recentes pelo menu de ações, com prévias diferenciadas nas respostas."
+  "version": "1.9.1720",
+  "dataPublicacao": "2026-09-17T22:20:31Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1720/NoteZap_Setup_v1.9.1720.exe",
+  "sha256Instalador": "7CD70F7A23D99A39B44BF4B65284873671E3F3BFC5BCCE2860F014C8CE808B19",
+  "changelog": "Reconhece links HTTP, HTTPS e www e exibe imagem, título e resumo acima das anotações, com atualização da prévia ao editar o texto."
 }

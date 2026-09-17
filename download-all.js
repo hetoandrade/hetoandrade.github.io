@@ -4,6 +4,9 @@
   var VERSION_PATTERN = /^\d+\.\d{1,2}\.\d{4}$/;
   var SHA256_PATTERN = /^[a-fA-F0-9]{64}$/;
   var RELEASES_PATH = '/hetoandrade/hetoandrade.github.io/releases/download/';
+  var DOWNLOAD_INTERVAL_MS = 1000;
+  var PERMISSION_WAIT_MS = 5000;
+  var READY_BUTTON_TEXT = '⬇️ Baixar todos os aplicativos de uma vez';
   var applications = [
     { name: 'NoteZap', manifest: 'version_notezap.json', tagPrefix: 'notezap-v', asset: function (version) { return 'NoteZap_Setup_v' + version + '.exe'; } },
     { name: 'PrintCerto', manifest: 'version_printcerto.json', tagPrefix: 'printcerto-v', asset: function (version) { return 'PrintCerto_Setup_v' + version + '.exe'; } },
@@ -57,8 +60,26 @@
     }));
   }
 
-  function iniciarDownloads(document, installers) {
-    installers.forEach(function (installer) {
+  function esperar(setTimeoutFunction, delay) {
+    return new Promise(function (resolve) {
+      setTimeoutFunction(resolve, delay);
+    });
+  }
+
+  async function iniciarDownloads(document, installers, onProgress, setTimeoutFunction) {
+    var schedule = setTimeoutFunction || global.setTimeout.bind(global);
+
+    for (var index = 0; index < installers.length; index++) {
+      if (index === 1) {
+        await esperar(schedule, DOWNLOAD_INTERVAL_MS);
+      } else if (index === 2) {
+        await esperar(schedule, PERMISSION_WAIT_MS);
+      } else if (index > 2) {
+        await esperar(schedule, DOWNLOAD_INTERVAL_MS);
+      }
+
+      var installer = installers[index];
+      if (typeof onProgress === 'function') onProgress(installer, index, installers.length);
       var link = document.createElement('a');
       link.href = installer.url;
       link.download = installer.fileName;
@@ -66,7 +87,7 @@
       document.body.appendChild(link);
       link.click();
       link.remove();
-    });
+    }
   }
 
   function inicializar() {
@@ -76,6 +97,8 @@
     var manifestUrl = global.HetoandradeSite && global.HetoandradeSite.manifestUrl;
     var installers = [];
     var downloadInProgress = false;
+    var installerCount = applications.length;
+    var installerLabel = installerCount + ' instaladores';
 
     if (!button || !status || typeof global.fetch !== 'function' || typeof manifestUrl !== 'function') return;
 
@@ -83,7 +106,7 @@
       button.disabled = true;
       button.setAttribute('aria-busy', 'true');
       button.textContent = 'Verificando instaladores...';
-      status.textContent = 'Preparando os sete downloads.';
+      status.textContent = 'Preparando ' + installerCount + ' downloads.';
     }
 
     function prepararDownloads(downloadAfterLoad) {
@@ -93,8 +116,8 @@
           installers = loadedInstallers;
           button.disabled = false;
           button.removeAttribute('aria-busy');
-          button.textContent = '⬇️ Baixar todos os instaladores';
-          status.textContent = '7 instaladores prontos · Windows 10/11';
+          button.textContent = READY_BUTTON_TEXT;
+          status.textContent = installerLabel + ' prontos · Windows 10/11';
           if (downloadAfterLoad) baixarTodos();
         })
         .catch(function () {
@@ -116,22 +139,28 @@
 
       downloadInProgress = true;
       button.disabled = true;
-      button.textContent = 'Iniciando os sete downloads...';
+      button.setAttribute('aria-busy', 'true');
+      button.textContent = 'Iniciando 1 de ' + installerCount + '...';
+      status.textContent = 'Se o navegador perguntar, permita vários downloads.';
 
-      try {
-        iniciarDownloads(document, installers);
-        status.textContent = 'Downloads iniciados. Se o navegador perguntar, permita vários downloads.';
-        global.setTimeout(function () {
+      iniciarDownloads(document, installers, function (installer, index, total) {
+        button.textContent = 'Iniciando ' + (index + 1) + ' de ' + total + '...';
+        status.textContent = 'Solicitando ' + installer.name + '. Permita vários downloads quando o navegador perguntar.';
+      }, global.setTimeout.bind(global))
+        .then(function () {
           downloadInProgress = false;
           button.disabled = false;
-          button.textContent = '⬇️ Baixar novamente';
-        }, 2000);
-      } catch (error) {
-        downloadInProgress = false;
-        button.disabled = false;
-        button.textContent = 'Tentar novamente';
-        status.textContent = 'Não foi possível iniciar todos os downloads. Tente novamente.';
-      }
+          button.removeAttribute('aria-busy');
+          button.textContent = READY_BUTTON_TEXT;
+          status.textContent = installerCount + ' downloads solicitados. Se algum não apareceu, permita vários downloads e tente novamente.';
+        })
+        .catch(function () {
+          downloadInProgress = false;
+          button.disabled = false;
+          button.removeAttribute('aria-busy');
+          button.textContent = 'Tentar novamente';
+          status.textContent = 'Não foi possível solicitar todos os downloads. Tente novamente.';
+        });
     }
 
     button.addEventListener('click', baixarTodos);
@@ -141,6 +170,9 @@
   global.HetoandradeSite = global.HetoandradeSite || {};
   global.HetoandradeSite.downloadAll = {
     applications: applications,
+    downloadIntervalMs: DOWNLOAD_INTERVAL_MS,
+    permissionWaitMs: PERMISSION_WAIT_MS,
+    readyButtonText: READY_BUTTON_TEXT,
     validarManifesto: validarManifesto,
     carregarInstaladores: carregarInstaladores,
     iniciarDownloads: iniciarDownloads,

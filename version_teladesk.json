@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1705",
-  "dataPublicacao": "2026-09-17T18:54:15-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1705/TelaDesk-Setup-1.9.1705.exe",
-  "sha256": "B5825FF58E5A2918B6FEED0CBBBBFB95A4C47E37071543FF995FC220A9F77029",
-  "changelog": "Corrige a troca involuntária de monitor, preservando a última tela escolhida durante a recuperação da conexão. Reduz o aviso de acesso ativo e reorganiza o diálogo de arquivos existentes com a ação Substituir."
+  "version": "1.9.1707",
+  "dataPublicacao": "2026-09-17T19:41:43-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1707/TelaDesk-Setup-1.9.1707.exe",
+  "sha256": "8681871F53DAE2DDA176D447423C857EC0255EE868BBD97F4C3F691AF76C256B",
+  "changelog": "Ajusta o aviso compacto para mostrar somente o indicador verde e o texto Remoto completo. Remove a mensagem de sucesso ao selecionar um monitor, mantendo os avisos quando a troca falha ou não é confirmada."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1710",
-  "dataPublicacao": "2026-09-17T16:45:39Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1710/NoteZap_Setup_v1.9.1710.exe",
-  "sha256Instalador": "ED4C5AE7E71D2A3CF7460A0F6F5D1B295F4B0A4D385967B1AC5ECA9D09F9B91C",
-  "changelog": "Reforça o degradê verde do ícone do NoteZap para alinhar a identidade visual ao conjunto de aplicativos."
+  "version": "1.9.1713",
+  "dataPublicacao": "2026-09-17T17:51:38Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.1713/NoteZap_Setup_v1.9.1713.exe",
+  "sha256Instalador": "B56CFC6EFEC9EB4A69B561BE9131FE21C3A99C2078B83C9E1B3B212E71DE210D",
+  "changelog": "Estabiliza a data à direita ao desmarcar itens e centraliza o botão de apagar no compositor."
 }

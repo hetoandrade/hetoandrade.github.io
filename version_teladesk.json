@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1703",
-  "dataPublicacao": "2026-09-17T16:00:51-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1703/TelaDesk-Setup-1.9.1703.exe",
-  "sha256": "047E6A67A04386B2F33BC87CCA6744E9CC2CA8BBDC7641D60B6A54271D8D8AE6",
-  "changelog": "Corrige a transferência de arquivos usando staging compartilhado entre o aplicativo e o serviço do Windows."
+  "version": "1.9.1704",
+  "dataPublicacao": "2026-09-17T17:01:48-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1704/TelaDesk-Setup-1.9.1704.exe",
+  "sha256": "505A376B7DAC643938F84F94194D88492755CF823BACFE854CFA969845EA9BE8",
+  "changelog": "Corrige a persistência da seleção de monitor após reconexões e apresenta em português os erros de transferência de arquivos bloqueados."
 }

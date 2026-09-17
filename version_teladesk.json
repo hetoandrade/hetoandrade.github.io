@@ -1,7 +1,7 @@
 {
-  "version": "1.9.1601",
-  "dataPublicacao": "2026-09-16T09:30:54-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1601/TelaDesk-Setup-1.9.1601.exe",
-  "sha256": "46D3CEF9AC1622D6A648DE50ED99711ADA549AE11A12D208D509341AC9A24F6B",
-  "changelog": "Corrige a inicialização em segundo plano e recupera automaticamente a identificação local recusada"
+  "version": "1.9.1702",
+  "dataPublicacao": "2026-09-17T15:10:46-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.1702/TelaDesk-Setup-1.9.1702.exe",
+  "sha256": "31A1782F1891CBADD29563D0C224E48153210A65C3AF4CC553E68B46FF503DC9",
+  "changelog": "Corrige troca de monitores com confirmação remota e estabiliza transferência de arquivos pelo relay protegido."
 }

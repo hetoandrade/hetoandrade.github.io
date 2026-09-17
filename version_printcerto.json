@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1618",
-  "dataPublicacao": "2026-09-16T22:27:55-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1618/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "3e0b2d39b6be2e7e6e7727d527d393578d8b8334f9135b77bc8f0b9afffae74e",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1618/PrintCerto_Setup_v1.9.1618.exe",
-  "sha256Instalador": "101881c708fe60071a3b2180ec33cad0716c892f6ae4ead1026c3dd43bee0d04",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1618/PrintCerto_Update.zip",
-  "sha256": "3e0b2d39b6be2e7e6e7727d527d393578d8b8334f9135b77bc8f0b9afffae74e",
-  "changelog": "Melhora a visibilidade das guias do retângulo, reduz o indicador de resolução e ajusta a posição das dicas e dos ícones de seta e traço no editor de captura."
+  "version": "1.9.1621",
+  "dataPublicacao": "2026-09-17T08:48:52-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1621/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "759c3fe5cad56d94d0d198b48aa53eb2cc9ecc1f77892f1a33d675ff7a1482cf",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1621/PrintCerto_Setup_v1.9.1621.exe",
+  "sha256Instalador": "2b83c1894c28febff6cd51a1606003e55b83dab1ce86d3b7397b863aa9a42b44",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1621/PrintCerto_Update.zip",
+  "sha256": "759c3fe5cad56d94d0d198b48aa53eb2cc9ecc1f77892f1a33d675ff7a1482cf",
+  "changelog": "Padroniza o ícone de atualização do PrintCerto e publica a versão compilada atual."
 }

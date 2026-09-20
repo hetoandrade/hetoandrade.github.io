@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1803",
-  "dataPublicacao": "2026-09-18T17:12:19-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1803/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "878d04a8f8324f3fc910c1e69db897dfff8d83fe3eb4ca1d77f2631d91ba07ad",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1803/PrintCerto_Setup_v1.9.1803.exe",
-  "sha256Instalador": "fdb4ab18b76dd8d6d87bcc8281a78f7d49ba7ca82e5b66f63aa55d3c14a89e4d",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.1803/PrintCerto_Update.zip",
-  "sha256": "878d04a8f8324f3fc910c1e69db897dfff8d83fe3eb4ca1d77f2631d91ba07ad",
-  "changelog": "Adiciona um terceiro atalho opcional de captura, posiciona a seção Windows antes dos atalhos e esclarece a opção Selecionar a tela toda ao capturar abaixo da escolha do monitor."
+  "version": "1.9.2010",
+  "dataPublicacao": "2026-09-20T14:18:10-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2010/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "6952c2e62c2cebd3de4517f72dc3789e3119136a4e4b3dc1b53c6cdedb79f026",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2010/PrintCerto_Setup_v1.9.2010.exe",
+  "sha256Instalador": "88325a0a321a284f929f64535fb83517d677418b271d421c027b4e671cc4ac6a",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2010/PrintCerto_Update.zip",
+  "sha256": "6952c2e62c2cebd3de4517f72dc3789e3119136a4e4b3dc1b53c6cdedb79f026",
+  "changelog": "Padroniza os ícones do menu da bandeja e unifica o ícone de configurações com os demais aplicativos."
 }

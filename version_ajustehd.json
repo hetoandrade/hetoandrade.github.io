@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1403",
-  "dataPublicacao": "2026-09-14T19:03:43-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.1403/AjusteHD_Update.zip",
-  "sha256PacoteAtualizacao": "1b3827e8a2b8c54330f3d32010eb86f53f5db6f1722c25d6fb8352c41d7822a6",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.1403/AjusteHD_Setup_v1.9.1403.exe",
-  "sha256Instalador": "c34d657bc10637d728b564de13cb055cff466caffdb7fd2fda64a142a0204328",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.1403/AjusteHD_Update.zip",
-  "sha256": "1b3827e8a2b8c54330f3d32010eb86f53f5db6f1722c25d6fb8352c41d7822a6",
-  "changelog": "Recompila o motor NTFS com limites explícitos para aumento pela esquerda, corrige o progresso de falha e inclui diagnósticos detalhados das cinco operações."
+  "version": "1.9.2005",
+  "dataPublicacao": "2026-09-20T14:13:24-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.2005/AjusteHD_Update.zip",
+  "sha256PacoteAtualizacao": "05d76cf55b3d6cee4e56f98d58cc2e4262d4329425f07f5d1c32f696c395b8b7",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.2005/AjusteHD_Setup_v1.9.2005.exe",
+  "sha256Instalador": "6e58d1687430b2e3f219aa138b14d59197091de20955b27f7ddc415ddbf19cd3",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.2005/AjusteHD_Update.zip",
+  "sha256": "05d76cf55b3d6cee4e56f98d58cc2e4262d4329425f07f5d1c32f696c395b8b7",
+  "changelog": "Padroniza os ícones do menu da bandeja e mantém o indicador visual de atualização aprovado."
 }

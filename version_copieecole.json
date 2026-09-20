@@ -1,11 +1,11 @@
 {
-  "version": "1.9.1708",
-  "dataPublicacao": "2026-09-17T16:02:55-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1708/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "EB15C1A3E3D0316907E5A54DF05DFD820C545D41F9212E5065994CC74A9C5D95",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1708/CopieECole_Setup_v1.9.1708.exe",
-  "sha256Instalador": "67983980010D14FAD3813FDC6F68A3C94BBDFA5E6AB69157029CEDAE306EB3B4",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.1708/CopieECole_Update.zip",
-  "sha256": "EB15C1A3E3D0316907E5A54DF05DFD820C545D41F9212E5065994CC74A9C5D95",
-  "changelog": "Exibe o ícone Backspace em todos os campos de texto editáveis do Web e Desktop, limpa o conteúdo, restaura o foco e cancela pesquisas pendentes."
+  "version": "1.9.2004",
+  "dataPublicacao": "2026-09-20T14:15:45-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2004/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "37C57B40B68B5F5AE903C7526DB66844B154D11FB8DB00E618855D61CB8CCD63",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2004/CopieECole_Setup_v1.9.2004.exe",
+  "sha256Instalador": "79B7A271A1EAD1546E307E0F32279D7EB82FE28BC3E0C0317830FEC48EFBF9F6",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2004/CopieECole_Update.zip",
+  "sha256": "37C57B40B68B5F5AE903C7526DB66844B154D11FB8DB00E618855D61CB8CCD63",
+  "changelog": "Padroniza tamanho, alinhamento e desenho dos ícones do menu da bandeja, preservando o indicador visual de atualização."
 }

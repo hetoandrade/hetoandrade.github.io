@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2004",
-  "dataPublicacao": "2026-09-20T14:16:06",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2004/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "0511ed64ebf136d42e891a1480542dbfc07305b9a22943bbd4193d85906c2233",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2004/DriverStatus_Setup_v1.9.2004.exe",
-  "sha256Instalador": "2d4eab07b3bca28cf8893dcd61fc92051342904d7171b19386c1a71a39cc4d63",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2004/DriverStatus_Update.zip",
-  "sha256": "0511ed64ebf136d42e891a1480542dbfc07305b9a22943bbd4193d85906c2233",
-  "changelog": "Padroniza tamanho, alinhamento e desenho dos ícones do menu da bandeja, preservando o indicador visual de atualização."
+  "version": "1.9.2104",
+  "dataPublicacao": "2026-09-21T12:04:26",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2104/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "1c8f5253e980c0d2a25791a684e7a593845f0e18222f165916eca59e09682333",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2104/DriverStatus_Setup_v1.9.2104.exe",
+  "sha256Instalador": "50ef94058cb6bb7eaad46c288f872b47a8359d1fb9073556b2f8dffc323cc0bf",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2104/DriverStatus_Update.zip",
+  "sha256": "1c8f5253e980c0d2a25791a684e7a593845f0e18222f165916eca59e09682333",
+  "changelog": "Adiciona HDR automático ao Modo Jogo com restauração do estado anterior, seleção do monitor compatível, identificação completa do monitor principal, seletor compacto, nova ordem do menu e aceite persistente dos termos de atualização."
 }

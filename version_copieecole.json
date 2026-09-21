@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2004",
-  "dataPublicacao": "2026-09-20T14:15:45-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2004/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "37C57B40B68B5F5AE903C7526DB66844B154D11FB8DB00E618855D61CB8CCD63",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2004/CopieECole_Setup_v1.9.2004.exe",
-  "sha256Instalador": "79B7A271A1EAD1546E307E0F32279D7EB82FE28BC3E0C0317830FEC48EFBF9F6",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2004/CopieECole_Update.zip",
-  "sha256": "37C57B40B68B5F5AE903C7526DB66844B154D11FB8DB00E618855D61CB8CCD63",
-  "changelog": "Padroniza tamanho, alinhamento e desenho dos ícones do menu da bandeja, preservando o indicador visual de atualização."
+  "version": "1.9.2104",
+  "dataPublicacao": "2026-09-21T18:38:00-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2104/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "BD69B71472C104A743BADB24B71648CC24B52EBEEF1B5C52A7AA845886DFD3E6",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2104/CopieECole_Setup_v1.9.2104.exe",
+  "sha256Instalador": "449A51153E9F43BCB0487E9BC0418C1B1695238986370CC1EFDA6FFB538BAE5B",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2104/CopieECole_Update.zip",
+  "sha256": "BD69B71472C104A743BADB24B71648CC24B52EBEEF1B5C52A7AA845886DFD3E6",
+  "changelog": "Padroniza Configurações com PrintCerto e NoteZap, corrige o botão Voltar e a versão exibida, preserva a sessão ao abrir Configurações e coordena a reconexão ao retornar à conversa."
 }

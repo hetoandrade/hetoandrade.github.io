@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2010",
-  "dataPublicacao": "2026-09-20T14:18:10-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2010/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "6952c2e62c2cebd3de4517f72dc3789e3119136a4e4b3dc1b53c6cdedb79f026",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2010/PrintCerto_Setup_v1.9.2010.exe",
-  "sha256Instalador": "88325a0a321a284f929f64535fb83517d677418b271d421c027b4e671cc4ac6a",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2010/PrintCerto_Update.zip",
-  "sha256": "6952c2e62c2cebd3de4517f72dc3789e3119136a4e4b3dc1b53c6cdedb79f026",
-  "changelog": "Padroniza os ícones do menu da bandeja e unifica o ícone de configurações com os demais aplicativos."
+  "version": "1.9.2101",
+  "dataPublicacao": "2026-09-22T09:53:49-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2101/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "d7c4e5bb7b8230087d1cd2840aa33d31c2efc52d9442b1fac409a0156f6d0acb",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2101/PrintCerto_Setup_v1.9.2101.exe",
+  "sha256Instalador": "a78ebea22590c28e82c5afbb9423702565dd67ce078e9146f71e93f8626bc846",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2101/PrintCerto_Update.zip",
+  "sha256": "d7c4e5bb7b8230087d1cd2840aa33d31c2efc52d9442b1fac409a0156f6d0acb",
+  "changelog": "Simplifica a tela Sobre, remove o canal de suporte por e-mail e mantém os acessos oficiais ao Site e à doação."
 }

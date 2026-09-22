@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2101",
-  "dataPublicacao": "2026-09-21T15:06:12Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2101/NoteZap_Setup_v1.9.2101.exe",
-  "sha256Instalador": "4C49B8F0CAB42A36A0D9EE7BCA3FB1B12186D9C44C0B13BA6E56FEE1A0C92FD4",
-  "changelog": "Implementa o arraste animado dos assuntos e o acesso por código para e-mails cadastrados, com remetente profissional do Resend."
+  "version": "1.9.2109",
+  "dataPublicacao": "2026-09-22T16:01:41Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2109/NoteZap_Setup_v1.9.2109.exe",
+  "sha256Instalador": "6DB5D0DE106A05C406307C1BF7DA1E8AF7DD7DD1AC973271623F9E30F9A734BD",
+  "changelog": "Publica as Configurações com a aba Sobre e o visual atualizado, os ajustes de câmera, orientação de imagens e hints, e a preservação da posição da conversa ao retornar."
 }

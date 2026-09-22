@@ -3,5 +3,5 @@
   "dataPublicacao": "2026-09-22T16:01:41Z",
   "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2109/NoteZap_Setup_v1.9.2109.exe",
   "sha256Instalador": "6DB5D0DE106A05C406307C1BF7DA1E8AF7DD7DD1AC973271623F9E30F9A734BD",
-  "changelog": "Publica as Configurações com a aba Sobre e o visual atualizado, os ajustes de câmera, orientação de imagens e hints, e a preservação da posição da conversa ao retornar."
+  "changelog": "Disponibiliza a aba Sobre nas Configurações e atualiza o NoteZap Desktop e Web/API."
 }

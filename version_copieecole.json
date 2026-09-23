@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2302",
-  "dataPublicacao": "2026-09-23T08:20:59-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2302/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "401C08D317ACF57F75FE4AEBFF5018CAFD504A80C0FBB389F167B2D3410EA3E9",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2302/CopieECole_Setup_v1.9.2302.exe",
-  "sha256Instalador": "94E929CAA7012502E6AE45960D940DBC33C6D1B6B1D3F7EBE18672815B5F4FDB",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2302/CopieECole_Update.zip",
-  "sha256": "401C08D317ACF57F75FE4AEBFF5018CAFD504A80C0FBB389F167B2D3410EA3E9",
-  "changelog": "Habilita a prévia da câmera no painel do chat Web e PWA e aguarda a foto antes de fechar o painel."
+  "version": "1.9.2303",
+  "dataPublicacao": "2026-09-23T09:31:31-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2303/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "71D879046F88DF346AFE1D2726F5F4ED85751EDA7BD523ED6E125C16525E259B",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2303/CopieECole_Setup_v1.9.2303.exe",
+  "sha256Instalador": "FF7B57C865F747527A2388426CE3EEFE9B154716EC6A0CC0423CC6E8A5464A12",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2303/CopieECole_Update.zip",
+  "sha256": "71D879046F88DF346AFE1D2726F5F4ED85751EDA7BD523ED6E125C16525E259B",
+  "changelog": "Ajusta a prévia da câmera no painel e a posição do campo de mensagem com o teclado aberto"
 }

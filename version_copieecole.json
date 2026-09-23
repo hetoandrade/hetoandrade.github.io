@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2305",
-  "dataPublicacao": "2026-09-23T10:23:12-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2305/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "1B9954BEAE725C5498FFD37CDB22C91232B4A1B8D8B75475463C40E66B0545CB",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2305/CopieECole_Setup_v1.9.2305.exe",
-  "sha256Instalador": "CE1891C219AF1A8C1FBF0FF664F259C695A7D5B6947CF7237CD5624F7C3B400A",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2305/CopieECole_Update.zip",
-  "sha256": "1B9954BEAE725C5498FFD37CDB22C91232B4A1B8D8B75475463C40E66B0545CB",
-  "changelog": "Amplia a folga do campo de mensagem para evitar a sobreposição pela barra de endereço do Chrome no iPhone."
+  "version": "1.9.2307",
+  "dataPublicacao": "2026-09-23T19:12:51-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2307/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "5517C1AFA7A696DB01BFD1D72BBCC3B3DC69D66B3C2D34CFCDC603D63BFA7988",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2307/CopieECole_Setup_v1.9.2307.exe",
+  "sha256Instalador": "6A2AC4C959B32A2FBBF1D28AF6E2B464A35F3DD479FDFB115466704A2F5A62A3",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2307/CopieECole_Update.zip",
+  "sha256": "5517C1AFA7A696DB01BFD1D72BBCC3B3DC69D66B3C2D34CFCDC603D63BFA7988",
+  "changelog": "Inclui histórico local de identificadores nas entradas Web e Desktop e corrige o endereço público do link de convite no Desktop."
 }

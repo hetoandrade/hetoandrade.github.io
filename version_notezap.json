@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2303",
-  "dataPublicacao": "2026-09-23T14:02:47Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2303/NoteZap_Setup_v1.9.2303.exe",
-  "sha256Instalador": "EF50FBAF38686D33EE56920A519AF4CA8499CD503BB1931A14F58E59949C23D3",
-  "changelog": "Mantém o campo de digitação acima do teclado no navegador e PWA, acompanhando a área visível e ajustando o modo memo quando falta espaço."
+  "version": "1.9.2306",
+  "dataPublicacao": "2026-09-23T22:27:40Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2306/NoteZap_Setup_v1.9.2306.exe",
+  "sha256Instalador": "C397975269583896FF77F10D324686DAC22B9715400792FF051C29A0796EE067",
+  "changelog": "Unifica o acesso às configurações do NoteZap: o menu da bandeja abre a página existente no aplicativo, sem criar outra janela."
 }

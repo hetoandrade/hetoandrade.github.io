@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2203",
-  "dataPublicacao": "2026-09-22T21:05:40-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2203/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "260004958A4E1A4F01ECCF2466FD0CFFE0135F386EC4AE6BC2A2AC4B817C2A9D",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2203/CopieECole_Setup_v1.9.2203.exe",
-  "sha256Instalador": "1B6023E0EDEBB0E39BC62D6E3D8F85B9987399BF804B63330F5667054B223A82",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2203/CopieECole_Update.zip",
-  "sha256": "260004958A4E1A4F01ECCF2466FD0CFFE0135F386EC4AE6BC2A2AC4B817C2A9D",
-  "changelog": "Exibe video ao vivo na previa da camera e usa captura nativa no toque original quando necessario; ajusta as areas seguras do PWA no iPhone."
+  "version": "1.9.2301",
+  "dataPublicacao": "2026-09-23T00:23:09-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2301/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "C06179674420D608A1D41EF124CC05D0E019B60D00F591D61DD8530016E8F0BA",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2301/CopieECole_Setup_v1.9.2301.exe",
+  "sha256Instalador": "5633C1167506764543EC1B1D88D38892571FD3816795A435C3AE6C459E9B6D90",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2301/CopieECole_Update.zip",
+  "sha256": "C06179674420D608A1D41EF124CC05D0E019B60D00F591D61DD8530016E8F0BA",
+  "changelog": "Corrige a prévia da câmera no PWA do iPhone e mantém o campo de mensagem acima do teclado."
 }

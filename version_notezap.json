@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2301",
-  "dataPublicacao": "2026-09-23T03:12:26Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2301/NoteZap_Setup_v1.9.2301.exe",
-  "sha256Instalador": "B01C2A8726FA8405B358BE90A15DD0FACF424442BA7D283790056259666D8789",
-  "changelog": "Corrige a área segura do PWA no Safari do iPhone e posiciona o campo de digitação acima do teclado no iPad."
+  "version": "1.9.2303",
+  "dataPublicacao": "2026-09-23T14:02:47Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2303/NoteZap_Setup_v1.9.2303.exe",
+  "sha256Instalador": "EF50FBAF38686D33EE56920A519AF4CA8499CD503BB1931A14F58E59949C23D3",
+  "changelog": "Mantém o campo de digitação acima do teclado no navegador e PWA, acompanhando a área visível e ajustando o modo memo quando falta espaço."
 }

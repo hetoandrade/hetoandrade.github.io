@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2304",
-  "dataPublicacao": "2026-09-23T10:04:26-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2304/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "6FD4CD911B06DE25CF8384A0678BD1907AE2C656CB3CFAE346F99BCBA8FDF14B",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2304/CopieECole_Setup_v1.9.2304.exe",
-  "sha256Instalador": "5A65678E10C11513756251E68627F2D71CB089784D71218CEC825B212047544F",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2304/CopieECole_Update.zip",
-  "sha256": "6FD4CD911B06DE25CF8384A0678BD1907AE2C656CB3CFAE346F99BCBA8FDF14B",
-  "changelog": "Afasta o campo de mensagem da barra inferior do navegador ao digitar no chat Web móvel."
+  "version": "1.9.2305",
+  "dataPublicacao": "2026-09-23T10:23:12-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2305/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "1B9954BEAE725C5498FFD37CDB22C91232B4A1B8D8B75475463C40E66B0545CB",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2305/CopieECole_Setup_v1.9.2305.exe",
+  "sha256Instalador": "CE1891C219AF1A8C1FBF0FF664F259C695A7D5B6947CF7237CD5624F7C3B400A",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2305/CopieECole_Update.zip",
+  "sha256": "1B9954BEAE725C5498FFD37CDB22C91232B4A1B8D8B75475463C40E66B0545CB",
+  "changelog": "Amplia a folga do campo de mensagem para evitar a sobreposição pela barra de endereço do Chrome no iPhone."
 }

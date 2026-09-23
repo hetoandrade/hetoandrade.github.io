@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2303",
-  "dataPublicacao": "2026-09-23T09:31:31-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2303/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "71D879046F88DF346AFE1D2726F5F4ED85751EDA7BD523ED6E125C16525E259B",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2303/CopieECole_Setup_v1.9.2303.exe",
-  "sha256Instalador": "FF7B57C865F747527A2388426CE3EEFE9B154716EC6A0CC0423CC6E8A5464A12",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2303/CopieECole_Update.zip",
-  "sha256": "71D879046F88DF346AFE1D2726F5F4ED85751EDA7BD523ED6E125C16525E259B",
-  "changelog": "Ajusta a prévia da câmera no painel e a posição do campo de mensagem com o teclado aberto"
+  "version": "1.9.2304",
+  "dataPublicacao": "2026-09-23T10:04:26-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2304/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "6FD4CD911B06DE25CF8384A0678BD1907AE2C656CB3CFAE346F99BCBA8FDF14B",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2304/CopieECole_Setup_v1.9.2304.exe",
+  "sha256Instalador": "5A65678E10C11513756251E68627F2D71CB089784D71218CEC825B212047544F",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2304/CopieECole_Update.zip",
+  "sha256": "6FD4CD911B06DE25CF8384A0678BD1907AE2C656CB3CFAE346F99BCBA8FDF14B",
+  "changelog": "Afasta o campo de mensagem da barra inferior do navegador ao digitar no chat Web móvel."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2102",
-  "dataPublicacao": "2026-09-21T12:03:51",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.2102/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "deb40f762838109846185982de8ed1e1e3f86a48cdec932267c1af7c10ec2d66",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.2102/VozDigitada_Setup_v1.9.2102.exe",
-  "sha256Instalador": "0819b2ca6e35ee6e801acc68f6ed38069d39c330f3d4cc4d7fce30be33c16103",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.2102/VozDigitada_Update.zip",
-  "sha256": "deb40f762838109846185982de8ed1e1e3f86a48cdec932267c1af7c10ec2d66",
-  "changelog": "Organiza as configurações gerais em três cartões visuais com melhor espaçamento."
+  "version": "1.9.2301",
+  "dataPublicacao": "2026-09-23T19:16:41",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.2301/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "5c38e00dff1601e29449a1a7619c18c2d197faf9d1c7e47de8f8596dcf9a3d8f",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.2301/VozDigitada_Setup_v1.9.2301.exe",
+  "sha256Instalador": "3d3ae3145928e15ee54da477c329cb37dfb7d4bdda68867f74683dd95c4b7ddf",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.9.2301/VozDigitada_Update.zip",
+  "sha256": "5c38e00dff1601e29449a1a7619c18c2d197faf9d1c7e47de8f8596dcf9a3d8f",
+  "changelog": "Reconexão automática do microfone após perda do dispositivo de áudio durante a gravação."
 }

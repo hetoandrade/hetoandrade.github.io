@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2309",
-  "dataPublicacao": "2026-09-23T20:55:10-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2309/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "10BB1B1239E4A69E5C8338C521852DDF2DD22E3ED12D276C640DAEB89E1BD478",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2309/CopieECole_Setup_v1.9.2309.exe",
-  "sha256Instalador": "42268DFFE64D4FBA3BE68105D5C2AB9E60D8CFA2CC56943962154BCDB3F45B64",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2309/CopieECole_Update.zip",
-  "sha256": "10BB1B1239E4A69E5C8338C521852DDF2DD22E3ED12D276C640DAEB89E1BD478",
-  "changelog": "Histórico registra apenas identificadores lembrados e apresenta a opção antes do botão Histórico."
+  "version": "1.9.2401",
+  "dataPublicacao": "2026-09-24T14:37:50-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2401/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "6A7A7558FD79B12FFF8D3C792019B9EA96A765CA8743A1F24ADB34B697991954",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2401/CopieECole_Setup_v1.9.2401.exe",
+  "sha256Instalador": "00E6185A43A8774AE030C2C4C45BD3BBF949F2BD34E728AEB5010D61BFDDAF7E",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2401/CopieECole_Update.zip",
+  "sha256": "6A7A7558FD79B12FFF8D3C792019B9EA96A765CA8743A1F24ADB34B697991954",
+  "changelog": "Corrige a restauração da conversa após atualizar uma aba antiga, evita carregamento indefinido e permite sair quando o servidor falha."
 }

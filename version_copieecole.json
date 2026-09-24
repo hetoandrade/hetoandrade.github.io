@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2402",
-  "dataPublicacao": "2026-09-24T15:46:33-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2402/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "228E9D34E322615E6BD69F0BC07B4BE7EF9E6225C2E6288A7FBFE70567F7D7EB",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2402/CopieECole_Setup_v1.9.2402.exe",
-  "sha256Instalador": "D9913C9FDD967F85385051F13777294CBDF0AE8DA0619184AF4A2A22B61F3BC0",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2402/CopieECole_Update.zip",
-  "sha256": "228E9D34E322615E6BD69F0BC07B4BE7EF9E6225C2E6288A7FBFE70567F7D7EB",
-  "changelog": "Corrige o retorno por gesto na Web para manter a confirmação de saída disponível após cancelar."
+  "version": "1.9.2403",
+  "dataPublicacao": "2026-09-24T17:31:05-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2403/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "BD1F3D832B8E876B53396C118FC5BE5DCC6D4892899542C1CEF670AB3F3F784F",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2403/CopieECole_Setup_v1.9.2403.exe",
+  "sha256Instalador": "B2C2AAF6B2A7B6AEF227406CE934917A4AD08AE9F0E3F9A37174DE67A42260BA",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2403/CopieECole_Update.zip",
+  "sha256": "BD1F3D832B8E876B53396C118FC5BE5DCC6D4892899542C1CEF670AB3F3F784F",
+  "changelog": "Corrige o gesto de voltar no iPhone e na Web Mobile: mantém a confirmação de saída, permite cancelar repetidamente e só encerra a conversa após confirmação."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2003",
-  "dataPublicacao": "2026-09-20T14:19:42-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.2003/TelaDesk-Setup-1.9.2003.exe",
-  "sha256": "BE5FB3797A220C61385FF21F2721A759EF6EB3ECC9D1F06CFF1587C4B2133765",
-  "changelog": "Padroniza tamanho, alinhamento e desenho dos ícones do menu da bandeja, preservando o indicador visual de atualização."
+  "version": "1.9.2101",
+  "dataPublicacao": "2026-09-24T12:40:16-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.2101/TelaDesk-Setup-1.9.2101.exe",
+  "sha256": "CBBAD7A6249D4464DADE8376B22EEB36BC079A4D4E475208AF0A872F9454B8CE",
+  "changelog": "Adiciona os acessos ao site oficial e à página de doações na seção Sobre do TelaDesk, no Desktop e na Web."
 }

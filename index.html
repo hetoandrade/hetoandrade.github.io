@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com/beacon.min.js; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: https://www.paypalobjects.com; connect-src 'self' https://hetoandrade.com.br https://api.github.com https://cloudflareinsights.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src 'none'; form-action 'none'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com/beacon.min.js https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: https://www.paypalobjects.com; connect-src 'self' https://hetoandrade.com.br https://api.github.com https://cloudflareinsights.com https://tracker.metricool.com; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
 
 <!-- SEO -->
@@ -250,6 +250,20 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="256x256" href="Imagems/ha_icon_v4.png">
 <link rel="stylesheet" href="style.css">
+<script>
+function loadScript(callback) {
+  var head = document.getElementsByTagName("head")[0];
+  var script = document.createElement("script");
+  script.type = "text/javascript";
+  script.src = "https://tracker.metricool.com/resources/be.js";
+  script.onreadystatechange = callback;
+  script.onload = callback;
+  head.appendChild(script);
+}
+loadScript(function () {
+  beTracker.t({hash: "dbdeca7e98ce0e643d0af733005c905d"});
+});
+</script>
 </head>
 <body>
 

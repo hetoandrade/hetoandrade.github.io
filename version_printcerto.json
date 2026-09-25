@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2101",
-  "dataPublicacao": "2026-09-22T09:53:49-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2101/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "d7c4e5bb7b8230087d1cd2840aa33d31c2efc52d9442b1fac409a0156f6d0acb",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2101/PrintCerto_Setup_v1.9.2101.exe",
-  "sha256Instalador": "a78ebea22590c28e82c5afbb9423702565dd67ce078e9146f71e93f8626bc846",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2101/PrintCerto_Update.zip",
-  "sha256": "d7c4e5bb7b8230087d1cd2840aa33d31c2efc52d9442b1fac409a0156f6d0acb",
-  "changelog": "Simplifica a tela Sobre, remove o canal de suporte por e-mail e mantém os acessos oficiais ao Site e à doação."
+  "version": "1.9.2410",
+  "dataPublicacao": "2026-09-24T21:09:57-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2410/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "62de703eabe02bd30de10f176934f01e077af728109a41f325975b62aa318178",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2410/PrintCerto_Setup_v1.9.2410.exe",
+  "sha256Instalador": "3722675cfef1faa9f7eeb7add419d2f39caf0625a0c68f438720464ff8426423",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2410/PrintCerto_Update.zip",
+  "sha256": "62de703eabe02bd30de10f176934f01e077af728109a41f325975b62aa318178",
+  "changelog": "Adiciona Copiar texto ao menu da bandeja, corrige o destaque da ferramenta e permite fechar a captura automaticamente 2s após copiar o texto com sucesso."
 }

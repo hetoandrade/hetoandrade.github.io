@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2401",
-  "dataPublicacao": "2026-09-24T17:02:07Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2401/NoteZap_Setup_v1.9.2401.exe",
-  "sha256Instalador": "28C5E7943A10C4679AE6F1944575DB3CA18E1AF2F7817C0F8857985E7130C966",
-  "changelog": "A conversa do NoteZap no celular acompanha o dedo ao arrastar da borda esquerda; recuar cancela o gesto e avançar retorna aos assuntos."
+  "version": "1.9.2501",
+  "dataPublicacao": "2026-09-25T17:49:54Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2501/NoteZap_Setup_v1.9.2501.exe",
+  "sha256Instalador": "33722201953E642B5A96F8C82B0AF4F7164BC23F2D89D09A7F1BF2BF3D3FE52A",
+  "changelog": "Organiza os ícones de assuntos em Trabalho e estudos e Programação, adiciona o chip de IA geral e preserva os ícones anteriores."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2410",
-  "dataPublicacao": "2026-09-24T21:09:57-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2410/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "62de703eabe02bd30de10f176934f01e077af728109a41f325975b62aa318178",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2410/PrintCerto_Setup_v1.9.2410.exe",
-  "sha256Instalador": "3722675cfef1faa9f7eeb7add419d2f39caf0625a0c68f438720464ff8426423",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2410/PrintCerto_Update.zip",
-  "sha256": "62de703eabe02bd30de10f176934f01e077af728109a41f325975b62aa318178",
-  "changelog": "Adiciona Copiar texto ao menu da bandeja, corrige o destaque da ferramenta e permite fechar a captura automaticamente 2s após copiar o texto com sucesso."
+  "version": "1.9.2516",
+  "dataPublicacao": "2026-09-25T23:26:15-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2516/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "ba90ccf0393795105c622c670073a480b609d13c11c07c756e2e966683960861",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2516/PrintCerto_Setup_v1.9.2516.exe",
+  "sha256Instalador": "7d2f27212553b46d04dccc6e892de55ac4e57426fe801c23b5f8ad3bed77133d",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2516/PrintCerto_Update.zip",
+  "sha256": "ba90ccf0393795105c622c670073a480b609d13c11c07c756e2e966683960861",
+  "changelog": "Aprimora o Histórico local: seleção de mensagens pelo painel inteiro, câmera alinhada aos chats de referência e destaque ao arrastar arquivos para anexar."
 }

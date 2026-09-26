@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2516",
-  "dataPublicacao": "2026-09-25T23:26:15-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2516/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "ba90ccf0393795105c622c670073a480b609d13c11c07c756e2e966683960861",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2516/PrintCerto_Setup_v1.9.2516.exe",
-  "sha256Instalador": "7d2f27212553b46d04dccc6e892de55ac4e57426fe801c23b5f8ad3bed77133d",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2516/PrintCerto_Update.zip",
-  "sha256": "ba90ccf0393795105c622c670073a480b609d13c11c07c756e2e966683960861",
-  "changelog": "Aprimora o Histórico local: seleção de mensagens pelo painel inteiro, câmera alinhada aos chats de referência e destaque ao arrastar arquivos para anexar."
+  "version": "1.9.2605",
+  "dataPublicacao": "2026-09-26T16:58:16-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2605/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "d5a02b5a82c55fb6e220a4d4106cc4fd0c657f852cc96bda732ed59cc8867a75",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2605/PrintCerto_Setup_v1.9.2605.exe",
+  "sha256Instalador": "15c63ad9287a554febc91526da3ff759656a5e27b14488559d1cd7209c4e5021",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.9.2605/PrintCerto_Update.zip",
+  "sha256": "d5a02b5a82c55fb6e220a4d4106cc4fd0c657f852cc96bda732ed59cc8867a75",
+  "changelog": "Aprimora o Histórico: organiza os arquivos em uma pasta própria no local escolhido, exemplifica o caminho no Google Drive, ajusta busca e seleção de mensagens e corrige a prévia da câmera e o destaque da ação Responder."
 }

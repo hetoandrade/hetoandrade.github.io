@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2905",
-  "dataPublicacao": "2026-09-29T17:53:33Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2905/NoteZap_Setup_v1.9.2905.exe",
-  "sha256Instalador": "FD6BE5D5491C09E19ED9CD47C8E207D34416C729F15EBAB0F105179912ADC4B6",
-  "changelog": "Novo e-mail visual para o código de acesso, foco automático no código, indicador de carregamento de imagens, organização das listas e ajustes visuais do chat. ✉️🖼️📋"
+  "version": "1.9.2907",
+  "dataPublicacao": "2026-09-29T18:24:02Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2907/NoteZap_Setup_v1.9.2907.exe",
+  "sha256Instalador": "468F9F2B36CCD7DCF6769E2DF1CF2EC08F9887D757AD69B94D8B2000B6801D6E",
+  "changelog": "Preserva o fundo verde e o texto branco no hover dos botões de entrada do NoteZap pelo componente compartilhado, no Desktop e na Web."
 }

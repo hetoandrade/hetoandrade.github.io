@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2501",
-  "dataPublicacao": "2026-09-25T17:49:54Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2501/NoteZap_Setup_v1.9.2501.exe",
-  "sha256Instalador": "33722201953E642B5A96F8C82B0AF4F7164BC23F2D89D09A7F1BF2BF3D3FE52A",
-  "changelog": "Organiza os ícones de assuntos em Trabalho e estudos e Programação, adiciona o chip de IA geral e preserva os ícones anteriores."
+  "version": "1.9.2905",
+  "dataPublicacao": "2026-09-29T17:53:33Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.9.2905/NoteZap_Setup_v1.9.2905.exe",
+  "sha256Instalador": "FD6BE5D5491C09E19ED9CD47C8E207D34416C729F15EBAB0F105179912ADC4B6",
+  "changelog": "Novo e-mail visual para o código de acesso, foco automático no código, indicador de carregamento de imagens, organização das listas e ajustes visuais do chat. ✉️🖼️📋"
 }

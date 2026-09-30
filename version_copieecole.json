@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2903",
-  "dataPublicacao": "2026-09-29T21:14:58-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2903/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "B9C8C4BF281CDFD682C56DCBA2C1D65F9CA19AD13FEC0BF3F0DD46BC6D7A114B",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2903/CopieECole_Setup_v1.9.2903.exe",
-  "sha256Instalador": "48DFD7547917416D7D3EC5F743D5DA6B7B2924D5EB057897210FC933F8C6861C",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.2903/CopieECole_Update.zip",
-  "sha256": "B9C8C4BF281CDFD682C56DCBA2C1D65F9CA19AD13FEC0BF3F0DD46BC6D7A114B",
-  "changelog": "Aprimora a interface das conversas e anexos: restaura cabeçalho e menus, corrige o retorno pela bandeja, padroniza os painéis compartilhados e remove dicas repetidas."
+  "version": "1.9.3002",
+  "dataPublicacao": "2026-09-30T14:21:56-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.3002/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "2E043E1B87AF6F8C4520168827692B9AA525A5C0423FEB5AE69D8ADDCA196695",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.3002/CopieECole_Setup_v1.9.3002.exe",
+  "sha256Instalador": "CC5FBC9BC3B1A629C8F981077A0997BF9550976D90AB983CD33252616E6C69A6",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.3002/CopieECole_Update.zip",
+  "sha256": "2E043E1B87AF6F8C4520168827692B9AA525A5C0423FEB5AE69D8ADDCA196695",
+  "changelog": "Corrige o enquadramento dos componentes no celular, mantém os campos de entrada, pesquisa e mensagem em 16 px e bloqueia o zoom da tela, preservando a rolagem e o zoom próprio do visualizador de imagens."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.9.3003",
-  "dataPublicacao": "2026-10-01T13:02:11-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.3003/AjusteHD_Update.zip",
-  "sha256PacoteAtualizacao": "cae2bcca94d97a9793752a3dd26926873d4531558e5d1323ab436d6da882445e",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.3003/AjusteHD_Setup_v1.9.3003.exe",
-  "sha256Instalador": "5cfe82c3d45d9a0ba07bdbe4f88f495f872c98c5d2dd2fed8ab7a82850a11a37",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.9.3003/AjusteHD_Update.zip",
-  "sha256": "cae2bcca94d97a9793752a3dd26926873d4531558e5d1323ab436d6da882445e",
-  "changelog": "Melhora a nitidez do logotipo no cabeçalho e no Sobre. Aplica o painel Sobre padrão, com descrição curta e ações Site e Doar padronizadas."
+  "version": "1.10.0101",
+  "dataPublicacao": "2026-10-01T13:17:28-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0101/AjusteHD_Update.zip",
+  "sha256PacoteAtualizacao": "4110ffad25edd5a128cd14726eeb280aadff8f4de214cb3f8cdfb62340b4f314",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0101/AjusteHD_Setup_v1.10.0101.exe",
+  "sha256Instalador": "d8a04ed01c85243892f5841378261a979b7fa4df894cf3567a2130971adaaa51",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0101/AjusteHD_Update.zip",
+  "sha256": "4110ffad25edd5a128cd14726eeb280aadff8f4de214cb3f8cdfb62340b4f314",
+  "changelog": "Atualiza o AjusteHD para a versão de outubro, com logotipo nítido e painel Sobre padrão com descrição curta."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.9.2104",
-  "dataPublicacao": "2026-09-21T12:04:26",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2104/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "1c8f5253e980c0d2a25791a684e7a593845f0e18222f165916eca59e09682333",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2104/DriverStatus_Setup_v1.9.2104.exe",
-  "sha256Instalador": "50ef94058cb6bb7eaad46c288f872b47a8359d1fb9073556b2f8dffc323cc0bf",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.9.2104/DriverStatus_Update.zip",
-  "sha256": "1c8f5253e980c0d2a25791a684e7a593845f0e18222f165916eca59e09682333",
-  "changelog": "Adiciona HDR automático ao Modo Jogo com restauração do estado anterior, seleção do monitor compatível, identificação completa do monitor principal, seletor compacto, nova ordem do menu e aceite persistente dos termos de atualização."
+  "version": "1.10.0103",
+  "dataPublicacao": "2026-10-01T15:40:20",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0103/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "a7aadb9a926bbc2895a8f67e6646932bddfbeedbcab6a8a15fbffdf5a0c1197d",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0103/DriverStatus_Setup_v1.10.0103.exe",
+  "sha256Instalador": "916fa5a555e0d81523a8198e939bf6e4170e31d7e1f6a89dce2318f3dcac2666",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0103/DriverStatus_Update.zip",
+  "sha256": "a7aadb9a926bbc2895a8f67e6646932bddfbeedbcab6a8a15fbffdf5a0c1197d",
+  "changelog": "Compacta os cabeçalhos da lista de aplicativos e remove títulos e descrições repetidos das telas Sobre e Atualização. Padroniza o painel Sobre, ajusta o botão de termos e o painel do Modo Jogo e corrige o ícone do DriverStatus na barra de tarefas."
 }

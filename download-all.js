@@ -80,13 +80,28 @@
 
       var installer = installers[index];
       if (typeof onProgress === 'function') onProgress(installer, index, installers.length);
+      var frameName = 'download-all-frame-' + index;
+      var frame = document.getElementById(frameName);
+      if (!frame) {
+        frame = document.createElement('iframe');
+        frame.id = frameName;
+        frame.name = frameName;
+        frame.hidden = true;
+        frame.setAttribute('sandbox', 'allow-downloads');
+        frame.title = 'Download de ' + installer.name;
+        document.body.appendChild(frame);
+      }
       var link = document.createElement('a');
       link.href = installer.url;
       link.download = installer.fileName;
+      link.target = frameName;
       link.hidden = true;
       document.body.appendChild(link);
-      link.click();
-      link.remove();
+      try {
+        link.click();
+      } finally {
+        link.remove();
+      }
     }
   }
 

@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0103",
-  "dataPublicacao": "2026-10-01T15:40:20",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0103/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "a7aadb9a926bbc2895a8f67e6646932bddfbeedbcab6a8a15fbffdf5a0c1197d",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0103/DriverStatus_Setup_v1.10.0103.exe",
-  "sha256Instalador": "916fa5a555e0d81523a8198e939bf6e4170e31d7e1f6a89dce2318f3dcac2666",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0103/DriverStatus_Update.zip",
-  "sha256": "a7aadb9a926bbc2895a8f67e6646932bddfbeedbcab6a8a15fbffdf5a0c1197d",
-  "changelog": "Compacta os cabeçalhos da lista de aplicativos e remove títulos e descrições repetidos das telas Sobre e Atualização. Padroniza o painel Sobre, ajusta o botão de termos e o painel do Modo Jogo e corrige o ícone do DriverStatus na barra de tarefas."
+  "version": "1.10.0202",
+  "dataPublicacao": "2026-10-02T11:52:19",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0202/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "2e1f61357bca3aaa0581fb641daec47cfe1da97b7d5a18cd7a1a48355166960c",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0202/DriverStatus_Setup_v1.10.0202.exe",
+  "sha256Instalador": "c6f359e798296d017d3eaf0876b7d2fa71d3d18f7b67822d00650fb4e8435fd0",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0202/DriverStatus_Update.zip",
+  "sha256": "2e1f61357bca3aaa0581fb641daec47cfe1da97b7d5a18cd7a1a48355166960c",
+  "changelog": "Remove separadores extras entre os cards, mantém os textos dos botões em uma linha e centraliza o título junto à pesquisa de inicialização. Alinha as mensagens de Backup e Restauração ao topo. Padroniza as confirmações com botões retangulares e ícones da ação, e amplia o painel de parada de serviços antes da atualização."
 }

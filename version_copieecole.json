@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0201",
-  "dataPublicacao": "2026-10-02T10:48:32-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0201/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "F3750B28427DB61370825C29F2FCE5F58DF2D858FCDAC1AAE0644888A19674B9",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0201/CopieECole_Setup_v1.10.0201.exe",
-  "sha256Instalador": "C745B1EF29CAB73C66184EF7D8BEA6F9918BD3D695193215944E9345866C0668",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0201/CopieECole_Update.zip",
-  "sha256": "F3750B28427DB61370825C29F2FCE5F58DF2D858FCDAC1AAE0644888A19674B9",
-  "changelog": "Botões com realce discreto ao passar o mouse, sem aumentar de tamanho nem criar barras de rolagem. Preserva texto, ícones, foco e estados desabilitados, com os componentes compartilhados atualizados no Desktop e na Web."
+  "version": "1.10.0204",
+  "dataPublicacao": "2026-10-02T16:52:38-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0204/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "D5B565246DAD437ABD7365B022880F9597AFAB34AD5368542B099B065FB514B8",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0204/CopieECole_Setup_v1.10.0204.exe",
+  "sha256Instalador": "7A96E6938B9DCE0B9065421A1D0A668B66350AE8A38A698852E5C263256810EC",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0204/CopieECole_Update.zip",
+  "sha256": "D5B565246DAD437ABD7365B022880F9597AFAB34AD5368542B099B065FB514B8",
+  "changelog": "Barra de rolagem verde fina no editor, preferências Lembrar junto aos rótulos e aceite dos termos editável. Componentes compartilhados atualizados e identificação do CopieECole nos textos de reinício."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0202",
-  "dataPublicacao": "2026-10-02T11:52:19",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0202/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "2e1f61357bca3aaa0581fb641daec47cfe1da97b7d5a18cd7a1a48355166960c",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0202/DriverStatus_Setup_v1.10.0202.exe",
-  "sha256Instalador": "c6f359e798296d017d3eaf0876b7d2fa71d3d18f7b67822d00650fb4e8435fd0",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0202/DriverStatus_Update.zip",
-  "sha256": "2e1f61357bca3aaa0581fb641daec47cfe1da97b7d5a18cd7a1a48355166960c",
-  "changelog": "Remove separadores extras entre os cards, mantém os textos dos botões em uma linha e centraliza o título junto à pesquisa de inicialização. Alinha as mensagens de Backup e Restauração ao topo. Padroniza as confirmações com botões retangulares e ícones da ação, e amplia o painel de parada de serviços antes da atualização."
+  "version": "1.10.0204",
+  "dataPublicacao": "2026-10-02T20:25:10",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0204/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "0d779ac5205839670083b17516bb35300bc9684b9ee822fa6d80b2c7361bd38d",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0204/DriverStatus_Setup_v1.10.0204.exe",
+  "sha256Instalador": "14d74884176b060b78680971bc5f38d7d36be6a360f862cfd0b1c02781484240",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0204/DriverStatus_Update.zip",
+  "sha256": "0d779ac5205839670083b17516bb35300bc9684b9ee822fa6d80b2c7361bd38d",
+  "changelog": "Corrige a análise dos temporários do Windows quando o acesso é negado e reaproveita a autorização de administrador enquanto o aplicativo estiver aberto. Preserva senhas, preenchimento automático e demais dados dos navegadores, arquivos recentes e arquivos em uso. Corrige também o acesso à janela de atualização pelas configurações. 🧹🔒🔄"
 }

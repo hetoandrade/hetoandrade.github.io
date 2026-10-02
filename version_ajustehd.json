@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0101",
-  "dataPublicacao": "2026-10-01T13:17:28-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0101/AjusteHD_Update.zip",
-  "sha256PacoteAtualizacao": "4110ffad25edd5a128cd14726eeb280aadff8f4de214cb3f8cdfb62340b4f314",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0101/AjusteHD_Setup_v1.10.0101.exe",
-  "sha256Instalador": "d8a04ed01c85243892f5841378261a979b7fa4df894cf3567a2130971adaaa51",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0101/AjusteHD_Update.zip",
-  "sha256": "4110ffad25edd5a128cd14726eeb280aadff8f4de214cb3f8cdfb62340b4f314",
-  "changelog": "Atualiza o AjusteHD para a versão de outubro, com logotipo nítido e painel Sobre padrão com descrição curta."
+  "version": "1.10.0207",
+  "dataPublicacao": "2026-10-02T16:40:58-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0207/AjusteHD_Update.zip",
+  "sha256PacoteAtualizacao": "1342ec47f1712e09f50550422b5f3479da18d7ce3c3384040fb01a909bbbc7fe",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0207/AjusteHD_Setup_v1.10.0207.exe",
+  "sha256Instalador": "3171f2bfe5b8d7d23612cea660a65428011dd41c04b0b388335b7783bd2d16c6",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0207/AjusteHD_Update.zip",
+  "sha256": "1342ec47f1712e09f50550422b5f3479da18d7ce3c3384040fb01a909bbbc7fe",
+  "changelog": "O botão AVANÇAR mantém um único ícone à direita. O componente H permite escolher a posição do ícone, com esquerda como padrão. Inclui as correções de leitura dos campos de entrada e de ícones duplicados dos botões."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.9.3002",
-  "dataPublicacao": "2026-09-30T14:21:56-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.3002/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "2E043E1B87AF6F8C4520168827692B9AA525A5C0423FEB5AE69D8ADDCA196695",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.3002/CopieECole_Setup_v1.9.3002.exe",
-  "sha256Instalador": "CC5FBC9BC3B1A629C8F981077A0997BF9550976D90AB983CD33252616E6C69A6",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.9.3002/CopieECole_Update.zip",
-  "sha256": "2E043E1B87AF6F8C4520168827692B9AA525A5C0423FEB5AE69D8ADDCA196695",
-  "changelog": "Corrige o enquadramento dos componentes no celular, mantém os campos de entrada, pesquisa e mensagem em 16 px e bloqueia o zoom da tela, preservando a rolagem e o zoom próprio do visualizador de imagens."
+  "version": "1.10.0201",
+  "dataPublicacao": "2026-10-02T10:48:32-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0201/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "F3750B28427DB61370825C29F2FCE5F58DF2D858FCDAC1AAE0644888A19674B9",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0201/CopieECole_Setup_v1.10.0201.exe",
+  "sha256Instalador": "C745B1EF29CAB73C66184EF7D8BEA6F9918BD3D695193215944E9345866C0668",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0201/CopieECole_Update.zip",
+  "sha256": "F3750B28427DB61370825C29F2FCE5F58DF2D858FCDAC1AAE0644888A19674B9",
+  "changelog": "Botões com realce discreto ao passar o mouse, sem aumentar de tamanho nem criar barras de rolagem. Preserva texto, ícones, foco e estados desabilitados, com os componentes compartilhados atualizados no Desktop e na Web."
 }

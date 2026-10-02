@@ -1,7 +1,7 @@
 {
-  "version": "1.9.2101",
-  "dataPublicacao": "2026-09-24T12:40:16-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.9.2101/TelaDesk-Setup-1.9.2101.exe",
-  "sha256": "CBBAD7A6249D4464DADE8376B22EEB36BC079A4D4E475208AF0A872F9454B8CE",
-  "changelog": "Adiciona os acessos ao site oficial e à página de doações na seção Sobre do TelaDesk, no Desktop e na Web."
+  "version": "1.10.0201",
+  "dataPublicacao": "2026-10-02T11:32:15-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.0201/TelaDesk-Setup-1.10.0201.exe",
+  "sha256": "5DDE78A2D935D51D44854ABB6FABE4C47BA2DC9B83D7B520DF35EE51DC9A2886",
+  "changelog": "Melhora a leitura dos títulos e ícones das configurações, remove a indicação redundante de Windows, alinha o botão de copiar ao código e retira o contorno amarelo das abas após clique, preservando o foco pelo teclado."
 }

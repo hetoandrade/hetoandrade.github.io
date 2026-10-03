@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0307",
-  "dataPublicacao": "2026-10-03T14:22:14-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0307/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "59e9cd9b664979277228ac1344ea7d0c5a974ace6f34ca4b8be53336a00a303c",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0307/PrintCerto_Setup_v1.10.0307.exe",
-  "sha256Instalador": "a8bc0428ccb5717c32d4b1efc97e3097f609bb7daba62ecaaeb7dd44a300c0d1",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0307/PrintCerto_Update.zip",
-  "sha256": "59e9cd9b664979277228ac1344ea7d0c5a974ace6f34ca4b8be53336a00a303c",
-  "changelog": "Confirma imediatamente copiar, copiar contexto e salvar automático com o ícone oficial por três segundos. A atualização segue os tons azuis do PrintCerto e bloqueia as demais ações enquanto estiver aberta. No checklist, desmarcar limpa a data na criação e a preserva na edição."
+  "version": "1.10.0308",
+  "dataPublicacao": "2026-10-03T20:15:23-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0308/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "46d40c90333584d68930bce9f0c3856348adcafdc85e0c9ee209ff177ca05128",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0308/PrintCerto_Setup_v1.10.0308.exe",
+  "sha256Instalador": "5fdf868ef29ea6afbb12c98d151494bf3a6563d00d463adb981847d033ca2e16",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0308/PrintCerto_Update.zip",
+  "sha256": "46d40c90333584d68930bce9f0c3856348adcafdc85e0c9ee209ff177ca05128",
+  "changelog": "A cópia de imagens é confirmada antes de fechar a captura, com novas tentativas quando a área de transferência está ocupada e aviso caso outro programa substitua a imagem durante o registro no Histórico."
 }

@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ https://release-assets.githubusercontent.com; form-action 'none'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com/beacon.min.js https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: https://www.paypalobjects.com https://tracker.metricool.com; connect-src 'self' https://hetoandrade.com.br https://api.github.com https://cloudflareinsights.com https://tracker.metricool.com; upgrade-insecure-requests">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; base-uri 'none'; object-src 'none'; frame-src https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ https://release-assets.githubusercontent.com; form-action 'none'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com/beacon.min.js https://tracker.metricool.com; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com data:; img-src 'self' data: blob: https://www.paypalobjects.com https://tracker.metricool.com; connect-src 'self' https://hetoandrade.com.br https://chamados.hetoandrade.com.br https://api.github.com https://cloudflareinsights.com https://tracker.metricool.com; upgrade-insecure-requests">
 <meta name="referrer" content="no-referrer">
 
 <!-- SEO -->
@@ -250,6 +250,7 @@
 <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="icon" type="image/png" sizes="256x256" href="Imagems/ha_icon_v4.png">
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="chamados.css">
 <script>
 function loadScript(callback) {
   var head = document.getElementsByTagName("head")[0];
@@ -349,6 +350,10 @@ loadScript(function () {
       Contato
     </a>
 
+    <a class="nav-item" href="#ajuda" onclick="showPage('ajuda'); return false;" id="nav-ajuda">
+      <svg class="chamados-icone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 3h14a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H10l-6 4v-4a2 2 0 0 1-2-2V5a2 2 0 0 1 3-2Z" /></svg>
+      Ajuda e sugestões
+    </a>
     <div class="nav-section">Outros</div>
     <a class="nav-item" href="#" onclick="showPage('terceiros'); return false;" id="nav-terceiros">
       <span class="icon">&#11015;&#65039;</span>
@@ -1964,6 +1969,23 @@ loadScript(function () {
   </div>
 
 
+  <div id="page-ajuda" class="page">
+    <section class="painel chamados-painel" aria-labelledby="chamados-titulo">
+      <h1 id="chamados-titulo">Ajuda e sugestões</h1>
+      <p class="chamados-intro">Conte o que aconteceu ou envie uma sugestão.</p>
+      <div id="chamados-aviso" class="chamados-aviso" role="status" aria-live="polite" hidden></div>
+      <form id="chamados-form">
+        <h-campo-web id="chamados-email" rotulo="Seu e-mail" maxlength="254"></h-campo-web>
+        <h-campo-web id="chamados-descricao" rotulo="Descrição" multilinha maxlength="10000"></h-campo-web>
+        <p class="chamados-dica">Cole uma imagem na descrição com Ctrl+V: ela será adicionada aos anexos. Você também pode selecionar arquivos.</p>
+        <h-anexos-web id="chamados-anexos"></h-anexos-web>
+        <div class="chamados-rodape">
+          <span>Imagens opcionais · até três imagens, somando 10 MB.<br>Seu e-mail, relato e imagens serão guardados de forma privada para atendimento.</span>
+          <h-botao-web id="chamados-enviar" texto="Enviar chamado" acao="Enviar" primario></h-botao-web>
+        </div>
+      </form>
+    </section>
+  </div>
   <footer class="site-footer">
     <div>&copy; 2026 Hetoandrade Apps &mdash; Aplicativos que ajudam no dia a dia</div>
     <div class="footer-links">
@@ -2719,7 +2741,8 @@ function showPage(page) {
     teladesk: 'nav-teladesk',
     ajustehd: 'nav-ajustehd',
     copieecole: 'nav-copieecole',
-    terceiros: 'nav-terceiros'
+    terceiros: 'nav-terceiros',
+    ajuda: 'nav-ajuda'
   };
   var navId = navByPage[page];
   if (navId) document.getElementById(navId).classList.add('active');
@@ -2735,7 +2758,7 @@ function showPage(page) {
 
 function showPageFromHash() {
   var page = window.location.hash.substring(1).toLowerCase();
-  var validPages = ['home', 'notezap', 'printcerto', 'vozdigitada', 'driverstatus', 'teladesk', 'ajustehd', 'copieecole', 'terceiros'];
+  var validPages = ['home', 'notezap', 'printcerto', 'vozdigitada', 'driverstatus', 'teladesk', 'ajustehd', 'copieecole', 'terceiros', 'ajuda'];
   showPage(validPages.indexOf(page) !== -1 ? page : 'home');
 }
 
@@ -2744,6 +2767,7 @@ showPageFromHash();
 </script>
 <script src="notezap-download.js"></script>
 <script src="download-all.js?v=20261002-1"></script>
+<script type="module" src="chamados.js"></script>
 
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "81c6cdc71d93423489a4964785094940"}'></script>
 </body>

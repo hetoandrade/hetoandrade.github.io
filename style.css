@@ -1977,3 +1977,13 @@ body::before { display: none; }
     min-height: 0;
   }
 }
+
+/* OfficeCerto: identidade cinza sobre os componentes existentes do site. */
+.app-icon.officecerto { width:80px; height:80px; border-radius:18px; background:linear-gradient(135deg,#eef0f2,#c9ced3); border:2px solid #a3aab0; box-shadow:0 2px 8px rgba(66,75,85,.18); }
+.app-icon.officecerto img { width:60px; height:60px; object-fit:contain; }
+.hero-badge.officecerto { background:#e6e9ec; border-color:#a3aab0; color:#424b55; }
+.hero-badge.officecerto .dot { background:#65707b; }
+.hero h1 .gradient-officecerto { background:linear-gradient(135deg,#767e88,#424b55); -webkit-background-clip:text; background-clip:text; -webkit-text-fill-color:transparent; }
+#page-officecerto .painel { box-shadow:inset 5px 0 0 #65707b,0 10px 30px rgba(66,75,85,.16); }
+.btn-primary.officecerto { background:linear-gradient(135deg,#767e88,#4b535e); color:#fff; }
+#page-officecerto .gallery-note { color:var(--text-muted); line-height:1.6; margin-bottom:20px; }

@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0211",
-  "dataPublicacao": "2026-10-02T20:21:00-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0211/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "dde3c442e1cd3e46f66a37c999a00e176749bf619030d4e03e52209277ea25e9",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0211/PrintCerto_Setup_v1.10.0211.exe",
-  "sha256Instalador": "2b4ab71150125d6d8e17966f412fddb2467e439aca600ae149e68df1c268e7c5",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0211/PrintCerto_Update.zip",
-  "sha256": "dde3c442e1cd3e46f66a37c999a00e176749bf619030d4e03e52209277ea25e9",
-  "changelog": "O Histórico agora mostra um ✓ por três segundos após copiar, seguindo o padrão do NoteZap. O ícone do aplicativo foi corrigido para remover o contorno claro externo, e esta versão inclui os componentes H atualizados."
+  "version": "1.10.0307",
+  "dataPublicacao": "2026-10-03T14:22:14-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0307/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "59e9cd9b664979277228ac1344ea7d0c5a974ace6f34ca4b8be53336a00a303c",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0307/PrintCerto_Setup_v1.10.0307.exe",
+  "sha256Instalador": "a8bc0428ccb5717c32d4b1efc97e3097f609bb7daba62ecaaeb7dd44a300c0d1",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0307/PrintCerto_Update.zip",
+  "sha256": "59e9cd9b664979277228ac1344ea7d0c5a974ace6f34ca4b8be53336a00a303c",
+  "changelog": "Confirma imediatamente copiar, copiar contexto e salvar automático com o ícone oficial por três segundos. A atualização segue os tons azuis do PrintCerto e bloqueia as demais ações enquanto estiver aberta. No checklist, desmarcar limpa a data na criação e a preserva na edição."
 }

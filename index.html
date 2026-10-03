@@ -8,8 +8,8 @@
 
 <!-- SEO -->
 <title>Hetoandrade Apps — Site oficial de aplicativos gratuitos</title>
-<meta name="description" content="Site oficial da Hetoandrade Apps. Conheça aplicativos gratuitos como NoteZap, PrintCerto, CopieECole, VozDigitada, DriverStatus, TelaDesk e AjusteHD.">
-<meta name="keywords" content="NoteZap, PrintCerto, captura de tela, print screen, anotar captura, salvar PNG, CopieECole, site CopieECole, copiar entre dispositivos, compartilhar arquivos entre dispositivos, compartilhar textos, navegador, voz digitada, VozDigitada, digitar com a voz, reconhecimento de voz, voz para texto, speech to text, ditado por voz, DriverStatus, driver status, diagnóstico drivers, atualizar drivers, drivers windows, backup drivers, windows update drivers, TelaDesk, acesso remoto, alternativa ao AnyDesk, AjusteHD, gerenciador de partições, comunicação entre dispositivos, Hetoandrade, software gratuito, aplicativo gratuito windows, download grátis, Windows 10, Windows 11, enter automatico, comando de voz, microfone sempre ligado">
+<meta name="description" content="Site oficial da Hetoandrade Apps. Conheça aplicativos gratuitos como NoteZap, PrintCerto, CopieECole, VozDigitada, DriverStatus, TelaDesk, AjusteHD e OfficeCerto.">
+<meta name="keywords" content="NoteZap, PrintCerto, captura de tela, print screen, anotar captura, salvar PNG, CopieECole, site CopieECole, copiar entre dispositivos, compartilhar arquivos entre dispositivos, compartilhar textos, navegador, voz digitada, VozDigitada, digitar com a voz, reconhecimento de voz, voz para texto, speech to text, ditado por voz, DriverStatus, driver status, diagnóstico drivers, atualizar drivers, drivers windows, backup drivers, windows update drivers, TelaDesk, acesso remoto, alternativa ao AnyDesk, AjusteHD, gerenciador de partições, OfficeCerto, editor de documentos, planilhas, leitor PDF, comunicação entre dispositivos, Hetoandrade, software gratuito, aplicativo gratuito windows, download grátis, Windows 10, Windows 11, enter automatico, comando de voz, microfone sempre ligado">
 <meta name="author" content="Hetoandrade Apps">
 <meta name="robots" content="index, follow">
 <link rel="canonical" href="https://hetoandrade.com.br/">
@@ -17,7 +17,7 @@
 <!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:title" content="Hetoandrade Apps — Site oficial de aplicativos gratuitos">
-<meta property="og:description" content="Site oficial da Hetoandrade Apps. Conheça aplicativos gratuitos como NoteZap, PrintCerto, CopieECole, VozDigitada, DriverStatus, TelaDesk e AjusteHD.">
+<meta property="og:description" content="Site oficial da Hetoandrade Apps. Conheça aplicativos gratuitos como NoteZap, PrintCerto, CopieECole, VozDigitada, DriverStatus, TelaDesk, AjusteHD e OfficeCerto.">
 <meta property="og:url" content="https://hetoandrade.com.br/">
 <meta property="og:site_name" content="Hetoandrade Apps">
 <meta property="og:locale" content="pt_BR">
@@ -28,7 +28,7 @@
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Hetoandrade Apps — Site oficial de aplicativos gratuitos">
-<meta name="twitter:description" content="Site oficial da Hetoandrade Apps. Conheça aplicativos gratuitos como NoteZap, PrintCerto, CopieECole, VozDigitada, DriverStatus, TelaDesk e AjusteHD.">
+<meta name="twitter:description" content="Site oficial da Hetoandrade Apps. Conheça aplicativos gratuitos como NoteZap, PrintCerto, CopieECole, VozDigitada, DriverStatus, TelaDesk, AjusteHD e OfficeCerto.">
 <meta name="twitter:image" content="https://hetoandrade.com.br/img/og-site.png">
 
 <!-- Schema.org JSON-LD -->
@@ -325,6 +325,12 @@ loadScript(function () {
       <span class="badge soon" id="nav-teladesk-badge">Verificando</span>
     </a>
 
+    <a class="nav-item" href="#officecerto" onclick="showPage('officecerto'); return false;" id="nav-officecerto">
+      <img src="Imagems/officecerto.png" alt="" class="nav-icon-img">
+      OfficeCerto
+      <span class="badge soon" id="nav-officecerto-badge">Verificando</span>
+    </a>
+
     <a class="nav-item" href="#" onclick="showPage('ajustehd'); return false;" id="nav-ajustehd">
       <img src="Imagems/ajustehd.png" alt="" class="nav-icon-img">
       AjusteHD
@@ -525,6 +531,24 @@ loadScript(function () {
           <span>&#128421; Acesso remoto</span>
           <span>&#129695; Windows</span>
           <span id="card-teladesk-status">&#8987; Verificando download</span>
+        </div>
+        <div class="app-card-arrow">&#8594;</div>
+      </div>
+
+      <!-- OfficeCerto Card -->
+      <div class="app-card" onclick="showPage('officecerto')">
+        <div class="app-card-header">
+          <div class="app-icon officecerto"><img src="Imagems/officecerto.png" alt="OfficeCerto"></div>
+          <div class="app-card-title">
+            <h3>OfficeCerto</h3>
+            <span class="app-tag soon" id="card-officecerto-tag">Verificando disponibilidade</span>
+          </div>
+        </div>
+        <p>Documentos, planilhas e PDFs em um só lugar. Escreva, organize suas planilhas e leia arquivos com abas e histórico local.</p>
+        <div class="app-card-footer">
+          <span>&#128196; PDF, Write e Calc</span>
+          <span>&#129695; Windows</span>
+          <span id="card-officecerto-status">&#8987; Verificando download</span>
         </div>
         <div class="app-card-arrow">&#8594;</div>
       </div>
@@ -899,6 +923,91 @@ loadScript(function () {
 
 
   <!-- ═══════════════ DRIVERSTATUS ═══════════════ -->
+  <!-- OfficeCerto -->
+  <div id="page-officecerto" class="page">
+    <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+    <div class="painel">
+      <section class="hero">
+        <div class="hero-badge officecerto">
+          <img src="Imagems/officecerto.png" alt="" class="badge-icon">
+          <span class="dot"></span><span id="officecerto-versao-badge">Verificando disponibilidade...</span>
+        </div>
+        <h1>Seus documentos.<br><span class="gradient-officecerto">Tudo no lugar certo.</span></h1>
+        <p>O <strong>OfficeCerto</strong> reúne PDF, Write e Calc em um só aplicativo. Leia PDFs, escreva documentos e organize planilhas com abas, arquivos recentes e ferramentas para trabalhar no seu computador.</p>
+        <div class="hero-actions">
+          <a id="btn-officecerto-download-hero" href="#officecerto-download" class="btn-primary officecerto is-disabled" aria-disabled="true" tabindex="-1">&#11015;&#65039; Download indisponível</a>
+          <a href="privacidade-officecerto.html" class="btn-secondary">&#128274; Privacidade</a>
+        </div>
+        <div class="hero-meta">
+          <span>&#128421; Windows 10 e 11 (64-bit)</span><span>&#127382; Gratuito</span><span>&#128196; PDF, Write e Calc</span>
+        </div>
+      </section>
+    </div>
+    <section class="section" id="officecerto-screenshots">
+      <div class="section-title">O aplicativo</div>
+      <p class="gallery-note">Imagens ilustrativas baseadas na interface do aplicativo. Os documentos e dados exibidos são fictícios.</p>
+      <div class="screenshots-grid">
+        <div class="screenshot-card" onclick="openLightbox('Prints/OfficeCerto/01-inicio-ilustrativo.png', 'officecerto')">
+          <img src="Prints/OfficeCerto/01-inicio-ilustrativo.png" alt="Imagem ilustrativa do OfficeCerto: Início e arquivos recentes" loading="lazy">
+          <div class="screenshot-label">Início e arquivos recentes — imagem ilustrativa</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/OfficeCerto/02-write-ilustrativo.png', 'officecerto')">
+          <img src="Prints/OfficeCerto/02-write-ilustrativo.png" alt="Imagem ilustrativa do OfficeCerto: Write — edição de documentos" loading="lazy">
+          <div class="screenshot-label">Write — edição de documentos — imagem ilustrativa</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/OfficeCerto/03-calc-ilustrativo.png', 'officecerto')">
+          <img src="Prints/OfficeCerto/03-calc-ilustrativo.png" alt="Imagem ilustrativa do OfficeCerto: Calc — edição de planilhas" loading="lazy">
+          <div class="screenshot-label">Calc — edição de planilhas — imagem ilustrativa</div>
+        </div>
+        <div class="screenshot-card" onclick="openLightbox('Prints/OfficeCerto/04-pdf-ilustrativo.png', 'officecerto')">
+          <img src="Prints/OfficeCerto/04-pdf-ilustrativo.png" alt="Imagem ilustrativa do OfficeCerto: PDF — leitura e navegação" loading="lazy">
+          <div class="screenshot-label">PDF — leitura e navegação — imagem ilustrativa</div>
+        </div>
+      </div>
+    </section>
+    <section class="section" id="officecerto-features">
+      <div class="section-title">Recursos</div><div class="features-grid">
+        <div class="feature-card"><div class="feature-icon red">&#128196;</div><h3>Leitor de PDF</h3><p>Navegue pelas miniaturas, ajuste o zoom, pesquise e copie texto. Imprima documentos pelo próprio leitor.</p></div>
+        <div class="feature-card"><div class="feature-icon blue">&#9997;&#65039;</div><h3>Documentos no Write</h3><p>Crie e edite textos com formatação, imagens e tabelas. Trabalhe com documentos Word e OpenDocument.</p></div>
+        <div class="feature-card"><div class="feature-icon green">&#128202;</div><h3>Planilhas no Calc</h3><p>Organize dados com fórmulas, filtros, gráficos e formatação. Abra planilhas Excel e OpenDocument.</p></div>
+        <div class="feature-card"><div class="feature-icon purple">&#128195;</div><h3>Documentos em abas</h3><p>Alterne entre documentos e seções. Escolha abrir novos arquivos em abas ou em janelas separadas.</p></div>
+        <div class="feature-card"><div class="feature-icon cyan">&#128337;</div><h3>Histórico local</h3><p>Encontre os arquivos recentes por nome e pasta. Remova registros sem apagar os documentos.</p></div>
+        <div class="feature-card"><div class="feature-icon orange">&#128190;</div><h3>Salvar e exportar</h3><p>Escolha onde salvar, use Salvar como e exporte documentos e planilhas em PDF.</p></div>
+        <div class="feature-card"><div class="feature-icon green">&#128421;</div><h3>Trabalho offline</h3><p>A leitura e a edição acontecem no computador, sem depender de conexão com a internet.</p></div>
+        <div class="feature-card"><div class="feature-icon red">&#9881;&#65039;</div><h3>Preferências do aplicativo</h3><p>Configure o histórico, a abertura de documentos e a inicialização com o Windows.</p></div>
+        <div class="feature-card"><div class="feature-icon purple">&#128274;</div><h3>Seus arquivos no computador</h3><p>Documentos e preferências ficam locais. A conexão para atualizações não envia o conteúdo dos arquivos.</p></div>
+      </div>
+    </section>
+    <section class="section" id="officecerto-faq">
+      <div class="section-title">Perguntas Frequentes</div><div class="faq-container">
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Preciso do Microsoft Office instalado?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Não. O OfficeCerto usa o motor LibreOffice para documentos e planilhas, e um leitor próprio para PDF.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Quais formatos posso usar?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Você pode trabalhar com documentos Word e OpenDocument, planilhas Excel e OpenDocument e arquivos PDF. Documentos novos usam DOCX e XLSX como padrões de salvamento.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Precisa de internet para funcionar?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>A leitura e a edição funcionam localmente. A internet é usada para consultar e baixar atualizações e para abrir links externos quando você os escolhe.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Posso editar um PDF?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>O leitor permite pesquisar, selecionar, copiar e imprimir. A ação Editar cópia abre uma cópia no Draw, preservando o original; o resultado pode mudar a disposição do PDF.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>As planilhas mantêm todos os recursos do Excel?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>A compatibilidade depende do arquivo. Recursos específicos, como macros VBA e Power Query, podem exigir o Excel. Confira o resultado antes de substituir um documento importante.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Apagar o histórico exclui meus documentos?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>Não. A exclusão remove somente os registros de arquivos recentes. Você também pode desativar novas gravações do histórico nas configurações.</p></div></div>
+        <div class="faq-item"><div class="faq-question" onclick="toggleFaq(this)"><span>Onde encontro o download?</span><span class="faq-arrow">&#9660;</span></div><div class="faq-answer"><p>O instalador será habilitado nesta página quando o manifesto e o arquivo da publicação oficial estiverem disponíveis e validados. Enquanto isso, o download permanece indisponível.</p></div></div>
+      </div>
+    </section>
+    <section class="section" id="officecerto-download">
+      <div class="section-title">Download</div>
+      <p id="officecerto-disponibilidade" class="development-notice"><strong>Verificando disponibilidade.</strong> O instalador será habilitado após a validação da publicação oficial.</p>
+      <div class="download-card">
+        <div class="download-row">
+          <div class="download-info"><h3>&#11015;&#65039; OfficeCerto para Windows</h3><div class="download-meta"><div class="hero-badge officecerto" style="margin-bottom:0;"><img src="Imagems/officecerto.png" alt="" class="badge-icon"><span class="dot"></span><span id="officecerto-versao-download">Verificando disponibilidade...</span></div></div></div>
+          <div class="download-buttons"><a id="btn-officecerto-download-section" href="#officecerto-download" class="btn-primary officecerto btn-download is-disabled" aria-disabled="true" tabindex="-1">&#11015;&#65039; Download indisponível</a></div>
+        </div>
+        <div class="version-info">
+          <div class="version-tag"><span class="label">Requisitos</span> Windows 10/11 x64</div>
+          <div class="version-tag"><span class="label">Licença</span> Gratuito</div>
+          <div class="version-tag"><span class="label">Formatos</span> Documentos, planilhas e PDF</div>
+          <a class="version-tag privacy-tag" href="privacidade-officecerto.html"><span class="label">Dados</span> Política de privacidade</a>
+        </div>
+      </div>
+    </section>
+    <a href="#" class="btn-back btn-back-bottom" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
+  </div>
+
   <div id="page-driverstatus" class="page">
 
     <a href="#" class="btn-back" onclick="showPage('home'); return false;">&#8592; Voltar aos aplicativos</a>
@@ -2035,6 +2144,7 @@ var siteManifestUrl = window.HetoandradeSite &&
 
 // ─── Lightbox ───
 var lightboxGroups = {
+  officecerto: ['Prints/OfficeCerto/01-inicio-ilustrativo.png', 'Prints/OfficeCerto/02-write-ilustrativo.png', 'Prints/OfficeCerto/03-calc-ilustrativo.png', 'Prints/OfficeCerto/04-pdf-ilustrativo.png'],
   notezap: [
     'Prints/NoteZap/entrada-ilustrativa.png',
     'Prints/NoteZap/anotacoes-ilustrativas.png'
@@ -2701,6 +2811,24 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
   });
 
   carregarProduto({
+    manifest: 'version_officecerto.json',
+    badgeId: 'officecerto-versao-badge',
+    downloadBadgeId: 'officecerto-versao-download',
+    cardTagId: 'card-officecerto-tag',
+    cardStatusId: 'card-officecerto-status',
+    navBadgeId: 'nav-officecerto-badge',
+    availabilityId: 'officecerto-disponibilidade',
+    buttonIds: ['btn-officecerto-download-hero', 'btn-officecerto-download-section'],
+    hashField: 'sha256Instalador',
+    tagPrefix: 'officecerto-v',
+    assetName: function(version) { return 'OfficeCerto_Setup_v' + version + '.exe'; },
+    fallbackHash: '#officecerto-download',
+    prepareStore: false,
+    availableText: '<strong>Download direto validado.</strong> Instale o OfficeCerto para trabalhar com documentos, planilhas e PDFs no computador.',
+    unavailableText: '<strong>Download ainda indisponível.</strong> A publicação oficial do OfficeCerto precisa ter manifesto e instalador validados para habilitar o download.'
+  });
+
+  carregarProduto({
     manifest: 'version_ajustehd.json',
     badgeId: 'ajustehd-versao-badge',
     downloadBadgeId: 'ajustehd-versao-download',
@@ -2740,6 +2868,7 @@ function showPage(page) {
     driverstatus: 'nav-driver',
     teladesk: 'nav-teladesk',
     ajustehd: 'nav-ajustehd',
+    officecerto: 'nav-officecerto',
     copieecole: 'nav-copieecole',
     terceiros: 'nav-terceiros',
     ajuda: 'nav-ajuda'
@@ -2758,7 +2887,7 @@ function showPage(page) {
 
 function showPageFromHash() {
   var page = window.location.hash.substring(1).toLowerCase();
-  var validPages = ['home', 'notezap', 'printcerto', 'vozdigitada', 'driverstatus', 'teladesk', 'ajustehd', 'copieecole', 'terceiros', 'ajuda'];
+  var validPages = ['home', 'notezap', 'printcerto', 'vozdigitada', 'driverstatus', 'teladesk', 'ajustehd', 'officecerto', 'copieecole', 'terceiros', 'ajuda'];
   showPage(validPages.indexOf(page) !== -1 ? page : 'home');
 }
 

@@ -2893,6 +2893,17 @@ function showPageFromHash() {
 
 window.addEventListener('hashchange', showPageFromHash);
 showPageFromHash();
+
+document.querySelectorAll('.site-layout > .sidebar, .site-layout > .main').forEach(function(panel) {
+  function updateScrollIndicator() {
+    var range = panel.scrollHeight - panel.clientHeight;
+    var progress = range > 0 ? Math.max(0, Math.min(1, panel.scrollTop / range)) : 0;
+    panel.style.setProperty('--site-scroll-position', (progress * 100) + '%');
+  }
+  panel.addEventListener('scroll', updateScrollIndicator, { passive: true });
+  window.addEventListener('resize', updateScrollIndicator);
+  updateScrollIndicator();
+});
 </script>
 <script src="notezap-download.js"></script>
 <script src="download-all.js?v=20261003-1"></script>

@@ -115,8 +115,10 @@ body {
 
 .site-layout > .sidebar::-webkit-scrollbar-thumb,
 .site-layout > .main::-webkit-scrollbar-thumb {
-  background: var(--site-scroll-thumb);
+  background: linear-gradient(var(--site-scroll-thumb), var(--site-scroll-thumb))
+    50% var(--site-scroll-position, 0%) / 100% 24px no-repeat;
   border: 3px solid transparent;
+  background-origin: padding-box;
   background-clip: padding-box;
   border-radius: 4px;
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0307",
-  "dataPublicacao": "2026-10-03T13:08:36",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0307/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "73f7290406b04923d66dbcaa744bc31a354fd4d869a9d0f37abb81d265b3c7ad",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0307/DriverStatus_Setup_v1.10.0307.exe",
-  "sha256Instalador": "37fba3d38967f46f3a4b7c7fd809f55425b07ffed8ea7e2f8f70a52ef01d45c0",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0307/DriverStatus_Update.zip",
-  "sha256": "73f7290406b04923d66dbcaa744bc31a354fd4d869a9d0f37abb81d265b3c7ad",
-  "changelog": "Restaura as cores originais dos menus, painéis, campos e botões do DriverStatus. Corrige a inicialização da paleta dos componentes H, preservando a janela de atualização modal com identidade roxa."
+  "version": "1.10.0405",
+  "dataPublicacao": "2026-10-04T13:01:05",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0405/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "5cd5134e1c464ec491f191645f468c322c3915b6bd4c7b1c4f2ce96db50e0e53",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0405/DriverStatus_Setup_v1.10.0405.exe",
+  "sha256Instalador": "373c3efe27b8bad80d038b10d8f81c0c084f744e1d059c330337cd99de9deac4",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0405/DriverStatus_Update.zip",
+  "sha256": "5cd5134e1c464ec491f191645f468c322c3915b6bd4c7b1c4f2ce96db50e0e53",
+  "changelog": "Amplia as confirmações do HConfirma compartilhado para acomodar mensagens e avisos, mantém os botões inteiros na mesma linha e diferencia os indicadores de gatilho dos botões em Tarefas agendadas."
 }

@@ -14,6 +14,7 @@
     { name: 'VozDigitada', manifest: 'version.json', tagPrefix: 'vozdigitada-v', asset: function (version) { return 'VozDigitada_Setup_v' + version + '.exe'; } },
     { name: 'DriverStatus', manifest: 'version_driverstatus.json', tagPrefix: 'driverstatus-v', asset: function (version) { return 'DriverStatus_Setup_v' + version + '.exe'; } },
     { name: 'TelaDesk', manifest: 'version_teladesk.json', tagPrefix: 'teladesk-v', asset: function (version) { return 'TelaDesk-Setup-' + version + '.exe'; } },
+    { name: 'OfficeCerto', manifest: 'version_officecerto.json', tagPrefix: 'officecerto-v', optional: true, verifyRelease: true, asset: function (version) { return 'OfficeCerto_Setup_v' + version + '.exe'; } },
     { name: 'AjusteHD', manifest: 'version_ajustehd.json', tagPrefix: 'ajustehd-v', asset: function (version) { return 'AjusteHD_Setup_v' + version + '.exe'; } }
   ];
 
@@ -43,21 +44,51 @@
     return {
       name: application.name,
       fileName: assetName,
-      url: parsedUrl.href
+      url: parsedUrl.href,
+      sha256: hash.toLowerCase(),
+      tag: application.tagPrefix + version
     };
+  }
+
+  function verificarRelease(fetchFunction, installer) {
+    var apiUrl = 'https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases/tags/' + encodeURIComponent(installer.tag);
+    return fetchFunction(apiUrl, { cache: 'no-cache' })
+      .then(function (response) {
+        if (!response.ok) throw new Error('Release indisponível para ' + installer.name);
+        return response.json();
+      })
+      .then(function (release) {
+        var asset = Array.isArray(release.assets) && release.assets.find(function (item) {
+          return item.name === installer.fileName && item.browser_download_url === installer.url &&
+            Number(item.size) > 0 && String(item.digest || '').toLowerCase() === 'sha256:' + installer.sha256;
+        });
+        if (!asset || release.draft || release.prerelease || release.tag_name !== installer.tag) {
+          throw new Error('Instalador publicado inválido para ' + installer.name);
+        }
+        return installer;
+      });
   }
 
   function carregarInstaladores(fetchFunction, manifestUrl) {
     return Promise.all(applications.map(function (application) {
-      return fetchFunction(manifestUrl(application.manifest), { cache: 'no-cache' })
+      return Promise.resolve().then(function () {
+        return fetchFunction(manifestUrl(application.manifest), { cache: 'no-cache' });
+      })
         .then(function (response) {
           if (!response.ok) throw new Error('Manifesto indisponível para ' + application.name);
           return response.json();
         })
         .then(function (data) {
-          return validarManifesto(application, data);
+          var installer = validarManifesto(application, data);
+          return application.verifyRelease ? verificarRelease(fetchFunction, installer) : installer;
+        })
+        .catch(function (error) {
+          if (application.optional) return null;
+          throw error;
         });
-    }));
+    })).then(function (installers) {
+      return installers.filter(function (installer) { return installer !== null; });
+    });
   }
 
   function esperar(setTimeoutFunction, delay) {
@@ -112,8 +143,7 @@
     var manifestUrl = global.HetoandradeSite && global.HetoandradeSite.manifestUrl;
     var installers = [];
     var downloadInProgress = false;
-    var installerCount = applications.length;
-    var installerLabel = installerCount + ' instaladores';
+    var installerCount = 0;
 
     if (!button || !status || typeof global.fetch !== 'function' || typeof manifestUrl !== 'function') return;
 
@@ -121,7 +151,7 @@
       button.disabled = true;
       button.setAttribute('aria-busy', 'true');
       button.textContent = 'Verificando instaladores...';
-      status.textContent = 'Preparando ' + installerCount + ' downloads.';
+      status.textContent = 'Verificando os instaladores disponíveis.';
     }
 
     function prepararDownloads(downloadAfterLoad) {
@@ -129,10 +159,12 @@
       return carregarInstaladores(global.fetch.bind(global), manifestUrl)
         .then(function (loadedInstallers) {
           installers = loadedInstallers;
+          installerCount = installers.length;
           button.disabled = false;
           button.removeAttribute('aria-busy');
           button.textContent = READY_BUTTON_TEXT;
-          status.textContent = installerLabel + ' prontos · Windows 10/11';
+          status.textContent = installerCount + ' instaladores prontos · Windows 10/11' +
+            (installers.some(function (installer) { return installer.name === 'OfficeCerto'; }) ? '' : ' · OfficeCerto ainda indisponível');
           if (downloadAfterLoad) baixarTodos();
         })
         .catch(function () {
@@ -147,7 +179,7 @@
     function baixarTodos() {
       if (downloadInProgress) return;
 
-      if (installers.length !== applications.length) {
+      if (installers.length === 0) {
         prepararDownloads(true);
         return;
       }

@@ -1,7 +1,7 @@
 {
-  "version": "1.10.0203",
-  "dataPublicacao": "2026-10-02T15:45:13-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.0203/TelaDesk-Setup-1.10.0203.exe",
-  "sha256": "5F689BBFC40CE8DD0337BD88F3146DD68F749DFD2845E8185D3AC75AB75F0958",
-  "changelog": "Ajusta as abas de sessão com altura uniforme, nome do computador e fechamento dentro da aba. Fecha os painéis laterais ao clicar fora e destaca suas ações como botões. Permite recolher a transferência de arquivos mantendo o progresso visível e corrige o fundo quadrado da barra de acesso remoto."
+  "version": "1.10.0306",
+  "dataPublicacao": "2026-10-03T21:18:42-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.0306/TelaDesk-Setup-1.10.0306.exe",
+  "sha256": "6FC509EF9C7E999C98B24D3EF7AE7F809B05E0DD675994B12479BE1C5B1B3722",
+  "changelog": "Restaura a barra de título padrão do Windows e aplica a identidade azul do TelaDesk à janela de atualização, preservando sua estrutura e os fluxos de verificação, download e reinício."
 }

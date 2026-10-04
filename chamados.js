@@ -48,7 +48,7 @@ async function enviarChamado(){
     if(!configuracao.ok)throw new Error('O serviço de chamados não está configurado.');
     const config=await configuracao.json();
     const url=new URL(config.API_URL);
-    if(url.protocol!=='https:' || url.hostname!=='chamados.hetoandrade.com.br' || url.pathname!=='/api/chamados')
+    if(url.protocol!=='https:' || url.hostname!=='hub.hetoandrade.com.br' || url.pathname!=='/api/chamados')
       throw new Error('O endereço do serviço de chamados não passou na verificação.');
     const dados=new FormData();dados.append('CLIENTE_ID',identificacao);dados.append('EMAIL',email.value.trim());dados.append('DESCRICAO',descricao.value);
     anexos.arquivos.forEach((f,i)=>dados.append('IMAGENS',f,f.name||`captura-${i+1}.png`));

@@ -266,7 +266,7 @@ loadScript(function () {
 });
 </script>
 </head>
-<body>
+<body class="site-layout">
 
 <!-- ═══════════════ SIDEBAR ═══════════════ -->
 <aside class="sidebar" id="sidebar">
@@ -376,7 +376,7 @@ loadScript(function () {
 <main class="main">
 
   <div class="topbar-mobile">
-    <button class="mobile-menu-btn" onclick="document.getElementById('sidebar').classList.toggle('mobile-open')">&#9776;</button>
+    <button class="mobile-menu-btn" onclick="if (document.getElementById('sidebar').classList.toggle('mobile-open')) window.scrollTo({ top: 0, behavior: 'instant' });">&#9776;</button>
   </div>
 
 

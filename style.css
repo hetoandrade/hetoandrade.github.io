@@ -76,6 +76,66 @@ body {
 .site-layout {
   display: grid;
   grid-template-columns: var(--sidebar-w) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr);
+  height: 100vh;
+  height: 100dvh;
+  min-height: 0;
+  overflow: hidden;
+}
+
+.site-layout > .sidebar,
+.site-layout > .main {
+  --site-scroll-thumb: transparent;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+}
+
+.site-layout > .sidebar:hover,
+.site-layout > .sidebar:focus-within,
+.site-layout > .main:hover,
+.site-layout > .main:focus-within {
+  --site-scroll-thumb: #e3e5e8;
+}
+
+.site-layout > .sidebar::-webkit-scrollbar,
+.site-layout > .main::-webkit-scrollbar {
+  width: 9px;
+}
+
+.site-layout > .sidebar::-webkit-scrollbar-track,
+.site-layout > .main::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.site-layout > .sidebar::-webkit-scrollbar-thumb,
+.site-layout > .main::-webkit-scrollbar-thumb {
+  background: var(--site-scroll-thumb);
+  border: 3px solid transparent;
+  background-clip: padding-box;
+  border-radius: 4px;
+}
+
+.site-layout > .sidebar::-webkit-scrollbar-button,
+.site-layout > .main::-webkit-scrollbar-button {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  .site-layout > .sidebar,
+  .site-layout > .main {
+    scrollbar-width: thin;
+    scrollbar-color: var(--site-scroll-thumb) transparent;
+  }
+}
+
+@media (hover: none) {
+  .site-layout > .sidebar,
+  .site-layout > .main {
+    --site-scroll-thumb: #e3e5e8;
+  }
 }
 
 body::before {
@@ -99,7 +159,7 @@ body::before {
   position: relative;
   left: 0; top: 0;
   width: var(--sidebar-w);
-  min-height: 100vh;
+  min-height: 0;
   background: var(--bg-secondary);
   border-right: 1px solid var(--border);
   display: flex;
@@ -109,6 +169,7 @@ body::before {
 }
 
 .sidebar-header {
+  flex-shrink: 0;
   padding: 28px 24px 20px;
   border-bottom: 1px solid var(--border);
   display: flex;
@@ -217,6 +278,7 @@ body::before {
 .nav-item.disabled { opacity: 0.35; pointer-events: none; }
 
 .sidebar-footer {
+  flex-shrink: 0;
   padding: 16px 24px;
   border-top: 1px solid var(--border);
   font-size: 11px;
@@ -228,7 +290,7 @@ body::before {
   min-width: 0;
   position: relative;
   z-index: 1;
-  min-height: 100vh;
+  min-height: 0;
 }
 
 .topbar-mobile {

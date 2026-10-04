@@ -1,7 +1,7 @@
-.chamados-painel{margin:32px 40px;padding:36px;max-width:1100px;border-left:5px solid var(--h-azul);text-align:left}
-.chamados-painel h1{font-size:36px;color:var(--h-azul-escuro);margin:0 0 12px}
-.chamados-intro{color:var(--erp-txt-muted);margin:0 0 30px;line-height:1.6}
-#chamados-form{display:grid;gap:18px}
+.chamados-painel{margin:24px 40px;padding:26px;max-width:920px;border-left:5px solid var(--h-azul);text-align:left}
+.chamados-painel h1{font-size:28px;color:var(--h-azul-escuro);margin:0 0 8px}
+.chamados-intro{color:var(--erp-txt-muted);margin:0 0 20px;line-height:1.6}
+#chamados-form{display:grid;gap:14px}
 .chamados-dica,.chamados-rodape{color:var(--erp-txt-subtle);font-size:14px;line-height:1.6}
 .chamados-dica{margin:0}
 .chamados-rodape{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:10px}

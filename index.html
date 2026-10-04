@@ -376,7 +376,7 @@ loadScript(function () {
 <main class="main">
 
   <div class="topbar-mobile">
-    <button class="mobile-menu-btn" onclick="if (document.getElementById('sidebar').classList.toggle('mobile-open')) window.scrollTo({ top: 0, behavior: 'instant' });">&#9776;</button>
+    <button class="mobile-menu-btn" onclick="if (document.getElementById('sidebar').classList.toggle('mobile-open')) document.getElementById('sidebar').scrollTo({ top: 0, behavior: 'instant' });">&#9776;</button>
   </div>
 
 
@@ -2882,7 +2882,7 @@ function showPage(page) {
   var hash = page === 'home' ? '' : '#' + page;
   history.replaceState(null, '', window.location.pathname + window.location.search + hash);
 
-  window.scrollTo({ top: 0, behavior: 'smooth' });
+  document.querySelector('.main').scrollTo({ top: 0, behavior: 'smooth' });
 }
 
 function showPageFromHash() {

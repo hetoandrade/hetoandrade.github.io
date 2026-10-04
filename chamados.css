@@ -7,6 +7,5 @@
 .chamados-rodape{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:10px}
 .chamados-aviso{margin-bottom:20px;padding:16px;border:1px solid #fecaca;border-radius:4px;background:#fff1f2;color:#b91c1c;overflow-wrap:anywhere}
 .chamados-aviso.sucesso{border-color:#a7f3d0;background:#ecfdf5;color:#047857}
-.nav-item .chamados-icone{width:26px;height:26px;flex-shrink:0}
 @media(max-width:900px){.chamados-painel{margin:24px 20px;padding:24px}.chamados-painel h1{font-size:28px}}
 @media(max-width:600px){.chamados-painel{margin:16px 12px;padding:20px}.chamados-rodape{align-items:flex-start;flex-direction:column}}

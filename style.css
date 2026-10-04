@@ -86,16 +86,21 @@ body {
 .site-layout > .sidebar,
 .site-layout > .main {
   --site-scroll-thumb: transparent;
+  --site-scroll-thumb-color: #e3e5e8;
   overflow-y: auto;
   overflow-x: hidden;
   overscroll-behavior: contain;
+}
+
+.site-layout > .sidebar {
+  --site-scroll-thumb-color: var(--accent-light);
 }
 
 .site-layout > .sidebar:hover,
 .site-layout > .sidebar:focus-within,
 .site-layout > .main:hover,
 .site-layout > .main:focus-within {
-  --site-scroll-thumb: #e3e5e8;
+  --site-scroll-thumb: var(--site-scroll-thumb-color);
 }
 
 .site-layout > .sidebar::-webkit-scrollbar,
@@ -134,7 +139,7 @@ body {
 @media (hover: none) {
   .site-layout > .sidebar,
   .site-layout > .main {
-    --site-scroll-thumb: #e3e5e8;
+    --site-scroll-thumb: var(--site-scroll-thumb-color);
   }
 }
 

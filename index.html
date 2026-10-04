@@ -293,7 +293,6 @@ loadScript(function () {
     <a class="nav-item" href="#notezap" onclick="showPage('notezap'); return false;" id="nav-notezap">
       <img src="Imagems/notezap.png" alt="" class="nav-icon-img">
       NoteZap
-      <span class="badge">Novo</span>
     </a>
     <!-- NOTEZAP:NAV:END -->
 
@@ -306,7 +305,6 @@ loadScript(function () {
     <a class="nav-item" href="#" onclick="showPage('copieecole'); return false;" id="nav-copieecole">
       <img src="Imagems/copieecole-verde.png" alt="" class="nav-icon-img copieecole">
       CopieECole
-      <span class="badge">Novo</span>
     </a>
 
     <a class="nav-item" href="#" onclick="showPage('vozdigitada'); return false;" id="nav-voz">
@@ -2661,6 +2659,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
   function atualizarBadgeNavegacao(id, disponivel) {
     var badge = element(id);
     if (!badge) return;
+    badge.hidden = disponivel && id !== 'nav-officecerto-badge';
     badge.textContent = disponivel ? 'Novo' : 'Indisponível';
     badge.classList.toggle('available', disponivel);
     badge.classList.toggle('soon', !disponivel);

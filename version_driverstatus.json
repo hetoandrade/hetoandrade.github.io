@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0405",
-  "dataPublicacao": "2026-10-04T13:01:05",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0405/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "5cd5134e1c464ec491f191645f468c322c3915b6bd4c7b1c4f2ce96db50e0e53",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0405/DriverStatus_Setup_v1.10.0405.exe",
-  "sha256Instalador": "373c3efe27b8bad80d038b10d8f81c0c084f744e1d059c330337cd99de9deac4",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0405/DriverStatus_Update.zip",
-  "sha256": "5cd5134e1c464ec491f191645f468c322c3915b6bd4c7b1c4f2ce96db50e0e53",
-  "changelog": "Amplia as confirmações do HConfirma compartilhado para acomodar mensagens e avisos, mantém os botões inteiros na mesma linha e diferencia os indicadores de gatilho dos botões em Tarefas agendadas."
+  "version": "1.10.0501",
+  "dataPublicacao": "2026-10-05T12:11:42",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0501/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "48449c380a64ecb26ebb9b57466dc925564b91db706d8b754aa5d36c2b05fe51",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0501/DriverStatus_Setup_v1.10.0501.exe",
+  "sha256Instalador": "4bdeba071ab03f8f421855d1518e248245567d6d0122776f1c50522ae7c055b1",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0501/DriverStatus_Update.zip",
+  "sha256": "48449c380a64ecb26ebb9b57466dc925564b91db706d8b754aa5d36c2b05fe51",
+  "changelog": "Corrige a inicialização automática silenciosa na bandeja do Windows e recupera o ícone quando o Explorer inicia ou reinicia, inclusive em computadores mais lentos."
 }

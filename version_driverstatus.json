@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0501",
-  "dataPublicacao": "2026-10-05T12:11:42",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0501/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "48449c380a64ecb26ebb9b57466dc925564b91db706d8b754aa5d36c2b05fe51",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0501/DriverStatus_Setup_v1.10.0501.exe",
-  "sha256Instalador": "4bdeba071ab03f8f421855d1518e248245567d6d0122776f1c50522ae7c055b1",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0501/DriverStatus_Update.zip",
-  "sha256": "48449c380a64ecb26ebb9b57466dc925564b91db706d8b754aa5d36c2b05fe51",
-  "changelog": "Corrige a inicialização automática silenciosa na bandeja do Windows e recupera o ícone quando o Explorer inicia ou reinicia, inclusive em computadores mais lentos."
+  "version": "1.10.0502",
+  "dataPublicacao": "2026-10-05T14:12:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0502/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "fe86d652b7935d57ab685f568b27eaf5567b67953fc81f030c832cfcecf8838e",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0502/DriverStatus_Setup_v1.10.0502.exe",
+  "sha256Instalador": "afe725f6f3fbc20a1709463675d100397b67fbb47fe93a9044332b9ca6b817b7",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0502/DriverStatus_Update.zip",
+  "sha256": "fe86d652b7935d57ab685f568b27eaf5567b67953fc81f030c832cfcecf8838e",
+  "changelog": "Corrige o Reiniciar agora após a atualização ZIP, encerrando o DriverStatus pela rotina de atualização e desabilitando Fechar enquanto prepara o reinício."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0309",
-  "dataPublicacao": "2026-10-03T21:30:34",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0309/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "891390fb9a518c26a910d36a7a00649aec5d050d7155edacd3aa4fafe6817dda",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0309/VozDigitada_Setup_v1.10.0309.exe",
-  "sha256Instalador": "7ba9231dd76e96d14c6a58b4782d66c040e4736a076bcfc3592aa24c1fc9b7f3",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0309/VozDigitada_Update.zip",
-  "sha256": "891390fb9a518c26a910d36a7a00649aec5d050d7155edacd3aa4fafe6817dda",
-  "changelog": "Configuração com lateral vermelha, fundo neutro, painéis brancos e destaques vermelhos nas seleções e recomendações. Botões sem verde e contraste adequado ao tema claro, preservando as medidas da tela e dos balões flutuantes."
+  "version": "1.10.0602",
+  "dataPublicacao": "2026-10-06T10:45:22",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0602/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "5a35911e0d4fc9d1e2231687b7412be18a6360d2119b3394b8105e33c1ee3965",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0602/VozDigitada_Setup_v1.10.0602.exe",
+  "sha256Instalador": "e33009108a94c32a2bb8fba0d026c5716135fa2499299d28e6bf9e5bc862fc06",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0602/VozDigitada_Update.zip",
+  "sha256": "5a35911e0d4fc9d1e2231687b7412be18a6360d2119b3394b8105e33c1ee3965",
+  "changelog": "A seleção de frases no histórico do dicionário agora segue o padrão suave do VozDigitada, com fundo claro, texto escuro e borda vermelha fina."
 }

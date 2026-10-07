@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0506",
-  "dataPublicacao": "2026-10-05T12:17:23-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0506/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "f74ec2e3720f7cc2775b9760850bd7cd16829c8dc0c292ed05bb0be42c27911d",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0506/PrintCerto_Setup_v1.10.0506.exe",
-  "sha256Instalador": "87384c09c157b78da4936a9b094482c3ce7e76d2e52a9b8119700b58addd9246",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0506/PrintCerto_Update.zip",
-  "sha256": "f74ec2e3720f7cc2775b9760850bd7cd16829c8dc0c292ed05bb0be42c27911d",
-  "changelog": "Corrige a confirmação da cópia de prints diretamente no Windows, recupera ocupações temporárias da área de transferência e mantém o Histórico independente, com logs de diagnóstico."
+  "version": "1.10.0705",
+  "dataPublicacao": "2026-10-07T17:30:54-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0705/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "a27ce5899a78390d398eed6c8c6a7b734c3f2a3d08fd361ed3096afd141fb6e0",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0705/PrintCerto_Setup_v1.10.0705.exe",
+  "sha256Instalador": "2b1753a9bcb79dde8295426cf28a0f2b11721d8e9b3dc084647972dc0f7a8554",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0705/PrintCerto_Update.zip",
+  "sha256": "a27ce5899a78390d398eed6c8c6a7b734c3f2a3d08fd361ed3096afd141fb6e0",
+  "changelog": "Corrige a abertura do histórico ao usar Copiar com Chat e devolve o foco ao campo de envio após a cópia. Confirma a cópia trocando somente o ícone clicado por três segundos e preserva a proteção contra cópias simultâneas."
 }

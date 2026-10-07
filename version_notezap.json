@@ -1,7 +1,7 @@
 {
-  "version": "1.10.0308",
-  "dataPublicacao": "2026-10-03T23:20:09Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.0308/NoteZap_Setup_v1.10.0308.exe",
-  "sha256Instalador": "334BB83E7643B65F616C901B178D1A95C3E7FBF95A254E108432D2E143D7DCA4",
-  "changelog": "Remove o degradê do cabeçalho no NoteZap instalado pelo navegador no iPhone, usando o mesmo verde sólido da área superior."
+  "version": "1.10.0704",
+  "dataPublicacao": "2026-10-07T20:42:07Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.0704/NoteZap_Setup_v1.10.0704.exe",
+  "sha256Instalador": "085AE26BF4726FA73842C5F601039D5C6455CA9390B06C9D681C2A1E12D957B7",
+  "changelog": "Coloca o botão Copiar como a primeira ação à esquerda nos cards de imagem, anotação e checklist do chat, preservando os componentes e as funções existentes."
 }

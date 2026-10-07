@@ -1,7 +1,7 @@
 {
-  "version": "1.10.0704",
-  "dataPublicacao": "2026-10-07T20:42:07Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.0704/NoteZap_Setup_v1.10.0704.exe",
-  "sha256Instalador": "085AE26BF4726FA73842C5F601039D5C6455CA9390B06C9D681C2A1E12D957B7",
-  "changelog": "Coloca o botão Copiar como a primeira ação à esquerda nos cards de imagem, anotação e checklist do chat, preservando os componentes e as funções existentes."
+  "version": "1.10.0706",
+  "dataPublicacao": "2026-10-07T22:53:08Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.0706/NoteZap_Setup_v1.10.0706.exe",
+  "sha256Instalador": "C36BDE022DEE415D3FF1D36B2D4EC92632D64A7928DC8A8AFED1B05838A0112F",
+  "changelog": "Coloca o botão Copiar como a primeira ação à esquerda nos cards de imagem, anotação e checklist do chat, preservando os componentes e as funções existentes.\n\nPadroniza os botões nos componentes H oficiais com cantos de 8 px, preservando suas ações, cores e medidas."
 }

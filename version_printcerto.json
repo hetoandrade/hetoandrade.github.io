@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0705",
-  "dataPublicacao": "2026-10-07T17:30:54-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0705/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "a27ce5899a78390d398eed6c8c6a7b734c3f2a3d08fd361ed3096afd141fb6e0",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0705/PrintCerto_Setup_v1.10.0705.exe",
-  "sha256Instalador": "2b1753a9bcb79dde8295426cf28a0f2b11721d8e9b3dc084647972dc0f7a8554",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0705/PrintCerto_Update.zip",
-  "sha256": "a27ce5899a78390d398eed6c8c6a7b734c3f2a3d08fd361ed3096afd141fb6e0",
-  "changelog": "Corrige a abertura do histórico ao usar Copiar com Chat e devolve o foco ao campo de envio após a cópia. Confirma a cópia trocando somente o ícone clicado por três segundos e preserva a proteção contra cópias simultâneas."
+  "version": "1.10.0706",
+  "dataPublicacao": "2026-10-07T18:21:50-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0706/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "f96839c054c48d16c78534642248686a8fe6dd2b42c87ab8f5d483e1e54f1729",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0706/PrintCerto_Setup_v1.10.0706.exe",
+  "sha256Instalador": "fb4887ad7c3a06c2473f350d6a802e33aa5b5ff25d06873ac28cedc714291024",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0706/PrintCerto_Update.zip",
+  "sha256": "f96839c054c48d16c78534642248686a8fe6dd2b42c87ab8f5d483e1e54f1729",
+  "changelog": "Corrige o foco no campo de texto após Copiar com chat. Aguarda o campo estar pronto para digitar, confirma o foco do teclado e evita avisos repetidos. Interrompe o foco automático quando o usuário interage ou sai do Histórico."
 }

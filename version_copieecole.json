@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0401",
-  "dataPublicacao": "2026-10-04T11:34:19-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0401/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "DAE0CD58FF1A2FCA9DE83A0646F0CBFDED187BCCDC6A5CED6CA492144CF611DC",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0401/CopieECole_Setup_v1.10.0401.exe",
-  "sha256Instalador": "1CEEE503FFBFD9C90C228CF746C14818F22AFBE7E9012FA7E1BE08CDEA7F059A",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0401/CopieECole_Update.zip",
-  "sha256": "DAE0CD58FF1A2FCA9DE83A0646F0CBFDED187BCCDC6A5CED6CA492144CF611DC",
+  "version": "1.10.0703",
+  "dataPublicacao": "2026-10-07T17:27:53-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0703/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "4A26DE79AA2C2D44F29F78FDC58271E8D5E913EF66A6D5BC98B5EE77FBA772F7",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0703/CopieECole_Setup_v1.10.0703.exe",
+  "sha256Instalador": "2508AE67FBEEDE0097355C4E428414A83B720FF2903849FFEDD651421634B1B0",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.0703/CopieECole_Update.zip",
+  "sha256": "4A26DE79AA2C2D44F29F78FDC58271E8D5E913EF66A6D5BC98B5EE77FBA772F7",
   "changelog": "Padroniza a tela de atualização pelos componentes compartilhados do NoteZap, com faixa superior de 80, janela de 660 por 510 e ação Reiniciar agora, preservando a identidade visual do CopieECole."
 }

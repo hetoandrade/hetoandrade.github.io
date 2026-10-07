@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0603",
-  "dataPublicacao": "2026-10-06T11:37:07",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0603/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "9ee5e8349dbc6731d87a4907eadf1ed447218bd0781f3bbb55a97c0a8b12a860",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0603/DriverStatus_Setup_v1.10.0603.exe",
-  "sha256Instalador": "b4e4b9c9bb12e8c6c4f7f2e7245b7fae09919f35c7cea0395ec26e13b4d68c25",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0603/DriverStatus_Update.zip",
-  "sha256": "9ee5e8349dbc6731d87a4907eadf1ed447218bd0781f3bbb55a97c0a8b12a860",
-  "changelog": "Remove a barra de rolagem da tela de atualização, mantém os textos com quebra de linha e ajusta a altura ao conteúdo. Bloqueia Fechar e o X durante a verificação, o download e o reinício, informa para aguardar e libera o fechamento após o resultado ou erro."
+  "version": "1.10.0702",
+  "dataPublicacao": "2026-10-07T17:29:23",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0702/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "6f07084ab19ed8d72391082b81228ca3211947279194e38364cc0c21aba115fd",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0702/DriverStatus_Setup_v1.10.0702.exe",
+  "sha256Instalador": "2bba7db8283ba877553f4bc2aaca77843b5eb1d92bfdaf711ce340048310e150",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0702/DriverStatus_Update.zip",
+  "sha256": "6f07084ab19ed8d72391082b81228ca3211947279194e38364cc0c21aba115fd",
+  "changelog": "Protege a janela de atualização contra fechamento durante a operação, preservando o fluxo de reinício."
 }

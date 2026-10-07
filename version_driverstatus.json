@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0702",
-  "dataPublicacao": "2026-10-07T17:29:23",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0702/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "6f07084ab19ed8d72391082b81228ca3211947279194e38364cc0c21aba115fd",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0702/DriverStatus_Setup_v1.10.0702.exe",
-  "sha256Instalador": "2bba7db8283ba877553f4bc2aaca77843b5eb1d92bfdaf711ce340048310e150",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0702/DriverStatus_Update.zip",
-  "sha256": "6f07084ab19ed8d72391082b81228ca3211947279194e38364cc0c21aba115fd",
-  "changelog": "Protege a janela de atualização contra fechamento durante a operação, preservando o fluxo de reinício."
+  "version": "1.10.0704",
+  "dataPublicacao": "2026-10-07T19:50:05",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0704/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "0a20eb20d531bce41c99e1b189a0563f39b40a864f6f63b10bd7d574238f7b41",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0704/DriverStatus_Setup_v1.10.0704.exe",
+  "sha256Instalador": "3a7ecbda8b2ccd83ce58c4434276548f0670ad0f423d61ba1384ec7d5fb90520",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.0704/DriverStatus_Update.zip",
+  "sha256": "0a20eb20d531bce41c99e1b189a0563f39b40a864f6f63b10bd7d574238f7b41",
+  "changelog": "Protege a janela de atualização contra fechamento durante a operação, preservando o fluxo de reinício.\n\nPadroniza os botões nos componentes H oficiais com cantos de 8 px, preservando suas ações, cores e medidas.\r\n\r\nDefine a identidade fixa do DriverStatus no Windows e reaplica o ícone antes de exibir a janela, preservando os atalhos do instalador."
 }

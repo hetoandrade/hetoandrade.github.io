@@ -1,7 +1,7 @@
 {
-  "version": "1.10.0502",
-  "dataPublicacao": "2026-10-05T14:27:42-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.0502/TelaDesk-Setup-1.10.0502.exe",
-  "sha256": "F5CFA58406C566D86065907A4A963BEFAB4A5A9326B8053C92ECCDF50EA3F9E7",
-  "changelog": "Iguala as margens das configurações e amplia o ícone de subir uma pasta; ajusta a altura das listas e suaviza a barra de acesso remoto recebido."
+  "version": "1.10.0704",
+  "dataPublicacao": "2026-10-07T19:57:09-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.0704/TelaDesk-Setup-1.10.0704.exe",
+  "sha256": "3B22ECFF17901DA68724D2DDE053A90BCC9A58D474D72FC07A1FEB860118D841",
+  "changelog": "Preserva os caminhos instalados na inicialização e protege a janela de atualização durante a operação.\n\nPadroniza os botões nos componentes H oficiais com cantos de 8 px, preservando suas ações, cores e medidas."
 }

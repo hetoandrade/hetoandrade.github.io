@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0303",
-  "dataPublicacao": "2026-10-03T11:43:59-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0303/AjusteHD_Update.zip",
-  "sha256PacoteAtualizacao": "d8b5dda2c295016ef2040a615207ac4c05a21109fc35f132fa30abca1231ab0e",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0303/AjusteHD_Setup_v1.10.0303.exe",
-  "sha256Instalador": "d13c4262bac49a5481ecad9d869d0d3731e6f8d6b3269cd5d2e78998b469e85e",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0303/AjusteHD_Update.zip",
-  "sha256": "d8b5dda2c295016ef2040a615207ac4c05a21109fc35f132fa30abca1231ab0e",
-  "changelog": "A tela de atualização usa os tons amarelos do AjusteHD no fundo, nas bordas, nos títulos, nos textos, nos botões e na barra de progresso, preservando o componente H oficial."
+  "version": "1.10.0703",
+  "dataPublicacao": "2026-10-07T17:23:33-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0703/AjusteHD_Update.zip",
+  "sha256PacoteAtualizacao": "5d8e5c40a3f7cb780d79e88d3ed51e4d408cd452bc31065d902dee6923b7d217",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0703/AjusteHD_Setup_v1.10.0703.exe",
+  "sha256Instalador": "f0234a1efd3e5219e7ac7fc701eb34a62e623cd057a09bf91f52b0c3766a7208",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0703/AjusteHD_Update.zip",
+  "sha256": "5d8e5c40a3f7cb780d79e88d3ed51e4d408cd452bc31065d902dee6923b7d217",
+  "changelog": "Protege a janela de atualização durante a operação e aplica o pacote na pasta do executável reiniciado."
 }

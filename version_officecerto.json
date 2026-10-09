@@ -1,7 +1,7 @@
 {
-  "version": "1.10.0405",
-  "dataPublicacao": "2026-10-04T14:06:00.1103915Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.0405/OfficeCerto_Setup_v1.10.0405.exe",
-  "sha256Instalador": "4E512FBA76CB0E909AE13EC64C0189AA9436ED22666E4895B2E0E72CF7FC1751",
-  "changelog": "Disponibiliza a versão de testes do OfficeCerto com instalador completo, download no site e atualização pelo instalador oficial."
+  "version": "1.10.0901",
+  "dataPublicacao": "2026-10-09T14:15:27.0104750Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.0901/OfficeCerto_Setup_v1.10.0901.exe",
+  "sha256Instalador": "4649CE2F41DD245EBA90B3D83117B05D3D50E71E03C67647B0737B730F16ADD3",
+  "changelog": "Corrige a abertura de arquivos pelo Explorer quando o OfficeCerto já está aberto e reduz a largura do painel lateral, preservando textos e ícones. 📂↔️"
 }

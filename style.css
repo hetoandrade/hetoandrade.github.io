@@ -1323,14 +1323,6 @@ body::before { display: none; }
 .sidebar-nav .nav-item { padding-right: 0; }
 .nav-item[data-update-recency] { position: relative; gap: 1px; }
 .nav-item[data-update-recency] > .badge:not(.publication-update) { display: none; }
-.nav-item[data-update-recency]::before {
-  content: '';
-  position: absolute;
-  inset: 6px auto 6px 0;
-  width: 3px;
-  border-radius: 3px;
-  background: var(--publication-color);
-}
 .nav-item .publication-update {
   margin-left: auto;
   flex-shrink: 0;
@@ -1381,12 +1373,15 @@ body::before { display: none; }
   background: var(--publication-background);
   color: var(--publication-text);
 }
+.nav-item[data-update-recency="today"] > .publication-update,
+.nav-item[data-update-recency="yesterday"] > .publication-update {
+  font-size: 9px;
+}
 .nav-item[data-update-recency="older"] > .publication-update {
   background: rgba(6, 36, 89, .25);
   color: #e2e8f0;
   font-weight: 500;
 }
-.nav-item[data-update-recency="older"]::before { background: transparent; }
 .app-card > .publication-update {
   position: absolute;
   inset: 0 0 auto;

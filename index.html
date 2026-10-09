@@ -615,14 +615,13 @@ loadScript(function () {
       <div class="section-title">Quem somos</div>
       <div class="historia-card">
         <div class="historia-texto" style="max-width: 700px; margin: 0 auto;">
-          <h3>De problemas reais, nascem solu&#231;&#245;es reais</h3>
-          <p>Sou programador e crio ferramentas que eu mesmo uso no dia a dia. Quando encontro um problema que n&#227;o tem boa solu&#231;&#227;o gratuita, eu construo uma.</p>
-          <p><em>O <strong>VozDigitada</strong> nasceu porque eu precisava ditar texto sem pagar assinatura &#8212; um app simples que transforma voz em texto em qualquer programa, com Enter autom&#225;tico e comandos de voz.</em></p>
-          <p><em>O <strong>DriverStatus</strong> nasceu porque diagnosticar drivers no Windows &#233; frustrante &#8212; um app que escaneia o hardware, identifica problemas e facilita a busca pela solu&#231;&#227;o certa, inclusive com IA.</em></p>
-          <p>Todas as minhas ferramentas s&#227;o <strong>100% gratuitas</strong>, sem an&#250;ncios, sem coleta de dados. Feitas por quem realmente usa, para quem realmente precisa.</p>
+          <h3>Apps para agilizar o seu dia a dia</h3>
+          <p>Sou programador e crio aplicativos a partir de necessidades reais da minha rotina. O objetivo &#233; simplificar tarefas, economizar tempo e tornar o dia a dia mais pr&#225;tico.</p>
+          <p>Uso diariamente todos os aplicativos que desenvolvo. Cada um nasce para resolver algo que eu tamb&#233;m preciso, e esse uso orienta os ajustes e as melhorias.</p>
+          <p>Compartilho essas ferramentas para ajudar outras pessoas que enfrentam as mesmas necessidades.</p>
           <div class="historia-destaque">
             <span class="destaque-icon">&#128161;</span>
-            <span>Cada ferramenta resolve um problema real &#8212; e sempre ser&#225; <strong>gratuita</strong>.</span>
+            <span>Atualmente, todos os aplicativos s&#227;o <strong>gratuitos</strong>.</span>
           </div>
         </div>
       </div>
@@ -2575,6 +2574,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
         throw new Error('Manifesto inválido');
       }
 
+      atualizarDataPublicacao('copieecole', data.dataPublicacao);
       return fetch(
         'https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases/tags/' + encodeURIComponent(tag),
         { cache: 'no-cache' }
@@ -2594,7 +2594,6 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
     })
     .then(function(release) {
       liberarDownloads(release.installerUrl);
-      atualizarDataPublicacao('copieecole', release.publicationDate);
       versionLabel.textContent = '💻 Windows 10/11 · v' + release.version;
       if (versionBadge) {
         versionBadge.textContent = 'Disponível · v' + release.version;
@@ -2744,6 +2743,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
           throw new Error('Manifesto inválido');
         }
 
+        atualizarDataPublicacao(config.updateKey, data.dataPublicacao);
         if (config.prepareStore) prepararMicrosoftStore(data);
 
         return validarReleaseGitHub(tag, assetName, parsedUrl.href, hash).then(function() {
@@ -2762,7 +2762,6 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
         if (cardStatus) cardStatus.textContent = '✅ Download validado';
         if (availability) availability.innerHTML = config.availableText;
         atualizarBadgeNavegacao(config.navBadgeId, true);
-        atualizarDataPublicacao(config.updateKey, release.publicationDate);
         buttons.forEach(function(button) {
           configurarBotao(button, release.installerUrl, '⬇️ Baixar Instalador');
         });

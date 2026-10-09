@@ -33,6 +33,9 @@
       if (!/^\d+\.\d{1,2}\.\d{4}$/.test(version) || !/^[a-f0-9]{64}$/.test(hash) || data.urlInstalador !== url) {
         throw new Error('Manifesto inválido');
       }
+      if (window.HetoandradeSite && typeof window.HetoandradeSite.setPublicationDate === 'function') {
+        window.HetoandradeSite.setPublicationDate('notezap', data.dataPublicacao);
+      }
       return fetch('https://api.github.com/repos/hetoandrade/hetoandrade.github.io/releases/tags/' + tag, { cache: 'no-cache' })
         .then(function (response) {
           if (!response.ok) throw new Error('Release indisponível');
@@ -50,9 +53,6 @@
           setLabel('notezap-versao-desktop', '💻 Windows 10/11 · v' + version);
           setLabel('notezap-versao-tag', version);
           setLabel('card-notezap-tag', 'Disponível · v' + version);
-          if (window.HetoandradeSite && typeof window.HetoandradeSite.setPublicationDate === 'function') {
-            window.HetoandradeSite.setPublicationDate('notezap', data.dataPublicacao);
-          }
           setLabel('notezap-disponibilidade', 'Disponível no navegador e Windows. Entre com sua conta Google para acessar suas anotações.');
           buttons.forEach(function (button) {
             button.href = url;

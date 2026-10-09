@@ -43,18 +43,29 @@
     var days = date ? (calendarDay(now) - calendarDay(date)) / 86400000 : -1;
     var recency = date && date <= now && days === 0 ? 'today' : date && date <= now && days === 1 ? 'yesterday' : date && date <= now && days > 1 ? 'older' : '';
     var label = recency === 'today' ? 'Atualizado hoje' : recency === 'yesterday' ? 'Atualizado ontem' : recency === 'older' ? publicationFormat.format(date) : '';
-    var nav = document.getElementById('nav-' + products[key]);
     var tag = document.getElementById('card-' + products[key] + '-tag');
     var card = tag && tag.closest('.app-card');
+    var pageId = key === 'voz' ? 'vozdigitada' : key === 'driver' ? 'driverstatus' : products[key];
+    var hero = document.querySelector('#page-' + pageId + ' .hero');
+    var row = hero && hero.querySelector('.hero-publication-row');
+    if (!row && hero && recency) {
+      var versionBadge = hero.querySelector('.hero-badge');
+      if (versionBadge) {
+        row = document.createElement('div');
+        row.className = 'hero-publication-row';
+        versionBadge.before(row);
+        row.appendChild(versionBadge);
+      }
+    }
 
-    [nav, card].forEach(function (container) {
+    [card, row].forEach(function (container) {
       if (!container) return;
       container.setAttribute('data-publication-product', key);
       var indicator = container.querySelector('.publication-update');
       if (!indicator && !recency) return;
       if (!indicator) {
         indicator = document.createElement('span');
-        indicator.className = container === nav ? 'publication-update badge' : 'publication-update';
+        indicator.className = container === row ? 'hero-badge publication-update' : 'publication-update';
         container.appendChild(indicator);
       }
       indicator.textContent = label;

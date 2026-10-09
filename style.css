@@ -1319,6 +1319,95 @@ body::before { display: none; }
   row-gap: 8px;
 }
 
+.nav-app-name { white-space: nowrap; }
+.sidebar-nav .nav-item { padding-right: 0; }
+.nav-item[data-update-recency] { position: relative; gap: 1px; }
+.nav-item[data-update-recency] > .badge:not(.publication-update) { display: none; }
+.nav-item[data-update-recency]::before {
+  content: '';
+  position: absolute;
+  inset: 6px auto 6px 0;
+  width: 3px;
+  border-radius: 3px;
+  background: var(--publication-color);
+}
+.nav-item .publication-update {
+  margin-left: auto;
+  flex-shrink: 0;
+  white-space: nowrap;
+  padding-inline: 2px;
+}
+[data-publication-product="notezap"] {
+  --publication-background: var(--notezap-surface);
+  --publication-text: var(--notezap-dark);
+  --publication-color: var(--notezap-green);
+}
+[data-publication-product="printcerto"] {
+  --publication-background: linear-gradient(135deg, var(--printcerto-icon-light), var(--printcerto-icon-mid));
+  --publication-text: rgb(var(--printcerto-icon-dark-rgb));
+  --publication-color: var(--printcerto-icon-border);
+}
+[data-publication-product="copieecole"] {
+  --publication-background: var(--copieecole-green-surface);
+  --publication-text: var(--copieecole-green-dark);
+  --publication-color: var(--copieecole-green-light);
+}
+[data-publication-product="voz"] {
+  --publication-background: #ffedd5;
+  --publication-text: #9a3412;
+  --publication-color: #fb8c00;
+}
+[data-publication-product="driver"] {
+  --publication-background: #f3e8ff;
+  --publication-text: #6d28d9;
+  --publication-color: #a855f7;
+}
+[data-publication-product="teladesk"] {
+  --publication-background: #dbeafe;
+  --publication-text: #1565c0;
+  --publication-color: #42a5f5;
+}
+[data-publication-product="officecerto"] {
+  --publication-background: #e6e9ec;
+  --publication-text: #424b55;
+  --publication-color: #65707b;
+}
+[data-publication-product="ajustehd"] {
+  --publication-background: var(--ajustehd-gold-surface);
+  --publication-text: var(--ajustehd-gold-dark);
+  --publication-color: var(--ajustehd-gold);
+}
+.nav-item[data-update-recency] > .publication-update {
+  background: var(--publication-background);
+  color: var(--publication-text);
+}
+.nav-item[data-update-recency="older"] > .publication-update {
+  background: rgba(6, 36, 89, .25);
+  color: #e2e8f0;
+  font-weight: 500;
+}
+.nav-item[data-update-recency="older"]::before { background: transparent; }
+.app-card > .publication-update {
+  position: absolute;
+  inset: 0 0 auto;
+  height: 24px;
+  padding: 0 32px;
+  line-height: 24px;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+  text-align: right;
+}
+.app-card[data-update-recency] > .publication-update {
+  background: var(--publication-background);
+  color: var(--publication-text);
+}
+.app-card[data-update-recency="older"] > .publication-update {
+  background: #eef2f6;
+  color: #64748b;
+}
+.publication-update[hidden] { display: none; }
+
 .app-card.upcoming {
   cursor: pointer;
 }

@@ -2134,11 +2134,18 @@ loadScript(function () {
 </div>
 
 <script src="manifest-source.js"></script>
+<script src="recent-updates.js"></script>
 <script>
 var siteManifestUrl = window.HetoandradeSite &&
   typeof window.HetoandradeSite.manifestUrl === 'function'
   ? window.HetoandradeSite.manifestUrl
   : function(fileName) { return fileName; };
+
+function atualizarDataPublicacao(key, value) {
+  if (window.HetoandradeSite && typeof window.HetoandradeSite.setPublicationDate === 'function') {
+    window.HetoandradeSite.setPublicationDate(key, value);
+  }
+}
 
 // ─── Lightbox ───
 var lightboxGroups = {
@@ -2478,6 +2485,7 @@ fetch(siteManifestUrl('version.json'), { cache: 'no-cache' })
     document.getElementById('versao-badge').textContent = 'Disponível · v' + v;
     document.getElementById('versao-download').textContent = 'Disponível · v' + v;
     document.getElementById('card-voz-tag').textContent = 'Disponível · v' + v;
+    atualizarDataPublicacao('voz', /^\d+\.\d{1,2}\.\d{4}$/.test(v) ? data.dataPublicacao : null);
     document.getElementById('btn-download-hero').href = setupUrl;
     document.getElementById('btn-download-section').href = setupUrl;
   })
@@ -2495,6 +2503,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
     document.getElementById('driver-versao-badge').textContent = 'Disponível · v' + v;
     document.getElementById('driver-versao-download').textContent = 'Disponível · v' + v;
     document.getElementById('card-driver-tag').textContent = 'Disponível · v' + v;
+    atualizarDataPublicacao('driver', /^\d+\.\d{1,2}\.\d{4}$/.test(v) ? data.dataPublicacao : null);
     if (setupUrl !== '#driver-download') {
       document.getElementById('btn-driver-download-hero').href = setupUrl;
       document.getElementById('btn-driver-download-section').href = setupUrl;
@@ -2580,11 +2589,12 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
             String(item.digest || '').toLowerCase() === 'sha256:' + hash;
         });
         if (!asset) throw new Error('Instalador ou hash inválido');
-        return { version: version, installerUrl: parsedUrl.href };
+        return { version: version, installerUrl: parsedUrl.href, publicationDate: data.dataPublicacao };
       });
     })
     .then(function(release) {
       liberarDownloads(release.installerUrl);
+      atualizarDataPublicacao('copieecole', release.publicationDate);
       versionLabel.textContent = '💻 Windows 10/11 · v' + release.version;
       if (versionBadge) {
         versionBadge.textContent = 'Disponível · v' + release.version;
@@ -2737,7 +2747,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
         if (config.prepareStore) prepararMicrosoftStore(data);
 
         return validarReleaseGitHub(tag, assetName, parsedUrl.href, hash).then(function() {
-          return { version: version, installerUrl: parsedUrl.href };
+          return { version: version, installerUrl: parsedUrl.href, publicationDate: data.dataPublicacao };
         });
       })
       .then(function(release) {
@@ -2752,6 +2762,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
         if (cardStatus) cardStatus.textContent = '✅ Download validado';
         if (availability) availability.innerHTML = config.availableText;
         atualizarBadgeNavegacao(config.navBadgeId, true);
+        atualizarDataPublicacao(config.updateKey, release.publicationDate);
         buttons.forEach(function(button) {
           configurarBotao(button, release.installerUrl, '⬇️ Baixar Instalador');
         });
@@ -2775,6 +2786,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
 
   carregarProduto({
     manifest: 'version_printcerto.json',
+    updateKey: 'printcerto',
     badgeId: 'printcerto-versao-badge',
     downloadBadgeId: 'printcerto-versao-download',
     cardTagId: 'card-printcerto-tag',
@@ -2793,6 +2805,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
 
   carregarProduto({
     manifest: 'version_teladesk.json',
+    updateKey: 'teladesk',
     badgeId: 'teladesk-versao-badge',
     downloadBadgeId: 'teladesk-versao-download',
     cardTagId: 'card-teladesk-tag',
@@ -2811,6 +2824,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
 
   carregarProduto({
     manifest: 'version_officecerto.json',
+    updateKey: 'officecerto',
     badgeId: 'officecerto-versao-badge',
     downloadBadgeId: 'officecerto-versao-download',
     cardTagId: 'card-officecerto-tag',
@@ -2829,6 +2843,7 @@ fetch(siteManifestUrl('version_driverstatus.json'), { cache: 'no-cache' })
 
   carregarProduto({
     manifest: 'version_ajustehd.json',
+    updateKey: 'ajustehd',
     badgeId: 'ajustehd-versao-badge',
     downloadBadgeId: 'ajustehd-versao-download',
     cardTagId: 'card-ajustehd-tag',

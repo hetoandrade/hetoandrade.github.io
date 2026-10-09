@@ -50,6 +50,9 @@
           setLabel('notezap-versao-desktop', '💻 Windows 10/11 · v' + version);
           setLabel('notezap-versao-tag', version);
           setLabel('card-notezap-tag', 'Disponível · v' + version);
+          if (window.HetoandradeSite && typeof window.HetoandradeSite.setPublicationDate === 'function') {
+            window.HetoandradeSite.setPublicationDate('notezap', data.dataPublicacao);
+          }
           setLabel('notezap-disponibilidade', 'Disponível no navegador e Windows. Entre com sua conta Google para acessar suas anotações.');
           buttons.forEach(function (button) {
             button.href = url;

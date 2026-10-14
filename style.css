@@ -1373,11 +1373,7 @@ body::before { display: none; }
 .hero-publication-row > .publication-update {
   box-sizing: border-box;
   min-height: 38px;
-  background: var(--publication-background);
-  border-color: var(--publication-color);
-  color: var(--publication-text);
   white-space: nowrap;
-  animation: none;
 }
 .app-card[data-update-recency] { padding-top: 35px; padding-bottom: 29px; }
 .app-card > .publication-update {

@@ -65,9 +65,11 @@
       if (!indicator && !recency) return;
       if (!indicator) {
         indicator = document.createElement('span');
-        indicator.className = container === row ? 'hero-badge publication-update' : 'publication-update';
         container.appendChild(indicator);
       }
+      indicator.className = container === row
+        ? row.querySelector('.hero-badge:not(.publication-update)').className + ' publication-update'
+        : 'publication-update';
       indicator.textContent = label;
       indicator.hidden = !recency;
       if (recency) container.setAttribute('data-update-recency', recency);

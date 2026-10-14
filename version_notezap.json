@@ -1,7 +1,7 @@
 {
-  "version": "1.10.1405",
-  "dataPublicacao": "2026-10-14T15:02:49Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1405/NoteZap_Setup_v1.10.1405.exe",
-  "sha256Instalador": "CDDB466311D53F069EB7D761F41A661A795BE8F3E038F2843A9CF5A148A296D8",
-  "changelog": "Exibe o ícone Google na entrada, organiza a autorização e corrige a validação do site para aceitar scripts externos existentes."
+  "version": "1.10.1407",
+  "dataPublicacao": "2026-10-14T16:21:45Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1407/NoteZap_Setup_v1.10.1407.exe",
+  "sha256Instalador": "96484F6EEEC743257BA01D2959C642B62B18FB1F4830FB524609A90EBE58F7CF",
+  "changelog": "Centraliza a marca na autorização, une a conta ao botão Autorizar e padroniza Trocar conta."
 }

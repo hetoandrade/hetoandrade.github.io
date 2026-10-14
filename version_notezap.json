@@ -1,7 +1,7 @@
 {
-  "version": "1.10.1407",
-  "dataPublicacao": "2026-10-14T16:21:45Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1407/NoteZap_Setup_v1.10.1407.exe",
-  "sha256Instalador": "96484F6EEEC743257BA01D2959C642B62B18FB1F4830FB524609A90EBE58F7CF",
-  "changelog": "Centraliza a marca na autorização, une a conta ao botão Autorizar e padroniza Trocar conta."
+  "version": "1.10.1412",
+  "dataPublicacao": "2026-10-14T17:21:26Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1412/NoteZap_Setup_v1.10.1412.exe",
+  "sha256Instalador": "A4400884A54DB2761FCED755F8CE534D5C24C14B716254897DD337E490F303C6",
+  "changelog": "Corrige o cache dos estilos da autorização, centraliza a marca e alinha a conta e os botões ao layout aprovado."
 }

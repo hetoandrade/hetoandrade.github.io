@@ -1,11 +1,11 @@
 {
-  "version": "1.10.1404",
-  "dataPublicacao": "2026-10-14T16:35:56",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1404/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "f3e4aad02cb656877e3feaf587b11f09d64d7683caf2ba55d0136e555ba5174d",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1404/DriverStatus_Setup_v1.10.1404.exe",
-  "sha256Instalador": "e3ffb98d47ca4cf6a6d19dc57b8c2f70faf5371c751e17d692c1edd350d4cee6",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1404/DriverStatus_Update.zip",
-  "sha256": "f3e4aad02cb656877e3feaf587b11f09d64d7683caf2ba55d0136e555ba5174d",
-  "changelog": "Melhora a leitura das ofertas de drivers com cards compactos e ações para selecionar ou desmarcar todas antes da instalação."
+  "version": "1.10.1405",
+  "dataPublicacao": "2026-10-14T18:43:26",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1405/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "f821e79d13c143d2a0f72f4b9e7ea88833ba3f2460f743049a9adc3964fc421a",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1405/DriverStatus_Setup_v1.10.1405.exe",
+  "sha256Instalador": "4f8951ce192364fec71cf4f8e6057ab73a00c4626b4513f57789f166b92fac59",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1405/DriverStatus_Update.zip",
+  "sha256": "f821e79d13c143d2a0f72f4b9e7ea88833ba3f2460f743049a9adc3964fc421a",
+  "changelog": "Oculta ofertas de drivers que já aguardam reinicialização e impede sua instalação no DriverStatus."
 }

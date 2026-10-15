@@ -1,7 +1,7 @@
 {
-  "version": "1.10.1501",
-  "dataPublicacao": "2026-10-15T13:01:36Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1501/NoteZap_Setup_v1.10.1501.exe",
-  "sha256Instalador": "69B5795F843FD8AFF774F79BC1BC4F0EB57318C9C52606FBD1934D9A007EEA43",
-  "changelog": "Corrige a abertura da atualização pela bandeja, remove o vínculo duplicado da janela e confirma o proprietário efetivo pelo componente oficial."
+  "version": "1.10.1506",
+  "dataPublicacao": "2026-10-15T18:47:05Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1506/NoteZap_Setup_v1.10.1506.exe",
+  "sha256Instalador": "FFC28F6E102C21E9E3B263198B1AE969682BBD620AD229D077EAFFD7364253F7",
+  "changelog": "Corrige o fechamento forçado do NoteZap no instalador e atualiza a validação de publicação para a navegação do site em /notezap/. 🛠️🐞🌐"
 }

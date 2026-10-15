@@ -1320,8 +1320,27 @@ body::before { display: none; }
 }
 
 .nav-app-name { white-space: nowrap; }
+.nav-app-icon {
+  position: relative;
+  display: inline-flex;
+  flex: 0 0 30px;
+  width: 30px;
+  height: 30px;
+}
 .sidebar-nav .nav-item { padding-right: 0; }
 .sidebar-nav .nav-item > .badge { display: none; }
+.sidebar-nav .nav-item[data-update-recency="today"] .nav-app-icon::after,
+.sidebar-nav .nav-item[data-update-recency="yesterday"] .nav-app-icon::after {
+  content: '';
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--publication-color);
+  box-shadow: 0 0 0 1px #fff;
+}
 [data-publication-product="notezap"] {
   --publication-background: var(--notezap-surface);
   --publication-text: var(--notezap-dark);
@@ -1373,8 +1392,12 @@ body::before { display: none; }
 .hero-publication-row > .publication-update {
   box-sizing: border-box;
   min-height: 38px;
-  white-space: nowrap;
+  max-width: 100%;
+  flex-wrap: wrap;
+  column-gap: 4px;
+  white-space: normal;
 }
+.publication-update-part { white-space: nowrap; }
 .app-card[data-update-recency] { padding-top: 35px; padding-bottom: 29px; }
 .app-card > .publication-update {
   position: absolute;

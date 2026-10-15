@@ -17,7 +17,7 @@
   var manifestUrl = typeof window !== 'undefined' && window.HetoandradeSite &&
     typeof window.HetoandradeSite.manifestUrl === 'function'
     ? window.HetoandradeSite.manifestUrl('version_notezap.json')
-    : 'version_notezap.json';
+    : '/version_notezap.json';
 
   fetch(manifestUrl, { cache: 'no-cache' })
     .then(function (response) {

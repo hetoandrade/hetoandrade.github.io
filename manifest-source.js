@@ -8,7 +8,7 @@
       return new URL(fileName, productionOrigin).href;
     }
 
-    return fileName;
+    return '/' + fileName;
   }
 
   global.HetoandradeSite = global.HetoandradeSite || {};

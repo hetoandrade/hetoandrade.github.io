@@ -44,7 +44,7 @@ async function enviarChamado(){
     const atual=await fingerprint();
     if(atual!==assinatura){identificacao=crypto.randomUUID();assinatura=atual;}
     try{sessionStorage.setItem('heto-chamado-envio',JSON.stringify({ID:identificacao,ASSINATURA:assinatura}));}catch{}
-    const configuracao=await fetch('chamados-config.json',{cache:'no-store',signal:controller.signal});
+    const configuracao=await fetch('/chamados-config.json',{cache:'no-store',signal:controller.signal});
     if(!configuracao.ok)throw new Error('O serviço de chamados não está configurado.');
     const config=await configuracao.json();
     const url=new URL(config.API_URL);

@@ -2,56 +2,78 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://hetoandrade.com.br/</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade-copieecole.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/notezap/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade-notezap.html</loc>
-    <lastmod>2026-09-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/printcerto/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade-printcerto.html</loc>
-    <lastmod>2026-09-15</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/copieecole/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/vozdigitada/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade-driverstatus.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/driverstatus/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade-teladesk.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/teladesk/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade-ajustehd.html</loc>
-    <lastmod>2026-09-09</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/officecerto/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
   <url>
-    <loc>https://hetoandrade.com.br/privacidade-officecerto.html</loc>
-    <lastmod>2026-10-03</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.3</priority>
+    <loc>https://hetoandrade.com.br/ajustehd/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/ajuda/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/terceiros/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade-ajustehd/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade-copieecole/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade-driverstatus/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade-notezap/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade-officecerto/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade-printcerto/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade-teladesk/</loc>
+    <lastmod>2026-10-15</lastmod>
+  </url>
+  <url>
+    <loc>https://hetoandrade.com.br/privacidade/</loc>
+    <lastmod>2026-10-15</lastmod>
   </url>
 </urlset>

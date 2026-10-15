@@ -43,6 +43,7 @@
     var days = date ? (calendarDay(now) - calendarDay(date)) / 86400000 : -1;
     var recency = date && date <= now && days === 0 ? 'today' : date && date <= now && days === 1 ? 'yesterday' : date && date <= now && days > 1 ? 'older' : '';
     var label = recency === 'today' ? 'Atualizado hoje' : recency === 'yesterday' ? 'Atualizado ontem' : recency === 'older' ? publicationFormat.format(date) : '';
+    var elapsed = recency === 'older' ? global.HFormatador.tempoDecorrido(date, now) : '';
     var tag = document.getElementById('card-' + products[key] + '-tag');
     var card = tag && tag.closest('.app-card');
     var pageId = key === 'voz' ? 'vozdigitada' : key === 'driver' ? 'driverstatus' : products[key];
@@ -70,11 +71,33 @@
       indicator.className = container === row
         ? row.querySelector('.hero-badge:not(.publication-update)').className + ' publication-update'
         : 'publication-update';
-      indicator.textContent = label;
+      if (container === row && recency === 'older') {
+        var dateLabel = document.createElement('span');
+        dateLabel.className = 'publication-update-part';
+        dateLabel.textContent = 'Atualizado em ' + label + ',';
+        var elapsedLabel = document.createElement('span');
+        elapsedLabel.className = 'publication-update-part';
+        elapsedLabel.textContent = elapsed;
+        indicator.replaceChildren(dateLabel, document.createTextNode(' '), elapsedLabel);
+      } else {
+        indicator.textContent = label;
+      }
       indicator.hidden = !recency;
       if (recency) container.setAttribute('data-update-recency', recency);
       else container.removeAttribute('data-update-recency');
     });
+
+    var nav = document.getElementById('nav-' + products[key]);
+    if (!nav) return;
+    nav.setAttribute('data-publication-product', key);
+    if (recency === 'today' || recency === 'yesterday') {
+      nav.setAttribute('data-update-recency', recency);
+      var name = nav.querySelector('.nav-app-name');
+      if (name) nav.setAttribute('aria-label', name.textContent + ', ' + label.toLowerCase());
+    } else {
+      nav.removeAttribute('data-update-recency');
+      nav.removeAttribute('aria-label');
+    }
   }
 
   function refresh() {
@@ -85,6 +108,13 @@
   Object.keys(products).forEach(function (key) {
     var nav = document.getElementById('nav-' + products[key]);
     if (!nav) return;
+    var icon = nav.querySelector('.nav-icon-img');
+    if (icon && !icon.parentElement.classList.contains('nav-app-icon')) {
+      var iconContainer = document.createElement('span');
+      iconContainer.className = 'nav-app-icon';
+      icon.before(iconContainer);
+      iconContainer.appendChild(icon);
+    }
     Array.from(nav.childNodes).forEach(function (node) {
       if (node.nodeType !== 3 || !node.textContent.trim()) return;
       var name = document.createElement('span');

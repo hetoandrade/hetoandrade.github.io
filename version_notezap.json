@@ -1,7 +1,7 @@
 {
-  "version": "1.10.1412",
-  "dataPublicacao": "2026-10-14T17:21:26Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1412/NoteZap_Setup_v1.10.1412.exe",
-  "sha256Instalador": "A4400884A54DB2761FCED755F8CE534D5C24C14B716254897DD337E490F303C6",
-  "changelog": "Corrige o cache dos estilos da autorização, centraliza a marca e alinha a conta e os botões ao layout aprovado."
+  "version": "1.10.1501",
+  "dataPublicacao": "2026-10-15T13:01:36Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1501/NoteZap_Setup_v1.10.1501.exe",
+  "sha256Instalador": "69B5795F843FD8AFF774F79BC1BC4F0EB57318C9C52606FBD1934D9A007EEA43",
+  "changelog": "Corrige a abertura da atualização pela bandeja, remove o vínculo duplicado da janela e confirma o proprietário efetivo pelo componente oficial."
 }

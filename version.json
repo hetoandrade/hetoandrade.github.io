@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0704",
-  "dataPublicacao": "2026-10-07T19:58:02",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0704/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "012659ad24153f21c359e216ef96fa43af85399d3ca74844e0c09d553f5d3c72",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0704/VozDigitada_Setup_v1.10.0704.exe",
-  "sha256Instalador": "14327f98735e85660dd680ee5b5262a35f39034dae9dfaecf94056deaaaaf777",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.0704/VozDigitada_Update.zip",
-  "sha256": "012659ad24153f21c359e216ef96fa43af85399d3ca74844e0c09d553f5d3c72",
-  "changelog": "Protege a abertura e o fechamento da janela de atualização e impede seu encerramento durante a operação.\n\nPadroniza os botões nos componentes H oficiais com cantos de 8 px, preservando suas ações, cores e medidas."
+  "version": "1.10.1605",
+  "dataPublicacao": "2026-10-16T12:40:59",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.1605/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "6471a33f3f163bc9ca0a68982bc227804a2c6efbb16d02f5af327bbc51eb16cd",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.1605/VozDigitada_Setup_v1.10.1605.exe",
+  "sha256Instalador": "2356fe441829436a6baadbce9e0f4f4c0d9471503944d402242ec91147f1168f",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.1605/VozDigitada_Update.zip",
+  "sha256": "6471a33f3f163bc9ca0a68982bc227804a2c6efbb16d02f5af327bbc51eb16cd",
+  "changelog": "Preserva o texto pendente ao usar Stop em outro aplicativo, estabiliza a retomada automática no Teams e corrige os cantos das listas e a quebra de linha do menu Comandos de Voz."
 }

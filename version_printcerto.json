@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0707",
-  "dataPublicacao": "2026-10-07T19:54:03-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0707/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "b127e7f90b26561b28204c97d0664563d93eea9a5d9612da10c5ba8a2cd300af",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0707/PrintCerto_Setup_v1.10.0707.exe",
-  "sha256Instalador": "883a1a4181cf6f54b8b97af658a9838911379fea908c4ef243dbee1bac01fe09",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.0707/PrintCerto_Update.zip",
-  "sha256": "b127e7f90b26561b28204c97d0664563d93eea9a5d9612da10c5ba8a2cd300af",
-  "changelog": "Corrige a abertura do histórico ao usar Copiar com Chat e devolve o foco ao campo de envio após a cópia. Confirma a cópia trocando somente o ícone clicado por três segundos e preserva a proteção contra cópias simultâneas.\n\nPadroniza os botões nos componentes H oficiais com cantos de 8 px, preservando suas ações, cores e medidas."
+  "version": "1.10.1602",
+  "dataPublicacao": "2026-10-16T12:23:53-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1602/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "53d37185f083c67870a44838cec1081ac5f94a8d999ac6943976aacd2b0e7509",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1602/PrintCerto_Setup_v1.10.1602.exe",
+  "sha256Instalador": "365d9a7471e960aa1242a631cbbf0faf49f18edc2468954f53a8cbb5694450df",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1602/PrintCerto_Update.zip",
+  "sha256": "53d37185f083c67870a44838cec1081ac5f94a8d999ac6943976aacd2b0e7509",
+  "changelog": "Preserva o recorte e as anotações ao clicar ou iniciar um arraste fora da área selecionada, inclusive ao errar o botão Copiar. Desfazer todas as anotações libera uma nova seleção. 🖼️🐞"
 }

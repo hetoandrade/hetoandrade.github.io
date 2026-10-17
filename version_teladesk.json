@@ -1,7 +1,7 @@
 {
-  "version": "1.10.0704",
-  "dataPublicacao": "2026-10-07T19:57:09-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.0704/TelaDesk-Setup-1.10.0704.exe",
-  "sha256": "3B22ECFF17901DA68724D2DDE053A90BCC9A58D474D72FC07A1FEB860118D841",
-  "changelog": "Preserva os caminhos instalados na inicialização e protege a janela de atualização durante a operação.\n\nPadroniza os botões nos componentes H oficiais com cantos de 8 px, preservando suas ações, cores e medidas."
+  "version": "1.10.1703",
+  "dataPublicacao": "2026-10-17T17:19:26-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.1703/TelaDesk-Setup-1.10.1703.exe",
+  "sha256": "DE24112B6111EE92A81F936D6793BDCE695B92652B3FDDFBFE61BE2C7F3B83CC",
+  "changelog": "Corrige os cards ao marcar e desmarcar favoritos e revisa limpeza de recentes, pesquisa, apelidos e gravação do painel. Ajusta o encerramento das sessões, as abas, a validação dos códigos copiados e a confirmação de cópia no botão. Destaca o ícone do aplicativo durante um acesso remoto."
 }

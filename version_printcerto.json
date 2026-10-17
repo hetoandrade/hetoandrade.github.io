@@ -1,11 +1,11 @@
 {
-  "version": "1.10.1602",
-  "dataPublicacao": "2026-10-16T12:23:53-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1602/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "53d37185f083c67870a44838cec1081ac5f94a8d999ac6943976aacd2b0e7509",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1602/PrintCerto_Setup_v1.10.1602.exe",
-  "sha256Instalador": "365d9a7471e960aa1242a631cbbf0faf49f18edc2468954f53a8cbb5694450df",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1602/PrintCerto_Update.zip",
-  "sha256": "53d37185f083c67870a44838cec1081ac5f94a8d999ac6943976aacd2b0e7509",
-  "changelog": "Preserva o recorte e as anotações ao clicar ou iniciar um arraste fora da área selecionada, inclusive ao errar o botão Copiar. Desfazer todas as anotações libera uma nova seleção. 🖼️🐞"
+  "version": "1.10.1705",
+  "dataPublicacao": "2026-10-17T14:50:05-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1705/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "9273bf138707c9ffd563cec801646b3fd0a880f76344218b7a5c1165b34ff3b6",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1705/PrintCerto_Setup_v1.10.1705.exe",
+  "sha256Instalador": "264d256bc003e9f31e8fdb63b7021a00f6acc17657fea844aa2f73dfc402bf6b",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1705/PrintCerto_Update.zip",
+  "sha256": "9273bf138707c9ffd563cec801646b3fd0a880f76344218b7a5c1165b34ff3b6",
+  "changelog": "Adiciona descrição à captura em um painel com prévia da imagem e campo de quatro linhas, sem abrir o Histórico. Aceita acentos na digitação e na colagem e mantém a ação de limpar no canto superior direito. Padroniza o carregamento do Histórico no azul escuro do PrintCerto e reduz as alças do recorte em 40%, preservando a área de clique. 📝🖼️⏳"
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.10.1701",
-  "dataPublicacao": "2026-10-17T04:41:26.2323612Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.1701/OfficeCerto_Setup_v1.10.1701.exe",
-  "sha256Instalador": "841D9688BA328172E9549B287937110E549BEEE5B87D53D0CADCDC8419BE7DCD",
-  "changelog": "Adiciona a janela de fontes com prévia e texto de teste no Word, Excel e PDF em edição; padroniza o carregamento em branco e cinza e confirma alterações não salvas ao sair, com Continuar editando em verde claro e Sair sem salvar em vermelho claro, por último à direita."
+  "version": "1.10.1707",
+  "dataPublicacao": "2026-10-17T15:42:26.3025666Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.1707/OfficeCerto_Setup_v1.10.1707.exe",
+  "sha256Instalador": "F4941FCCD2E4BC600146F59EC17D7EAC1E9AD1362167B6F80A8141FAB6B0ACAB",
+  "changelog": "Corrige a instalação de arquivos com caminhos longos, melhora a suavização dos textos e das miniaturas de PDF e aplica o diálogo de senha aprovado, com identificação do arquivo, nova tentativa após senha incorreta e cancelamento da abertura. 📦📄🔒🐞"
 }

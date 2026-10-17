@@ -1,11 +1,11 @@
 {
-  "version": "1.10.1705",
-  "dataPublicacao": "2026-10-17T14:50:05-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1705/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "9273bf138707c9ffd563cec801646b3fd0a880f76344218b7a5c1165b34ff3b6",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1705/PrintCerto_Setup_v1.10.1705.exe",
-  "sha256Instalador": "264d256bc003e9f31e8fdb63b7021a00f6acc17657fea844aa2f73dfc402bf6b",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1705/PrintCerto_Update.zip",
-  "sha256": "9273bf138707c9ffd563cec801646b3fd0a880f76344218b7a5c1165b34ff3b6",
-  "changelog": "Adiciona descrição à captura em um painel com prévia da imagem e campo de quatro linhas, sem abrir o Histórico. Aceita acentos na digitação e na colagem e mantém a ação de limpar no canto superior direito. Padroniza o carregamento do Histórico no azul escuro do PrintCerto e reduz as alças do recorte em 40%, preservando a área de clique. 📝🖼️⏳"
+  "version": "1.10.1706",
+  "dataPublicacao": "2026-10-17T17:00:39-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1706/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "f53ad278292b38b28223a748b27ebab5f2131537814dff5dc27cea2b007a8808",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1706/PrintCerto_Setup_v1.10.1706.exe",
+  "sha256Instalador": "aa4b0f1f0aed25cbeb3392e8c8e8b59bfcc645fc6c2a575d7e09fafbda12799c",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1706/PrintCerto_Update.zip",
+  "sha256": "f53ad278292b38b28223a748b27ebab5f2131537814dff5dc27cea2b007a8808",
+  "changelog": "Salva o texto de Adicionar descrição como uma mensagem independente abaixo da captura, sem a miniatura Responder. A imagem e a descrição mantêm suas próprias ações Copiar. 📝🖼️📋"
 }

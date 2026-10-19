@@ -1,11 +1,11 @@
 {
-  "version": "1.10.1505",
-  "dataPublicacao": "2026-10-15T10:56:08",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1505/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "06319a414ac6299ad08503e0f917f1edf5ecb10e7e32c16e4558a5fb12168635",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1505/DriverStatus_Setup_v1.10.1505.exe",
-  "sha256Instalador": "74cfcb2c55faf51414835c7b8bc2e33120939186e143301529afd1ab7aa87d71",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1505/DriverStatus_Update.zip",
-  "sha256": "06319a414ac6299ad08503e0f917f1edf5ecb10e7e32c16e4558a5fb12168635",
-  "changelog": "Corrige a abertura da tela de atualização e o filtro dos drivers que aguardam reinicialização; ajusta os três botões da Limpeza de Dispositivos, remove o espaço vazio na seleção de drivers e usa a lupa em Escanear Agora."
+  "version": "1.10.1901",
+  "dataPublicacao": "2026-10-19T11:43:49",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1901/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "903cd424d08ef1bdb544d68793d84930abe8cf226256388abb99e7525f8d74ec",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1901/DriverStatus_Setup_v1.10.1901.exe",
+  "sha256Instalador": "aeb1261b89296f0286f3045328b97b980091b64643a28d84cdcdb5bec132e632",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1901/DriverStatus_Update.zip",
+  "sha256": "903cd424d08ef1bdb544d68793d84930abe8cf226256388abb99e7525f8d74ec",
+  "changelog": "Alinha as mensagens de espera, instalação, sucesso e falha e a barra de progresso ao nome do driver, após o checkbox."
 }

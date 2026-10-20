@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2001",
-  "dataPublicacao": "2026-10-20T11:23:00-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2001/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "C487398D0158418C25ED26998732AB5F4C786B6EFCE03F3A7D80AB9B10A6A5D2",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2001/CopieECole_Setup_v1.10.2001.exe",
-  "sha256Instalador": "F8B6E6AFA3015DA7DFDE38F181909896BCFF24F69FF076DC5CFFCD9FCDCD100D",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2001/CopieECole_Update.zip",
-  "sha256": "C487398D0158418C25ED26998732AB5F4C786B6EFCE03F3A7D80AB9B10A6A5D2",
-  "changelog": "Atualiza o input do chat: Enter envia no modo normal, Ctrl+Enter quebra a linha e o campo cresce conforme o conteúdo; Memo e Código invertem os atalhos, com orientação por modo e preservação do rascunho até confirmar o envio."
+  "version": "1.10.2002",
+  "dataPublicacao": "2026-10-20T18:56:55-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2002/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "C2E208095E7FAAA31AAF6902E73E69DCC7B03D5C14C400E3347CA4D4BE6E737C",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2002/CopieECole_Setup_v1.10.2002.exe",
+  "sha256Instalador": "AC34BEB071E9A6E73AE459ADEB1E548D6EAA8A8B067FC1E9CAC55F6EB7FFA671",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2002/CopieECole_Update.zip",
+  "sha256": "C2E208095E7FAAA31AAF6902E73E69DCC7B03D5C14C400E3347CA4D4BE6E737C",
+  "changelog": "Padroniza todos os carregamentos no Desktop e na Web com a animação oficial, exibindo a espera desde o início, respeitando movimento reduzido e preservando o progresso real."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.10.1601",
-  "dataPublicacao": "2026-10-16T12:42:29Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.1601/NoteZap_Setup_v1.10.1601.exe",
-  "sha256Instalador": "7CB43686B01E5BE626E56A82B970B011E98E04FD1B5083CEF4EFA0365366D31E",
-  "changelog": "Corrige o erro ao abrir Verificar atualização removendo o recurso de tela obsoleto da instalação e impedindo sua inclusão em novos instaladores. 🛠️🐞"
+  "version": "1.10.2002",
+  "dataPublicacao": "2026-10-20T20:40:18Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.2002/NoteZap_Setup_v1.10.2002.exe",
+  "sha256Instalador": "832ADD4F605EAC90D7A629B28831C2DA6D5FCB9FF2EF4A410922C112120F6809",
+  "changelog": "Padroniza os carregamentos do NoteZap Desktop e Web com o painel inicial e a animação oficial de quatro barras, incluindo esperas locais e preservando o percentual real das atualizações."
 }

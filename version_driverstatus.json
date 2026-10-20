@@ -1,11 +1,11 @@
 {
-  "version": "1.10.1901",
-  "dataPublicacao": "2026-10-19T11:43:49",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1901/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "903cd424d08ef1bdb544d68793d84930abe8cf226256388abb99e7525f8d74ec",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1901/DriverStatus_Setup_v1.10.1901.exe",
-  "sha256Instalador": "aeb1261b89296f0286f3045328b97b980091b64643a28d84cdcdb5bec132e632",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.1901/DriverStatus_Update.zip",
-  "sha256": "903cd424d08ef1bdb544d68793d84930abe8cf226256388abb99e7525f8d74ec",
-  "changelog": "Alinha as mensagens de espera, instalação, sucesso e falha e a barra de progresso ao nome do driver, após o checkbox."
+  "version": "1.10.2002",
+  "dataPublicacao": "2026-10-20T11:07:32",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2002/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "ed589acd3637dcb25804d716aec204ed85185bfcdeb7b9765fe5157b62fea366",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2002/DriverStatus_Setup_v1.10.2002.exe",
+  "sha256Instalador": "709d5f508ec6d4c463d762a3acb78942d30208ef26a2ab8067ac2529c0f25e77",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2002/DriverStatus_Update.zip",
+  "sha256": "ed589acd3637dcb25804d716aec204ed85185bfcdeb7b9765fe5157b62fea366",
+  "changelog": "Melhora o diagnóstico de drivers nos botões ChatGPT e Gemini, apresenta o status e o código do erro com leitura completa e aprimora a pesquisa do Google com HardwareID, código do erro, arquitetura do Windows e fontes oficiais."
 }

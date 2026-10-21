@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2013",
-  "dataPublicacao": "2026-10-21T02:15:03.6138303Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2013/OfficeCerto_Setup_v1.10.2013.exe",
-  "sha256Instalador": "3FE43C0B95BF77ADB77772430B4D9EC887FFC6F0A16CE2EB588AC4D74BBE52F0",
-  "changelog": "Corrige a abertura de imagens, mantendo a tela de carregamento até a imagem selecionada e as miniaturas visíveis estarem prontas. 🖼️🐞"
+  "version": "1.10.2109",
+  "dataPublicacao": "2026-10-21T23:01:26.8134533Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2109/OfficeCerto_Setup_v1.10.2109.exe",
+  "sha256Instalador": "AB2A4D2AC25AC27DD62D197C7D5A400D69C9EC8BE5DC4F042185E6F61A5499F5",
+  "changelog": "Adiciona Abrir pasta nas barras de Imagens, PDF, Word e Excel e no histórico, entre Favorito e Remover. Abre o Explorador do Windows com o arquivo atual selecionado, acompanha cópias salvas e imagens selecionadas e preserva caminhos com acentos, espaços e vírgulas."
 }

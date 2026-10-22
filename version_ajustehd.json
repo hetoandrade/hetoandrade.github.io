@@ -1,11 +1,11 @@
 {
-  "version": "1.10.0704",
-  "dataPublicacao": "2026-10-07T19:45:51-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0704/AjusteHD_Update.zip",
-  "sha256PacoteAtualizacao": "a098451b4d737eb447e84547f3a11ce8a93ff4fc1ca399046a734a2f4328e638",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0704/AjusteHD_Setup_v1.10.0704.exe",
-  "sha256Instalador": "715b90b4afa965a693879b991986786955ba63782eb02e04bda61224f7d51aaf",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.0704/AjusteHD_Update.zip",
-  "sha256": "a098451b4d737eb447e84547f3a11ce8a93ff4fc1ca399046a734a2f4328e638",
-  "changelog": "Protege a janela de atualização durante a operação e aplica o pacote na pasta do executável reiniciado.\n\nPadroniza os botões nos componentes H oficiais com cantos de 8 px, preservando suas ações, cores e medidas."
+  "version": "1.10.2205",
+  "dataPublicacao": "2026-10-22T19:32:25-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.2205/AjusteHD_Update.zip",
+  "sha256PacoteAtualizacao": "fc6dce43d014ede62d83a8c0dbdb684267f36624b13c3d259789605bf1bf6ba1",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.2205/AjusteHD_Setup_v1.10.2205.exe",
+  "sha256Instalador": "182b8eb561bd6cbf3ca6736ba0b19516ea716ac28d1fb33542bd57c667adcf91",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/ajustehd-v1.10.2205/AjusteHD_Update.zip",
+  "sha256": "fc6dce43d014ede62d83a8c0dbdb684267f36624b13c3d259789605bf1bf6ba1",
+  "changelog": "Exige o aceite dos Termos de Uso antes das quatro operações e melhora a análise inicial dos discos com contador em minutos e segundos, orientação de duração e painel de aviso alinhado."
 }

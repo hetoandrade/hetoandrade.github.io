@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2301",
-  "dataPublicacao": "2026-10-23T09:50:47",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2301/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "b3f8a8a38f664425973c03b213c48c3b8813480e4dfd285ec9b0b4a7c736b4b5",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2301/DriverStatus_Setup_v1.10.2301.exe",
-  "sha256Instalador": "396b3f4308739005cc755f8cd8d39a3447905f751899dbced90050c520d07fc0",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2301/DriverStatus_Update.zip",
-  "sha256": "b3f8a8a38f664425973c03b213c48c3b8813480e4dfd285ec9b0b4a7c736b4b5",
-  "changelog": "Os programas de inicialização agora exibem Inicializando e Não inicializando na situação atual, deixando mais claro quais iniciam com o Windows."
+  "version": "1.10.2302",
+  "dataPublicacao": "2026-10-23T11:35:13",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2302/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "e01cec89021c20a99383470ad6ff3270f39975775589e4d545a9588e0a253934",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2302/DriverStatus_Setup_v1.10.2302.exe",
+  "sha256Instalador": "3a9f7a07e56afe938dcc7a803a2e0433b81f161b428c320febcbaec8d9c24804",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2302/DriverStatus_Update.zip",
+  "sha256": "e01cec89021c20a99383470ad6ff3270f39975775589e4d545a9588e0a253934",
+  "changelog": "Corrige a identificação de aplicativos para impedir que MicaPDF seja instalado no lugar do VozDigitada. Revalida a identidade da instalação antes de atualizar ou desinstalar e bloqueia associações incompatíveis."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.10.1706",
-  "dataPublicacao": "2026-10-17T17:00:39-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1706/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "f53ad278292b38b28223a748b27ebab5f2131537814dff5dc27cea2b007a8808",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1706/PrintCerto_Setup_v1.10.1706.exe",
-  "sha256Instalador": "aa4b0f1f0aed25cbeb3392e8c8e8b59bfcc645fc6c2a575d7e09fafbda12799c",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.1706/PrintCerto_Update.zip",
-  "sha256": "f53ad278292b38b28223a748b27ebab5f2131537814dff5dc27cea2b007a8808",
-  "changelog": "Salva o texto de Adicionar descrição como uma mensagem independente abaixo da captura, sem a miniatura Responder. A imagem e a descrição mantêm suas próprias ações Copiar. 📝🖼️📋"
+  "version": "1.10.2208",
+  "dataPublicacao": "2026-10-22T21:49:03-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2208/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "3aa3abc16ba5959f5dc659a0b85237846017042414afac0ea436d244f18e8763",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2208/PrintCerto_Setup_v1.10.2208.exe",
+  "sha256Instalador": "a634f74274fd8ace632d175044b7edccd8fc354258f6022ccdbc8ed499d32e22",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2208/PrintCerto_Update.zip",
+  "sha256": "3aa3abc16ba5959f5dc659a0b85237846017042414afac0ea436d244f18e8763",
+  "changelog": "Cópia com confirmação da imagem no Windows e espera automática quando a área de transferência estiver ocupada. Histórico com painel de carregamento na primeira abertura e redesenho ao reabrir."
 }

@@ -317,16 +317,16 @@ loadScript(function () {
       DriverStatus
     </a>
 
-    <a class="nav-item" href="/teladesk/" id="nav-teladesk">
-      <img src="/Imagems/teladesk.png" alt="" class="nav-icon-img">
-      TelaDesk
-      <span class="badge soon" id="nav-teladesk-badge">Verificando</span>
-    </a>
-
     <a class="nav-item active" href="/officecerto/" id="nav-officecerto">
       <img src="/Imagems/officecerto.png" alt="" class="nav-icon-img">
       OfficeCerto
       <span class="badge soon" id="nav-officecerto-badge">Verificando</span>
+    </a>
+
+    <a class="nav-item" href="/teladesk/" id="nav-teladesk">
+      <img src="/Imagems/teladesk.png" alt="" class="nav-icon-img">
+      TelaDesk
+      <span class="badge soon" id="nav-teladesk-badge">Verificando</span>
     </a>
 
     <a class="nav-item" href="/ajustehd/" id="nav-ajustehd">
@@ -510,6 +510,24 @@ loadScript(function () {
         <div class="app-card-arrow">&#8594;</div>
       </div>
 
+      <!-- OfficeCerto Card -->
+      <div class="app-card" onclick="showPage('officecerto')">
+        <div class="app-card-header">
+          <div class="app-icon officecerto"><img src="/Imagems/officecerto.png" alt="OfficeCerto"></div>
+          <div class="app-card-title">
+            <h3>OfficeCerto</h3>
+            <span class="app-tag soon" id="card-officecerto-tag">Verificando disponibilidade</span>
+          </div>
+        </div>
+        <p>Abra PDFs, documentos do Microsoft Word (DOC e DOCX) e planilhas do Microsoft Excel (XLS e XLSX). Trabalhe em abas e encontre arquivos recentes no computador.</p>
+        <div class="app-card-footer">
+          <span>&#128196; PDF, Word e Excel</span>
+          <span>&#129695; Windows</span>
+          <span id="card-officecerto-status">&#8987; Verificando download</span>
+        </div>
+        <div class="app-card-arrow">&#8594;</div>
+      </div>
+
       <!-- TelaDesk Card -->
       <div class="app-card" onclick="showPage('teladesk')">
         <div class="app-card-header">
@@ -529,24 +547,6 @@ loadScript(function () {
           <span>&#128421; Acesso remoto</span>
           <span>&#129695; Windows</span>
           <span id="card-teladesk-status">&#8987; Verificando download</span>
-        </div>
-        <div class="app-card-arrow">&#8594;</div>
-      </div>
-
-      <!-- OfficeCerto Card -->
-      <div class="app-card" onclick="showPage('officecerto')">
-        <div class="app-card-header">
-          <div class="app-icon officecerto"><img src="/Imagems/officecerto.png" alt="OfficeCerto"></div>
-          <div class="app-card-title">
-            <h3>OfficeCerto</h3>
-            <span class="app-tag soon" id="card-officecerto-tag">Verificando disponibilidade</span>
-          </div>
-        </div>
-        <p>Abra PDFs, documentos do Microsoft Word (DOC e DOCX) e planilhas do Microsoft Excel (XLS e XLSX). Trabalhe em abas e encontre arquivos recentes no computador.</p>
-        <div class="app-card-footer">
-          <span>&#128196; PDF, Word e Excel</span>
-          <span>&#129695; Windows</span>
-          <span id="card-officecerto-status">&#8987; Verificando download</span>
         </div>
         <div class="app-card-arrow">&#8594;</div>
       </div>

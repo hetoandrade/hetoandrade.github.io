@@ -1,11 +1,11 @@
 {
-  "version": "1.10.1605",
-  "dataPublicacao": "2026-10-16T12:40:59",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.1605/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "6471a33f3f163bc9ca0a68982bc227804a2c6efbb16d02f5af327bbc51eb16cd",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.1605/VozDigitada_Setup_v1.10.1605.exe",
-  "sha256Instalador": "2356fe441829436a6baadbce9e0f4f4c0d9471503944d402242ec91147f1168f",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.1605/VozDigitada_Update.zip",
-  "sha256": "6471a33f3f163bc9ca0a68982bc227804a2c6efbb16d02f5af327bbc51eb16cd",
-  "changelog": "Preserva o texto pendente ao usar Stop em outro aplicativo, estabiliza a retomada automática no Teams e corrige os cantos das listas e a quebra de linha do menu Comandos de Voz."
+  "version": "1.10.2301",
+  "dataPublicacao": "2026-10-23T10:51:33",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2301/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "77074dd82c4b2c2d9e9ecf5a1942b7aeae59acb3cdd1c954337d2daee43e7630",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2301/VozDigitada_Setup_v1.10.2301.exe",
+  "sha256Instalador": "fd860870d562d8a36ed6960e7c8c7b6da8207cc1db8b63827e38210bb3a75492",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2301/VozDigitada_Update.zip",
+  "sha256": "77074dd82c4b2c2d9e9ecf5a1942b7aeae59acb3cdd1c954337d2daee43e7630",
+  "changelog": "Corrige o identificador do instalador do VozDigitada para evitar associação indevida com MicaPDF e migra a instalação existente preservando pasta, dados e opções."
 }

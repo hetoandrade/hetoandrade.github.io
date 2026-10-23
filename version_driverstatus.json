@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2302",
-  "dataPublicacao": "2026-10-23T11:35:13",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2302/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "e01cec89021c20a99383470ad6ff3270f39975775589e4d545a9588e0a253934",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2302/DriverStatus_Setup_v1.10.2302.exe",
-  "sha256Instalador": "3a9f7a07e56afe938dcc7a803a2e0433b81f161b428c320febcbaec8d9c24804",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2302/DriverStatus_Update.zip",
-  "sha256": "e01cec89021c20a99383470ad6ff3270f39975775589e4d545a9588e0a253934",
-  "changelog": "Corrige a identificação de aplicativos para impedir que MicaPDF seja instalado no lugar do VozDigitada. Revalida a identidade da instalação antes de atualizar ou desinstalar e bloqueia associações incompatíveis."
+  "version": "1.10.2303",
+  "dataPublicacao": "2026-10-23T12:26:29",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2303/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "1f65040d7fe76ca85baf5cc1348ed05a8d800386ceb11db7fa0beb52424dcdba",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2303/DriverStatus_Setup_v1.10.2303.exe",
+  "sha256Instalador": "c902907fc9a47d79f302fa903df2a70d9b93f9e7a2c01c3ada8b639c9f05d7f2",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2303/DriverStatus_Update.zip",
+  "sha256": "1f65040d7fe76ca85baf5cc1348ed05a8d800386ceb11db7fa0beb52424dcdba",
+  "changelog": "Reconhece o Lightshot com versão após hífen, preservando a proteção contra atualizar aplicativos diferentes."
 }

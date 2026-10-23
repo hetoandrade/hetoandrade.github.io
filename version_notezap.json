@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2002",
-  "dataPublicacao": "2026-10-20T20:40:18Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.2002/NoteZap_Setup_v1.10.2002.exe",
-  "sha256Instalador": "832ADD4F605EAC90D7A629B28831C2DA6D5FCB9FF2EF4A410922C112120F6809",
-  "changelog": "Padroniza os carregamentos do NoteZap Desktop e Web com o painel inicial e a animação oficial de quatro barras, incluindo esperas locais e preservando o percentual real das atualizações."
+  "version": "1.10.2301",
+  "dataPublicacao": "2026-10-23T20:12:23Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.2301/NoteZap_Setup_v1.10.2301.exe",
+  "sha256Instalador": "3EAD060761766026C0B40DF7D146928ADC2B36C1645FADD2343DF1571056B7E2",
+  "changelog": "Mostra o aviso ao colar ou arrastar imagens com o limite de 500 anexos atingido, preservando as miniaturas leves do chat e as ações com a imagem original."
 }

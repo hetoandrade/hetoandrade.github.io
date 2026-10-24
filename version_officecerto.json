@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2207",
-  "dataPublicacao": "2026-10-22T23:09:57.2229375Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2207/OfficeCerto_Setup_v1.10.2207.exe",
-  "sha256Instalador": "53F560EBB3B90D4E74B836EDFA63C003F8982CD62C133B08528C502AAC26F549",
-  "changelog": "Permite copiar imagens sem rabiscos, adiciona navegação entre fotos e modo limpo em tela cheia, corrige o encaixe sem cortes e ajusta a casa do Início interno do Word e do Excel para o cinza das ferramentas."
+  "version": "1.10.2402",
+  "dataPublicacao": "2026-10-24T15:50:58.4629751Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2402/OfficeCerto_Setup_v1.10.2402.exe",
+  "sha256Instalador": "0FDB42616D786C4E46B177F938D9EA2BC38D6EF58F048E7A631CCF285DA42C34",
+  "changelog": "Corrige estilos, cabeçalho/rodapé, alternância de documentos e lançadores sem opções; amplia a verificação dos botões do Write e do Calc."
 }

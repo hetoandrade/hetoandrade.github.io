@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2301",
-  "dataPublicacao": "2026-10-23T10:22:54-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.2301/TelaDesk-Setup-1.10.2301.exe",
-  "sha256": "5337FF5E0DABAF1341E4CD33F2452B8A8D39E3F3D5D80E80A41B9FE874592ACA",
-  "changelog": "A janela de atualização usa os controles oficiais e registra os detalhes de falhas na abertura."
+  "version": "1.10.2401",
+  "dataPublicacao": "2026-10-24T11:47:23-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.2401/TelaDesk-Setup-1.10.2401.exe",
+  "sha256": "A1268338CBCDF8564735F6783BB063863E2110AA970AFB2B08022BEB3C21305F",
+  "changelog": "O instalador remove os recursos antigos que impediam abrir a atualização pela bandeja após iniciar o Windows."
 }

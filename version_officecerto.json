@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2402",
-  "dataPublicacao": "2026-10-24T15:50:58.4629751Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2402/OfficeCerto_Setup_v1.10.2402.exe",
-  "sha256Instalador": "0FDB42616D786C4E46B177F938D9EA2BC38D6EF58F048E7A631CCF285DA42C34",
-  "changelog": "Corrige estilos, cabeçalho/rodapé, alternância de documentos e lançadores sem opções; amplia a verificação dos botões do Write e do Calc."
+  "version": "1.10.2501",
+  "dataPublicacao": "2026-10-25T15:51:45.7593637Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2501/OfficeCerto_Setup_v1.10.2501.exe",
+  "sha256Instalador": "3DFDA18C7C8B18FD5D0D662F2F4CAE0BCC2A74548B6BAFDB094A1EFD139A2CD5",
+  "changelog": "Inclui o auxiliar de acompanhamento da atualização do OfficeCerto, com progresso da instalação, diagnóstico e confirmação da reabertura do aplicativo."
 }

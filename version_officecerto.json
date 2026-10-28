@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2706",
-  "dataPublicacao": "2026-10-28T01:10:07.0078581Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2706/OfficeCerto_Setup_v1.10.2706.exe",
-  "sha256Instalador": "321A9AA08C6D589D700215E37F1F07E98AD87C9117AEB19D235492AD0B9AE80C",
-  "changelog": "Confere o fechamento e a base na atualização, corrige atalhos antigos e o ícone dos textos e adota o nome Notas."
+  "version": "1.10.2801",
+  "dataPublicacao": "2026-10-28T18:55:54.2642669Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2801/OfficeCerto_Setup_v1.10.2801.exe",
+  "sha256Instalador": "8AD0B601CD01A1C4DD788ABC56D44E9C328B6F2C24BB92260DC46C489BB10394",
+  "changelog": "Arredonda os cantos superiores de todas as abas e acompanha a curva com o indicador de seleção."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2801",
-  "dataPublicacao": "2026-10-28T18:55:54.2642669Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2801/OfficeCerto_Setup_v1.10.2801.exe",
-  "sha256Instalador": "8AD0B601CD01A1C4DD788ABC56D44E9C328B6F2C24BB92260DC46C489BB10394",
-  "changelog": "Arredonda os cantos superiores de todas as abas e acompanha a curva com o indicador de seleção."
+  "version": "1.10.2802",
+  "dataPublicacao": "2026-10-28T20:16:18.1695548Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2802/OfficeCerto_Setup_v1.10.2802.exe",
+  "sha256Instalador": "B439AF13C6B1A0C70F65AE589D8B2FF7BFF03B1E59FC2A4F0DA5FBA0C471392D",
+  "changelog": "Corrige a confirmação de fechamento durante a instalação quando o processo do OfficeCerto já encerrou."
 }

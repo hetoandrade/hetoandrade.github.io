@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2405",
-  "dataPublicacao": "2026-10-24T11:37:32-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2405/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "f85e499157f76463c3f380362958120c94256f6f440417e0d0f7756e2477972d",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2405/PrintCerto_Setup_v1.10.2405.exe",
-  "sha256Instalador": "5da2c9e3b0bd09eb1749055e68b0fa3e1d3eedb57ec2e2ed0dcf35da0cc96a36",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2405/PrintCerto_Update.zip",
-  "sha256": "f85e499157f76463c3f380362958120c94256f6f440417e0d0f7756e2477972d",
-  "changelog": "Ajusta a confirmação visual de cópia para 20 milissegundos após a renderização, antes de fechar a captura."
+  "version": "1.10.2901",
+  "dataPublicacao": "2026-10-29T15:23:52-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2901/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "686b89c35f2d85dbe36338f9561ff1f52e1722b5aad1adf4687a71d17fe4a411",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2901/PrintCerto_Setup_v1.10.2901.exe",
+  "sha256Instalador": "4d32db1d8e62fab7fbdfb22b8ef5af3f1c47bced5c76c5d492ce72cf693eef6b",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2901/PrintCerto_Update.zip",
+  "sha256": "686b89c35f2d85dbe36338f9561ff1f52e1722b5aad1adf4687a71d17fe4a411",
+  "changelog": "Atualiza os componentes compartilhados de interface e preserva a confirmação visual de cópia após 20 milissegundos da renderização."
 }

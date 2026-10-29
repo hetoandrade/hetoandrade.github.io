@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2301",
-  "dataPublicacao": "2026-10-23T10:51:33",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2301/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "77074dd82c4b2c2d9e9ecf5a1942b7aeae59acb3cdd1c954337d2daee43e7630",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2301/VozDigitada_Setup_v1.10.2301.exe",
-  "sha256Instalador": "fd860870d562d8a36ed6960e7c8c7b6da8207cc1db8b63827e38210bb3a75492",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2301/VozDigitada_Update.zip",
-  "sha256": "77074dd82c4b2c2d9e9ecf5a1942b7aeae59acb3cdd1c954337d2daee43e7630",
-  "changelog": "Corrige o identificador do instalador do VozDigitada para evitar associação indevida com MicaPDF e migra a instalação existente preservando pasta, dados e opções."
+  "version": "1.10.2903",
+  "dataPublicacao": "2026-10-29T16:53:50",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2903/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "226966445c6d35ecd2a6f838034c897d00b4bd41108630b235d2624f6de530ef",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2903/VozDigitada_Setup_v1.10.2903.exe",
+  "sha256Instalador": "a92ed48aae9374f51681a038db722553a47deeb3d40dcad0afdf3f8d7bb0686e",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2903/VozDigitada_Update.zip",
+  "sha256": "226966445c6d35ecd2a6f838034c897d00b4bd41108630b235d2624f6de530ef",
+  "changelog": "Preserva as quinas das listas, aplica rolagem curta e restaura a prévia por monitor, com início à esquerda acima do Caps Lock."
 }

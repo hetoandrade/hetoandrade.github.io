@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2002",
-  "dataPublicacao": "2026-10-20T18:56:55-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2002/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "C2E208095E7FAAA31AAF6902E73E69DCC7B03D5C14C400E3347CA4D4BE6E737C",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2002/CopieECole_Setup_v1.10.2002.exe",
-  "sha256Instalador": "AC34BEB071E9A6E73AE459ADEB1E548D6EAA8A8B067FC1E9CAC55F6EB7FFA671",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2002/CopieECole_Update.zip",
-  "sha256": "C2E208095E7FAAA31AAF6902E73E69DCC7B03D5C14C400E3347CA4D4BE6E737C",
-  "changelog": "Padroniza todos os carregamentos no Desktop e na Web com a animação oficial, exibindo a espera desde o início, respeitando movimento reduzido e preservando o progresso real."
+  "version": "1.10.2903",
+  "dataPublicacao": "2026-10-29T16:27:15-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2903/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "5C2440FBD331170F3B4DDBEE92A90FCAAC9063681240A16C2B36A3CA8F224CEE",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2903/CopieECole_Setup_v1.10.2903.exe",
+  "sha256Instalador": "8C34C22C5CDB80449E8858452A6B30F73F43AE7E2BDADB4B3E4E8768BDC8032B",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2903/CopieECole_Update.zip",
+  "sha256": "5C2440FBD331170F3B4DDBEE92A90FCAAC9063681240A16C2B36A3CA8F224CEE",
+  "changelog": "Corrige o caminho da inicialização do Windows para recuperar o ícone oficial e preservar a opção escolhida."
 }

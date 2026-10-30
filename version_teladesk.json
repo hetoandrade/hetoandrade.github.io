@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2401",
-  "dataPublicacao": "2026-10-24T11:47:23-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.2401/TelaDesk-Setup-1.10.2401.exe",
-  "sha256": "A1268338CBCDF8564735F6783BB063863E2110AA970AFB2B08022BEB3C21305F",
-  "changelog": "O instalador remove os recursos antigos que impediam abrir a atualização pela bandeja após iniciar o Windows."
+  "version": "1.10.2902",
+  "dataPublicacao": "2026-10-29T22:34:01-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.2902/TelaDesk-Setup-1.10.2902.exe",
+  "sha256": "980EB41838D9CA817F6343B748509A513E20166E1A530B96934D12425AC2ACB6",
+  "changelog": "Protege o histórico de computadores contra sobrescrita após falha de leitura, mantém uma cópia de segurança e preserva os registros ao reiniciar. Corrige o aviso de convites e a abertura repetida do painel de arquivos."
 }

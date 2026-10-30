@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2802",
-  "dataPublicacao": "2026-10-28T20:16:18.1695548Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2802/OfficeCerto_Setup_v1.10.2802.exe",
-  "sha256Instalador": "B439AF13C6B1A0C70F65AE589D8B2FF7BFF03B1E59FC2A4F0DA5FBA0C471392D",
-  "changelog": "Corrige a confirmação de fechamento durante a instalação quando o processo do OfficeCerto já encerrou."
+  "version": "1.10.2904",
+  "dataPublicacao": "2026-10-30T03:39:11.4925029Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.2904/OfficeCerto_Setup_v1.10.2904.exe",
+  "sha256Instalador": "4641F1346F0934A2054E69E30B172B0BCF28B68E73B551F0C3ECCCA55B739BFB",
+  "changelog": "Preserva rascunhos ao retirar arquivos ausentes, inclui Salvar no menu do rascunho e mostra o lápis de edição nas cinco áreas."
 }

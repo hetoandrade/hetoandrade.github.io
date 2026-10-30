@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2903",
-  "dataPublicacao": "2026-10-29T16:53:50",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2903/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "226966445c6d35ecd2a6f838034c897d00b4bd41108630b235d2624f6de530ef",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2903/VozDigitada_Setup_v1.10.2903.exe",
-  "sha256Instalador": "a92ed48aae9374f51681a038db722553a47deeb3d40dcad0afdf3f8d7bb0686e",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2903/VozDigitada_Update.zip",
-  "sha256": "226966445c6d35ecd2a6f838034c897d00b4bd41108630b235d2624f6de530ef",
-  "changelog": "Preserva as quinas das listas, aplica rolagem curta e restaura a prévia por monitor, com início à esquerda acima do Caps Lock."
+  "version": "1.10.2904",
+  "dataPublicacao": "2026-10-29T22:31:15",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2904/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "ae24e8eeaf87704dd84f51e61a8395e9f81a6da16fdc1237830e1ce7ff8d16c4",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2904/VozDigitada_Setup_v1.10.2904.exe",
+  "sha256Instalador": "2dc48375ad7db69079eda86c6cd2774649928a32a7047a06bdcd374f1811625d",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.2904/VozDigitada_Update.zip",
+  "sha256": "ae24e8eeaf87704dd84f51e61a8395e9f81a6da16fdc1237830e1ce7ff8d16c4",
+  "changelog": "Adiciona explicações curtas às configurações com o HHint oficial da COMP.WinUI."
 }

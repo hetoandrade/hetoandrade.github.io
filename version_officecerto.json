@@ -1,7 +1,7 @@
 {
-  "version": "1.10.3001",
-  "dataPublicacao": "2026-10-30T14:42:56.5593171Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.3001/OfficeCerto_Setup_v1.10.3001.exe",
-  "sha256Instalador": "554480BD405B6293E9100E649FAABCA1B7C5BFBA89F272BDB71032F2485317B2",
-  "changelog": "Atualiza o Histórico e os filtros do Home e integra a apresentação compartilhada do auxiliar de atualização."
+  "version": "1.10.3003",
+  "dataPublicacao": "2026-10-30T20:48:09.4952930Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.3003/OfficeCerto_Setup_v1.10.3003.exe",
+  "sha256Instalador": "F630CAC288484046E2706C12BF78D2E4B61814DBCA9E72240F004D2445261ED0",
+  "changelog": "Torna o histórico independente por aba e trata arquivos indisponíveis sem alterar abas abertas, favoritos ou rascunhos."
 }

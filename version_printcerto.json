@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2904",
-  "dataPublicacao": "2026-10-29T22:30:26-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2904/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "ddfb88aa0a6669bdcc7e2e226c85f0096fc6518ff9ed8aca16dc12b52fed74f9",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2904/PrintCerto_Setup_v1.10.2904.exe",
-  "sha256Instalador": "6b5ef3de69f0d1653c621fbc06690098dbb7f711af3224d9cd3a683d99651864",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.2904/PrintCerto_Update.zip",
-  "sha256": "ddfb88aa0a6669bdcc7e2e226c85f0096fc6518ff9ed8aca16dc12b52fed74f9",
-  "changelog": "Protege o Histórico com banco local, cópias verificadas e recuperação segura, preservando os arquivos originais. Na abertura manual, mostra a tela do Histórico."
+  "version": "1.10.3003",
+  "dataPublicacao": "2026-10-30T17:44:44-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3003/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "b0ce77922fd9c9fb588442d77bb2ccb03b40aab389cdc26e8a6bf708d6833a36",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3003/PrintCerto_Setup_v1.10.3003.exe",
+  "sha256Instalador": "0ab003f5b701312c0eaa5eadc418f00d26f12e48a6896837dc9acd09482ae1a9",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3003/PrintCerto_Update.zip",
+  "sha256": "b0ce77922fd9c9fb588442d77bb2ccb03b40aab389cdc26e8a6bf708d6833a36",
+  "changelog": "Reforça a conferência da imagem na área de transferência antes e depois de fechar a captura, com diagnóstico de bloqueios. Padroniza as dicas do aplicativo com o HHint."
 }

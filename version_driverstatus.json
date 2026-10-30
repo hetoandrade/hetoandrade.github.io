@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2303",
-  "dataPublicacao": "2026-10-23T12:26:29",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2303/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "1f65040d7fe76ca85baf5cc1348ed05a8d800386ceb11db7fa0beb52424dcdba",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2303/DriverStatus_Setup_v1.10.2303.exe",
-  "sha256Instalador": "c902907fc9a47d79f302fa903df2a70d9b93f9e7a2c01c3ada8b639c9f05d7f2",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2303/DriverStatus_Update.zip",
-  "sha256": "1f65040d7fe76ca85baf5cc1348ed05a8d800386ceb11db7fa0beb52424dcdba",
-  "changelog": "Reconhece o Lightshot com versão após hífen, preservando a proteção contra atualizar aplicativos diferentes."
+  "version": "1.10.2902",
+  "dataPublicacao": "2026-10-29T23:56:38",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2902/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "c64613315c67f0afa877e7d9dc409f91e091fc655830915305db9c8decff9f70",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2902/DriverStatus_Setup_v1.10.2902.exe",
+  "sha256Instalador": "ba35d71894be755278b893389387882442b95350287d07903382c02ac516224a",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2902/DriverStatus_Update.zip",
+  "sha256": "c64613315c67f0afa877e7d9dc409f91e091fc655830915305db9c8decff9f70",
+  "changelog": "Corrige a leitura do catálogo do WinGet nas atualizações individuais e em massa, preservando a verificação de identidade."
 }

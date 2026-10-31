@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2903",
-  "dataPublicacao": "2026-10-29T16:27:15-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2903/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "5C2440FBD331170F3B4DDBEE92A90FCAAC9063681240A16C2B36A3CA8F224CEE",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2903/CopieECole_Setup_v1.10.2903.exe",
-  "sha256Instalador": "8C34C22C5CDB80449E8858452A6B30F73F43AE7E2BDADB4B3E4E8768BDC8032B",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.2903/CopieECole_Update.zip",
-  "sha256": "5C2440FBD331170F3B4DDBEE92A90FCAAC9063681240A16C2B36A3CA8F224CEE",
-  "changelog": "Corrige o caminho da inicialização do Windows para recuperar o ícone oficial e preservar a opção escolhida."
+  "version": "1.10.3106",
+  "dataPublicacao": "2026-10-31T16:05:05-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.3106/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "E5206BC472B9C4B78F0AD2CECC23C95AE4E2C2CF8933495E99E6859C6C768A59",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.3106/CopieECole_Setup_v1.10.3106.exe",
+  "sha256Instalador": "2EFCD3349E90D8A053BE061C87B429164FB5EAB9D2ACBE70480833E46DE26699",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.3106/CopieECole_Update.zip",
+  "sha256": "E5206BC472B9C4B78F0AD2CECC23C95AE4E2C2CF8933495E99E6859C6C768A59",
+  "changelog": "Estabiliza a janela compacta de atualização, mantendo tamanho e posições fixos e rolagem apenas para mensagens extensas."
 }

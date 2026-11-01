@@ -1,11 +1,11 @@
 {
-  "version": "1.10.3003",
-  "dataPublicacao": "2026-10-30T17:44:44-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3003/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "b0ce77922fd9c9fb588442d77bb2ccb03b40aab389cdc26e8a6bf708d6833a36",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3003/PrintCerto_Setup_v1.10.3003.exe",
-  "sha256Instalador": "0ab003f5b701312c0eaa5eadc418f00d26f12e48a6896837dc9acd09482ae1a9",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3003/PrintCerto_Update.zip",
-  "sha256": "b0ce77922fd9c9fb588442d77bb2ccb03b40aab389cdc26e8a6bf708d6833a36",
-  "changelog": "Reforça a conferência da imagem na área de transferência antes e depois de fechar a captura, com diagnóstico de bloqueios. Padroniza as dicas do aplicativo com o HHint."
+  "version": "1.10.3107",
+  "dataPublicacao": "2026-11-01T20:39:53-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3107/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "c6b2d13fbdfee6f49df2e5c3cf7278c2eebaf018aea69f32f6e6700006b34228",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3107/PrintCerto_Setup_v1.10.3107.exe",
+  "sha256Instalador": "59ff767ab4e080baa11790746ba3071d9212af42186636cfaeb995fa0ef90d58",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.10.3107/PrintCerto_Update.zip",
+  "sha256": "c6b2d13fbdfee6f49df2e5c3cf7278c2eebaf018aea69f32f6e6700006b34228",
+  "changelog": "Permite mover o conteúdo dentro do print e posiciona as barras automaticamente como na captura normal."
 }

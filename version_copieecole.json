@@ -1,11 +1,11 @@
 {
-  "version": "1.10.3106",
-  "dataPublicacao": "2026-10-31T16:05:05-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.3106/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "E5206BC472B9C4B78F0AD2CECC23C95AE4E2C2CF8933495E99E6859C6C768A59",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.3106/CopieECole_Setup_v1.10.3106.exe",
-  "sha256Instalador": "2EFCD3349E90D8A053BE061C87B429164FB5EAB9D2ACBE70480833E46DE26699",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.10.3106/CopieECole_Update.zip",
-  "sha256": "E5206BC472B9C4B78F0AD2CECC23C95AE4E2C2CF8933495E99E6859C6C768A59",
-  "changelog": "Estabiliza a janela compacta de atualização, mantendo tamanho e posições fixos e rolagem apenas para mensagens extensas."
+  "version": "1.11.0101",
+  "dataPublicacao": "2026-11-01T20:59:39-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0101/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "FC51ABC43F5DBAB8A58E44F27C5A14B090EF6DB040399DE21FD08C0ECADAE503",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0101/CopieECole_Setup_v1.11.0101.exe",
+  "sha256Instalador": "107B8D5D39719F8DDF5E7A7A545EF6D38704BD9674B70885650110FC20F2FC29",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0101/CopieECole_Update.zip",
+  "sha256": "FC51ABC43F5DBAB8A58E44F27C5A14B090EF6DB040399DE21FD08C0ECADAE503",
+  "changelog": "Corrige a inicialização da versão Web, preservando a proteção de scripts e o carregamento do aplicativo."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0102",
-  "dataPublicacao": "2026-11-02T02:33:37.4729146Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.0102/OfficeCerto_Setup_v1.11.0102.exe",
-  "sha256Instalador": "BA9870DB4A28400BC27C5085E78F9499E72FF7445D0E2A5EB6794E1C240B82B1",
-  "changelog": "Identifica alterações e novos documentos na lista de Notas, preservando salvamento e recuperação; prepara a compilação proporcional com reutilização segura da ponte UNO."
+  "version": "1.11.0201",
+  "dataPublicacao": "2026-11-02T16:25:10.1792988Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.0201/OfficeCerto_Setup_v1.11.0201.exe",
+  "sha256Instalador": "089DCE9CAD8102D35C4694C12C8FBEA03A4B7EF2DF51BBC81577D71E102B4BD5",
+  "changelog": "Ajusta guias, réguas e navegação por linha e coluna nas Notas; preserva as pesquisas de arquivos e pastas ao fechar."
 }

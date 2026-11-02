@@ -1,7 +1,7 @@
 {
-  "version": "1.10.3003",
-  "dataPublicacao": "2026-10-30T20:48:09.4952930Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.10.3003/OfficeCerto_Setup_v1.10.3003.exe",
-  "sha256Instalador": "F630CAC288484046E2706C12BF78D2E4B61814DBCA9E72240F004D2445261ED0",
-  "changelog": "Torna o histórico independente por aba e trata arquivos indisponíveis sem alterar abas abertas, favoritos ou rascunhos."
+  "version": "1.11.0102",
+  "dataPublicacao": "2026-11-02T02:33:37.4729146Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.0102/OfficeCerto_Setup_v1.11.0102.exe",
+  "sha256Instalador": "BA9870DB4A28400BC27C5085E78F9499E72FF7445D0E2A5EB6794E1C240B82B1",
+  "changelog": "Identifica alterações e novos documentos na lista de Notas, preservando salvamento e recuperação; prepara a compilação proporcional com reutilização segura da ponte UNO."
 }

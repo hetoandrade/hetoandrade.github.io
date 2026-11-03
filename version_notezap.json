@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0305",
-  "dataPublicacao": "2026-11-03T17:14:28Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.11.0305/NoteZap_Setup_v1.11.0305.exe",
-  "sha256Instalador": "7BF7E1A7EE3529F9E2A33981B614CFFAF57A9641E847303EB7C8C3B27EB817F5",
-  "changelog": "Registra contas ativas e histórico de uso por mês, semana e dia para o Monitor. 📊"
+  "version": "1.11.0307",
+  "dataPublicacao": "2026-11-03T20:34:20Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.11.0307/NoteZap_Setup_v1.11.0307.exe",
+  "sha256Instalador": "35237621E7913B8022C3DC6A07675FEEBC855F716C30515EACCF3DE00D34AEFE",
+  "changelog": "Registra usuário, computador e localização reais no Monitor."
 }

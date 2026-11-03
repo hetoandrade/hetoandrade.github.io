@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2301",
-  "dataPublicacao": "2026-10-23T20:12:23Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.10.2301/NoteZap_Setup_v1.10.2301.exe",
-  "sha256Instalador": "3EAD060761766026C0B40DF7D146928ADC2B36C1645FADD2343DF1571056B7E2",
-  "changelog": "Mostra o aviso ao colar ou arrastar imagens com o limite de 500 anexos atingido, preservando as miniaturas leves do chat e as ações com a imagem original."
+  "version": "1.11.0305",
+  "dataPublicacao": "2026-11-03T17:14:28Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.11.0305/NoteZap_Setup_v1.11.0305.exe",
+  "sha256Instalador": "7BF7E1A7EE3529F9E2A33981B614CFFAF57A9641E847303EB7C8C3B27EB817F5",
+  "changelog": "Registra contas ativas e histórico de uso por mês, semana e dia para o Monitor. 📊"
 }

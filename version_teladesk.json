@@ -1,7 +1,7 @@
 {
-  "version": "1.10.2902",
-  "dataPublicacao": "2026-10-29T22:34:01-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.10.2902/TelaDesk-Setup-1.10.2902.exe",
-  "sha256": "980EB41838D9CA817F6343B748509A513E20166E1A530B96934D12425AC2ACB6",
-  "changelog": "Protege o histórico de computadores contra sobrescrita após falha de leitura, mantém uma cópia de segurança e preserva os registros ao reiniciar. Corrige o aviso de convites e a abertura repetida do painel de arquivos."
+  "version": "1.11.0302",
+  "dataPublicacao": "2026-11-03T15:12:59-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.0302/TelaDesk-Setup-1.11.0302.exe",
+  "sha256": "7DD795676836FB741491C859C0E53086FDF4F4541624271E95F3280813064754",
+  "changelog": "Registra dispositivos ativos e histórico de uso por mês, semana e dia para o Monitor. 📊"
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.11.0301",
-  "dataPublicacao": "2026-11-03T13:33:49-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0301/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "42702ACC886A156E370F4B8BDBC1ED4329FB1831FCCBB9C7FF0683E113103919",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0301/CopieECole_Setup_v1.11.0301.exe",
-  "sha256Instalador": "103C1639104218A51B46B0AFC44755AC66B93E719DE36B8CEC452BF8F4C683B9",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0301/CopieECole_Update.zip",
-  "sha256": "42702ACC886A156E370F4B8BDBC1ED4329FB1831FCCBB9C7FF0683E113103919",
-  "changelog": "Registra dispositivos ativos e histórico de uso sem duplicar navegadores entre conversas. 📊"
+  "version": "1.11.0302",
+  "dataPublicacao": "2026-11-03T17:49:42-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0302/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "DE8B4DD9DE6F71D5D32166809716C3CFA311D089FBE91D2A7BA472644868C908",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0302/CopieECole_Setup_v1.11.0302.exe",
+  "sha256Instalador": "F88BE98750454841C3494F599E8E00D43562DA598994F9464DCF5378FB7BEE84",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0302/CopieECole_Update.zip",
+  "sha256": "DE8B4DD9DE6F71D5D32166809716C3CFA311D089FBE91D2A7BA472644868C908",
+  "changelog": "Registra computador e localização reais dos dispositivos no Monitor."
 }

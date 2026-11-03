@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0302",
-  "dataPublicacao": "2026-11-03T15:12:59-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.0302/TelaDesk-Setup-1.11.0302.exe",
-  "sha256": "7DD795676836FB741491C859C0E53086FDF4F4541624271E95F3280813064754",
-  "changelog": "Registra dispositivos ativos e histórico de uso por mês, semana e dia para o Monitor. 📊"
+  "version": "1.11.0303",
+  "dataPublicacao": "2026-11-03T18:02:02-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.0303/TelaDesk-Setup-1.11.0303.exe",
+  "sha256": "73A870336BC3872E89051241D15D0FEA563936942635B2D3A8BE2BE347B92BA1",
+  "changelog": "Registra computador e localização reais dos acessos no Monitor."
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.11.0201",
-  "dataPublicacao": "2026-11-02T15:04:06-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0201/CopieECole_Update.zip",
-  "sha256PacoteAtualizacao": "09CDAD678B38B1F507B33ABFEC52B696060827A26E90914B56F70BEAEF31B54F",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0201/CopieECole_Setup_v1.11.0201.exe",
-  "sha256Instalador": "A53ACA7E9B707AB343F092D584A56C543D7243656C1F99043D3B6444B97FC124",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0201/CopieECole_Update.zip",
-  "sha256": "09CDAD678B38B1F507B33ABFEC52B696060827A26E90914B56F70BEAEF31B54F",
-  "changelog": "Corrige a abertura da atualização na instalação Windows e preserva os recursos compatíveis da tela."
+  "version": "1.11.0301",
+  "dataPublicacao": "2026-11-03T13:33:49-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0301/CopieECole_Update.zip",
+  "sha256PacoteAtualizacao": "42702ACC886A156E370F4B8BDBC1ED4329FB1831FCCBB9C7FF0683E113103919",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0301/CopieECole_Setup_v1.11.0301.exe",
+  "sha256Instalador": "103C1639104218A51B46B0AFC44755AC66B93E719DE36B8CEC452BF8F4C683B9",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/copieecole-v1.11.0301/CopieECole_Update.zip",
+  "sha256": "42702ACC886A156E370F4B8BDBC1ED4329FB1831FCCBB9C7FF0683E113103919",
+  "changelog": "Registra dispositivos ativos e histórico de uso sem duplicar navegadores entre conversas. 📊"
 }

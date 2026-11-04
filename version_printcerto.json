@@ -1,11 +1,11 @@
 {
-  "version": "1.11.0203",
-  "dataPublicacao": "2026-11-02T12:35:05-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0203/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "fea6de44df0341880e8149cdb80e7b5a0cd86f51499e1b81762ef4a70f0fb20c",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0203/PrintCerto_Setup_v1.11.0203.exe",
-  "sha256Instalador": "7b288e298d10a6f4ff3a202da8b779a3c5db4d1ad306ea39a0c8a2732797d223",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0203/PrintCerto_Update.zip",
-  "sha256": "fea6de44df0341880e8149cdb80e7b5a0cd86f51499e1b81762ef4a70f0fb20c",
-  "changelog": "Corrige o redesenho da janela de atualização para manter o conteúdo visível."
+  "version": "1.11.0401",
+  "dataPublicacao": "2026-11-04T11:47:11-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0401/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "f533ba64e25d5e377dd7be0acef458e878ecdb8a26bd4bbe4c58afb83153cd54",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0401/PrintCerto_Setup_v1.11.0401.exe",
+  "sha256Instalador": "15c3aae0e360929ec9b419b999c94ce40d55315307bd040d1093a7adb392e16d",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0401/PrintCerto_Update.zip",
+  "sha256": "f533ba64e25d5e377dd7be0acef458e878ecdb8a26bd4bbe4c58afb83153cd54",
+  "changelog": "Corrige o modo direto de copiar texto ao iniciar a seleção em outro monitor."
 }

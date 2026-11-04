@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0316",
-  "dataPublicacao": "2026-11-04T00:55:53.7431349Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0316/EquipeZap_Setup_v1.11.0316.exe",
-  "sha256Instalador": "DFDA63F6F1055A0197D6DB47A71FD9B3280895EBA4BDF1A7F47129FCE66D6779",
-  "changelog": "Centraliza os controles de Conversas com margens fixas e ajusta as setas de rolagem."
+  "version": "1.11.0406",
+  "dataPublicacao": "2026-11-04T19:08:31.1455864Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0406/EquipeZap_Setup_v1.11.0406.exe",
+  "sha256Instalador": "89CAF9DF7E4ED4E8EC8BDE8F2BD2F643A9BC09CD2618C8AABC6C2757F81FD58F",
+  "changelog": "Painéis de áudio, vídeo e anexos preservados, falhas de envio sem repetição e seleção do tema pela imagem."
 }

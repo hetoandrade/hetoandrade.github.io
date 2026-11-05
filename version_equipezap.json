@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0508",
-  "dataPublicacao": "2026-11-05T23:05:34.3323984Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0508/EquipeZap_Setup_v1.11.0508.exe",
-  "sha256Instalador": "B1598C5F28C3B25F1C3CFFAAC571CEFA90196F198849D95222E15682C968C193",
-  "changelog": "Os cartões de assunto nas exibições rápidas agrupam os indicadores abaixo do título e usam a largura do cartão para a agenda, a conversa e a mensagem."
+  "version": "1.11.0509",
+  "dataPublicacao": "2026-11-05T23:44:28.8344607Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0509/EquipeZap_Setup_v1.11.0509.exe",
+  "sha256Instalador": "C40D7912BA535704106002EDC65DA9023AFE26566993758D5D988A73F145C75E",
+  "changelog": "Os cards do assunto ficam agrupados em um painel lavanda na conversa. A ação Ver enquete fica no cabeçalho do card, na Web e no Desktop."
 }

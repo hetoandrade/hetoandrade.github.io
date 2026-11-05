@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0410",
-  "dataPublicacao": "2026-11-04T21:56:42.2737279Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0410/EquipeZap_Setup_v1.11.0410.exe",
-  "sha256Instalador": "7F0736B565025747BA411EB91D5CC2C36FD183D371D210DCF030D2726281B8A8",
-  "changelog": "Afericao do CC integrado completo Web API e Desktop apos ajuste do coordenador"
+  "version": "1.11.0412",
+  "dataPublicacao": "2026-11-05T02:20:05.6188987Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0412/EquipeZap_Setup_v1.11.0412.exe",
+  "sha256Instalador": "F65CB46DB6596EED3AC2273D6A396E834CC0DDF5AD660CC145349C8D5BEE6A15",
+  "changelog": "Preserva os sinais naturais de idade nos avatares e inclui os paineis aprovados de audio, video e anexos."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0505",
-  "dataPublicacao": "2026-11-05T18:02:17.1654246Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0505/EquipeZap_Setup_v1.11.0505.exe",
-  "sha256Instalador": "4CC57E2BFE0C0F112541FA324CF916F7E656BE72FCD297234D511E735B73F706",
-  "changelog": "Sugere completar datas no chat, abre o calendário pelo link e permite fechar os painéis durante a digitação. 📅"
+  "version": "1.11.0506",
+  "dataPublicacao": "2026-11-05T20:09:32.9756763Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0506/EquipeZap_Setup_v1.11.0506.exe",
+  "sha256Instalador": "F318D460C0A4A98D5A1E7B882E4D1048F121A5EDD0EC531E783D352630378CF1",
+  "changelog": "Unifica o cadastro de tarefas e reuniões, mostra o horário de cada participante e envia a descrição antes do cartão."
 }

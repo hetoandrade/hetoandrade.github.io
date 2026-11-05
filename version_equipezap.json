@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0507",
-  "dataPublicacao": "2026-11-05T21:24:05.8220140Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0507/EquipeZap_Setup_v1.11.0507.exe",
-  "sha256Instalador": "78F49656254990C769A4CD988E210710A5487EF74410463A4B7B1410E55877CF",
-  "changelog": "Agendar reunião usa o mesmo ícone de telefone da aba Chamadas na Web e no Desktop."
+  "version": "1.11.0508",
+  "dataPublicacao": "2026-11-05T23:05:34.3323984Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0508/EquipeZap_Setup_v1.11.0508.exe",
+  "sha256Instalador": "B1598C5F28C3B25F1C3CFFAAC571CEFA90196F198849D95222E15682C968C193",
+  "changelog": "Os cartões de assunto nas exibições rápidas agrupam os indicadores abaixo do título e usam a largura do cartão para a agenda, a conversa e a mensagem."
 }

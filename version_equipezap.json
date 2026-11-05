@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0412",
-  "dataPublicacao": "2026-11-05T02:20:05.6188987Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0412/EquipeZap_Setup_v1.11.0412.exe",
-  "sha256Instalador": "F65CB46DB6596EED3AC2273D6A396E834CC0DDF5AD660CC145349C8D5BEE6A15",
-  "changelog": "Preserva os sinais naturais de idade nos avatares e inclui os paineis aprovados de audio, video e anexos."
+  "version": "1.11.0505",
+  "dataPublicacao": "2026-11-05T18:02:17.1654246Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0505/EquipeZap_Setup_v1.11.0505.exe",
+  "sha256Instalador": "4CC57E2BFE0C0F112541FA324CF916F7E656BE72FCD297234D511E735B73F706",
+  "changelog": "Sugere completar datas no chat, abre o calendário pelo link e permite fechar os painéis durante a digitação. 📅"
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0301",
-  "dataPublicacao": "2026-11-03T04:17:33.5962320Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.0301/OfficeCerto_Setup_v1.11.0301.exe",
-  "sha256Instalador": "1BE832B533440E64BF0A7F339B46358358272C178C82200A80C0D4F53B465915",
-  "changelog": "Padroniza menus e ferramentas de Imagem, Notas e PDF e integra os modelos nativos às abas.\r\nCorrige guias e contornos das Notas, com quebra de linha por extensão e navegação por linha e coluna."
+  "version": "1.11.0501",
+  "dataPublicacao": "2026-11-05T14:13:13.7523739Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.0501/OfficeCerto_Setup_v1.11.0501.exe",
+  "sha256Instalador": "FA2AF944EB612951AE8B92A7556B9EFB287298396C41863C1A6BAC93695BFE42",
+  "changelog": "Novos perfis do Writer e do Calc usam ícones pequenos na barra de ferramentas, na barra lateral e na barra de abas."
 }

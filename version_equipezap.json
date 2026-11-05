@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0506",
-  "dataPublicacao": "2026-11-05T20:09:32.9756763Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0506/EquipeZap_Setup_v1.11.0506.exe",
-  "sha256Instalador": "F318D460C0A4A98D5A1E7B882E4D1048F121A5EDD0EC531E783D352630378CF1",
-  "changelog": "Unifica o cadastro de tarefas e reuniões, mostra o horário de cada participante e envia a descrição antes do cartão."
+  "version": "1.11.0507",
+  "dataPublicacao": "2026-11-05T21:24:05.8220140Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0507/EquipeZap_Setup_v1.11.0507.exe",
+  "sha256Instalador": "78F49656254990C769A4CD988E210710A5487EF74410463A4B7B1410E55877CF",
+  "changelog": "Agendar reunião usa o mesmo ícone de telefone da aba Chamadas na Web e no Desktop."
 }

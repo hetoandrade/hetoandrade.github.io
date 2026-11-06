@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0601",
-  "dataPublicacao": "2026-11-06T14:15:42.1462699Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0601/EquipeZap_Setup_v1.11.0601.exe",
-  "sha256Instalador": "ABD628D0A547E2FF06D3E21151C7B1835490C355EC8F298EDDB94AED7AC4FCC3",
-  "changelog": "Exibe três participantes no chat com acesso aos resultados completos e corrige a rolagem que retornava ao final."
+  "version": "1.11.0602",
+  "dataPublicacao": "2026-11-06T17:28:52.3699656Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0602/EquipeZap_Setup_v1.11.0602.exe",
+  "sha256Instalador": "BD217EE33B018180B6601C17FAD21B97C92F6A7E692B38388A987892D4044AA4",
+  "changelog": "Compacta as abas do chat, elimina nomes repetidos e destaca o assunto com nomes menores no cabeçalho."
 }

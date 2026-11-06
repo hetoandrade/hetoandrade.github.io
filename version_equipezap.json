@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0509",
-  "dataPublicacao": "2026-11-05T23:44:28.8344607Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0509/EquipeZap_Setup_v1.11.0509.exe",
-  "sha256Instalador": "C40D7912BA535704106002EDC65DA9023AFE26566993758D5D988A73F145C75E",
-  "changelog": "Os cards do assunto ficam agrupados em um painel lavanda na conversa. A ação Ver enquete fica no cabeçalho do card, na Web e no Desktop."
+  "version": "1.11.0601",
+  "dataPublicacao": "2026-11-06T14:15:42.1462699Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0601/EquipeZap_Setup_v1.11.0601.exe",
+  "sha256Instalador": "ABD628D0A547E2FF06D3E21151C7B1835490C355EC8F298EDDB94AED7AC4FCC3",
+  "changelog": "Exibe três participantes no chat com acesso aos resultados completos e corrige a rolagem que retornava ao final."
 }

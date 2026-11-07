@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0702",
-  "dataPublicacao": "2026-11-07T16:13:24.9612440Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0702/EquipeZap_Setup_v1.11.0702.exe",
-  "sha256Instalador": "3590A036BC2014DDE3ECF1229738168D5F859560E00E31AC2006656D23A667A7",
-  "changelog": "Mantém o EquipeZap ativo na bandeja ao fechar a janela, com menu e acesso às configurações do perfil."
+  "version": "1.11.0703",
+  "dataPublicacao": "2026-11-07T22:03:55.7664756Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0703/EquipeZap_Setup_v1.11.0703.exe",
+  "sha256Instalador": "9E67BD20EB65E08AF677ABA97009A8E347ACFD8B6D8EA9304EA83A21FA18ACA4",
+  "changelog": "Corrige duplicação de áudio, adiciona Stop e Ouvir com texto e linha roxa com picos; ajusta margem das conversas e ícone da bandeja."
 }

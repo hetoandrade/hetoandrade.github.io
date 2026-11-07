@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0603",
-  "dataPublicacao": "2026-11-06T21:05:12.0963761Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0603/EquipeZap_Setup_v1.11.0603.exe",
-  "sha256Instalador": "EEAF76F64FFA8F4B62F30CEF3AAA36AE53AAE9777292401C16A6C1E4556DAF0F",
-  "changelog": "Confirma leitura automaticamente com o chat visível na última mensagem."
+  "version": "1.11.0604",
+  "dataPublicacao": "2026-11-07T01:06:33.0457470Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0604/EquipeZap_Setup_v1.11.0604.exe",
+  "sha256Instalador": "E7C3FAFAF1282A4712149651FFE1D2D3C1908CA1873F4BD7DDBF743E1D4E07C0",
+  "changelog": "Registra o aceite dos códigos de acesso no Resend sem expor códigos ou credenciais."
 }

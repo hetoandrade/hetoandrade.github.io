@@ -1,11 +1,11 @@
 {
-  "version": "1.11.0607",
-  "dataPublicacao": "2026-11-06T12:22:20-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0607/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "dabbb788974d9aab56d1feaca1512c993a96d3336760a4f0560920d4a4f0b114",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0607/PrintCerto_Setup_v1.11.0607.exe",
-  "sha256Instalador": "b350b28fbe65939f5fc58a12aa077e39f39bba4ea9d21b3505edbb1430ebf9f8",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0607/PrintCerto_Update.zip",
-  "sha256": "dabbb788974d9aab56d1feaca1512c993a96d3336760a4f0560920d4a4f0b114",
-  "changelog": "Adiciona aviso dinâmico do Esc e orienta a cópia de texto com Selecione o texto à esquerda da mira, ocultando o aviso ao iniciar a seleção."
+  "version": "1.11.0610",
+  "dataPublicacao": "2026-11-06T21:43:44-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0610/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "bd22ce04c77128fc8a011010b9f99a89384e8933e5738815e1b6a8a01d2b1b4b",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0610/PrintCerto_Setup_v1.11.0610.exe",
+  "sha256Instalador": "ad8d7d4a1676bd28e9b252a3307b7f4edc4ccbab4110b12e34a008c5b0cba8d7",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0610/PrintCerto_Update.zip",
+  "sha256": "bd22ce04c77128fc8a011010b9f99a89384e8933e5738815e1b6a8a01d2b1b4b",
+  "changelog": "Corrige a mira do atalho de copiar texto entre monitores e posiciona o aviso Selecionar área à esquerda da mira."
 }

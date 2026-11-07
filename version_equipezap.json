@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0602",
-  "dataPublicacao": "2026-11-06T17:28:52.3699656Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0602/EquipeZap_Setup_v1.11.0602.exe",
-  "sha256Instalador": "BD217EE33B018180B6601C17FAD21B97C92F6A7E692B38388A987892D4044AA4",
-  "changelog": "Compacta as abas do chat, elimina nomes repetidos e destaca o assunto com nomes menores no cabeçalho."
+  "version": "1.11.0603",
+  "dataPublicacao": "2026-11-06T21:05:12.0963761Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0603/EquipeZap_Setup_v1.11.0603.exe",
+  "sha256Instalador": "EEAF76F64FFA8F4B62F30CEF3AAA36AE53AAE9777292401C16A6C1E4556DAF0F",
+  "changelog": "Confirma leitura automaticamente com o chat visível na última mensagem."
 }

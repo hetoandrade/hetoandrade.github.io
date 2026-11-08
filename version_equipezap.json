@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0703",
-  "dataPublicacao": "2026-11-07T22:03:55.7664756Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0703/EquipeZap_Setup_v1.11.0703.exe",
-  "sha256Instalador": "9E67BD20EB65E08AF677ABA97009A8E347ACFD8B6D8EA9304EA83A21FA18ACA4",
-  "changelog": "Corrige duplicação de áudio, adiciona Stop e Ouvir com texto e linha roxa com picos; ajusta margem das conversas e ícone da bandeja."
+  "version": "1.11.0801",
+  "dataPublicacao": "2026-11-08T18:08:26.0182407Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0801/EquipeZap_Setup_v1.11.0801.exe",
+  "sha256Instalador": "6AC6C302A07B6C463AA4F1D2A695674647E1ED761C054524FE91DDE177057772",
+  "changelog": "Cadastro de setores e regras de avatar por setor no ADM, com estilos, roupas e cores permitidos em abas."
 }

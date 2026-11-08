@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0303",
-  "dataPublicacao": "2026-11-03T18:02:02-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.0303/TelaDesk-Setup-1.11.0303.exe",
-  "sha256": "73A870336BC3872E89051241D15D0FEA563936942635B2D3A8BE2BE347B92BA1",
-  "changelog": "Registra computador e localização reais dos acessos no Monitor."
+  "version": "1.11.0802",
+  "dataPublicacao": "2026-11-08T10:19:38-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.0802/TelaDesk-Setup-1.11.0802.exe",
+  "sha256": "414E43FD49C892EA27A12A89CB7727716188BCE55C661EB2C8669CFEB666FD18",
+  "changelog": "Corrige o tamanho do ícone do TelaDesk nas listas do Windows usando o ícone oficial com múltiplas resoluções."
 }

@@ -7,15 +7,21 @@ const paths = {
 export function hIcone(acao) {
   return `<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">${paths[acao] || ''}</svg>`;
 }
-const estilo = `:host{display:block;font-family:inherit;color:var(--h-azul-escuro,#0d47a1)}*{box-sizing:border-box}button,input,textarea{font:inherit}button{cursor:pointer;border-radius:8px}button:disabled{cursor:wait;opacity:.6}svg{width:22px;height:22px;flex-shrink:0}label{display:block;font-weight:600;margin-bottom:8px}.campo{display:flex;align-items:stretch;border:1px solid var(--erp-border,#dbeafe);border-radius:4px;background:#fff}.campo:focus-within{border-color:var(--h-azul,#42a5f5);box-shadow:0 0 0 2px #42a5f526}input,textarea{flex:1;min-width:0;width:100%;padding:14px 16px;color:#15283b;background:transparent;border:0!important;outline:0!important;box-shadow:none!important}textarea{resize:vertical;min-height:150px;padding-right:76px}:host([multilinha]) .campo{position:relative}:host([multilinha]) .limpar{position:absolute;top:0;right:10px}.limpar{display:flex;align-items:center;justify-content:center;align-self:flex-start;flex-shrink:0;background:transparent;border:0;color:#64748b;padding:12px;font-size:22px;line-height:1}.erro{margin-top:6px;min-height:1em;font-size:13px;color:#b45309}.acao{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:10px 16px;border:1px solid var(--h-azul,#42a5f5);color:#0d47a1;background:transparent;box-shadow:none}.acao.primario{color:#fff;background:var(--h-degrade,linear-gradient(135deg,#42a5f5,#0d47a1));border:0}:host([compacto]) .acao{min-height:30px;padding:5px 9px;font-size:13px}button:focus-visible{outline:2px solid #42a5f5;outline-offset:3px}[hidden]{display:none!important}.anexos{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}.anexo{display:flex;align-items:center;gap:12px;max-width:100%;padding:12px;border:1px solid #dbeafe;border-radius:4px;background:#fff}.anexo img{width:110px;height:80px;object-fit:contain;background:#f3f6fa}.dados{min-width:0}.nome{display:block;overflow-wrap:anywhere;color:#15283b}.tamanho{display:block;margin:5px 0 8px;color:#64748b;font-size:13px}textarea{scrollbar-width:thin;scrollbar-color:transparent transparent}.campo:hover textarea,.campo:focus-within textarea{scrollbar-color:#8ac7a9 transparent}@media(hover:none){textarea{scrollbar-color:#8ac7a9 transparent}}textarea::-webkit-scrollbar{width:10px}textarea::-webkit-scrollbar-thumb{background:transparent;border:3.5px solid transparent;background-clip:padding-box;border-radius:4px}.campo:hover textarea::-webkit-scrollbar-thumb,.campo:focus-within textarea::-webkit-scrollbar-thumb{background-color:#8ac7a9}@media(hover:none){textarea::-webkit-scrollbar-thumb{background-color:#8ac7a9}}`;
+export function arquivosColados(clipboard) {
+  if (!clipboard) return [];
+  const itens = Array.from(clipboard.items || []).filter(i=>i.kind==='file').map(i=>i.getAsFile()).filter(Boolean);
+  return itens.length ? itens : Array.from(clipboard.files || []);
+}
+const estilo = `:host([compacto]){font-size:13px}:host([compacto]) label{font-size:13px;margin-bottom:5px}:host([compacto]) input{padding:8px 10px}:host([compacto]) textarea{padding:9px 42px 9px 10px;height:82px;min-height:82px}:host([compacto]) .limpar{padding:7px}:host([compacto]) .erro:empty,:host([compacto]) .anexos:empty{display:none}:host{display:block;font-family:inherit;color:var(--h-azul-escuro,#0d47a1)}*{box-sizing:border-box}button,input,textarea{font:inherit}button{cursor:pointer;border-radius:8px}button:disabled{cursor:wait;opacity:.6}svg{width:22px;height:22px;flex-shrink:0}label{display:block;font-weight:600;margin-bottom:8px}.campo{display:flex;align-items:stretch;border:1px solid var(--erp-border,#dbeafe);border-radius:4px;background:#fff}.campo:focus-within{border-color:var(--h-azul,#42a5f5);box-shadow:0 0 0 2px #42a5f526}input,textarea{flex:1;min-width:0;width:100%;padding:14px 16px;color:#15283b;background:transparent;border:0!important;outline:0!important;box-shadow:none!important}textarea{resize:vertical;min-height:150px;padding-right:76px}:host([multilinha]) .campo{position:relative}:host([multilinha]) .limpar{position:absolute;top:0;right:10px}.limpar{display:flex;align-items:center;justify-content:center;align-self:flex-start;flex-shrink:0;background:transparent;border:0;color:#64748b;padding:12px;font-size:22px;line-height:1}.erro{margin-top:6px;min-height:1em;font-size:13px;color:#b45309}.acao{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:42px;padding:10px 16px;border:1px solid var(--h-azul,#42a5f5);color:#0d47a1;background:transparent;box-shadow:none}.acao.primario{color:#fff;background:var(--h-degrade,linear-gradient(135deg,#42a5f5,#0d47a1));border:0}:host([compacto]) .acao{min-height:30px;padding:5px 9px;font-size:13px}button:focus-visible{outline:2px solid #42a5f5;outline-offset:3px}[hidden]{display:none!important}.anexos{display:flex;flex-wrap:wrap;gap:12px;margin-top:14px}.anexo{display:flex;align-items:center;gap:12px;max-width:100%;padding:12px;border:1px solid #dbeafe;border-radius:4px;background:#fff}.anexo img{width:110px;height:80px;object-fit:contain;background:#f3f6fa}.dados{min-width:0}.nome{display:block;overflow-wrap:anywhere;color:#15283b}.tamanho{display:block;margin:5px 0 8px;color:#64748b;font-size:13px}textarea{scrollbar-width:thin;scrollbar-color:transparent transparent}.campo:hover textarea,.campo:focus-within textarea{scrollbar-color:#8ac7a9 transparent}@media(hover:none){textarea{scrollbar-color:#8ac7a9 transparent}}textarea::-webkit-scrollbar{width:10px}textarea::-webkit-scrollbar-thumb{background:transparent;border:3.5px solid transparent;background-clip:padding-box;border-radius:4px}.campo:hover textarea::-webkit-scrollbar-thumb,.campo:focus-within textarea::-webkit-scrollbar-thumb{background-color:#8ac7a9}@media(hover:none){textarea::-webkit-scrollbar-thumb{background-color:#8ac7a9}}`;
 
 export class HCampoWeb extends HTMLElement {
   connectedCallback() {
     if (this.shadowRoot) return;
     const root = this.attachShadow({mode:'open'});
     const memo = this.hasAttribute('multilinha');
-    root.innerHTML = `<style>${estilo}</style><label for="entrada"></label><div class="campo"><${memo?'textarea':'input'} id="entrada" aria-describedby="erro" ${memo?'rows="5"':'type="email" autocomplete="email"'}></${memo?'textarea':'input'}><button class="limpar" type="button" aria-label="Limpar campo" hidden>⌫</button></div><div class="erro" id="erro" aria-live="polite"></div>`;
+    root.innerHTML = `<style>${estilo}:host([invalido]) label,.erro{color:#b91c1c}:host([invalido]) .campo{border-color:#b91c1c;box-shadow:none}</style><label for="entrada"></label><div class="campo"><${memo?'textarea':'input'} id="entrada" aria-describedby="erro" ${memo?'rows="5"':'type="email" autocomplete="email"'}></${memo?'textarea':'input'}><button class="limpar" type="button" aria-label="Limpar campo" hidden>⌫</button></div><div class="erro" id="erro" aria-live="polite"></div>`;
     this.entrada = root.querySelector('#entrada');
+    this.entrada.required = true;
     this.entrada.setAttribute('aria-required','true');
     this.entrada.maxLength = Number(this.getAttribute('maxlength') || (memo?10000:254));
     root.querySelector('label').textContent = this.getAttribute('rotulo') || '';
@@ -26,18 +32,24 @@ export class HCampoWeb extends HTMLElement {
       if (!memo && e.data && /[^\x00-\x7F]/.test(e.data)) { e.preventDefault(); this.erro='O e-mail deve usar caracteres sem acentos.'; }
     });
     this.entrada.addEventListener('paste', e => {
-      if (!memo && /[^\x00-\x7F]/.test(e.clipboardData.getData('text/plain'))) {
+      const clipboard = e.clipboardData;
+      if (!clipboard) return;
+      if (!memo && /[^\x00-\x7F]/.test(clipboard.getData('text/plain'))) {
         e.preventDefault(); this.erro='O e-mail deve usar caracteres sem acentos.';
       }
       if (memo && !this.entrada.readOnly) {
-        const arquivos = Array.from(e.clipboardData.items).filter(i=>i.kind==='file').map(i=>i.getAsFile()).filter(Boolean);
-        if (arquivos.length) this.dispatchEvent(new CustomEvent('h-colar-imagens',{detail:arquivos,bubbles:true}));
+        const arquivos = arquivosColados(clipboard);
+        if (arquivos.length) {
+          if (!clipboard.getData('text/plain')) e.preventDefault();
+          this.dispatchEvent(new CustomEvent('h-colar-arquivos',{detail:arquivos,bubbles:true}));
+        }
       }
     });
   }
   get value(){ return this.entrada?.value || ''; }
+  get valido(){ return Boolean(this.value.trim()) && this.entrada.validity.valid; }
   set value(v){ this.entrada.value=v; this.shadowRoot.querySelector('.limpar').hidden=!v; }
-  set erro(v){ this.shadowRoot.querySelector('.erro').textContent=v; this.entrada.setAttribute('aria-invalid',String(Boolean(v))); }
+  set erro(v){ this.shadowRoot.querySelector('.erro').textContent=v; this.entrada.setAttribute('aria-invalid',String(Boolean(v))); this.toggleAttribute('invalido',Boolean(v)); }
   set ocupado(v){ this.entrada.readOnly=v; this.shadowRoot.querySelector('.limpar').disabled=v; }
   focus(){ this.entrada.focus(); }
   alterado(){ this.shadowRoot.querySelector('.limpar').hidden=!this.value; this.erro=''; this.dispatchEvent(new CustomEvent('h-alterado',{bubbles:true})); }
@@ -62,19 +74,21 @@ export class HAnexosWeb extends HTMLElement {
   connectedCallback(){
     if(this.shadowRoot)return;
     const root=this.attachShadow({mode:'open'});
-    root.innerHTML=`<style>${estilo}</style><input type="file" accept="image/png,image/jpeg,image/webp" multiple hidden><h-botao-web acao="Anexar" texto="Selecionar imagens"></h-botao-web><div class="erro" aria-live="polite"></div><div class="anexos"></div>`;
+    root.innerHTML=`<style>${estilo}.acoes{display:flex;gap:16px;flex-wrap:wrap}:host([compacto]) .acoes{gap:10px}.erro{color:#b91c1c}</style><input type="file" accept="image/png,image/jpeg,image/webp" multiple hidden><div class="acoes"><h-botao-web acao="Anexar" texto="Selecionar imagens"></h-botao-web></div><div class="erro" aria-live="polite"></div><div class="anexos"></div>`;
     root.querySelector('h-botao-web').addEventListener('h-acao',()=>root.querySelector('input').click());
     root.querySelector('input').addEventListener('change',e=>{this.adicionar(Array.from(e.target.files));e.target.value='';});
+    if(this.hasAttribute('compacto'))root.querySelectorAll('h-botao-web').forEach(b=>b.setAttribute('compacto',''));
   }
   adicionar(arquivos){
     if(this.busy)return;
     this.erro='';
+    if(arquivos.some(f=>/\.zip$/i.test(f.name))){this.erro='Envie o diagnóstico pela opção Suporte do aplicativo. No site, anexe apenas imagens.';return;}
     if(arquivos.some(f=>!['image/png','image/jpeg','image/webp'].includes(f.type))){this.erro='Selecione imagens PNG, JPEG ou WebP.';return;}
     if(this.arquivos.length+arquivos.length>3 || [...this.arquivos,...arquivos].reduce((s,f)=>s+f.size,0)>10*1024*1024){this.erro='Envie até três imagens, somando no máximo 10 MB.';return;}
     this.arquivos.push(...arquivos);this.renderizar();this.dispatchEvent(new CustomEvent('h-alterado',{bubbles:true}));
   }
   set erro(v){this.shadowRoot.querySelector('.erro').textContent=v;}
-  set ocupado(v){this.busy=v;this.shadowRoot.querySelector('input').disabled=v;this.shadowRoot.querySelectorAll('h-botao-web').forEach(b=>b.ocupado=v);}
+  set ocupado(v){this.busy=v;this.shadowRoot.querySelectorAll('input').forEach(i=>i.disabled=v);this.shadowRoot.querySelectorAll('h-botao-web').forEach(b=>b.ocupado=v);}
   limpar(){this.arquivos=[];this.erro='';this.renderizar();}
   desconectarURLs(){this.urls.forEach(URL.revokeObjectURL);this.urls=[];}
   disconnectedCallback(){this.desconectarURLs();}

@@ -1,11 +1,24 @@
-.chamados-painel{margin:24px 40px;padding:26px;max-width:920px;border-left:5px solid var(--h-azul);text-align:left}
-.chamados-painel h1{font-size:28px;color:var(--h-azul-escuro);margin:0 0 8px}
-.chamados-intro{color:var(--erp-txt-muted);margin:0 0 20px;line-height:1.6}
-#chamados-form{display:grid;gap:14px}
-.chamados-dica,.chamados-rodape{color:var(--erp-txt-subtle);font-size:14px;line-height:1.6}
+.chamados-painel,.ajuda-apps{box-sizing:border-box;margin:20px 32px;padding:20px;max-width:620px;border-left:5px solid var(--h-azul);text-align:left}
+.chamados-painel h1{font-size:22px;color:var(--h-azul-escuro);margin:0 0 5px}
+.chamados-intro{color:var(--erp-txt-muted);font-size:13px;margin:0 0 14px;line-height:1.5}
+#chamados-form{display:grid;gap:10px}
+.chamados-dica,.chamados-rodape{color:var(--erp-txt-subtle);font-size:12px;line-height:1.5}
 .chamados-dica{margin:0}
-.chamados-rodape{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;margin-top:10px}
+.chamados-rodape{display:flex;justify-content:space-between;align-items:center;gap:12px;flex-wrap:wrap;margin-top:2px}
+.chamados-rodape>span{flex:1 1 240px;min-width:0}
+#chamados-enviar{margin-left:auto}
 .chamados-aviso{margin-bottom:20px;padding:16px;border:1px solid #fecaca;border-radius:4px;background:#fff1f2;color:#b91c1c;overflow-wrap:anywhere}
 .chamados-aviso.sucesso{border-color:#a7f3d0;background:#ecfdf5;color:#047857}
-@media(max-width:900px){.chamados-painel{margin:24px 20px;padding:24px}.chamados-painel h1{font-size:28px}}
-@media(max-width:600px){.chamados-painel{margin:16px 12px;padding:20px}.chamados-rodape{align-items:flex-start;flex-direction:column}}
+.painel.ajuda-apps{background:#edf0f3;border-left-color:#b7bec7;box-shadow:none}
+.ajuda-apps h2{font-size:20px;line-height:1.3;margin:0 0 10px;color:#475569}
+.ajuda-apps p,.ajuda-apps li{font-size:13px;line-height:1.6;color:var(--erp-txt-muted)}
+.ajuda-apps ol{padding-left:19px;margin:8px 0 14px}
+.ajuda-apps li{margin:4px 0}
+.ajuda-apps figure{margin:0}
+.ajuda-apps img{width:100%;height:auto;display:block;border-radius:6px;border:1px solid var(--erp-border);box-sizing:border-box}
+.ajuda-apps figcaption{font-size:12px;line-height:1.5;color:var(--erp-txt-subtle);margin-top:8px}
+.recortes-suporte{display:grid;grid-template-columns:132px minmax(0,1fr);gap:12px;align-items:center}
+.ajuda-apps .recortes-suporte img{border:0;border-radius:4px}
+@media(max-width:480px){.recortes-suporte{grid-template-columns:94px minmax(0,1fr);gap:8px}}
+@media(max-width:900px){.chamados-painel,.ajuda-apps{margin:20px}}
+@media(max-width:600px){.chamados-painel,.ajuda-apps{margin:16px 12px;padding:20px}.chamados-rodape{align-items:flex-start;flex-direction:column}.chamados-rodape>span{flex:0 1 auto}}

@@ -13,7 +13,7 @@ try {
   const anterior=JSON.parse(sessionStorage.getItem('heto-chamado-envio') || 'null');
   if(anterior?.ID && anterior?.ASSINATURA){identificacao=anterior.ID;assinatura=anterior.ASSINATURA;}
 } catch {}
-descricao.addEventListener('h-colar-imagens',e=>anexos.adicionar(e.detail));
+descricao.addEventListener('h-colar-arquivos',e=>anexos.adicionar(e.detail));
 form.addEventListener('h-alterado',()=>{if(aviso.classList.contains('sucesso'))mensagem('');});
 form.addEventListener('submit',e=>{e.preventDefault();enviarChamado();});
 enviar.addEventListener('h-acao',()=>enviarChamado());
@@ -31,7 +31,7 @@ async function enviarChamado(){
   if(enviando)return;
   email.erro='';descricao.erro='';
   let valido=true;
-  if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()) || /[^\x00-\x7F]/.test(email.value)){
+  if(!email.valido || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim()) || /[^\x00-\x7F]/.test(email.value)){
     email.erro='Informe um e-mail válido.';email.focus();valido=false;
   }
   if(!descricao.value.trim() || descricao.value.length>10000){
@@ -39,7 +39,7 @@ async function enviarChamado(){
   }
   if(!valido)return;
   enviando=true;[email,descricao,anexos,enviar].forEach(c=>c.ocupado=true);mensagem('');
-  const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),45000);
+  const controller=new AbortController();const timer=setTimeout(()=>controller.abort(),10*60*1000);
   try{
     const atual=await fingerprint();
     if(atual!==assinatura){identificacao=crypto.randomUUID();assinatura=atual;}
@@ -58,6 +58,7 @@ async function enviarChamado(){
       if(resultado?.CAMPO==='EMAIL'){email.erro=resultado.MENSAGEM;email.focus();return;}
       if(resultado?.CAMPO==='DESCRICAO'){descricao.erro=resultado.MENSAGEM;descricao.focus();return;}
       if(resultado?.CAMPO==='IMAGENS'){anexos.erro=resultado.MENSAGEM;return;}
+      if(resultado?.CAMPO==='DIAGNOSTICO'){anexos.erro=resultado.MENSAGEM;return;}
       throw new Error(resultado?.MENSAGEM || 'Não foi possível registrar o chamado. Tente novamente.');
     }
     if(resultado?.ID!==identificacao || !Number.isSafeInteger(resultado.NUMERO) || resultado.NUMERO<1)

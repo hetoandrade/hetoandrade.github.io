@@ -2094,15 +2094,31 @@ loadScript(function () {
       <p class="chamados-intro">Conte o que aconteceu ou envie uma sugestão.</p>
       <div id="chamados-aviso" class="chamados-aviso" role="status" aria-live="polite" hidden></div>
       <form id="chamados-form">
-        <h-campo-web id="chamados-email" rotulo="Seu e-mail" maxlength="254"></h-campo-web>
-        <h-campo-web id="chamados-descricao" rotulo="Descrição" multilinha maxlength="10000"></h-campo-web>
-        <p class="chamados-dica">Cole uma imagem na descrição com Ctrl+V: ela será adicionada aos anexos. Você também pode selecionar arquivos.</p>
-        <h-anexos-web id="chamados-anexos"></h-anexos-web>
+        <h-campo-web id="chamados-email" rotulo="Seu e-mail" maxlength="254" compacto></h-campo-web>
+        <h-campo-web id="chamados-descricao" rotulo="Descrição" multilinha maxlength="10000" compacto></h-campo-web>
+        <p class="chamados-dica">Cole imagens com Ctrl+V na descrição, ou selecione abaixo.</p>
+        <h-anexos-web id="chamados-anexos" compacto></h-anexos-web>
         <div class="chamados-rodape">
-          <span>Imagens opcionais · até três imagens, somando 10 MB.<br>Seu e-mail, relato e imagens serão guardados de forma privada para atendimento.</span>
-          <h-botao-web id="chamados-enviar" texto="Enviar chamado" acao="Enviar" primario></h-botao-web>
+          <span>Até 3 imagens, somando 10 MB.<br>Seus dados ficam privados para atendimento.</span>
+          <h-botao-web id="chamados-enviar" texto="Enviar chamado" acao="Enviar" primario compacto></h-botao-web>
         </div>
       </form>
+    </section>
+    <section class="painel ajuda-apps" aria-labelledby="ajuda-apps-titulo">
+      <h2 id="ajuda-apps-titulo">Como enviar pelo aplicativo</h2>
+      <p>No <strong>PrintCerto</strong>, você pode enviar o relato sem abrir o site:</p>
+      <ol>
+        <li>Abra a janela de configurações e clique em <strong>Suporte</strong>, no menu à esquerda.</li>
+        <li>Descreva o que aconteceu e cole os prints com <strong>Ctrl+V</strong>. Seu e-mail fica salvo.</li>
+        <li>Escolha <strong>Sugestão</strong> ou <strong>Problema</strong>. Para problema, envie log de pelo menos <strong>1 dia</strong>. Clique em <strong>Enviar</strong>.</li>
+      </ol>
+      <figure>
+        <div class="recortes-suporte">
+          <img src="/Imagems/printcerto-menu-suporte.png" width="176" height="119" loading="lazy" alt="Menu do PrintCerto com Suporte selecionado entre Atualização e Sobre">
+          <img src="/Imagems/printcerto-formulario-suporte.png" width="468" height="385" loading="lazy" alt="Exemplo no PrintCerto: Problema selecionado, descrição Erro ao verificar atualização e envio de log de 3 dias">
+        </div>
+        <figcaption><strong>Suporte</strong> fica entre <strong>Atualização</strong> e <strong>Sobre</strong>.<br>Exemplo: problema ao verificar atualização, com logs de 3 dias.</figcaption>
+      </figure>
     </section>
   </div>
   <footer class="site-footer">

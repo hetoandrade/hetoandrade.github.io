@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0307",
-  "dataPublicacao": "2026-11-03T20:34:20Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.11.0307/NoteZap_Setup_v1.11.0307.exe",
-  "sha256Instalador": "35237621E7913B8022C3DC6A07675FEEBC855F716C30515EACCF3DE00D34AEFE",
-  "changelog": "Registra usuário, computador e localização reais no Monitor."
+  "version": "1.11.0901",
+  "dataPublicacao": "2026-11-09T14:36:03Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/notezap-v1.11.0901/NoteZap_Setup_v1.11.0901.exe",
+  "sha256Instalador": "CA0B4700A84A9B02F46B4B84B1E9F147AEF6B886A123B98BAF992A04B496B7BB",
+  "changelog": "Apresenta erros de comunicação em português no aviso padrão e registra os detalhes técnicos."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0801",
-  "dataPublicacao": "2026-11-08T18:08:26.0182407Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0801/EquipeZap_Setup_v1.11.0801.exe",
-  "sha256Instalador": "6AC6C302A07B6C463AA4F1D2A695674647E1ED761C054524FE91DDE177057772",
-  "changelog": "Cadastro de setores e regras de avatar por setor no ADM, com estilos, roupas e cores permitidos em abas."
+  "version": "1.11.0803",
+  "dataPublicacao": "2026-11-09T01:39:59.8502322Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0803/EquipeZap_Setup_v1.11.0803.exe",
+  "sha256Instalador": "9F9A7E240795AB1D522B21594B3035FFFFA8B3EA61F8EFAB5A231D788A86C985",
+  "changelog": "Corrige o inicio livre dos avatares, preserva setores carregados e iguala os paineis de camera e avatar."
 }

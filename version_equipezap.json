@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0902",
-  "dataPublicacao": "2026-11-09T20:42:09.8847303Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.0902/EquipeZap_Setup_v1.11.0902.exe",
-  "sha256Instalador": "8440A52972737006367C3DDF46C814C7ED69C05842A98EEBEAC002876F06E1C7",
-  "changelog": "Exibe inteiro o ícone de ajuste da largura de Conversas na Web e no Desktop."
+  "version": "1.11.1002",
+  "dataPublicacao": "2026-11-10T15:12:40.7394365Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1002/EquipeZap_Setup_v1.11.1002.exe",
+  "sha256Instalador": "AF2357CB95514A20B90DF7B14C3508765789C926BB6205C005479811FBC4A1F8",
+  "changelog": "Permite pausar e retomar o vídeo ampliado com um clique, mostra os dispositivos no gravador e alinha o aviso de erro à ação de tentar novamente."
 }

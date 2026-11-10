@@ -25,7 +25,11 @@ async function fingerprint(){
   const textos=new TextEncoder().encode(email.value.trim()+'\n'+descricao.value);
   const hashes=[await crypto.subtle.digest('SHA-256',textos)];
   for(const arquivo of anexos.arquivos)hashes.push(await crypto.subtle.digest('SHA-256',await arquivo.arrayBuffer()));
-  return hashes.map(h=>Array.from(new Uint8Array(h)).map(b=>b.toString(16).padStart(2,'0')).join('')).join(':');
+  const emHex=h=>Array.from(new Uint8Array(h)).map(b=>b.toString(16).padStart(2,'0')).join('');
+  const relato=hashes.map(emHex).join(':');
+  if(!anexos.diagnostico)return relato;
+  const zip=await crypto.subtle.digest('SHA-256',await anexos.diagnostico.arrayBuffer());
+  return `${relato}:ZIP:${emHex(zip)}`;
 }
 async function enviarChamado(){
   if(enviando)return;
@@ -52,13 +56,14 @@ async function enviarChamado(){
       throw new Error('O endereço do serviço de chamados não passou na verificação.');
     const dados=new FormData();dados.append('CLIENTE_ID',identificacao);dados.append('EMAIL',email.value.trim());dados.append('DESCRICAO',descricao.value);
     anexos.arquivos.forEach((f,i)=>dados.append('IMAGENS',f,f.name||`captura-${i+1}.png`));
+    if(anexos.diagnostico)dados.append('DIAGNOSTICO',anexos.diagnostico,anexos.diagnostico.name);
     const response=await fetch(url.href,{method:'POST',body:dados,signal:controller.signal,credentials:'omit'});
     const resultado=await response.json().catch(()=>null);
     if(!response.ok){
       if(resultado?.CAMPO==='EMAIL'){email.erro=resultado.MENSAGEM;email.focus();return;}
       if(resultado?.CAMPO==='DESCRICAO'){descricao.erro=resultado.MENSAGEM;descricao.focus();return;}
       if(resultado?.CAMPO==='IMAGENS'){anexos.erro=resultado.MENSAGEM;return;}
-      if(resultado?.CAMPO==='DIAGNOSTICO'){anexos.erro=resultado.MENSAGEM;return;}
+      if(resultado?.CAMPO==='DIAGNOSTICO'){anexos.erroDiagnostico=resultado.MENSAGEM;return;}
       throw new Error(resultado?.MENSAGEM || 'Não foi possível registrar o chamado. Tente novamente.');
     }
     if(resultado?.ID!==identificacao || !Number.isSafeInteger(resultado.NUMERO) || resultado.NUMERO<1)

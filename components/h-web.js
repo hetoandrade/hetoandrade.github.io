@@ -70,28 +70,65 @@ export class HBotaoWeb extends HTMLElement {
 }
 export class HAnexosWeb extends HTMLElement {
   arquivos=[];
+  diagnostico=null;
   urls=[];
   connectedCallback(){
     if(this.shadowRoot)return;
     const root=this.attachShadow({mode:'open'});
-    root.innerHTML=`<style>${estilo}.acoes{display:flex;gap:16px;flex-wrap:wrap}:host([compacto]) .acoes{gap:10px}.erro{color:#b91c1c}</style><input type="file" accept="image/png,image/jpeg,image/webp" multiple hidden><div class="acoes"><h-botao-web acao="Anexar" texto="Selecionar imagens"></h-botao-web></div><div class="erro" aria-live="polite"></div><div class="anexos"></div>`;
-    root.querySelector('h-botao-web').addEventListener('h-acao',()=>root.querySelector('input').click());
-    root.querySelector('input').addEventListener('change',e=>{this.adicionar(Array.from(e.target.files));e.target.value='';});
+    root.innerHTML=`<style>${estilo}.acoes{display:flex;gap:16px;flex-wrap:wrap}:host([compacto]) .acoes{gap:10px}.erro{color:#b91c1c}.diagnostico:not(:empty){margin-top:10px}.diagnostico .anexo{justify-content:space-between}</style><input id="imagens" type="file" accept="image/png,image/jpeg,image/webp" multiple hidden><input id="zip" type="file" accept=".zip,application/zip,application/x-zip-compressed" hidden><div class="acoes"><h-botao-web id="selecionar-imagens" acao="Anexar" texto="Selecionar imagens"></h-botao-web><h-botao-web id="anexar-log" acao="Anexar" texto="Anexar log (.zip)"></h-botao-web></div><div class="erro erro-imagens" aria-live="polite"></div><div class="anexos"></div><div class="erro erro-zip" aria-live="polite"></div><div class="diagnostico"></div>`;
+    const imagens=root.getElementById('imagens');
+    const zip=root.getElementById('zip');
+    root.getElementById('selecionar-imagens').addEventListener('h-acao',()=>imagens.click());
+    root.getElementById('anexar-log').addEventListener('h-acao',()=>zip.click());
+    imagens.addEventListener('change',()=>{this.adicionar(Array.from(imagens.files));imagens.value='';});
+    zip.addEventListener('change',()=>{this.adicionarDiagnostico(Array.from(zip.files));zip.value='';});
     if(this.hasAttribute('compacto'))root.querySelectorAll('h-botao-web').forEach(b=>b.setAttribute('compacto',''));
   }
   adicionar(arquivos){
-    if(this.busy)return;
+    if(this.busy || !arquivos.length)return;
+    const zips=arquivos.filter(f=>/\.zip$/i.test(f.name));
+    if(zips.length){
+      this.adicionarDiagnostico(zips);
+      arquivos=arquivos.filter(f=>!zips.includes(f));
+      if(!arquivos.length)return;
+    }
     this.erro='';
-    if(arquivos.some(f=>/\.zip$/i.test(f.name))){this.erro='Envie o diagnóstico pela opção Suporte do aplicativo. No site, anexe apenas imagens.';return;}
     if(arquivos.some(f=>!['image/png','image/jpeg','image/webp'].includes(f.type))){this.erro='Selecione imagens PNG, JPEG ou WebP.';return;}
     if(this.arquivos.length+arquivos.length>3 || [...this.arquivos,...arquivos].reduce((s,f)=>s+f.size,0)>10*1024*1024){this.erro='Envie até três imagens, somando no máximo 10 MB.';return;}
     this.arquivos.push(...arquivos);this.renderizar();this.dispatchEvent(new CustomEvent('h-alterado',{bubbles:true}));
   }
-  set erro(v){this.shadowRoot.querySelector('.erro').textContent=v;}
+  adicionarDiagnostico(arquivos){
+    if(this.busy || !arquivos.length)return;
+    this.erroDiagnostico='';
+    if(arquivos.length!==1 || this.diagnostico){this.erroDiagnostico='Anexe um ZIP por chamado. Remova o atual para escolher outro.';return;}
+    const arquivo=arquivos[0];
+    if(!/\.zip$/i.test(arquivo.name) || arquivo.size<22 || arquivo.size>100*1024*1024){this.erroDiagnostico='Selecione um arquivo ZIP de até 100 MB.';return;}
+    this.diagnostico=arquivo;
+    this.renderizarDiagnostico();
+    this.dispatchEvent(new CustomEvent('h-alterado',{bubbles:true}));
+  }
+  set erro(v){this.shadowRoot.querySelector('.erro-imagens').textContent=v;}
+  set erroDiagnostico(v){this.shadowRoot.querySelector('.erro-zip').textContent=v;}
   set ocupado(v){this.busy=v;this.shadowRoot.querySelectorAll('input').forEach(i=>i.disabled=v);this.shadowRoot.querySelectorAll('h-botao-web').forEach(b=>b.ocupado=v);}
-  limpar(){this.arquivos=[];this.erro='';this.renderizar();}
+  limpar(){this.arquivos=[];this.diagnostico=null;this.erro='';this.erroDiagnostico='';this.renderizar();this.renderizarDiagnostico();}
   desconectarURLs(){this.urls.forEach(URL.revokeObjectURL);this.urls=[];}
   disconnectedCallback(){this.desconectarURLs();}
+  renderizarDiagnostico(){
+    const lista=this.shadowRoot.querySelector('.diagnostico');lista.replaceChildren();
+    if(!this.diagnostico)return;
+    const card=document.createElement('div');card.className='anexo';
+    const dados=document.createElement('div');dados.className='dados';
+    const nome=document.createElement('strong');nome.className='nome';nome.textContent=this.diagnostico.name;
+    const tamanho=document.createElement('span');tamanho.className='tamanho';
+    tamanho.textContent=`ZIP · ${Math.ceil(this.diagnostico.size/1024).toLocaleString('pt-BR')} KB`;
+    const remover=document.createElement('h-botao-web');remover.setAttribute('acao','Excluir');remover.setAttribute('texto','Remover');remover.setAttribute('compacto','');
+    remover.addEventListener('h-acao',()=>{
+      if(this.busy)return;
+      this.diagnostico=null;this.erroDiagnostico='';this.renderizarDiagnostico();
+      this.dispatchEvent(new CustomEvent('h-alterado',{bubbles:true}));
+    });
+    dados.append(nome,tamanho);card.append(dados,remover);lista.append(card);
+  }
   renderizar(){
     this.desconectarURLs();const lista=this.shadowRoot.querySelector('.anexos');lista.replaceChildren();
     this.arquivos.forEach((file,index)=>{

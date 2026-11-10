@@ -1,11 +1,11 @@
 {
-  "version": "1.11.0902",
-  "dataPublicacao": "2026-11-09T19:31:20-03:00",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0902/PrintCerto_Update.zip",
-  "sha256PacoteAtualizacao": "331890e8f49fa6fc6407e7495c2ca8ad154f4df91a5c3e7bcac8ab46f7732ec3",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0902/PrintCerto_Setup_v1.11.0902.exe",
-  "sha256Instalador": "248ab6740f972bc19cf75019534f108f49cd516e1332c313ebe6e3354f5a721e",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.0902/PrintCerto_Update.zip",
-  "sha256": "331890e8f49fa6fc6407e7495c2ca8ad154f4df91a5c3e7bcac8ab46f7732ec3",
-  "changelog": "Adiciona suporte com e-mail salvo, imagens e log obrigatório para problemas; orienta o envio pelo aplicativo no site."
+  "version": "1.11.1003",
+  "dataPublicacao": "2026-11-10T14:39:41-03:00",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.1003/PrintCerto_Update.zip",
+  "sha256PacoteAtualizacao": "5e3373738aff3db132b6d99780245a20ca601f5cb10400baef40b95c8abfb362",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.1003/PrintCerto_Setup_v1.11.1003.exe",
+  "sha256Instalador": "84913003df3800707e36a32e524f25ad983b689156b5ba56c001e48b96bb44db",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/printcerto-v1.11.1003/PrintCerto_Update.zip",
+  "sha256": "5e3373738aff3db132b6d99780245a20ca601f5cb10400baef40b95c8abfb362",
+  "changelog": "Exporta logs pela aba Suporte e identifica o ZIP com a data, o período e um código único."
 }

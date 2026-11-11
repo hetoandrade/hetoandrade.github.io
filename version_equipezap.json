@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1101",
-  "dataPublicacao": "2026-11-11T13:41:03.4434634Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1101/EquipeZap_Setup_v1.11.1101.exe",
-  "sha256Instalador": "53805B93DF84D6B646B2B0CA487092F08782460AEC04365F7A60312031480778",
-  "changelog": "Atualiza a biblioteca compartilhada incluída no atualizador do EquipeZap."
+  "version": "1.11.1102",
+  "dataPublicacao": "2026-11-11T16:44:24.6975697Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1102/EquipeZap_Setup_v1.11.1102.exe",
+  "sha256Instalador": "028B1748B7A314BB28527580B908D87AA5515C5022511D8A7502603CD5E0831B",
+  "changelog": "Separa o nome completo do nome de exibição e libera o acesso no pré-cadastro."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1103",
-  "dataPublicacao": "2026-11-11T20:31:37.2978565Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1103/EquipeZap_Setup_v1.11.1103.exe",
-  "sha256Instalador": "DE7EBBAB64F84331F551051E02B02E043291B4C4DEA70F98D7DBFCB31690104A",
-  "changelog": "Habilita a gravação do monitor inteiro no Web e compartilha a onda do microfone com o Desktop."
+  "version": "1.11.1104",
+  "dataPublicacao": "2026-11-11T23:16:30.0428623Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1104/EquipeZap_Setup_v1.11.1104.exe",
+  "sha256Instalador": "52F0CAF77012791941C51A18D7B93B0AEC02C8EB636C8AF2E3582FB73F6846EE",
+  "changelog": "Melhora os estilos de avatar Gemini e preserva os traços do rosto usando uma única foto ajustada."
 }

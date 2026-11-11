@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1003",
-  "dataPublicacao": "2026-11-10T18:11:53.8975393Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1003/EquipeZap_Setup_v1.11.1003.exe",
-  "sha256Instalador": "90D100CEE2543E7A7D52D1BCF6DA82C656B875678FD651E85C81ED03FB201388",
-  "changelog": "Adiciona fundo virtual às reuniões, com galeria, imagem própria e seleção do processador."
+  "version": "1.11.1101",
+  "dataPublicacao": "2026-11-11T13:41:03.4434634Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1101/EquipeZap_Setup_v1.11.1101.exe",
+  "sha256Instalador": "53805B93DF84D6B646B2B0CA487092F08782460AEC04365F7A60312031480778",
+  "changelog": "Atualiza a biblioteca compartilhada incluída no atualizador do EquipeZap."
 }

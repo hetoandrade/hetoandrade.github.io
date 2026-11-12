@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0501",
-  "dataPublicacao": "2026-11-05T14:13:13.7523739Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.0501/OfficeCerto_Setup_v1.11.0501.exe",
-  "sha256Instalador": "FA2AF944EB612951AE8B92A7556B9EFB287298396C41863C1A6BAC93695BFE42",
-  "changelog": "Novos perfis do Writer e do Calc usam ícones pequenos na barra de ferramentas, na barra lateral e na barra de abas."
+  "version": "1.11.1105",
+  "dataPublicacao": "2026-11-12T00:01:45.2063121Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.1105/OfficeCerto_Setup_v1.11.1105.exe",
+  "sha256Instalador": "B9CDB6B751C2D996A008B18327703AC293E98B57316206216B653860960F7EEA",
+  "changelog": "Agiliza a alternância do painel no Writer e no Calc, amplia a confirmação de substituição de arquivos e restaura o tamanho padrão do campo de e-mail no suporte."
 }

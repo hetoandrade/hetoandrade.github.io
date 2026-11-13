@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1202",
-  "dataPublicacao": "2026-11-13T01:28:07.4119398Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1202/EquipeZap_Setup_v1.11.1202.exe",
-  "sha256Instalador": "7C1493FC529138C94ED63EC5439A3270BED4F0349407B6ED3A9E30BE4A02B252",
-  "changelog": "Atualiza as regras de senha, os botões e a preferência de entrada do EquipeZap."
+  "version": "1.11.1301",
+  "dataPublicacao": "2026-11-13T13:06:10.6640352Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/equipezap-v1.11.1301/EquipeZap_Setup_v1.11.1301.exe",
+  "sha256Instalador": "2D2AEFAD3B726EDA67B9A4ED320E7BB1646F417B861F8C51A8997A5C8E1D57FF",
+  "changelog": "Posiciona a opção Abrir com senha neste dispositivo acima do e-mail no login."
 }

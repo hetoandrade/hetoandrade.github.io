@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1105",
-  "dataPublicacao": "2026-11-12T00:01:45.2063121Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.1105/OfficeCerto_Setup_v1.11.1105.exe",
-  "sha256Instalador": "B9CDB6B751C2D996A008B18327703AC293E98B57316206216B653860960F7EEA",
-  "changelog": "Agiliza a alternância do painel no Writer e no Calc, amplia a confirmação de substituição de arquivos e restaura o tamanho padrão do campo de e-mail no suporte."
+  "version": "1.11.1301",
+  "dataPublicacao": "2026-11-14T22:53:35.0345650Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.1301/OfficeCerto_Setup_v1.11.1301.exe",
+  "sha256Instalador": "00D7B58C89AD209CA40E750BC1C7906BCDE39C916A04D37E5DC4BF9A51C9E74B",
+  "changelog": "Abre a primeira janela no Home e recupera os rascunhos sob demanda."
 }

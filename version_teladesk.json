@@ -1,7 +1,7 @@
 {
-  "version": "1.11.0802",
-  "dataPublicacao": "2026-11-08T10:19:38-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.0802/TelaDesk-Setup-1.11.0802.exe",
-  "sha256": "414E43FD49C892EA27A12A89CB7727716188BCE55C661EB2C8669CFEB666FD18",
-  "changelog": "Corrige o tamanho do ícone do TelaDesk nas listas do Windows usando o ícone oficial com múltiplas resoluções."
+  "version": "1.11.1401",
+  "dataPublicacao": "2026-11-14T21:16:26-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.1401/TelaDesk-Setup-1.11.1401.exe",
+  "sha256": "97B06EFE534222305D016118EF3FD47B1DE62D542A18512E11B03111CCD752F3",
+  "changelog": "Salva a permissão padrão das conexões, remove o contorno amarelo do X e atualiza o aviso de colagem."
 }

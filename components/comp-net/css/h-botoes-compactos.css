@@ -1,0 +1,30 @@
+/* Apresentações compactas preservam as medidas dos controles de conversa. */
+.hbutton.hbutton-apresentacao.hbutton-mensagemcompacta { width:32px; height:32px; padding:0; border:0; border-radius:5px; background:transparent; color:var(--h-acao-compacta,#00745e); }
+.hbutton.hbutton-apresentacao.hbutton-mensagemcompacta .hbutton-ico-acao { width:16px; height:16px; }
+.hbutton.hbutton-apresentacao.hbutton-mensagemcompacta:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled),.hbutton.hbutton-apresentacao.hbutton-mensagemcompacta:focus-visible,.hbutton.hbutton-apresentacao.hbutton-mensagemcompacta.hbutton-sucesso { background:var(--h-acao-compacta-hover,#f6fffc); color:var(--h-acao-compacta-ativa,#006b57); }
+.hbutton.hbutton-apresentacao.hbutton-cabecalhocompacto { border-radius:7px; }
+.hbutton.hbutton-apresentacao.hbutton-acaoitemcompacta { width:28px; height:28px; padding:0; border:0; border-radius:4px; background:transparent; color:var(--h-acao-compacta,#00745e); }
+.hbutton.hbutton-apresentacao.hbutton-acaoitemcompacta .hbutton-ico-acao { width:16px; height:16px; }
+.hbutton.hbutton-apresentacao.hbutton-acaoitemcompacta:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background:var(--h-item-acao-hover,#00a17a1f); }
+.hbutton.hbutton-apresentacao.hbutton-favoritocompacto { width:24px; height:24px; padding:0; border:0; border-radius:4px; background:transparent; color:#c6cdca; }
+.hbutton.hbutton-apresentacao.hbutton-favoritocompacto .hbutton-ico-acao { width:18px; height:18px; stroke-width:1.8; }
+.hbutton.hbutton-apresentacao.hbutton-favoritocompacto:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background:#7c89851a; }
+.hbutton.hbutton-apresentacao.hbutton-favoritocompacto.hbutton-selecionado { color:#f4a300; }
+.hbutton.hbutton-apresentacao.hbutton-tipo-favorito.hbutton-selecionado .hbutton-ico-acao { fill:currentColor; }
+.hbutton.hbutton-apresentacao.hbutton-favoritocompacto.hbutton-selecionado:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background:#f4a3001f; }
+.hbutton.hbutton-apresentacao.hbutton-dialogofecharcompacto { width:34px; height:34px; padding:0; border:1px solid var(--h-dialog-borda,#d9e1e5); border-radius:4px; background:#fff; color:var(--h-dialog-texto,#183044); }
+.hbutton.hbutton-apresentacao.hbutton-dialogofecharcompacto .hbutton-ico-acao { width:18px; height:18px; }
+.hbutton.hbutton-apresentacao.hbutton-dialogofecharcompacto:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background:var(--h-azul-fundo,#edf7f4); }
+.hbutton.hbutton-apresentacao.hbutton-informacaorodape { width:34px; height:34px; padding:0; border:1px solid var(--h-informacao-fechar-borda,#00695433); border-radius:7px; background:#fff; color:var(--h-acao-compacta,#00745e); }
+.hbutton.hbutton-apresentacao.hbutton-informacaorodape .hbutton-ico-acao { width:18px; height:18px; }
+.hbutton.hbutton-apresentacao.hbutton-entradaprimariocompacto { width:100%;height:52px;min-height:52px;padding:10px 14px;gap:10px;border:0;border-radius:9px;background:var(--h-botao-entrada-fundo,linear-gradient(180deg,#00ac83 0%,#00a17a 50%,#00966f 100%));color:var(--h-botao-entrada-texto,#fff);font-size:14px;font-weight:650;letter-spacing:0;box-shadow:0 8px 16px color-mix(in srgb,var(--h-azul,#00a17a) 16%,transparent); }
+.hbutton.hbutton-apresentacao.hbutton-entradaprimariocompacto:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background:var(--h-botao-entrada-fundo,linear-gradient(180deg,#00ac83 0%,#00a17a 50%,#00966f 100%)); color:var(--h-botao-entrada-texto,#fff); }
+.hbutton.hbutton-apresentacao.hbutton-entradaprimariocompacto:hover:not(:disabled) { box-shadow:0 10px 20px color-mix(in srgb,var(--h-azul,#00a17a) 24%,transparent); }
+.hbutton.hbutton-apresentacao.hbutton-entradaprimariocompacto:disabled { opacity:.5;box-shadow:none; }
+.hbutton.hbutton-apresentacao.hbutton-entradasecundarioclassico { width:100%;min-height:44px;padding:10px 14px;border:1px solid #ccd6d3;border-radius:9px;background:#fff;color:var(--h-entrada-texto,#263f3a);font-size:16px;font-weight:400;line-height:normal; }
+.hbutton.hbutton-apresentacao.hbutton-dialogorodape { min-height:42px;padding:10px 14px;gap:6px;border:1px solid var(--h-dialog-borda,#d9e1e5);border-radius:4px;background:var(--h-dialog-botao-fundo,#fff);color:var(--h-dialog-texto,#183044);font-size:16px;font-weight:400;line-height:normal; }
+.hbutton.hbutton-apresentacao.hbutton-dialogorodape:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background:var(--h-azul-fundo,#edf7f4); }
+.hbutton.hbutton-apresentacao.hbutton-dialogorodape.hbutton-tipo-salvar,.hbutton.hbutton-apresentacao.hbutton-dialogorodape.hbutton-acao { background:var(--h-botao-entrada-fundo,var(--h-azul,#00a17a));border-color:var(--h-azul,#00a17a);color:var(--h-botao-entrada-texto,#fff); }
+.hbutton.hbutton-apresentacao.hbutton-seletoricone.hbutton-tipo-selecionaricone { color:var(--h-seletor-icone,var(--h-azul,#00745e)); }
+.hbutton.hbutton-apresentacao.hbutton-seletoricone.hbutton-tipo-selecionaricone.hbutton-selecionado { border-color:var(--h-seletor-icone,var(--h-azul,#00745e)); }
+.hbutton.hbutton-apresentacao.hbutton-seletoricone.hbutton-tipo-selecionaricone .h-icone { stroke-width:2; }

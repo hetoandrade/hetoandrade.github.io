@@ -1,0 +1,46 @@
+:host {
+    display: block;
+    min-width: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+:is(.hinput, .hmemo) {
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+[hidden] { display: none !important; }
+
+.hinput-clear { visibility: hidden; }
+.hinput-field:is(:hover, :focus-within) .hinput-clear { visibility: visible; }
+
+@media (hover: none) {
+    .hinput-clear { visibility: visible; }
+}
+
+.hmemo-field {
+    border-color: var(--h-campo-borda, #d1d5db);
+    background: var(--h-campo-fundo, #fff);
+}
+
+.hmemo-field.hmemo-focused { border-color: var(--h-input-borda-foco, #2563eb); }
+.hmemo-field.hmemo-readonly-field { background: var(--h-campo-somente-leitura-fundo, #fafafa); }
+
+.hmemo-label { background: var(--h-campo-caption-fundo, #fff); }
+.hmemo-field.hmemo-focused .hmemo-label { color: var(--h-input-cor-caption, #2563eb); }
+
+.hmemo-field textarea {
+    box-sizing: border-box;
+    min-height: 3em;
+    padding-right: 32px;
+    color: var(--h-campo-texto, #1e293b);
+}
+
+.hmemo-field.hinput-invalido { border-color: var(--h-validacao-texto, #a4262c); }
+.hmemo-field.hinput-invalido .hmemo-label { color: var(--h-validacao-texto, #a4262c); }
+
+.hmemo-field .hbutton-limparcampo {
+    position: absolute;
+    top: 4px;
+    right: 6px;
+}

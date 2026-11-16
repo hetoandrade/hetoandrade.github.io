@@ -1,0 +1,21 @@
+.h-carregando { display:inline-flex; flex-direction:column; align-items:center; justify-content:center; gap:12px; max-width:100%; color:var(--h-identidade,#00745e); }
+.h-carregando-em-linha { flex-direction:row; gap:10px; }
+.h-carregando-indicador { display:inline-flex; flex:0 0 auto; align-items:center; justify-content:center; gap:5px; width:35px; height:28px; }
+.h-carregando-indicador>span { display:block; flex:0 0 5px; width:5px; height:24px; border-radius:3px; background:currentColor; transform:scaleY(.4); animation:h-carregando-onda 1s cubic-bezier(.42,0,.58,1) infinite; }
+.h-carregando-indicador>span:nth-child(2) { animation-delay:120ms; }
+.h-carregando-indicador>span:nth-child(3) { animation-delay:240ms; }
+.h-carregando-indicador>span:nth-child(4) { animation-delay:360ms; }
+.h-carregando-mensagem { font-size:14px; font-weight:600; line-height:1.45; text-align:center; overflow-wrap:anywhere; }
+section.h-painel-carregamento.h-painel-entrada.hpe-acesso { box-sizing:border-box; padding:0; border:0; border-radius:16px; overflow:hidden; background:var(--h-entrada-fundo,#fff); box-shadow:0 8px 32px rgba(0,116,94,.12); }
+section.h-painel-carregamento.h-painel-entrada>.hpe-cabecalho { margin:0; padding:24px; background:var(--h-degrade,linear-gradient(135deg,#00ac83,#00745e)); text-align:center; color:var(--h-painel-carregamento-texto-cabecalho,#fff); }
+.h-painel-carregamento-nome { display:block; font-size:28px; font-weight:800; letter-spacing:1px; line-height:35px; }
+.h-painel-carregamento .hpe-cabecalho p.h-painel-carregamento-subtitulo { margin:4px 0 0; max-width:none; font-size:12px; line-height:18px; font-weight:400; white-space:pre-line; color:inherit; }
+section.h-painel-carregamento.h-painel-entrada>.hpe-conteudo { display:block; padding:0; }
+.h-painel-carregamento-conteudo { display:flex; flex-direction:column; align-items:center; padding:28px 24px 32px; text-align:center; }
+.h-painel-carregamento .h-painel-carregamento-mensagem { margin:16px 0 0; color:var(--h-entrada-titulo,#006d58); font-size:18px; line-height:27px; font-weight:600; letter-spacing:normal; text-wrap:balance; }
+.h-painel-carregamento .h-painel-carregamento-conteudo p.h-painel-carregamento-descricao { margin:6px 0 0; color:var(--h-entrada-resumo,#63706d); font-size:14px; font-weight:400; line-height:20px; text-wrap:balance; }
+@keyframes h-carregando-onda { 0%,100% { transform:scaleY(.4); } 50% { transform:scaleY(1); } }
+@media(prefers-reduced-motion:reduce) { .h-carregando-indicador>span { animation:none; transform:scaleY(1); } }
+
+section.h-painel-carregamento-compacto.h-painel-entrada>.hpe-cabecalho { padding:17px; }
+.h-painel-carregamento-compacto .h-painel-carregamento-conteudo { padding:20px; }

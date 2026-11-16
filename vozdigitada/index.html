@@ -2094,8 +2094,8 @@ loadScript(function () {
       <p class="chamados-intro">Conte o que aconteceu ou envie uma sugestão.</p>
       <div id="chamados-aviso" class="chamados-aviso" role="status" aria-live="polite" hidden></div>
       <form id="chamados-form">
-        <h-campo-web id="chamados-email" rotulo="Seu e-mail" maxlength="254" compacto></h-campo-web>
-        <h-campo-web id="chamados-descricao" rotulo="Descrição" multilinha maxlength="10000" compacto></h-campo-web>
+        <h-input-web id="chamados-email" rotulo="Seu e-mail" tipo="email" autocomplete="email" maxlength="254" obrigatorio erro-caracteres="O e-mail deve usar caracteres sem acentos."></h-input-web>
+        <h-memo-web id="chamados-descricao" rotulo="Descrição" linhas="3" maxlength="10000" obrigatorio colar-arquivos></h-memo-web>
         <p class="chamados-dica">Cole imagens ou um ZIP com Ctrl+V no campo Descrição.</p>
         <h-anexos-web id="chamados-anexos" compacto></h-anexos-web>
         <div class="chamados-rodape">
@@ -2905,6 +2905,7 @@ document.querySelectorAll('.site-layout > .sidebar, .site-layout > .main').forEa
 <script src="/navigation.js"></script>
 <script src="/notezap-download.js"></script>
 <script src="/download-all.js?v=20261003-1"></script>
+<script type="module" src="/components/comp-net/js/h-campos-web.js"></script>
 <script type="module" src="/chamados.js"></script>
 
 <script type="module" src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "81c6cdc71d93423489a4964785094940"}'></script>

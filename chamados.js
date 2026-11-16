@@ -13,7 +13,26 @@ try {
   const anterior=JSON.parse(sessionStorage.getItem('heto-chamado-envio') || 'null');
   if(anterior?.ID && anterior?.ASSINATURA){identificacao=anterior.ID;assinatura=anterior.ASSINATURA;}
 } catch {}
-descricao.addEventListener('h-colar-arquivos',e=>anexos.adicionar(e.detail));
+descricao.addEventListener('h-colar-arquivos',e=>{
+  const agora=new Date();
+  const doisDigitos=valor=>String(valor).padStart(2,'0');
+  const data=`${agora.getFullYear()}${doisDigitos(agora.getMonth()+1)}${doisDigitos(agora.getDate())}`;
+  const hora=`${doisDigitos(agora.getHours())}${doisDigitos(agora.getMinutes())}${doisDigitos(agora.getSeconds())}`;
+  const nomeBase=`${data}-${hora}`;
+  const nomesUsados=new Set([...anexos.arquivos,...e.detail].map(arquivo=>arquivo.name.toLowerCase()));
+  anexos.adicionar(e.detail.map(arquivo=>{
+    if(arquivo.type!=='image/png' || arquivo.name.toLowerCase()!=='image.png')return arquivo;
+
+    let nome=`${nomeBase}.png`;
+    let numero=2;
+    while(nomesUsados.has(nome)){
+      nome=`${nomeBase}-${doisDigitos(numero)}.png`;
+      numero++;
+    }
+    nomesUsados.add(nome);
+    return new File([arquivo],nome,{type:arquivo.type,lastModified:arquivo.lastModified});
+  }));
+});
 form.addEventListener('h-alterado',()=>{if(aviso.classList.contains('sucesso'))mensagem('');});
 form.addEventListener('submit',e=>{e.preventDefault();enviarChamado();});
 enviar.addEventListener('h-acao',()=>enviarChamado());

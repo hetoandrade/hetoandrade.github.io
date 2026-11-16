@@ -1,0 +1,2584 @@
+@import url("./h-tema-escuro.css");
+@import url("./h-chat-componentes.css");
+@import url("./h-botoes-compactos.css");
+@import url("./h-input-dialogo.css");
+@import url("./h-carregando.css");
+@import url("./h-validacao.css");
+
+button {
+    border-radius: 8px !important;
+}
+/* ─────────────── Variáveis globais ─────────────── */
+
+:root {
+    /* Cores base */
+    --h-azul: #42a5f5;            /* azul padrão (médio) */
+    --h-azul-escuro: #1565c0;     /* azul escuro (paleta forte) — Material Blue 800 (suavizado em 2026-06-11) */
+    --h-azul-claro: #64b5f6;      /* azul claro */
+    --h-azul-mais-claro: #90caf9; /* azul bem claro (início de degradês) */
+    --h-azul-medio: #1976d2;      /* meio entre claro e escuro */
+    --h-azul-hover: #e3f2fd;      /* fundo hover (quase branco) */
+    --h-texto: #0d47a1;           /* texto principal (escuro) */
+
+    /* Auxiliares — usadas por HPainelConsulta, HConsultaWizard e outros */
+    --h-azul-fundo: #f5f9ff;      /* fundo de painéis/headers — muito claro, quase branco */
+    --h-cinza-borda: #d8e2f0;     /* borda padrão de inputs/cards */
+    --h-cinza-texto: #6b7c93;     /* texto secundário (labels, dicas) */
+    --h-laranja: #f08c00;         /* destaque/atalho (NOT, atalhos de data) */
+    --h-amarelo-selecao: #fff9cf; /* seleção compartilhada em todo o projeto */
+
+    /* Degradês padronizados */
+    --h-degrade: linear-gradient(135deg, #42a5f5 0%, #0d47a1 100%);                /* original (diagonal) */
+    --h-degrade-h: linear-gradient(90deg, #42a5f5, #0d47a1);                       /* horizontal — títulos */
+    --h-degrade-h-claro: linear-gradient(90deg, #90caf9, #42a5f5);                 /* horizontal claro — destaque ("volta") */
+
+    /* Degradês "escuro à esquerda → claro à direita" — usados nos níveis
+       de agrupamento do HGrid e em qualquer barra/linha horizontal que precise
+       reforçar hierarquia (n1 mais forte, n2 médio, n3 mais suave). */
+    --h-degrade-azul-forte:    linear-gradient(to right, #1976d2 0%, #90caf9 100%);  /* n1 — forte → claro pastel */
+    --h-degrade-azul-claro:    linear-gradient(to right, #90caf9 0%, #e3f2fd 100%);  /* n2 — claro pastel → quase branco */
+    --h-degrade-azul-clarinho: linear-gradient(to right, #bbdefb 0%, #ffffff 100%);  /* n3 — pastel → branco */
+}
+
+/* Hora em celulas DataHora do HGrid — cinza pra nao competir com a data.
+   Global porque MarkupString nao recebe scoped attribute do CSS isolation. */
+.hgrid-cel-hora {
+    color: #a8b3c2;
+    font-weight: 400;
+    margin-left: 8px;
+}
+
+/* ─── Layout padrao dentro do HPainel (cadastros) ───
+   Linha de campos: flex-wrap + gap:12px (espacamento padrao entre HInput/HCombobox/etc).
+   Bloco "inativo": fica abaixo da linha com margin-top pra nao colar nos campos.
+   Toda tela de cadastro novo USA estas duas classes — assim o espacamento e regra
+   do projeto, nao algo que cada cadastro precisa redeclarar em CSS scoped. */
+.h-painel-linha {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    align-items: flex-end;
+}
+/* Linhas consecutivas dentro do mesmo painel ganham respiro vertical (default = grudado). */
+.h-painel-linha + .h-painel-linha {
+    margin-top: 14px;
+}
+/* HCheckbox dentro de .h-painel-linha — alinhamento automatico com os HInputs/HCombobox
+   da mesma linha. Sem isso, o checkbox cola no bottom e fica desencontrado da linha
+   visual dos inputs. Regra global — vale pra TODOS os cadastros do sistema. */
+.h-painel-linha .hcheckbox {
+    align-self: center;
+    margin-bottom: 8px;
+    padding: 4px 4px;
+}
+.h-painel-inativo {
+    margin-top: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 16px;
+}
+
+/* ─── Consulta Avancada — chips + botoes do wizard "+ Adicionar Consulta" ───
+   Padrao do projeto: chip aparece na linha "Consulta:" do HPainelConsulta com formato
+   "Campo [NAO] op Valor X". Clicar no chip abre o wizard pra editar; ✕ remove.
+   Usado por todas as telas de Pesquisa com wizard (Notificacoes/Setor/Cargo/...). */
+.h-painel-add-wrap {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* Sem filtros, mantém "Salvar consulta" visível e desabilitado, mas não
+   oferece "Remover todos" porque não existe conteúdo para remover. */
+.hpc-row-chips.hpc-sem-chips .h-painel-btn-limpar,
+.hpc-row-chips.hpc-sem-chips .notif-btn-limpar {
+    display: none;
+}
+.h-painel-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: #fff;
+    border: 1px solid var(--h-azul-escuro);
+    border-radius: 4px;
+    padding: 4px 4px 4px 8px;
+    font-size: 12.5px;
+    color: var(--h-azul-escuro);
+    line-height: 1.4;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.h-painel-chip:hover { background: #fafcff; }
+.h-painel-chip-acoes {
+    padding: 4px;
+    cursor: default;
+}
+.h-painel-chip-acoes > .hhint:first-child {
+    margin-right: -4px;
+}
+.h-painel-chip-conteudo {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    min-width: 0;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+}
+.h-painel-chip-config {
+    width: 18px;
+    height: 18px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: transparent;
+    color: var(--h-azul-escuro);
+    cursor: pointer;
+}
+.h-painel-chip-config svg {
+    width: 14px;
+    height: 14px;
+    transform: translateY(-1px);
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+}
+.h-painel-chip-config:hover { color: var(--h-azul-medio); }
+.h-painel-chip-campo { font-weight: 700; }
+.h-painel-chip-cond  { color: var(--h-cinza-texto); font-style: italic; }
+.h-painel-chip-valor { font-weight: 500; }
+.h-painel-chip-not {
+    background: var(--h-laranja);
+    color: #fff;
+    font-weight: 700;
+    font-size: 9.5px;
+    padding: 1px 5px;
+    border-radius: 3px;
+    letter-spacing: 0.5px;
+}
+.h-painel-chip-x {
+    width: 18px; height: 18px;
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    border-radius: 3px;
+    color: var(--h-cinza-texto);
+    padding: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+}
+.h-painel-chip-x:hover { background: #ffe1e1; color: #c62828; }
+
+.h-painel-btn-limpar {
+    background: #fff;
+    color: var(--h-azul-escuro);
+    border: 1px solid var(--h-cinza-borda);
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 12px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    transition: background 0.15s;
+}
+.h-painel-btn-limpar:hover { background: var(--h-azul-fundo); }
+.h-painel-btn-limpar svg { width: 12px; height: 12px; }
+
+/* ─── Item de filha em cadastro com 1-N (Contatos / Enderecos / etc.) ───
+   Mesmo visual entre Empresa/Pessoa/futuros. Cada item vira um cartao com borda,
+   campos em flex + gap, e botao remover (X vermelho) no canto direito. */
+.h-cadastro-item {
+    /* Herda os tons do HPainel pai via CSS vars — quando o painel for verde,
+       o item fica verde claro; ambar, fica ambar claro; etc. Fallback no
+       cinza-claro de antes pra quando estiver solto fora de painel. */
+    border: 1.5px solid var(--hp-borda, #e3eaf5);
+    border-radius: 6px;
+    padding: 12px;
+    margin-bottom: 10px;
+    background: var(--hp-body, #fff);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: flex-end;
+}
+.h-cadastro-item:last-child { margin-bottom: 0; }
+
+/* Destaque laranja na linha por 5s quando a validacao falha dentro de um loop
+   (ex.: CEP nao encontrado no endereco 2, EAN invalido no codigo 3).
+   Espelha o estilo do .hinput-aviso pros HInput/HCombobox. */
+.h-cadastro-item-aviso {
+    border-color: #ff9800 !important;
+    box-shadow: 0 0 0 3px rgba(255, 152, 0, 0.18);
+    transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.h-cadastro-item-remover {
+    margin-left: auto;
+    /* align-self: flex-end alinha o X com o BOTTOM dos HInput/HCombobox da mesma linha.
+       margin-bottom: 4px da um respiro pra alinhar visualmente com o cursor do input
+       (em vez de colar na borda inferior do field). */
+    align-self: flex-end;
+    margin-bottom: 4px;
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 4px;
+    background: transparent;
+    color: #c62828;
+    border: 1px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+.h-cadastro-item-remover:hover {
+    background: #fef2f2;
+    border-color: #fecaca;
+}
+.h-cadastro-item-remover svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+}
+
+.h-cadastro-item-vazio {
+    font-size: 12px;
+    color: var(--h-cinza-texto);
+    font-style: italic;
+    text-align: center;
+    padding: 14px;
+}
+
+/* ─────────────── HInput ─────────────── */
+
+.hinput {
+    display: inline-block;
+    width: 100%;
+}
+
+/* Tamanhos semânticos — sobrescrevem o width:100% acima. Atributo inline Width="..." continua tendo prioridade. */
+/* min-width = limite inferior pra inputs não ficarem ilegíveis ao reduzir.
+   Em telas estreitas (entre 500 e desktop) o flex-wrap quebra pra próxima linha
+   em vez de espremer o input abaixo desse limite. */
+.hinput.h-tam-mini       { width: 80px;  min-width: 80px;  }
+.hinput.h-tam-quantidade { width: 110px; min-width: 100px; }   /* Qtd "9.999,999" — 3 casas */
+.hinput.h-tam-valor      { width: 130px; min-width: 120px; }   /* Dinheiro "99.999,99" — 2 casas */
+.hinput.h-tam-pequeno    { width: 140px; min-width: 110px; }
+.hinput.h-tam-cep      { width: 160px; min-width: 140px; }   /* "00000-000" + botao opcional */
+.hinput.h-tam-telefone { width: 200px; min-width: 170px; }   /* "(00) 00000-0000" */
+.hinput.h-tam-cnpjcpf  { width: 200px; min-width: 180px; }   /* CNPJ "00.000.000/0000-00" */
+.hinput.h-tam-medio    { width: 240px; min-width: 170px; }
+.hinput.h-tam-grande   { width: 360px; min-width: 240px; }
+.hinput.h-tam-extenso  { width: 600px; min-width: 320px; }
+
+/* Mobile (<=500px): tamanhos semanticos viram 100% pra nao estourar o container.
+   h-tam-mini fica fora — geralmente serve pra campos compactos tipo CEP. */
+@media (max-width: 500px) {
+    .hinput.h-tam-quantidade,
+    .hinput.h-tam-valor,
+    .hinput.h-tam-pequeno,
+    .hinput.h-tam-cep,
+    .hinput.h-tam-telefone,
+    .hinput.h-tam-cnpjcpf,
+    .hinput.h-tam-medio,
+    .hinput.h-tam-grande,
+    .hinput.h-tam-extenso { width: 100%; }
+}
+
+.hinput-field {
+    position: relative;
+    border: 1.5px solid var(--h-campo-borda, #d1d5db);
+    border-radius: 10px;
+    background: var(--h-campo-fundo, #fff);
+    transition: border-color 0.2s;
+}
+
+.hinput-field.hinput-focused {
+    border-color: var(--h-input-borda-foco, #2563eb);
+}
+
+/* Aviso temporário (3s): borda laranja + pulso ao aparecer.
+   Override em focado também (mesma cor — usuário precisa ver o problema). */
+.hinput-field.hinput-aviso,
+.hinput-field.hinput-aviso.hinput-focused {
+    border-color: #f57c00;
+    animation: hinput-aviso-pulse 0.6s ease-in-out 1;
+}
+.hinput-field.hinput-aviso label { color: #f57c00; }
+
+@keyframes hinput-aviso-pulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(245, 124, 0, 0); }
+    50%      { box-shadow: 0 0 0 4px rgba(245, 124, 0, 0.25); }
+}
+
+.hinput-field input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: var(--h-campo-texto, #1e293b);
+    padding: 9px 44px 9px 14px;   /* reserva à direita pros ícones (clear, olho, readonly) */
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+    text-overflow: ellipsis;       /* mostra "..." quando texto não cabe e input está sem foco */
+}
+
+/* Edge/IE injetam olho nativo (::-ms-reveal) e X de limpar (::-ms-clear) em todo
+   <input type="password"> e <input type="text">. Esconde — usamos nossos próprios
+   ícones (HInput tem botão clear + olho azul). Sem isso, aparecem 2 olhos no Edge. */
+.hinput-field input::-ms-reveal,
+.hinput-field input::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+}
+
+/* Tipo=Senha tem 2 ícones simultâneos (clear + olho ~62px). 44px não basta;
+   reserva 72px à direita pra senha não passar por baixo do botão de mostrar. */
+.hinput-field.hinput-senha input {
+    padding-right: 72px;
+}
+
+/* HPesquisar tem DOIS botoes a direita (clear + lupa). Calculo da reserva:
+   right offset 6 + lupa 28 + gap 2 + clear 24 = 60px; +4 de respiro = 64px.
+   Ellipsis corta o texto exatamente antes do clear, sem deixar vao visivel. */
+.hinput-field.hpesquisar input {
+    padding-right: 64px;
+}
+
+.hinput-field input.hinput-upper {
+    text-transform: uppercase;
+}
+
+.hinput-field input.hinput-lower {
+    text-transform: lowercase;
+}
+
+.hinput-field input[readonly] {
+    color: var(--h-campo-somente-leitura-texto, #5d6470);
+    cursor: default;
+}
+
+/* Fundo cinza claro do container — aplicado no .hinput-field pra cobrir TODA a area
+   do input (sem aparecer borda branca nos cantos). Padrao do projeto pra ReadOnly. */
+.hinput-field.hinput-readonly-field {
+    background: var(--h-campo-somente-leitura-fundo, #fafafa);
+}
+
+/* Caption fixo na borda superior, independente de foco e conteúdo. */
+.hinput-field label {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    transform: translateY(-50%);
+    font-size: 12px;
+    color: var(--h-input-cor-caption, #6b7280);
+    pointer-events: none;
+    transition: none;
+    background: var(--h-campo-caption-fundo, #fff);
+    border-radius: 4px;
+    padding: 0 6px;
+    max-width: calc(100% - 24px);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.hinput-field label:empty { display: none; }
+
+.hinput-field.hinput-focused label {
+    color: var(--h-input-cor-caption, #2563eb);
+}
+
+.hinput.hinput-caption-personalizado .hinput-field.hinput-aviso label {
+    color: #f57c00;
+}
+
+/* Container dos ícones (olho + limpar) */
+.hinput-actions {
+    position: absolute;
+    right: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+/* Complementos públicos dividem a linha com a entrada, sem sobreposição de ações. */
+.hinput-field.hinput-com-complemento {
+    display: flex;
+    align-items: center;
+}
+.hinput-field.hinput-com-complemento input {
+    flex: 1 1 0;
+    min-width: 0;
+    width: 0;
+    padding-right: 3px;
+}
+.hinput-field.hinput-com-complemento .hinput-actions {
+    position: static;
+    flex: 0 0 auto;
+    transform: none;
+    margin-right: 8px;
+    gap: 5px;
+}
+
+/* Botão olho (senha) */
+.hinput-eye {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+    color: #94a3b8;
+    transition: transform 0.15s ease;
+}
+
+.hinput-eye svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: block;
+}
+
+/* Hover / foco: TODOS os ícones de ação à direita do HInput ficam --h-azul. */
+.hinput-eye:hover,
+.hinput-eye:focus {
+    color: var(--h-azul);
+    transform: none;
+    outline: none;
+}
+
+/* Botão limpar (backspace) */
+.hinput-clear {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px;
+    line-height: 1;
+    color: #94a3b8;
+    transition: transform 0.15s ease;
+}
+
+.hinput-clear:hover,
+.hinput-clear:focus {
+    color: var(--h-azul);
+    transform: none;
+    outline: none;
+}
+
+/* Asterisco azul no label de campos obrigatórios. */
+.hinput-obrig {
+    color: var(--h-azul);
+    font-weight: 700;
+    margin-left: 3px;
+}
+
+/* ─── Botão opcional à ESQUERDA do input (gerar codigo, buscar CEP, etc) ─────
+   Só aparece quando a tela passa AcaoIconeSvg + OnAcao. Visual padronizado pelo
+   HInput pra ficar consistente em todas as telas — quem usa só passa o SVG e
+   a função. Posicao absoluta sobre o input; padding-left maior cuida do espaço.
+   Sem a classe .hinput-com-acao no field, padding fica padrao (nenhum impacto). */
+/* Wrapper espelha EXATAMENTE o .hinput-actions da direita: position absolute,
+   top 50% + translateY(-50%). O botao filho .hinput-acao-esquerda nao tem
+   position propria — herda o centro vertical do wrapper, como o .hinput-clear
+   herda do .hinput-actions. */
+.hinput-acoes-esquerda {
+    position: absolute;
+    left: 6px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+}
+.hinput-acao-esquerda {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    line-height: 1;
+    color: #94a3b8;
+    transition: color 0.15s ease, transform 0.15s ease;
+}
+.hinput-acao-esquerda:hover,
+.hinput-acao-esquerda:focus {
+    color: var(--h-azul);
+    transform: none;
+    outline: none;
+}
+.hinput-acao-esquerda svg {
+    width: 16px;
+    height: 16px;
+    display: block;
+}
+
+/* Reserva espaço para a ação esquerda; o caption permanece na borda superior. */
+.hinput-field.hinput-com-acao input { padding-left: 34px; }
+.hinput-field.hinput-com-acao label { left: 15px; }
+
+/* Indicador de campo readonly (ícone "proibido" no canto direito).
+   Não é clicável, mas recebe cor e realce discreto no hover para ficar visualmente
+   coerente com os outros ícones de ação à direita. */
+.hinput-readonly {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    color: #94a3b8;
+    padding: 0 2px;
+    transition: transform 0.15s ease, color 0.15s ease;
+}
+.hinput-readonly:hover {
+    color: var(--h-azul);
+    transform: none;
+}
+.hinput-readonly svg {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* ─────────────── HMemo (= TMemo do Delphi) ─────────────── */
+
+.hmemo {
+    display: block;
+    width: 100%;
+}
+
+.hmemo-field {
+    position: relative;
+    border: 1.5px solid #d1d5db;
+    border-radius: 10px;
+    background: #fff;
+    transition: border-color 0.2s;
+    padding: 14px 14px 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hmemo-field.hmemo-focused {
+    border-color: #2563eb;
+}
+
+.hmemo-field textarea {
+    width: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #1e293b;
+    font-family: 'Segoe UI', sans-serif;
+    resize: vertical;
+    line-height: 1.5;
+    padding: 0;
+}
+
+.hmemo-field.hmemo-no-resize textarea {
+    resize: none;
+}
+
+.hmemo-field textarea[readonly] {
+    color: #5d6470;
+    cursor: default;
+    padding-right: 30px;
+}
+
+.hmemo-field.hmemo-readonly-field {
+    background: #fafafa;
+}
+
+.hmemo-field > .hhint {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+}
+
+.hmemo-readonly-icone {
+    position: static;
+}
+
+.hmemo-label {
+    position: absolute;
+    top: -8px;
+    left: 10px;
+    font-size: 12px;
+    color: #6b7280;
+    background: #fff;
+    border-radius: 4px;
+    padding: 0 6px;
+    font-weight: 600;
+    pointer-events: none;
+    transition: color 0.15s;
+}
+
+.hmemo-field.hmemo-focused .hmemo-label {
+    color: #2563eb;
+}
+
+.hmemo-contador {
+    align-self: flex-end;
+    font-size: 11px;
+    color: #37547a;
+    margin-top: 4px;
+    user-select: none;
+}
+
+.hmemo-contador.hmemo-contador-over {
+    color: #c62828;
+    font-weight: 700;
+}
+
+/* ─────────────── HHint ─────────────── */
+
+.hhint {
+    position: relative;
+    display: inline-flex;
+}
+
+.hhint-balao {
+    position: fixed;
+    display: none;
+    box-sizing: border-box;
+    width: max-content;
+    background: #fff;
+    border: 1.5px solid #0d47a1;
+    border-radius: 8px;
+    padding: 5px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #0d47a1;
+    /* pre-line respeita \n e o max-width quebra automaticamente explicações longas;
+       hints curtos continuam em uma única linha. */
+    white-space: pre-line;
+    max-width: min(260px, calc(100vw - 16px));
+    overflow-wrap: anywhere;
+    line-height: 1.35;
+    text-align: center;
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.15s ease;
+    pointer-events: none;
+    box-shadow: 0 4px 12px rgba(13, 71, 161, 0.15);
+}
+
+.hhint-texto {
+    display: block;
+}
+
+.hhint-titulo,
+.hhint-conteudo {
+    display: none;
+}
+
+/* Hint com quebra de linha: primeira linha é título e o restante é conteúdo. */
+.hhint-balao.hhint-estruturado {
+    padding: 7px 12px;
+    white-space: normal;
+}
+
+.hhint-balao.hhint-estruturado .hhint-texto {
+    display: none;
+}
+
+.hhint-balao.hhint-estruturado .hhint-titulo {
+    display: block;
+    color: #0d47a1;
+    font-weight: 700;
+    line-height: 1.2;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.hhint-balao.hhint-estruturado .hhint-conteudo {
+    display: block;
+    margin-top: 2px;
+    color: #546e7a;
+    font-weight: 500;
+    line-height: 1.3;
+    text-align: center;
+    white-space: pre-line;
+}
+
+.hhint-visivel {
+    opacity: 1 !important;
+}
+
+.hhint-balao::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: #fff;
+    border: 1.5px solid #0d47a1;
+    transform: rotate(45deg);
+}
+
+/* Posição agora é setada inline em px pelo JS (hhintShow).
+   Só a setinha (::after) muda conforme o lado escolhido. */
+
+.hhint-baixo::after {
+    top: -5px;
+    left: var(--hhint-seta-x, 50%);
+    margin-left: -4px;
+    border-bottom: none;
+    border-right: none;
+}
+
+.hhint-cima::after {
+    bottom: -5px;
+    left: var(--hhint-seta-x, 50%);
+    margin-left: -4px;
+    border-top: none;
+    border-left: none;
+}
+
+.hhint-esquerda::after {
+    right: -5px;
+    top: var(--hhint-seta-y, 50%);
+    margin-top: -4px;
+    border-left: none;
+    border-bottom: none;
+}
+
+.hhint-direita::after {
+    left: -5px;
+    top: var(--hhint-seta-y, 50%);
+    margin-top: -4px;
+    border-right: none;
+    border-top: none;
+}
+
+.hhint-rico {
+    position: fixed;
+    inset: auto;
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    max-width: var(--hhint-largura-maxima, calc(100vw - 16px));
+    max-height: min(360px, var(--hhint-altura-maxima, calc(100dvh - 16px)));
+    box-sizing: border-box;
+    overflow: visible;
+    border: 1px solid var(--hhint-borda, #cfc4ef);
+    border-radius: 6px;
+    background: var(--hhint-fundo, #fff);
+    color: var(--hhint-texto, #102c49);
+    font: 14px/1.35 "Segoe UI", Arial, sans-serif;
+    text-align: left;
+    text-transform: none;
+    letter-spacing: normal;
+    box-shadow: 0 4px 12px #49399312;
+}
+
+.hhint-rico:popover-open {
+    display: flex;
+    flex-direction: column;
+}
+
+.hhint-rico::after {
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: var(--hhint-fundo, #fff);
+    border: 1px solid var(--hhint-borda, #cfc4ef);
+    transform: rotate(45deg);
+}
+
+.hhint-rico.hhint-baixo::after { top:-5px;left:var(--hhint-seta-x, 50%);margin-left:-4px;border-bottom:none;border-right:none;background:var(--hhint-cabecalho-fundo, var(--hhint-fundo, #fff)); }
+.hhint-rico.hhint-cima::after { bottom:-5px;left:var(--hhint-seta-x, 50%);margin-left:-4px;border-top:none;border-left:none; }
+
+.hbuscar-lupa {
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 4px;
+    border-radius: 6px;
+    color: #94a3b8;
+    transition: color 0.15s, background 0.15s;
+}
+.hbuscar-lupa:hover {
+    color: #1565c0;
+    background: #e3eaf5;
+}
+.hbuscar-lupa svg {
+    fill: currentColor;
+    stroke: none;
+}
+
+/* ─────────────── HBuscar (dropdown) ─────────────── */
+
+.hbuscar-wrapper {
+    position: relative;
+}
+
+/* HPesquisar com Flex=true cresce dentro de um container flex (ex.: painel
+   de filtros onde o campo divide a linha com datas + atalhos + botão). */
+.hbuscar-wrapper.hpesquisar-flex {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.hbuscar-dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: #fff;
+    border: 1.5px solid #2563eb;
+    border-top: none;
+    border-radius: 0 0 10px 10px;
+    max-height: 240px;
+    overflow-y: auto;
+    z-index: 9000;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.hbuscar-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 8px 14px;
+    cursor: pointer;
+    transition: background 0.1s;
+}
+
+.hbuscar-item:hover,
+.hbuscar-item-ativo {
+    background: #e3f2fd;
+}
+
+.hbuscar-item-icone {
+    width: 28px;
+    height: 28px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #42a5f5, #1565c0);
+    flex-shrink: 0;
+}
+
+.hbuscar-item-icone svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: #fff;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.hbuscar-item-nome {
+    font-size: 13px;
+    font-weight: 600;
+    color: #0d47a1;
+    flex: 1;
+}
+
+.hbuscar-item-codigo {
+    font-size: 11px;
+    font-weight: 600;
+    color: #37547a;
+    margin-left: auto;
+}
+
+/* Atalhos textuais de período reutilizados na barra de datas e em seletores. */
+.hatalho-data {
+    min-width: 33px;
+    height: 24px;
+    padding: 2px 6px 4px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    flex: 0 0 auto;
+    border: 1px solid var(--h-azul, #1976d2);
+    border-radius: 999px;
+    background: #fff;
+    color: var(--h-azul, #1976d2);
+    font-family: 'Segoe UI', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1;
+    white-space: nowrap;
+}
+
+/* ─────────────── HButton ─────────────── */
+
+.hbutton {
+    width: 80%;
+    margin-top: 15px;
+    padding: 11px 20px;
+    height: 46px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: none;
+    border-radius: 8px !important;
+    background: var(--h-botao-incolor-fundo, linear-gradient(135deg, #42a5f5 0%, #0d47a1 100%));
+    color: var(--h-botao-incolor-texto, #fff);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hbutton-superficie,
+.hgrid-acoes-btn,
+.hbutton-icone-navegacao {
+    border-radius: 8px !important;
+}
+
+.hbutton:hover {
+    transform: none;
+}
+
+.hbutton.hbutton-hover-padrao,
+.hconfirma-hover-padrao .hconfirma-btn,
+.hinput-eye, .hinput-clear, .hinput-acao-esquerda, .hinput-readonly,
+.havisos-clear-all, .hgrid-acoes-item { position: relative; }
+
+.hbutton.hbutton-hover-padrao:not(.hbutton-indicador)::after,
+.hbutton.hbutton-hover-padrao.hbutton-indicador::before,
+.hconfirma-hover-padrao .hconfirma-btn::after,
+.hinput-eye::after, .hinput-clear::after, .hinput-acao-esquerda::after,
+.hinput-readonly::after, .hpsimples-clear::after,
+.havisos-clear-all::after, .hgrid-acoes-item::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    background: currentColor;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s ease;
+}
+
+.hbutton.hbutton-hover-padrao:not(.hbutton-indicador):hover:not(:disabled)::after,
+.hbutton.hbutton-hover-padrao.hbutton-indicador:hover:not(:disabled)::before,
+.hconfirma-hover-padrao .hconfirma-btn:hover:not(:disabled)::after,
+.hinput-eye:hover:not(:disabled)::after, .hinput-clear:hover:not(:disabled)::after,
+.hinput-acao-esquerda:hover:not(:disabled)::after, .hinput-readonly:hover::after,
+.hpsimples-clear:hover:not(:disabled)::after,
+.havisos-clear-all:hover:not(:disabled)::after, .hgrid-acoes-item:hover:not(:disabled)::after {
+    opacity: 0.08;
+}
+
+.hbutton.hbutton-hover-padrao:not(.hbutton-indicador):active:not(:disabled)::after,
+.hbutton.hbutton-hover-padrao.hbutton-indicador:active:not(:disabled)::before,
+.hconfirma-hover-padrao .hconfirma-btn:active:not(:disabled)::after,
+.hinput-eye:active:not(:disabled)::after, .hinput-clear:active:not(:disabled)::after,
+.hinput-acao-esquerda:active:not(:disabled)::after, .hpsimples-clear:active:not(:disabled)::after,
+.havisos-clear-all:active:not(:disabled)::after, .hgrid-acoes-item:active:not(:disabled)::after {
+    opacity: 0.16;
+}
+
+/* Foco — contorno amarelo fino em volta. Texto e fundo do botão
+   permanecem originais; só a sombra externa indica foco. Substitui o outline preto
+   nativo do navegador. */
+.hbutton:focus {
+    outline: none;
+    box-shadow:
+        0 0 0 2px #fff,
+        0 0 0 3px var(--h-foco-cor, #fdd835);
+}
+
+.hbutton:active {
+    transform: none;
+}
+
+.hbutton:disabled {
+    opacity: 0.5;
+    cursor: default;
+    transform: none;
+}
+
+/* ─── Reset comum dos botões "de tipo" — tamanho único, retangular ─── */
+.hbutton-normal,
+.hbutton-novo,
+.hbutton-editar,
+.hbutton-excluir,
+.hbutton-inativar,
+.hbutton-cancelar,
+.hbutton-salvar,
+.hbutton-pesquisar,
+.hbutton-confirmar,
+.hbutton-imprimir,
+.hbutton-recarregar,
+.hbutton-exportar,
+.hbutton-importar,
+.hbutton-multi,
+.hbutton-acao,
+.hbutton-acaoincolor {
+    width: auto;
+    min-width: 130px;            /* tamanho único entre eles */
+    margin: 0;
+    height: 36px;
+    padding: 0 22px;             /* mais comprido */
+    border-radius: 8px;          /* mais "quadrado/retangular", menos pílula */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 13.5px;
+    line-height: 1;
+    border: none;
+}
+/* ─── Cores por tipo (nível médio) ─── */
+.hbutton-normal     { background: var(--h-botao-normal-fundo, linear-gradient(135deg, #42a5f5 0%, #1976d2 100%)); color: var(--h-botao-normal-texto, #fff); }
+.hbutton-novo       { background: var(--h-botao-novo-fundo, linear-gradient(135deg, #ba68c8 0%, #8e24aa 100%)); color: var(--h-botao-novo-texto, #fff); }
+.hbutton-editar     { background: var(--h-botao-editar-fundo, linear-gradient(135deg, #81c784 0%, #66bb6a 100%)); color: var(--h-botao-editar-texto, #fff); }
+.hbutton-excluir    { background: var(--h-botao-excluir-fundo, linear-gradient(135deg, #fb8c00 0%, #ef6c00 100%)); color: var(--h-botao-excluir-texto, #fff); }
+.hbutton-inativar   { background: var(--h-botao-inativar-fundo, #fff4e5); color: var(--h-botao-inativar-texto, #a34700); border: 1.5px solid var(--h-botao-inativar-borda, #ef8a17); }
+.hbutton-inativar:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: #ffe8cc; }
+.hbutton-salvar     { background: var(--h-botao-salvar-fundo, linear-gradient(135deg, #42a5f5 0%, #1976d2 100%)); color: var(--h-botao-salvar-texto, #fff); }
+.hbutton-pesquisar  { background: var(--h-botao-pesquisar-fundo, linear-gradient(135deg, #42a5f5 0%, #1976d2 100%)); color: var(--h-botao-pesquisar-texto, #fff); }
+.hbutton-confirmar  { background: var(--h-botao-confirmar-fundo, linear-gradient(135deg, #81c784 0%, #66bb6a 100%)); color: var(--h-botao-confirmar-texto, #fff); }
+.hbutton-imprimir   { background: var(--h-botao-imprimir-fundo, linear-gradient(135deg, #42a5f5 0%, #1976d2 100%)); color: var(--h-botao-imprimir-texto, #fff); }
+.hbutton-recarregar { background: var(--h-botao-recarregar-fundo, linear-gradient(135deg, #ffb74d 0%, #f57c00 100%)); color: var(--h-botao-recarregar-texto, #fff); }
+.hbutton-exportar   { background: var(--h-botao-exportar-fundo, linear-gradient(135deg, #42a5f5 0%, #1976d2 100%)); color: var(--h-botao-exportar-texto, #fff); }
+.hbutton-importar   { background: var(--h-botao-importar-fundo, linear-gradient(135deg, #9575cd 0%, #5e35b1 100%)); color: var(--h-botao-importar-texto, #fff); }
+.hbutton-cancelar   { background: var(--h-botao-cancelar-fundo, #fff); color: var(--h-botao-cancelar-texto, #0d47a1); border: 1.5px solid var(--h-botao-cancelar-borda, #c5d4ea); }
+.hbutton-cancelar:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: #f3f7fc; }
+
+/* Botão "Multi" — outline azul (modo inativo). */
+.hbutton-multi      { background: var(--h-botao-multi-fundo, #fff); color: var(--h-botao-multi-texto, #1565c0); border: 1.5px solid var(--h-botao-multi-borda, #1565c0); }
+.hbutton-multi:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: #e3f2fd; }
+
+/* Ação genérica — mesmo gradient azul do Pesquisar, sem ícone. Pra textos longos
+   tipo "Reprocessar Erros" — força nowrap pra não quebrar em 2 linhas. */
+.hbutton-acao       { background: var(--h-botao-acao-fundo, linear-gradient(135deg, #42a5f5 0%, #1976d2 100%)); color: var(--h-botao-acao-texto, #fff); white-space: nowrap; }
+
+/* Ação genérica em OUTLINE — mesmo visual do Multi sem o icone fixo. */
+.hbutton-acaoincolor { background: var(--h-botao-acaoincolor-fundo, #fff); color: var(--h-botao-acaoincolor-texto, #1565c0); border: 1.5px solid var(--h-botao-acaoincolor-borda, #1565c0); white-space: nowrap; }
+.hbutton-acaoincolor:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: #e3f2fd; }
+
+/* Variante "ativo" — mesmo ícone (2 quadrados), texto "Cancelar", visual laranja
+   pra deixar claro que está em modo seleção múltipla. */
+.hbutton-multi.hbutton-multi-ativo {
+    background: #fff4e6;
+    color: #ef6c00;
+    border-color: #ef6c00;
+}
+.hbutton-multi.hbutton-multi-ativo:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: #ffe8cc; }
+
+/* ─── Mobile: botões encolhem ao tamanho natural do conteúdo ─── */
+/* Em telas estreitas, o min-width:130px fixo dos botões empurra o título/X de fechar
+   pra fora. Em mobile cada botão ocupa apenas o necessário pro próprio texto+ícone. */
+@media (max-width: 500px) {
+    .hbutton-normal,
+    .hbutton-novo,
+    .hbutton-editar,
+    .hbutton-excluir,
+    .hbutton-inativar,
+    .hbutton-cancelar,
+    .hbutton-salvar,
+    .hbutton-pesquisar,
+    .hbutton-confirmar,
+    .hbutton-imprimir,
+    .hbutton-recarregar,
+    .hbutton-exportar,
+    .hbutton-importar,
+    .hbutton-multi,
+    .hbutton-acao,
+    .hbutton-acaoincolor {
+        min-width: 0;
+        padding: 0 12px;
+        gap: 6px;
+        font-size: 12.5px;
+    }
+}
+
+/* ─── Modificador SoIcone — qualquer hbutton vira quadrado só com o ícone ─── */
+/* Mantém cor/borda do Tipo (Multi, Editar, Novo, etc.) — só some o texto e fica quadrado. */
+.hbutton.hbutton-soicone {
+    min-width: 0;
+    width: 36px;
+    padding: 0;
+    gap: 0;
+}
+@media (max-width: 500px) {
+    .hbutton.hbutton-soicone { width: 32px; }
+}
+
+/* Botão COMPACTO 22x22 — pra ações secundárias no header de painel
+   (ex.: + Adicionar contato). Anula o gradient/cor do Tipo via !important. */
+.hbutton.hbutton-compacto {
+    width: 22px !important;
+    height: 22px !important;
+    min-width: 0 !important;
+    padding: 0 !important;
+    border-radius: 8px !important;
+    background: var(--h-botao-compacto-fundo,#fff) !important;
+    color: var(--h-azul-medio) !important;
+    border: 1px solid var(--h-cinza-borda) !important;
+}
+.hbutton.hbutton-compacto:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: var(--h-botao-compacto-hover-fundo,#f0f6ff) !important; border-color: var(--h-azul-medio) !important; }
+.hbutton.hbutton-compacto:hover:where(:not(.hbutton-hover-padrao)):not(:disabled) { transform: none; }
+.hbutton.hbutton-compacto .hbutton-ico {
+    width: 14px;
+    height: 14px;
+}
+
+/* ─── HBotaoTipo.Fechar — quadrado só com ícone X, sem caixa visível ─── */
+.hbutton-fechar {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    margin: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #c62828;
+    border: 1.5px solid transparent;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.hbutton-fechar:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: #fef2f2; border-color: #fecaca; }
+.hbutton-fechar:hover:where(:not(.hbutton-hover-padrao)):not(:disabled) { transform: none; }
+
+/* ─── Ícone interno (Lucide SVG outline 2px) ─── */
+.hbutton-ico {
+    width: 16px;
+    height: 16px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    flex-shrink: 0;
+}
+
+/* ─────────────── HAvisos ─────────────── */
+
+.havisos-container {
+    --havisos-largura: 272px;
+    --havisos-largura-centro: 304px;
+    --havisos-topo-lista: 54px;
+    position: fixed;
+    top: 4px;
+    right: 0;
+    width: var(--havisos-largura);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    z-index: 9999;
+    max-height: calc(100vh - 40px);
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+/* Mobile: respiro pequeno na esquerda quando a tela é estreita demais. */
+@media (max-width: 500px) {
+    .havisos-container {
+        --havisos-largura: min(272px, calc(100vw - 8px));
+        --havisos-largura-centro: min(304px, calc(100vw - 8px));
+    }
+}
+
+/* Painel branco que serve de "fundo" para o botão Limpar tudo —
+   ocupa toda a largura do container (mesma dos toasts abaixo) e sem sombra.
+   Padding vertical maior pra cobrir o botão de logoff que fica atrás no header. */
+.havisos-clear-wrap {
+    background: #fff;
+    border-radius: 10px;
+    padding: 8px 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 8px;
+}
+
+.havisos-clear-all {
+    background: var(--h-degrade);
+    color: #fff;
+    border: none;
+    padding: 5px 14px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+.havisos-clear-all:hover { transform: none; }
+
+/* Mesmo padrão do .hbutton-acaoincolor — outline azul, hover só clareia o fundo. */
+.havisos-abrir-avisos {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background: #fff;
+    color: #1565c0;
+    border: 1.5px solid #1565c0;
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.15s;
+    white-space: nowrap;
+}
+.havisos-abrir-avisos:hover:not(:disabled) { background: #e3f2fd; }
+.havisos-abrir-avisos svg { width: 14px; height: 14px; }
+
+.havisos {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+    overflow: hidden;
+    border-left: none;
+}
+.havisos .havisos-icon {
+    animation: havisosPulse 2s ease-in-out infinite;
+}
+
+.havisos-container .havisos ~ .havisos .havisos-icon {
+    animation: none;
+}
+
+@keyframes havisosPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+/* Toasts antigos mantêm cor cheia — só o primeiro tem a animação de pulse no ícone (havisosPulse). */
+
+.havisos-removing {
+    animation: havisosOut 0.35s ease forwards;
+}
+@keyframes havisosIn {
+    from { opacity: 0; transform: translateX(60px); }
+    to { opacity: 1; transform: translateX(0); }
+}
+@keyframes havisosOut {
+    from { opacity: 1; transform: translateX(0); }
+    to { opacity: 0; transform: translateX(60px); }
+}
+
+.havisos-centro {
+    position: fixed !important;
+    top: 35vh;
+    left: 50vw;
+    transform: translate(-50%, -50%) scale(1.1);
+    width: var(--havisos-largura-centro);
+    z-index: 10001;
+    animation: havisosCentroIn 0.4s cubic-bezier(0.21, 1.02, 0.73, 1) !important;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+}
+
+@keyframes havisosCentroIn {
+    from { opacity: 0; transform: translate(-50%, -70%) scale(0.5); }
+    to { opacity: 1; transform: translate(-50%, -50%) scale(1.1); }
+}
+
+.havisos-movendo {
+    position: fixed !important;
+    z-index: 10001;
+    animation: havisosMover 0.6s cubic-bezier(0.4, 0, 0.2, 1) forwards !important;
+}
+
+@keyframes havisosMover {
+    0% {
+        top: 35vh; left: 50vw;
+        transform: translate(-50%, -50%) scale(1.1);
+        width: var(--havisos-largura-centro);
+        box-shadow: 0 8px 40px rgba(0,0,0,0.2);
+    }
+    100% {
+        top: var(--havisos-topo-lista);
+        left: calc(100vw - var(--havisos-largura));
+        transform: none;
+        width: var(--havisos-largura);
+        box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    }
+}
+
+.havisos-centro .havisos-progress-fill {
+    animation-play-state: paused !important;
+}
+
+.havisos-movendo .havisos-progress-fill {
+    animation: none;
+    width: 100%;
+}
+
+.havisos-top-bar { height: 2px; width: 100%; }
+
+.havisos-erro .havisos-top-bar { background: #e53935; }
+.havisos-aviso .havisos-top-bar { background: #f57c00; }
+.havisos-info .havisos-top-bar { background: #1976d2; }
+.havisos-ok .havisos-top-bar { background: #43a047; }
+
+/* Traço vertical na borda esquerda (mesma cor do tipo). */
+.havisos-left-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+}
+.havisos-erro  .havisos-left-bar { background: #e53935; }
+.havisos-aviso .havisos-left-bar { background: #f57c00; }
+.havisos-info  .havisos-left-bar { background: #1976d2; }
+.havisos-ok    .havisos-left-bar { background: #43a047; }
+
+
+.havisos-close {
+    position: absolute;
+    top: 6px; right: 6px;
+    background: none;
+    border: none;
+    color: #bbb;
+    cursor: pointer;
+    font-size: 18px;
+    line-height: 1;
+    min-width: 32px;
+    min-height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    transition: color 0.2s, background 0.2s;
+}
+.havisos-close:hover { color: #666; background: #f5f5f5; }
+
+.havisos-body {
+    display: block;
+    padding: 10px 14px 8px;
+}
+
+.havisos-icon {
+    position: relative;
+    top: -2px;
+    width: 20px; height: 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    flex-shrink: 0;
+    color: #fff;
+    font-weight: 700;
+}
+.havisos-erro .havisos-icon { background: #e53935; }
+.havisos-aviso .havisos-icon { background: #f57c00; }
+.havisos-info .havisos-icon { background: #1976d2; }
+.havisos-ok .havisos-icon { background: #43a047; }
+
+.havisos-content { width: 100%; min-width: 0; }
+
+/* Primeira linha: ícone compacto alinhado ao assunto. */
+.havisos-msg {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    min-height: 22px;
+    padding-right: 22px;
+    line-height: 1.3;
+    overflow: visible;
+    word-break: break-word;
+}
+
+/* Primeira linha: assunto. */
+.havisos-msg-titulo {
+    flex: 1;
+    min-width: 0;
+    font-size: 13px;
+    font-weight: 700;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.havisos-content-expandido .havisos-msg-titulo {
+    white-space: normal;
+    overflow: visible;
+}
+
+/* Conteúdo abaixo do assunto: até 3 linhas visuais. */
+.havisos-msg-detalhe {
+    margin-top: 3px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    word-break: break-word;
+    overflow-wrap: anywhere;
+    white-space: pre-line;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.havisos-content-expandido .havisos-msg-detalhe {
+    display: block;
+    overflow: visible;
+    -webkit-line-clamp: unset;
+}
+
+.havisos-erro .havisos-msg,
+.havisos-erro .havisos-msg-detalhe { color: #c62828; }
+.havisos-aviso .havisos-msg,
+.havisos-aviso .havisos-msg-detalhe { color: #e65100; }
+.havisos-info .havisos-msg,
+.havisos-info .havisos-msg-detalhe { color: #1565c0; }
+.havisos-ok .havisos-msg,
+.havisos-ok .havisos-msg-detalhe { color: #2e7d32; }
+
+.havisos-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 4px;
+}
+
+.havisos-time { font-size: 11px; color: #9e9e9e; letter-spacing: 0.5px; }
+
+.havisos-footer-actions {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.havisos-footer-actions > button {
+    width: 72px;
+    justify-content: center;
+}
+
+.havisos-copy,
+.havisos-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--h-azul);
+    padding: 2px 6px;
+    border-radius: 4px;
+    transition: color 0.2s, background 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-family: 'Segoe UI', sans-serif;
+}
+.havisos-copy:hover,
+.havisos-toggle:hover {
+    color: var(--h-azul-escuro);
+    background: var(--h-azul-hover);
+}
+.havisos-copy svg,
+.havisos-toggle svg {
+    width: 14px;
+    height: 14px;
+    stroke: currentColor;
+    fill: none;
+}
+.havisos-copy-label,
+.havisos-toggle span {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.havisos-toggle { display: none; }
+.havisos:not(.havisos-centro):not(.havisos-movendo)
+    .havisos-content[data-havisos-overflow="true"] .havisos-toggle {
+    display: flex;
+}
+.havisos-toggle svg { transition: transform 0.2s; }
+.havisos-toggle.aberto svg { transform: rotate(180deg); }
+
+.havisos-progress { height: 3px; background: #f0f0f0; }
+.havisos-progress-fill {
+    height: 100%;
+    animation: havisosProgress 12s linear forwards;
+}
+.havisos-erro .havisos-progress-fill { background: #e53935; }
+.havisos-aviso .havisos-progress-fill { background: #f57c00; }
+.havisos-info .havisos-progress-fill { background: #1976d2; }
+.havisos-ok .havisos-progress-fill { background: #43a047; }
+
+@keyframes havisosProgress {
+    from { width: 100%; }
+    to { width: 0%; }
+}
+
+/* ─── Compatibilidade com o painel expansível antigo ─── */
+.havisos-detalhe-box {
+    margin: 6px 0 0;
+    border: 1px solid;
+    border-radius: 6px;
+    max-height: 140px;
+    overflow-y: auto;
+    font-family: 'Cascadia Mono', Consolas, 'Courier New', monospace;
+    font-size: 11px;
+    line-height: 1.45;
+    white-space: pre-wrap;
+    word-break: break-word;
+    padding: 8px 10px;
+}
+.havisos-detalhe-box-oculto { display: none; }
+
+.havisos-erro  .havisos-detalhe-box { background: #fbf5f5; border-color: #f3c2c2; color: #6b2020; }
+.havisos-aviso .havisos-detalhe-box { background: #fdf6ee; border-color: #f5cba5; color: #6b3a10; }
+.havisos-info  .havisos-detalhe-box { background: #f3f8fd; border-color: #b6d4f0; color: #0d3a66; }
+.havisos-ok    .havisos-detalhe-box { background: #f3faf4; border-color: #b8dcbb; color: #1f4a23; }
+
+/* Em modo "centro" (toast recém-chegado, position:fixed em 35vh) o painel
+   pode estourar viewports baixas — limita por altura da tela. */
+.havisos-centro .havisos-detalhe-box { max-height: 25vh; }
+
+.havisos-detalhe-box::-webkit-scrollbar { width: 8px; }
+.havisos-detalhe-box::-webkit-scrollbar-thumb { background: rgba(0,0,0,0.25); border-radius: 4px; }
+.havisos-detalhe-box::-webkit-scrollbar-track { background: transparent; }
+
+/* ─────────────── HConfirma ─────────────── */
+
+.hconfirma-dialog {
+    border: none;
+    background: transparent;
+    padding: 0;
+    max-width: none;
+    max-height: none;
+    overflow: visible;
+    animation: hconfirmaFadeIn 0.2s ease;
+}
+
+.hconfirma-dialog::backdrop {
+    background: rgba(0, 0, 0, 0.35);
+    animation: hconfirmaFadeIn 0.2s ease;
+}
+
+@keyframes hconfirmaFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hconfirma {
+    background: #fff;
+    border: var(--h-confirmacao-borda, none);
+    border-radius: var(--h-confirmacao-raio, 20px);
+    box-sizing: border-box;
+    padding: 0 36px 28px;
+    width: 380px;
+    max-width: min(100%, calc(100vw - 32px));
+    text-align: center;
+    box-shadow: var(--h-confirmacao-sombra, 0 20px 60px rgba(0, 0, 0, 0.15));
+    animation: hconfirmaSlideIn 0.3s cubic-bezier(0.21, 1.02, 0.73, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+/* Mobile: padding interno menor pra economizar espaço */
+@media (max-width: 500px) {
+    .hconfirma { padding: 0 20px 20px; }
+}
+
+@keyframes hconfirmaSlideIn {
+    from { opacity: 0; transform: scale(0.9) translateY(10px); }
+    to { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.hconfirma-barra {
+    height: var(--h-confirmacao-barra-altura, 3px);
+    width: 100%;
+    margin-left: -36px;
+    margin-right: -36px;
+    width: calc(100% + 72px);
+    margin-bottom: 28px;
+}
+
+.hconfirma-barra-info { background: var(--h-confirmacao-info-barra, linear-gradient(90deg, #42a5f5, var(--h-texto, #0d47a1))); }
+.hconfirma-barra-ok { background: var(--h-confirmacao-ok-barra, linear-gradient(90deg, #66bb6a, #2e7d32)); }
+.hconfirma-barra-aviso { background: var(--h-confirmacao-aviso-barra, linear-gradient(90deg, #ffa726, #f57c00)); }
+.hconfirma-barra-erro { background: var(--h-confirmacao-erro-barra, linear-gradient(90deg, #ef5350, #c62828)); }
+
+.hconfirma-icone {
+    width: 64px;
+    height: 64px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.hconfirma-icone-info { background: var(--h-confirmacao-info-fundo, #e3f2fd); color: var(--h-confirmacao-info-cor, #1976d2); }
+.hconfirma-icone-ok { background: var(--h-confirmacao-ok-fundo, #e8f5e9); color: var(--h-confirmacao-ok-cor, #2e7d32); }
+.hconfirma-icone-aviso { background: var(--h-confirmacao-aviso-fundo, #fff3e0); color: var(--h-confirmacao-aviso-cor, #f57c00); }
+.hconfirma-icone-erro { background: var(--h-confirmacao-erro-fundo, #ffebee); color: var(--h-confirmacao-erro-cor, #e53935); }
+
+.hconfirma-icone svg {
+    width: 48px;
+    height: 48px;
+    animation: hconfirmaPulse 2s ease-in-out infinite;
+}
+
+@keyframes hconfirmaPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.15); }
+    100% { transform: scale(1); }
+}
+
+.hconfirma-titulo {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--h-texto, #0d47a1);
+    margin-bottom: 8px;
+}
+
+.hconfirma-titulo-duas-linhas .hconfirma-destaque {
+    display: block;
+    margin-top: 3px;
+}
+
+.hconfirma-cor-info { color: #1976d2; }
+.hconfirma-cor-ok { color: #2e7d32; }
+.hconfirma-cor-aviso { color: #f57c00; }
+.hconfirma-cor-erro { color: #e53935; }
+
+.hconfirma-mensagem {
+    font-size: 14px;
+    color: var(--h-confirmacao-texto, #37547a);
+    margin-bottom: 24px;
+    line-height: 1.5;
+}
+
+.hconfirma-itens {
+    margin: -16px 0 24px;
+    padding: 12px 16px 12px 34px;
+    list-style: disc;
+    background: #fafbfd;
+    border: 1px solid #e3e9f1;
+    border-left-width: 3px;
+    border-radius: 10px;
+    text-align: left;
+    font-size: 13px;
+    color: var(--h-confirmacao-texto, #37547a);
+    max-height: 240px;
+    overflow-y: auto;
+    line-height: 1.7;
+}
+
+.hconfirma-itens li { padding-left: 4px; }
+.hconfirma-itens li::marker { color: inherit; opacity: 0.7; }
+
+.hconfirma-itens li.hconfirma-item-lista {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-left: 0;
+    list-style: none;
+    font-weight: 400;
+}
+
+.hconfirma-itens li.hconfirma-item-lista::marker {
+    content: "";
+}
+
+.hconfirma-lista-tag {
+    display: inline-flex;
+    align-items: center;
+    height: 17px;
+    padding: 0 7px;
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.hconfirma-item-lista-inserido {
+    color: var(--h-texto, #0d47a1);
+}
+
+.hconfirma-item-lista-editado {
+    color: #2e7d32;
+}
+
+.hconfirma-item-lista-deletado {
+    color: #c62828;
+}
+
+.hconfirma-item-lista-inserido .hconfirma-lista-tag {
+    border: 1px solid #8fb6e8;
+    background: #edf5ff;
+    color: var(--h-texto, #0d47a1);
+}
+
+.hconfirma-item-lista-editado .hconfirma-lista-tag {
+    border: 1px solid #81c784;
+    background: #edf8ee;
+    color: #2e7d32;
+}
+
+.hconfirma-item-lista-deletado .hconfirma-lista-tag {
+    border: 1px solid #ef9a9a;
+    background: #fff1f1;
+    color: #c62828;
+}
+
+.hconfirma-itens-info  { border-left-color: #1976d2; }
+.hconfirma-itens-ok    { border-left-color: #2e7d32; }
+.hconfirma-itens-aviso { border-left-color: #f57c00; }
+.hconfirma-itens-erro  { border-left-color: #e53935; }
+
+.hconfirma-botoes {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 12px;
+    justify-content: center;
+    padding: 5px;
+}
+
+.hconfirma-btn {
+    flex: 0 1 auto;
+    padding: 10px 28px;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.15s ease;
+    border: none;
+    font-family: 'Segoe UI', sans-serif;
+    min-width: 100px;
+}
+
+.hconfirma-btn:hover { transform: none; }
+.hconfirma-btn:active { transform: none; }
+
+/* Foco visual — halo AMARELO em volta do botão.
+   Texto e fundo do botão permanecem originais; só a sombra externa indica foco.
+   Usa :focus (não :focus-visible) porque o foco aqui é programático. */
+.hconfirma-btn:focus {
+    outline: none;
+    box-shadow:
+        0 0 0 2px #fff,
+        0 0 0 5px var(--h-foco-cor, #fdd835);
+}
+
+.hconfirma-btn-cancelar {
+    background: #fff;
+    color: var(--h-confirmacao-texto, #37547a);
+    border: 1.5px solid #d1d5db;
+}
+
+.hconfirma-btn-cancelar:hover:where(:not(.hconfirma-cores-estaveis *)) { background: #f8fafc; }
+
+.hconfirma-bg-info { background: var(--h-confirmacao-info-botao, linear-gradient(135deg, #42a5f5, #1565c0)); color: #fff; }
+.hconfirma-bg-ok { background: var(--h-confirmacao-ok-botao, linear-gradient(135deg, #66bb6a, #2e7d32)); color: #fff; }
+.hconfirma-bg-aviso { background: var(--h-confirmacao-aviso-botao, linear-gradient(135deg, #ffa726, #f57c00)); color: #fff; }
+.hconfirma-bg-erro { background: var(--h-confirmacao-erro-botao, linear-gradient(135deg, #ef5350, #c62828)); color: #fff; }
+
+.hconfirma-amplo {
+    box-sizing: border-box;
+    width: 600px;
+    max-width: min(100%, calc(100vw - 32px));
+    max-height: calc(100dvh - 32px);
+    padding: 0 32px 28px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.hconfirma-amplo .hconfirma-barra {
+    width: calc(100% + 64px);
+    margin-left: -32px;
+    margin-right: -32px;
+}
+
+.hconfirma-amplo .hconfirma-titulo {
+    margin-bottom: 16px;
+    overflow-wrap: anywhere;
+}
+
+.hconfirma-amplo .hconfirma-destaque {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.hconfirma-amplo .hconfirma-mensagem {
+    margin-bottom: 20px;
+    white-space: pre-line;
+}
+
+.hconfirma-amplo .hconfirma-itens {
+    margin: 0 0 24px;
+    max-height: min(240px, 30dvh);
+    overflow-wrap: anywhere;
+}
+
+.hconfirma-amplo .hconfirma-btn {
+    flex: 1 1 0;
+    min-width: 0;
+    min-height: 44px;
+    padding: 10px 20px;
+    border-radius: 4px;
+    white-space: normal;
+}
+
+.hconfirma-amplo .hconfirma-btn:focus {
+    outline: 2px solid #fdd835;
+    outline-offset: 3px;
+    box-shadow: none;
+}
+
+@media (max-width: 600px) {
+    .hconfirma-amplo { padding: 0 20px 20px; }
+    .hconfirma-amplo .hconfirma-barra {
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .hconfirma-btn { min-width: 0; padding-left: 12px; padding-right: 12px; }
+}
+
+/* ─────────────── HCombobox (visual igual ao HInput + dropdown) ─────────────── */
+
+/* Wrapper precisa de position:relative pra o dropdown (absolute, top:100%)
+   ancorar embaixo do input — não no body. */
+.hcombo-wrapper {
+    position: relative;
+}
+
+.hcombo-wrapper:focus-within {
+    z-index: 9000;
+}
+
+/* Eleva toda a cadeia visual que contém o combo aberto. Sem isso, um HPainel
+   irmão renderizado depois pode pintar seu fundo por cima do dropdown, mesmo
+   quando a própria lista tem z-index alto. :has() acompanha o estado real do
+   componente: a regra só existe enquanto o dropdown está renderizado. */
+.hp:has(.hcombo-dropdown),
+.h-item-painel:has(.hcombo-dropdown) {
+    position: relative;
+    z-index: 10000;
+    overflow: visible !important;
+}
+
+.hcombo-field {
+    cursor: pointer;
+}
+
+.hcombo-dropdown {
+    right: auto;
+    min-width: 100%;
+    width: max-content;
+    max-width: min(560px, calc(100vw - 24px));
+}
+
+.hcombo-dropdown .hbuscar-item {
+    min-height: 30px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    white-space: nowrap;
+}
+
+/* O input é editável (filtro por digitação), texto na cor normal — não cinza.
+   Sempre 2 ícones à direita (normal: X+seta · readonly: 🚫+seta). 64px = folga
+   visual sem desperdício de espaço. text-overflow: ellipsis mostra "..." quando
+   o texto não cabe e o input está SEM foco (no foco, cursor navega normal). */
+.hcombo-field input {
+    color: #1e293b;
+    padding-right: 64px;
+    text-overflow: ellipsis;
+}
+
+/* Seta ▾ que gira ao abrir. */
+.hcombo-seta svg {
+    width: 20px;
+    height: 20px;
+    fill: none;
+    stroke: #94a3b8;
+    stroke-width: 1.8;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    display: block;
+    transition: transform 0.2s ease;
+}
+
+.hcombo-seta-aberta svg {
+    transform: rotate(180deg);
+}
+
+/* No HCombobox, amarelo identifica o valor que já está selecionado.
+   A regra vem depois do hover/ativo azul e mantém o amarelo mesmo quando
+   o mouse ou a navegação por teclado passam novamente sobre esse item. */
+.hcombo-dropdown .hcombo-item-sel,
+.hcombo-dropdown .hcombo-item-sel:hover,
+.hcombo-dropdown .hcombo-item-sel.hbuscar-item-ativo {
+    background: var(--h-amarelo-selecao);
+}
+
+.hcombo-item-sel .hbuscar-item-nome {
+    color: #0d47a1;
+}
+
+/* ─────────────── HCheckbox ─────────────── */
+
+.hcheckbox {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* Esconde o checkbox nativo, mas mantém acessível por teclado. */
+.hcheckbox input {
+    position: absolute;
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.hcheckbox-caixa {
+    width: 20px;
+    height: 20px;
+    border: 1.5px solid var(--h-checkbox-borda, #d1d5db);
+    border-radius: 6px;
+    background: var(--h-checkbox-fundo, #fff);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+}
+
+.hcheckbox-caixa svg {
+    width: 14px;
+    height: 14px;
+    fill: none;
+    stroke: var(--h-checkbox-marca, #fff);
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    opacity: 0;
+    transform: scale(0.6);
+    transition: opacity 0.15s, transform 0.15s;
+}
+
+/* Marcado: caixa azul-escuro com o tique branco visível. */
+.hcheckbox input:checked + .hcheckbox-caixa {
+    background: var(--h-checkbox-marcado-fundo, var(--h-azul));
+    border-color: var(--h-checkbox-marcado-borda, var(--h-azul));
+}
+
+.hcheckbox input:checked + .hcheckbox-caixa svg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Foco por teclado: anel azul claro. */
+.hcheckbox input:focus-visible + .hcheckbox-caixa {
+    box-shadow: 0 0 0 3px var(--h-checkbox-foco, rgba(37, 99, 235, 0.25));
+}
+
+.hcheckbox-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--h-checkbox-texto, #6b7280);
+}
+
+.hcheckbox-disabled {
+    cursor: default;
+    opacity: 0.55;
+}
+
+.hcheckbox-readonly {
+    cursor: default;
+}
+
+.hcheckbox-readonly-icone {
+    width: 18px;
+    height: 18px;
+    margin-left: -4px;
+}
+
+/* ─────────────── HRadioButton ─────────────── */
+
+.hradio-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    user-select: none;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.hradio-button input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+}
+
+.hradio-button-marca {
+    width: 19px;
+    height: 19px;
+    display: grid;
+    place-items: center;
+    flex: 0 0 19px;
+    border: 1.5px solid var(--h-radio-borda, #b8c6d8);
+    border-radius: 50%;
+    background: var(--h-radio-fundo, #fff);
+}
+
+.hradio-button-marca::after {
+    width: 9px;
+    height: 9px;
+    border-radius: 50%;
+    background: var(--h-azul-medio);
+    content: "";
+    opacity: 0;
+}
+
+.hradio-button input:checked + .hradio-button-marca {
+    border-color: var(--h-azul-medio);
+}
+
+.hradio-button input:checked + .hradio-button-marca::after {
+    opacity: 1;
+}
+
+.hradio-button input:focus-visible + .hradio-button-marca {
+    box-shadow: 0 0 0 3px var(--h-radio-foco, rgba(37, 99, 235, 0.25));
+}
+
+.hradio-button-label {
+    color: var(--h-texto);
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.hradio-button-disabled {
+    cursor: default;
+    opacity: .55;
+}
+
+/* ─────────────── HGrid — menu de ações por linha (⋮) ─────────────── */
+/* Globais (não scoped) porque o RenderFragment <Acoes> é renderizado pelo HGrid.
+   Qualquer tela pode usar essas classes na coluna de ações. */
+
+.hgrid-acoes-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+/* ─── Botoes padrao do HGrid (Copiar + VER) — antes duplicados em cada tela.
+   Centralizados aqui pra padronizar altura/cores em todas as telas que usam
+   ColunaExtra (Copiar) e RowExpanded (botao VER do expander). ─── */
+
+/* Botao "Copiar" — usado via class="hgrid-btn-copiar" no slot ColunaExtra. */
+.hgrid-btn-copiar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 22px;
+    height: 22px;
+    background: #fff;
+    border: 1.5px solid #1976d2;
+    border-radius: 4px;
+    color: #1976d2;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+.hgrid-btn-copiar:hover { background: #e3f2fd; }
+.hgrid-btn-copiar svg {
+    width: 12px;
+    height: 12px;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 2;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+/* (Estilo do .hgrid-expander-btn movido pro HGrid.razor.css — scoped vence
+   por especificidade ([b-xxx]), entao manter aqui era CSS morto.) */
+
+.hgrid-acoes-btn {
+    width: 22px;
+    height: 22px;
+    border-radius: 4px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    color: #37547a;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background 0.15s, color 0.15s;
+}
+.hgrid-acoes-btn:hover { background: #e3eaf5; color: var(--h-azul); }
+.hgrid-acoes-btn svg {
+    width: 16px; height: 16px;
+    fill: none; stroke: currentColor;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+.hgrid-acoes-btn-aberto,
+.hgrid-acoes-btn-aberto:hover {
+    background: var(--h-azul);
+    color: #fff;
+}
+
+/* O JavaScript posiciona o menu na viewport. Assim ele escapa do overflow do grid
+   e escolhe automaticamente acima/abaixo e direita/esquerda. */
+.hgrid-acoes-dropdown {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 0;
+    visibility: hidden;
+    background: #fff;
+    border: 1px solid #d6e0ed;
+    border-radius: 10px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
+    min-width: 110px;
+    z-index: 1000;
+    padding: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-height: calc(100vh - 16px);
+    overflow-y: auto;
+}
+
+/* Header com X de fechar — pequena faixa acima dos botões de ação. */
+.hgrid-acoes-header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 2px 2px 4px;
+    border-bottom: 1px solid #f0f4f8;
+    margin-bottom: 2px;
+}
+
+.hgrid-acoes-fechar {
+    width: 22px;
+    height: 22px;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+    color: #c62828;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    transition: background 0.15s;
+}
+.hgrid-acoes-fechar:hover { background: #fef2f2; }
+.hgrid-acoes-fechar svg {
+    width: 14px; height: 14px;
+    fill: none; stroke: currentColor;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+/* Cada item do menu é um botão completo com a cor do tipo (igual HButton). */
+.hgrid-acoes-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+    height: 32px;
+    padding: 0 14px;
+    border: none;
+    border-radius: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.15s;
+    font-family: 'Segoe UI', sans-serif;
+    white-space: nowrap;
+}
+.hgrid-acoes-item:hover { transform: none; }
+.hgrid-acoes-item svg {
+    width: 14px; height: 14px;
+    flex-shrink: 0;
+    fill: none; stroke: currentColor;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.hgrid-acoes-item-excluir { background: linear-gradient(135deg, #fb8c00, #ef6c00); }
+.hgrid-acoes-item-pessoa { background: linear-gradient(135deg, #1e88e5, #1565c0); }
+
+/* ─────────────── HSenha — overlay de "definir/trocar senha" ─────────────── */
+/* Renderizado DENTRO do cadastro (não modal global). Permite trocar de aba
+   sem perder o estado da janela de senha. */
+
+.hsenha-overlay {
+    position: absolute;
+    inset: 0;
+    z-index: 20;
+    background: rgba(13, 71, 161, 0.35);
+}
+
+/* Posicionado no terço superior da aba (mais visível, não compete com a barra
+   de Cancelar/Salvar lá em cima). top:30% + translateY(-50%) deixa o CENTRO
+   do card em 30% da altura — visualmente "alto" sem encostar no topo. */
+.hsenha-card {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    border-radius: 14px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+    width: 480px;
+    max-width: calc(100% - 40px);
+    overflow: hidden;
+}
+
+.hsenha-barra {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px 14px;
+    border-bottom: 1px solid #e3eaf5;
+}
+
+.hsenha-titulo {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    flex: 1;
+    background-image: var(--h-degrade-h);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+}
+
+.hsenha-fechar {
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    border-radius: 8px;
+    background: transparent;
+    color: #c62828;
+    border: 1.5px solid transparent;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, border-color 0.15s;
+}
+.hsenha-fechar:hover { background: #fef2f2; border-color: #fecaca; }
+.hsenha-fechar svg {
+    width: 16px; height: 16px;
+    fill: none; stroke: currentColor;
+    stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
+}
+
+.hsenha-campos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;          /* centraliza os HInputs no painel */
+    gap: 16px;
+    padding: 26px 28px 26px;
+}
+
+/* Botões Cancelar/Confirmar — lado a lado, alinhados à direita.
+   padding-right 60px coincide com a borda direita do HInput Grande dentro do card 480px
+   (input 360px centralizado → termina em x=420). Cancelar fica imediatamente à esquerda do Confirmar. */
+.hsenha-acoes {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding: 22px 60px 24px;
+    border-top: 1px solid #eef3f9;
+}
+
+/* ───────────────────────── HGrid — Modo mobile (≤500px) ─────────────────────────
+   Transforma a tabela em CARDS verticais: cada <tr> vira bloco; cada <td> vira
+   linha "Label : Valor" usando data-label="@col.Titulo". Header some.
+   CSS NAO-scoped — atinge TODAS as instancias do HGrid (UsuarioPesquisa, NotificacoesPesquisa,
+   AtualizacoesBancoPesquisa, etc) sem precisar tocar em codigo Razor de cada tela. */
+@media (max-width: 500px) {
+
+    .hgrid-wrap { overflow-x: hidden; }
+    .hgrid-scroll { overflow-x: hidden; }
+    .hgrid {
+        display: block;
+        width: 100% !important;      /* sobrescreve width:max-content do desktop */
+        table-layout: auto;           /* desktop usa "fixed" — no mobile bagunça */
+    }
+
+    /* Esconde header da tabela (titulos da coluna) — substituidos pelos labels nas celulas */
+    .hgrid thead { display: none; }
+
+    /* colgroup nao tem efeito no display block mas garantimos */
+    .hgrid colgroup { display: none; }
+
+    .hgrid tbody { display: block; width: 100%; }
+
+    /* Cada linha vira "card". Fundo CINZA NEUTRO (#f5f6f8): essa cor é a
+       "faixa do painel de botões" no topo. Os td[data-label] depois têm
+       background:#fff que cobre essa cor, restando cinza só onde os td-botões
+       ocupam (faixa contínua na 1ª linha do flex, estendida até borda direita). */
+    .hgrid tbody tr {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: stretch;
+        gap: 0;
+        width: 100%;
+        box-sizing: border-box;   /* sem isso, width:100% + border:1px estoura 2px e a borda direita e cortada pelo overflow do .h-base-pesquisa pai */
+        margin: 0 0 4px;
+        padding: 0;
+        background: #f5f6f8;
+        background-clip: padding-box;
+        border: 1px solid #d8e2f0;
+        border-radius: 6px;
+        overflow: hidden;
+        height: auto !important;
+    }
+
+    /* Linha "vazio" vira card simples — anula o display:flex + background cinza
+       + border-right/bottom dos td que vinha herdado da regra geral de card.
+       box-sizing herdado da regra geral acima (border-box) — sem ele a borda
+       direita seria cortada pelo overflow:hidden do .h-base-pesquisa. */
+    .hgrid tbody tr.hgrid-vazio {
+        display: block;
+        text-align: center;
+        padding: 20px;
+        background: #fff;
+        border: 1px solid #d8e2f0;
+        border-radius: 6px;
+    }
+    .hgrid tbody tr.hgrid-vazio td {
+        display: block;
+        text-align: center;
+        padding: 0;
+        border: none !important;
+        max-width: none !important;
+        white-space: normal !important;
+        overflow: visible !important;
+        color: var(--h-cinza-texto);
+    }
+
+    /* Cada celula com data-label vira linha: label à esquerda + valor à direita,
+       lado a lado. align-items: baseline pra alinhar a base do texto.
+       !important nas larguras pra sobrescrever o style="width:Xpx" INLINE
+       que o Razor coloca pra cada coluna. padding lateral aqui (o <tr> tem 0). */
+    .hgrid tbody tr > td[data-label] {
+        display: flex !important;
+        align-items: baseline;
+        gap: 4px;
+        width: 100% !important;
+        max-width: none !important;
+        padding: 4px 6px;
+        background: #fff;
+        border-bottom: none;
+        text-align: left !important;
+        white-space: normal;
+        overflow: visible;
+        overflow-wrap: anywhere;
+        height: auto;
+        font-size: 13px;
+        color: var(--h-azul-escuro);
+        font-weight: 500;
+    }
+    .hgrid tbody tr > td[data-label]:last-child { border-bottom: none; }
+
+    /* Label vem do atributo data-label. Largura fixa pra alinhar
+       verticalmente os valores entre todas as linhas do card. */
+    .hgrid tbody tr > td[data-label]::before {
+        content: attr(data-label);
+        color: var(--h-cinza-texto);
+        font-weight: 600;
+        font-size: 10.5px;
+        text-transform: uppercase;
+        letter-spacing: 0.3px;
+        flex-shrink: 0;
+        width: 70px;
+    }
+
+    /* Colunas SEM data-label (acoes, expander, extra) viram BARRA superior do card.
+       max-width:none e overflow:visible anulam o "max-width:0; overflow:hidden" da
+       regra desktop (.hgrid tbody td) — sem isso o td recorta a borda lateral do
+       botao VER e ate a letra V. PADDING e tratado no HGrid.razor.css (regra
+       scoped, especificidade maior) — nao adianta colocar aqui. */
+    .hgrid tbody tr > td.hgrid-col-acoes,
+    .hgrid tbody tr > td.hgrid-col-expander,
+    .hgrid tbody tr > td.hgrid-col-extra {
+        max-width: none !important;
+        background: transparent;
+        border: none !important;
+        margin: 0;
+        float: none;
+        overflow: visible !important;
+    }
+
+    /* Botão "Copiar" do ColunaExtra + botão ≡ de Ações — 22x22 no mobile
+       (sintoniza altura com o VER, evita o botão de ações ficar enorme
+       cobrindo a faixa amarela na tela Usuários e outras com AceitaDeletar).
+       Para o ≡ usa .hgrid-acoes-btn (botao de abrir menu) — NAO afeta os
+       buttons internos do dropdown (X de fechar, Excluir). */
+    .hgrid tbody tr > td.hgrid-col-extra button,
+    .hgrid tbody tr > td.hgrid-col-acoes .hgrid-acoes-btn {
+        width: 22px !important;
+        height: 22px !important;
+    }
+    .hgrid tbody tr > td.hgrid-col-extra button svg,
+    .hgrid tbody tr > td.hgrid-col-acoes .hgrid-acoes-btn svg {
+        width: 16px !important;
+        height: 16px !important;
+    }
+    /* Botao ≡ ganha "envelope branco" (border azul + fundo branco) igual o
+       Copiar/VER. Sem isso ele fica solto no amarelo do card selecionado.
+       Aplica SO no .hgrid-acoes-btn — buttons internos do dropdown ficam
+       com seu estilo proprio. */
+    .hgrid tbody tr > td.hgrid-col-acoes .hgrid-acoes-btn {
+        border: 1.5px solid #1976d2 !important;
+        background: var(--h-botao-compacto-fundo,#fff) !important;
+        color: #1976d2 !important;
+        border-radius: 8px !important;
+    }
+    /* Anula o background scoped desktop do td.hgrid-col-acoes selecionado
+       que criava um halo em volta do botão. */
+    .hgrid tbody tr > td.hgrid-col-acoes,
+    .hgrid tbody tr.hgrid-sel > td.hgrid-col-acoes,
+    .hgrid tbody tr.hgrid-msel > td.hgrid-col-acoes {
+        background: transparent !important;
+    }
+
+    /* Seleção (single ou multi) usa o token global de seleção.
+       Labels (QUANDO/TIPO/etc) viram laranja.
+       !important pra vencer a regra scoped (com [b-xxx]) do HGrid.razor.css
+       desktop que e mais especifica. */
+    .hgrid tbody tr.hgrid-sel,
+    .hgrid tbody tr.hgrid-msel {
+        background: var(--h-amarelo-selecao) !important;
+    }
+    .hgrid tbody tr.hgrid-sel > td[data-label],
+    .hgrid tbody tr.hgrid-msel > td[data-label] {
+        background: var(--h-amarelo-selecao);
+    }
+    .hgrid tbody tr.hgrid-sel > td[data-label]::before,
+    .hgrid tbody tr.hgrid-msel > td[data-label]::before {
+        color: var(--h-laranja);
+    }
+
+    /* Linha de detalhe expandido — ocupa card inteiro. max-width/overflow anulam
+       o "max-width:0; overflow:hidden" da regra desktop (.hgrid tbody td) que
+       no mobile escondia todo o conteudo do detalhe. width/flex forcam o td a
+       ocupar a linha toda do flex container do <tr>. */
+    .hgrid tbody tr.hgrid-linha-detalhe { padding: 0; }
+    .hgrid tbody tr.hgrid-linha-detalhe > td {
+        padding: 8px;
+        border-bottom: none;
+        max-width: none !important;
+        overflow: visible !important;
+        width: 100% !important;
+        flex: 1 1 100%;
+    }
+
+    /* Sem ponteiros de resize/cursor no mobile */
+    .hgrid-col-resize-handle { display: none; }
+
+    /* Foco de celula (halo amarelo) some no mobile — sem navegacao por colunas */
+    .hgrid-cel-focada { box-shadow: none !important; }
+}
+
+/* Apresentações extraídas da navegação, pesquisa e abas do ERP.NET. */
+.hbutton.hbutton-navegacao,.hbutton.hbutton-lista,.hbutton.hbutton-aba {
+    box-sizing: border-box; margin: 0; min-width: 0; height: auto; min-height: 36px;
+    display: flex; align-items: center; justify-content: flex-start; text-align: left;
+    font-family: 'Segoe UI', sans-serif; line-height: 1.4; letter-spacing: normal;
+    box-shadow: none; transform: none;
+}
+.hbutton.hbutton-navegacao {
+    width: 100%; gap: 10px; padding: 9px 14px; border: 0; border-left: 3px solid transparent;
+    border-radius: 0; color: var(--h-navegacao-texto,#e3f2fd); background: var(--h-navegacao-fundo,transparent);
+    font-size: 13.5px; font-weight: 400;
+}
+.hbutton.hbutton-navegacao:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) {
+    background: var(--h-navegacao-hover,rgba(255,255,255,.10)); color: var(--h-navegacao-texto-hover,#fff);
+}
+.hbutton.hbutton-navegacao.hbutton-selecionado {
+    background: var(--h-navegacao-selecionado,linear-gradient(90deg,rgba(255,209,128,.28),rgba(255,209,128,0)));
+    color: var(--h-navegacao-texto-selecionado,#fff); font-weight: 700;
+    border-left-color: var(--h-navegacao-borda-selecionado,#ffb74d);
+}
+.hbutton.hbutton-lista {
+    width: 100%; gap: 10px; padding: 8px 14px; border: 0; border-radius: 0;
+    color: var(--h-texto,#0d47a1); background: var(--h-lista-fundo,#fff);
+    font-size: 13px; font-weight: 600; white-space: normal;
+}
+.hbutton.hbutton-lista:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled),.hbutton.hbutton-lista.hbutton-selecionado {
+    background: var(--h-lista-selecionado,var(--h-azul-hover,#e3f2fd));
+}
+.hbutton.hbutton-aba {
+    width: auto; gap: 8px; padding: 8px 10px 8px 18px; border: 1px solid var(--h-aba-borda,#d6e0ed);
+    border-bottom: none; border-radius: 8px 8px 0 0; font-size: 13px; font-weight: 400;
+    color: var(--h-azul-escuro); background: var(--h-aba-fundo,#fff); white-space: nowrap;
+}
+.hbutton.hbutton-aba:hover:where(:not(.hbutton-cores-estaveis)):not(:disabled) { background: var(--h-aba-hover,#dbeafe); }
+.hbutton.hbutton-aba.hbutton-selecionado {
+    background: var(--h-aba-selecionada,var(--h-azul,#42a5f5)); color: var(--h-aba-texto-selecionada,#fff);
+    font-weight: 600; border-color: transparent; margin-bottom: -1px;
+}
+.hbutton > svg:not(.hbutton-ico),.hbutton > .h-icone { width: 16px; height: 16px; flex-shrink: 0; }
+.h-ui-aplicativo .hbutton > svg:not(.hbutton-ico) { fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.hbutton.hbutton-navegacao > svg,.hbutton.hbutton-navegacao > .h-icone { width: 18px; height: 18px; flex-shrink: 0; }
+.hbutton.hbutton-lista > svg,.hbutton.hbutton-lista > .h-icone { width: 14px; height: 14px; flex-shrink: 0; }
+.hbutton.hbutton-navegacao:focus,.hbutton.hbutton-lista:focus,.hbutton.hbutton-aba:focus {
+    box-shadow: inset 0 0 0 2px var(--h-foco-cor,#fdd835);
+}
+.hbutton.hbutton-aba:focus:not(:focus-visible) {
+    box-shadow: none;
+}
+
+.hconfirma-sem-animacao,.hconfirma-sem-animacao::backdrop,.hconfirma-sem-animacao .hconfirma,.hconfirma-sem-animacao .hconfirma-icone svg { animation: none; }
+.hconfirma-sem-animacao .hconfirma-btn { transition: none; transform: none; }
+.hconfirma-sem-animacao .hconfirma { max-height: calc(100dvh - 32px); overflow-y: auto; }
+.hconfirma-sem-animacao .hconfirma-titulo,.hconfirma-sem-animacao .hconfirma-mensagem { overflow-wrap: anywhere; }
+@media(max-width:500px) { .hconfirma-sem-animacao .hconfirma-barra { margin-left: -20px; margin-right: -20px; width: calc(100% + 40px); } }
+
+@media (max-width: 700px) {
+    .hbutton.hbutton-navegacao { flex-shrink: 0; width: auto; min-height: 0; padding: 6px 12px; border-left: 0; border-radius: 16px; font-size: 12.5px; background: var(--h-navegacao-mobile-fundo,rgba(255,255,255,.10)); }
+    .hbutton.hbutton-navegacao.hbutton-selecionado { border-left: 0; background: var(--h-navegacao-mobile-selecionado,rgba(255,209,128,.30)); }
+}
+
+.hinput.hinput-validacao .hinput-field { transition: none; }
+.hinput.hinput-validacao .hinput-field.hinput-focused,
+.hinput.hinput-validacao .hinput-field.hinput-focused:focus-within,
+.hinput.hinput-validacao .hinput-field:focus-within { box-shadow: none; outline: none; }
+.hinput.hinput-validacao .hinput-field.hinput-invalido,
+.hinput.hinput-validacao .hinput-field.hinput-invalido:focus-within {
+    border-color: var(--h-validacao-texto, #a4262c);
+    box-shadow: none;
+    outline: none;
+    animation: none;
+}
+.hinput.hinput-validacao .hinput-field.hinput-invalido label { color: var(--h-validacao-texto, #a4262c); }

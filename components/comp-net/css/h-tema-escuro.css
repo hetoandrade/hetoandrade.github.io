@@ -1,0 +1,285 @@
+/* Tema opcional. A identidade e as substituições de paleta pertencem ao aplicativo. */
+.h-ui-aplicativo.h-tema-escuro {
+    color-scheme: dark;
+    --h-azul-hover:var(--h-tema-selecao,color-mix(in srgb,var(--h-identidade,var(--h-azul)) 18%,var(--h-superficie)));
+    --h-superficie: var(--h-tema-superficie,#1b2333);
+    --h-superficie-suave: var(--h-tema-superficie-suave,#2a3547);
+    --h-tema-destaque: color-mix(in srgb,var(--h-identidade,var(--h-azul)) 50%,#eaeef4);
+    --h-texto: var(--h-tema-texto,#eaeef4);
+    --h-cinza-texto: var(--h-tema-texto-secundario,#bcc6d4);
+    --h-cinza-borda: var(--h-tema-borda,#53627a);
+    --h-editor-fundo: var(--h-superficie);
+    --h-editor-borda: var(--h-cinza-borda);
+    --h-editor-texto: var(--h-texto);
+    --h-painel-fundo: var(--h-superficie);
+    --h-painel-borda: var(--h-cinza-borda);
+    --h-painel-cabecalho: var(--h-azul-hover);
+    --h-painel-titulo: var(--h-tema-destaque);
+    --h-botao-cancelar-fundo: var(--h-superficie-suave);
+    --h-botao-cancelar-texto: var(--h-texto);
+    --h-botao-cancelar-borda: var(--h-cinza-borda);
+    --h-botao-acaoincolor-fundo: var(--h-superficie-suave);
+    --h-botao-acaoincolor-texto: var(--h-texto);
+    --h-botao-acaoincolor-borda: var(--h-cinza-borda);
+    --h-botao-multi-fundo: var(--h-superficie-suave);
+    --h-amarelo-selecao: var(--h-azul-hover);
+    --h-perigo-texto: #ffaaaa;
+    --h-perigo-fundo: #432b35;
+    --h-aviso-texto: #e6bd6a;
+    --h-aviso-fundo: #3a2d13;
+    --hgrid-vazio-titulo-cor: var(--h-texto);
+    --hgrid-vazio-descricao-cor: var(--h-cinza-texto);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.h-base-pesquisa,.h-base-pesquisa-cabecalho,.h-base-pesquisa-painel,.hbc-tela,.hbc-conteudo,.hbc-body,.hbc-barra,.hgrid-wrap,.hgrid-scroll,.hgrid-acoes-dropdown,.hgrid-acoes-header,.hgrid-organizar,.hgrid-col-menu,.hgrid-barra-filtros,.hgrid-barra-chip,.hgrid-linha-detalhe,.hgrid-detalhe-painel,.hbuscar-dropdown,.hcombo-dropdown,.hcombo-popup,.hcombobox-dropdown,.hcombomulti-todos,.h-seletor-icones,.hconfirma,.hconfirma-itens,.h-painel-entrada,.hpe-acesso,.hpe-conteudo,.h-dialog-conteudo) {
+    background: var(--h-superficie);
+    color: var(--h-texto);
+    border-color: var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hgrid th,.hgrid td,.hgrid thead th.hgrid-col-acoes,.hgrid tbody td.hgrid-col-acoes,.hgrid tbody tr td.hgrid-col-fixa) {
+    background: var(--h-superficie);
+    color: var(--h-texto);
+    border-color: var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hgrid thead th { background: var(--h-superficie-suave); }
+.h-ui-aplicativo.h-tema-escuro .hgrid tbody tr:is(:hover,.hgrid-msel) td { background: var(--h-azul-hover); }
+.h-ui-aplicativo.h-tema-escuro :is(.hinput-field,.hinput-readonly-field,.hcombo-field,.hbuscar-field,.hpsimples-claro input,.h-pesquisar-simples,.hcombomulti-check) {
+    background: var(--h-superficie);
+    color: var(--h-texto);
+    border-color: var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hinput-field,.hcombo-field,.hbuscar-field,.h-pesquisar-simples) :is(input,textarea) {
+    color: var(--h-texto);
+    background: transparent;
+    border: 0;
+    outline: none;
+    box-shadow: none;
+}
+.h-ui-aplicativo.h-tema-escuro :is(input,textarea)::placeholder { color: var(--h-cinza-texto); opacity: 1; }
+.h-ui-aplicativo.h-tema-escuro :is(.hinput-field,.hcombo-field,.hbuscar-field) label { background: var(--h-superficie); color: var(--h-cinza-texto); }
+.h-ui-aplicativo.h-tema-escuro :is(.hinput-field,.hcombo-field,.hbuscar-field):focus-within { border-color: var(--h-tema-destaque); }
+.h-ui-aplicativo.h-tema-escuro :is(.hinput-field.hinput-invalido,.hinput-field.hinput-invalido:focus-within) { border-color: var(--h-validacao-erro,#ffaaaa); }
+.h-ui-aplicativo.h-tema-escuro .hinput-field.hinput-invalido label { color: var(--h-validacao-erro,#ffaaaa); }
+.h-ui-aplicativo.h-tema-escuro :is(.hbuscar-item,.hbuscar-item-nome,.hgrid-vazio-titulo,.hconfirma-titulo,.hconfirma-destaque) { color: var(--h-texto); }
+.h-ui-aplicativo.h-tema-escuro :is(.hbuscar-item,.hcombomulti-todos):hover { background: var(--h-azul-hover); }
+.h-ui-aplicativo.h-tema-escuro :is(.hgrid-vazio-descricao,.hconfirma-mensagem,.hdata-calendario,.hbc-barra-titulo) { color: var(--h-cinza-texto); }
+.h-ui-aplicativo.h-tema-escuro .hbutton:is(.hbutton-cancelar,.hbutton-acaoincolor,.hbutton-multi,.hbutton-inativar,.hbutton-compacto,.hbutton-paginacao,.hbutton-filtro,.hbutton-resultadosmais,.hbutton-chamada,.hbutton-entradasecundario,.hbutton-com-contorno,.hbutton-compositor,.hbutton-compositorclassico,.hbutton-dialogorodape) {
+    background: var(--h-superficie-suave);
+    color: var(--h-texto);
+    border-color: var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton:is(.hbutton-cancelar,.hbutton-acaoincolor,.hbutton-multi,.hbutton-inativar,.hbutton-compacto,.hbutton-dialogorodape):hover:where(:not(:disabled)) {
+    background: var(--h-tema-hover,var(--h-azul-hover));
+    border-color: var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao.hbutton-dialogorodape:is(.hbutton-tipo-salvar,.hbutton-acao) {
+    background: var(--h-botao-entrada-fundo,var(--h-degrade));
+    color: var(--h-botao-entrada-texto,#eaeef4);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hconfirma-btn-cancelar,.hconfirma-btn-cancelar:hover) { background: var(--h-superficie-suave); color: var(--h-texto); border-color: var(--h-cinza-borda); }
+.h-ui-aplicativo.h-tema-escuro :is(.hma-cores-por-acao .hma-icon,.hma-anexos .hma-icon,.hma-opcoes .hma-icon) { background: var(--h-superficie-suave); color: var(--h-tema-destaque); }
+.h-ui-aplicativo.h-tema-escuro :is(.hma-anexos .hma-item,.hma-opcoes .hma-item) { border-color: var(--h-cinza-borda); }
+.h-ui-aplicativo.h-tema-escuro .hgrid-expander-btn { background: var(--h-superficie-suave) !important; color: var(--h-texto) !important; border-color: var(--h-cinza-borda) !important; }
+.h-ui-aplicativo.h-tema-escuro {
+    --h-botao-compacto-fundo:var(--h-superficie-suave);
+    --h-botao-compacto-hover-fundo:var(--h-tema-hover,var(--h-azul-hover));
+    --h-lista-selecionado:var(--h-azul-hover);
+}
+.h-ui-aplicativo.h-tema-escuro .hbc-sidebar { background:var(--h-superficie-suave); color:var(--h-texto); border-color:var(--h-cinza-borda); }
+.h-ui-aplicativo.h-tema-escuro {
+    --h-cor-fundo:var(--h-superficie);
+    --h-badge-info-fundo:var(--h-azul-hover);
+    --h-badge-info-texto:var(--h-tema-destaque);
+    --h-badge-ok-fundo:#253a32;
+    --h-badge-ok-texto:#98d5b0;
+    --h-badge-aviso-fundo:#3a2d13;
+    --h-badge-aviso-texto:#e6bd6a;
+    --h-badge-erro-fundo:#432b35;
+    --h-badge-erro-texto:#ffaaaa;
+    --h-badge-neutro-fundo:var(--h-superficie-suave);
+    --h-badge-neutro-texto:var(--h-cinza-texto);
+    --h-previa-link-fundo:var(--h-superficie-suave);
+    --h-previa-link-hover:var(--h-azul-hover);
+    --h-previa-link-miniatura:var(--h-superficie);
+    --h-previa-link-dominio:var(--h-cinza-texto);
+    --h-previa-link-descricao:var(--h-cinza-texto);
+    --h-previa-link-github-fundo:var(--h-superficie);
+    --h-previa-link-github-borda:var(--h-cinza-borda);
+    --h-previa-link-vazio:var(--h-cinza-texto);
+    --h-lista-usuarios-fundo:var(--h-superficie);
+    --h-lista-usuarios-texto:var(--h-texto);
+    --h-lista-usuarios-borda:var(--h-cinza-borda);
+    --h-lista-usuarios-destaque:var(--h-tema-destaque);
+    --h-lista-usuarios-divisoria:var(--h-cinza-borda);
+    --hhint-cabecalho-fundo:var(--h-azul-hover);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.habas-conteudo,.h-editor-mensagem.h-editor-chat,.h-editor-mencoes,.h-lista-usuarios,.h-lista-usuarios-cabecalho,.h-previa-documento) { background:var(--h-superficie); color:var(--h-texto); border-color:var(--h-cinza-borda); }
+.h-ui-aplicativo.h-tema-escuro .h-editor-mensagem textarea { background:transparent; color:var(--h-texto); }
+.h-ui-aplicativo.h-tema-escuro .h-previa-link-github .h-previa-link-github-icone { color:var(--h-texto); }
+.h-ui-aplicativo.h-tema-escuro .h-video-lateral .hbutton { background:var(--h-superficie-suave); color:var(--h-tema-destaque); }
+.h-ui-aplicativo.h-tema-escuro .h-painel-aviso { --hpa-cor:var(--h-tema-destaque); --hpa-fundo:var(--h-azul-hover); --hpa-borda:var(--h-cinza-borda); color:var(--h-texto); }
+.h-ui-aplicativo.h-tema-escuro .h-painel-aviso.hpa-aviso { --hpa-cor:#e6bd6a; --hpa-fundo:#3a2d13; }
+.h-ui-aplicativo.h-tema-escuro .h-painel-aviso.hpa-erro { --hpa-cor:#ffaaaa; --hpa-fundo:#432b35; }
+.h-ui-aplicativo.h-tema-escuro .h-painel-aviso.hpa-sucesso { --hpa-cor:#98d5b0; --hpa-fundo:#253a32; }
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao:is(.hbutton-compositor,.hbutton-compositorclassico).hbutton-tipo-enviar { background:var(--h-tema-acao-fundo,var(--h-degrade)); color:var(--h-texto); }
+.h-ui-aplicativo.h-tema-escuro {
+    --h-painel-0-body:var(--h-superficie); --h-painel-0-fundo:var(--h-azul-hover); --h-painel-0-borda:var(--h-cinza-borda); --h-painel-0-titulo:var(--h-tema-destaque); --h-painel-0-icone:var(--h-tema-destaque);
+    --h-painel-1-body:var(--h-superficie); --h-painel-1-fundo:var(--h-azul-hover); --h-painel-1-borda:var(--h-cinza-borda); --h-painel-1-titulo:var(--h-tema-destaque); --h-painel-1-icone:var(--h-tema-destaque);
+    --h-painel-2-body:var(--h-superficie); --h-painel-2-fundo:var(--h-azul-hover); --h-painel-2-borda:var(--h-cinza-borda); --h-painel-2-titulo:var(--h-tema-destaque); --h-painel-2-icone:var(--h-tema-destaque);
+    --h-painel-3-body:var(--h-superficie); --h-painel-3-fundo:var(--h-azul-hover); --h-painel-3-borda:var(--h-cinza-borda); --h-painel-3-titulo:var(--h-tema-destaque); --h-painel-3-icone:var(--h-tema-destaque);
+    --h-painel-4-body:var(--h-superficie); --h-painel-4-fundo:var(--h-azul-hover); --h-painel-4-borda:var(--h-cinza-borda); --h-painel-4-titulo:var(--h-tema-destaque); --h-painel-4-icone:var(--h-tema-destaque);
+    --h-painel-5-body:var(--h-superficie); --h-painel-5-fundo:var(--h-azul-hover); --h-painel-5-borda:var(--h-cinza-borda); --h-painel-5-titulo:var(--h-tema-destaque); --h-painel-5-icone:var(--h-tema-destaque);
+    --h-painel-6-body:var(--h-superficie); --h-painel-6-fundo:var(--h-azul-hover); --h-painel-6-borda:var(--h-cinza-borda); --h-painel-6-titulo:var(--h-tema-destaque); --h-painel-6-icone:var(--h-tema-destaque);
+    --h-painel-7-body:var(--h-superficie); --h-painel-7-fundo:var(--h-azul-hover); --h-painel-7-borda:var(--h-cinza-borda); --h-painel-7-titulo:var(--h-tema-destaque); --h-painel-7-icone:var(--h-tema-destaque);
+}
+.h-ui-aplicativo.h-tema-escuro {
+    --h-lista-fundo:var(--h-superficie);
+    --h-texto-secundario:var(--h-cinza-texto);
+    --h-cor-perigo:var(--h-perigo-texto);
+    --h-validacao-cor:var(--h-perigo-texto);
+    --h-radio-fundo:var(--h-superficie-suave);
+    --h-radio-borda:var(--h-cinza-borda);
+    --h-radio-foco:color-mix(in srgb,var(--h-tema-destaque) 30%,transparent);
+    --h-checkbox-fundo:var(--h-superficie-suave);
+    --h-checkbox-borda:var(--h-cinza-borda);
+    --h-checkbox-texto:var(--h-texto);
+    --h-checkbox-marcado-fundo:var(--h-tema-acao-fundo,var(--h-degrade));
+    --h-checkbox-marcado-borda:var(--h-tema-destaque);
+    --h-checkbox-marca:var(--h-tema-acao-texto,#eaeef4);
+    --h-checkbox-foco:var(--h-radio-foco);
+    --hhint-fundo:var(--h-superficie);
+    --hhint-texto:var(--h-texto);
+    --hhint-borda:var(--h-cinza-borda);
+    --h-acao-compacta:var(--h-tema-destaque);
+    --h-acao-compacta-ativa:var(--h-texto);
+    --h-acao-compacta-hover:var(--h-superficie-suave);
+    --h-item-acao-hover:var(--h-superficie-suave);
+    --h-aba-fundo:var(--h-superficie-suave);
+    --h-aba-selecionada:var(--h-tema-acao-fundo,var(--h-degrade));
+    --h-aba-texto-selecionada:var(--h-tema-acao-texto,#eaeef4);
+    --h-confirmacao-info-botao:var(--h-tema-acao-fundo,var(--h-degrade));
+    --h-confirmacao-ok-botao:#253a32;
+    --h-confirmacao-aviso-botao:var(--h-aviso-fundo);
+    --h-confirmacao-erro-botao:var(--h-perigo-fundo);
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao:is(.hbutton-chat.hbutton-tipo-cancelar,.hbutton-dialogofechar,.hbutton-dialogofecharcompacto,.hbutton-entradasecundario,.hbutton-entradasecundarioclassico,.hbutton-informacaorodape) {
+    background:var(--h-superficie-suave);
+    color:var(--h-texto);
+    border-color:var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao:is(.hbutton-chat.hbutton-tipo-cancelar,.hbutton-dialogofechar,.hbutton-dialogofecharcompacto,.hbutton-entradasecundario,.hbutton-entradasecundarioclassico,.hbutton-informacaorodape):hover:where(:not(:disabled)) {
+    background:var(--h-tema-hover,var(--h-azul-hover));
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao.hbutton-chat:not(.hbutton-tipo-cancelar,.hbutton-tipo-excluir,.hbutton-tipo-inativar),
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao.hbutton-dialogorodape:is(.hbutton-tipo-salvar,.hbutton-acao),
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao:is(.hbutton-entrada,.hbutton-entradaprimario,.hbutton-entradaprimariocompacto) {
+    background:var(--h-tema-acao-fundo,var(--h-botao-entrada-fundo,var(--h-degrade)));
+    color:var(--h-tema-acao-texto,#eaeef4);
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao:is(.hbutton-chat,.hbutton-dialogorodape).hbutton-tipo-excluir {
+    background:var(--h-perigo-fundo);
+    color:var(--h-perigo-texto);
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao:is(.hbutton-compositor,.hbutton-compositorclassico).hbutton-selecionado {
+    background:var(--h-azul-hover);
+    color:var(--h-tema-destaque);
+    border-color:var(--h-tema-destaque);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hmemo-field,.hma-panel,.hcombomulti-dropdown,.hcombomulti-tags,.hcal,.hhint-balao) {
+    background:var(--h-superficie);
+    color:var(--h-texto);
+    border-color:var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hmemo-field textarea {
+    background:transparent;
+    color:var(--h-texto);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.h-lista-checklist small,.h-concluido label) { color:var(--h-cinza-texto); }
+.h-ui-aplicativo.h-tema-escuro .h-texto-mensagem blockquote {
+    color:var(--h-cinza-texto);
+    border-left-color:var(--h-tema-destaque);
+}
+.h-ui-aplicativo.h-tema-escuro .h-texto-mensagem a { color:var(--h-tema-destaque); }
+.h-ui-aplicativo.h-tema-escuro :is(.h-texto-mensagem code,.h-texto-codigo pre) {
+    background:var(--h-superficie-suave);
+    color:var(--h-texto);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hcal-header,.hcal-dias-header,.hcal-footer) {
+    background:var(--h-superficie-suave);
+    color:var(--h-texto);
+    border-color:var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hcal-dia,.hcal-mes,.hcal-ano,.hcal-btn-aux) {
+    background:var(--h-superficie);
+    color:var(--h-texto);
+    border-color:var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hcal-dia,.hcal-mes,.hcal-ano,.hcal-btn-aux):hover {
+    background:var(--h-azul-hover);
+    border-color:var(--h-tema-destaque);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hcal-dia-nome,.hcal-titulo) { color:var(--h-tema-destaque); }
+.h-ui-aplicativo.h-tema-escuro :is(.hcal-nav-label,.hcal-dia-fora,.hcal-ano-fora,.hcal-btn-fechar) { color:var(--h-cinza-texto); }
+.h-ui-aplicativo.h-tema-escuro .hcal-dia-nome-dom { color:var(--h-perigo-texto); }
+.h-ui-aplicativo.h-tema-escuro :is(.hcal-dia-selecionado,.hcal-mes-selecionado,.hcal-ano-selecionado,.hcal-btn-aux-ativo),
+.h-ui-aplicativo.h-tema-escuro :is(.hcal-dia-selecionado,.hcal-mes-selecionado,.hcal-ano-selecionado,.hcal-btn-aux-ativo):hover,
+.h-ui-aplicativo.h-tema-escuro .hcal-embutido-dias .hcal-embutido-dia[aria-pressed=true],
+.h-ui-aplicativo.h-tema-escuro .h-agenda-cabecalho .h-agenda-dia-selecionado {
+    background:var(--h-tema-acao-fundo,var(--h-degrade));
+    color:var(--h-tema-acao-texto,#eaeef4);
+    border-color:var(--h-tema-destaque);
+}
+.h-ui-aplicativo.h-tema-escuro .hcal-btn-fechar:hover {
+    background:var(--h-perigo-fundo);
+    color:var(--h-perigo-texto);
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hsessao-card,.hsessao-card-icone) {
+    background:var(--h-superficie-suave);
+    color:var(--h-texto);
+    border-color:var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hsessao-card-aqui {
+    background:#253a32;
+    border-color:#527463;
+}
+.h-ui-aplicativo.h-tema-escuro .hsessao-card-outro {
+    background:var(--h-aviso-fundo);
+    border-color:#8d7548;
+}
+.h-ui-aplicativo.h-tema-escuro :is(.hsessao-card-nome,.hsessao-card-rotulo,.hsessao-card-versao) { color:var(--h-texto); }
+.h-ui-aplicativo.h-tema-escuro :is(.hsessao-card-linha,.hsessao-card-atividade) { color:var(--h-cinza-texto); }
+.h-ui-aplicativo.h-tema-escuro :is(.hsessao-card-tempo,.hsessao-flag-novo) { color:var(--h-aviso-texto); }
+.h-ui-aplicativo.h-tema-escuro :is(.hsessao-card-aqui .hsessao-card-tempo,.hsessao-flag-conhecido) { color:#98d5b0; }
+.h-ui-aplicativo.h-tema-escuro .hsessao-flag-conhecido { background:#253a32; border-color:#527463; }
+.h-ui-aplicativo.h-tema-escuro .hsessao-flag-novo { background:var(--h-aviso-fundo); border-color:#8d7548; }
+.h-ui-aplicativo.h-tema-escuro .hhint-balao::after {
+    background:var(--h-superficie);
+    border-color:var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hbutton.hbutton-apresentacao.hbutton-selecao.hbutton-sucesso {
+    background:rgba(255,255,255,.13);
+    color:var(--h-texto);
+}
+.h-ui-aplicativo.h-tema-escuro .hdata-chip-hoje:hover {
+    background:var(--h-tema-acao-fundo,var(--h-degrade));
+    color:var(--h-tema-acao-texto,#eaeef4);
+}
+.h-ui-aplicativo.h-tema-escuro .hinput.hinput-dialogo .hinput-field {
+    background:var(--h-superficie);
+    border-color:var(--h-cinza-borda);
+}
+.h-ui-aplicativo.h-tema-escuro .hinput.hinput-dialogo .hinput-field:focus-within,
+.h-ui-aplicativo.h-tema-escuro .hinput.hinput-dialogo .hinput-field.hinput-focused { border-color:var(--h-tema-destaque); }
+.h-ui-aplicativo.h-tema-escuro .hinput.hinput-dialogo .hinput-field.hinput-invalido,
+.h-ui-aplicativo.h-tema-escuro .hinput.hinput-dialogo .hinput-field.hinput-invalido:focus-within { border-color:var(--h-validacao-erro,#ffaaaa); }
+.h-ui-aplicativo.h-tema-escuro :is(.hcombomulti-item-sel,.hcombomulti-todos-marcado) .hcombomulti-check {
+    background:var(--h-tema-acao-fundo,var(--h-degrade));
+    color:var(--h-tema-acao-texto,#eaeef4);
+    border-color:var(--h-tema-destaque);
+}
+.h-ui-aplicativo.h-tema-escuro .hcombomulti-todos-parcial .hcombomulti-check {
+    background:var(--h-superficie-suave);
+    color:var(--h-tema-destaque);
+    border-color:var(--h-tema-destaque);
+}
+.h-ui-aplicativo.h-tema-escuro .hcombomulti-todos-contador { color:var(--h-cinza-texto); }
+.h-ui-aplicativo.h-tema-escuro .h-audio-erro { color:var(--h-perigo-texto); }

@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1301",
-  "dataPublicacao": "2026-11-14T22:53:35.0345650Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.1301/OfficeCerto_Setup_v1.11.1301.exe",
-  "sha256Instalador": "00D7B58C89AD209CA40E750BC1C7906BCDE39C916A04D37E5DC4BF9A51C9E74B",
-  "changelog": "Abre a primeira janela no Home e recupera os rascunhos sob demanda."
+  "version": "1.11.1601",
+  "dataPublicacao": "2026-11-16T20:04:27.2034541Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.1601/OfficeCerto_Setup_v1.11.1601.exe",
+  "sha256Instalador": "38BC467973D0611F33A9E2550A1B232166A1889A1E79EEDB96A99E80D42B7178",
+  "changelog": "Esta versão salva o rascunho do Writer mesmo quando a visualização falha e mantém o aviso de fechamento em um monitor visível."
 }

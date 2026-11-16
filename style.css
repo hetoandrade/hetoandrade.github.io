@@ -205,6 +205,7 @@ body::before {
 }
 
 .logo {
+  border-radius: 8px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -261,6 +262,12 @@ body::before {
 }
 .nav-item:hover { background: rgba(255,255,255,0.05); color: white; }
 .nav-item.active { background: var(--accent-glow); color: var(--accent-light); }
+
+.sidebar-header .logo:focus-visible,
+.sidebar-nav .nav-item:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
 
 .nav-item .icon { width: 26px; text-align: center; font-size: 22px; }
 .nav-icon-img {
@@ -1004,6 +1011,9 @@ body::before { display: none; }
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+.home-hero h1 .gradient-platform {
+  background-size: 250% 100%;
 }
 .hero h1 .gradient-green {
   background: linear-gradient(135deg, #a855f7, #6d28d9);

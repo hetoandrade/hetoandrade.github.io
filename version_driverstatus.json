@@ -1,11 +1,11 @@
 {
-  "version": "1.10.2902",
-  "dataPublicacao": "2026-10-29T23:56:38",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2902/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "c64613315c67f0afa877e7d9dc409f91e091fc655830915305db9c8decff9f70",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2902/DriverStatus_Setup_v1.10.2902.exe",
-  "sha256Instalador": "ba35d71894be755278b893389387882442b95350287d07903382c02ac516224a",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.10.2902/DriverStatus_Update.zip",
-  "sha256": "c64613315c67f0afa877e7d9dc409f91e091fc655830915305db9c8decff9f70",
-  "changelog": "Corrige a leitura do catálogo do WinGet nas atualizações individuais e em massa, preservando a verificação de identidade."
+  "version": "1.11.1803",
+  "dataPublicacao": "2026-11-18T16:49:55",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1803/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "73540426989261418943039c00948ff48d3c53356e276503830313f1e3ef368e",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1803/DriverStatus_Setup_v1.11.1803.exe",
+  "sha256Instalador": "9a84d7b330c7919f3749ce7be49f2fd87970975c88b7e17e5ccd42802cbfd6af",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1803/DriverStatus_Update.zip",
+  "sha256": "73540426989261418943039c00948ff48d3c53356e276503830313f1e3ef368e",
+  "changelog": "Adiciona filtros de situação e inicialização aos serviços, programas de inicialização, tarefas agendadas e dispositivos"
 }

@@ -1,11 +1,11 @@
 {
-  "version": "1.11.1803",
-  "dataPublicacao": "2026-11-18T16:49:55",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1803/DriverStatus_Update.zip",
-  "sha256PacoteAtualizacao": "73540426989261418943039c00948ff48d3c53356e276503830313f1e3ef368e",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1803/DriverStatus_Setup_v1.11.1803.exe",
-  "sha256Instalador": "9a84d7b330c7919f3749ce7be49f2fd87970975c88b7e17e5ccd42802cbfd6af",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1803/DriverStatus_Update.zip",
-  "sha256": "73540426989261418943039c00948ff48d3c53356e276503830313f1e3ef368e",
-  "changelog": "Adiciona filtros de situação e inicialização aos serviços, programas de inicialização, tarefas agendadas e dispositivos"
+  "version": "1.11.1804",
+  "dataPublicacao": "2026-11-18T18:03:09",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1804/DriverStatus_Update.zip",
+  "sha256PacoteAtualizacao": "ba5827b93bcb28eacab6e8d73e19f3b563632c779221c2f2c4459800ac216f5a",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1804/DriverStatus_Setup_v1.11.1804.exe",
+  "sha256Instalador": "bdce3bd8730e46c030b57f00061a0b870070d17799565e12510dd1ccc7c01cb0",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/driverstatus-v1.11.1804/DriverStatus_Update.zip",
+  "sha256": "ba5827b93bcb28eacab6e8d73e19f3b563632c779221c2f2c4459800ac216f5a",
+  "changelog": "Acompanha a desinstalação enquanto a atividade puder ser identificada, avisa quando a remoção ficar inconclusiva e reserva a faixa vermelha para falhas."
 }

@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1401",
-  "dataPublicacao": "2026-11-14T21:16:26-03:00",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.1401/TelaDesk-Setup-1.11.1401.exe",
-  "sha256": "97B06EFE534222305D016118EF3FD47B1DE62D542A18512E11B03111CCD752F3",
-  "changelog": "Salva a permissão padrão das conexões, remove o contorno amarelo do X e atualiza o aviso de colagem."
+  "version": "1.11.1801",
+  "dataPublicacao": "2026-11-18T18:43:36-03:00",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/teladesk-v1.11.1801/TelaDesk-Setup-1.11.1801.exe",
+  "sha256": "F4917ED9B5C5519523A7A203C97B929BD438375D16D278797E98A4CFC99FA10D",
+  "changelog": "Corrige Ctrl+C e Ctrl+V na sessão remota."
 }

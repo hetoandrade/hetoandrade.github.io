@@ -1,7 +1,7 @@
 {
-  "version": "1.11.1601",
-  "dataPublicacao": "2026-11-16T20:04:27.2034541Z",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.1601/OfficeCerto_Setup_v1.11.1601.exe",
-  "sha256Instalador": "38BC467973D0611F33A9E2550A1B232166A1889A1E79EEDB96A99E80D42B7178",
-  "changelog": "Esta versão salva o rascunho do Writer mesmo quando a visualização falha e mantém o aviso de fechamento em um monitor visível."
+  "version": "1.11.2101",
+  "dataPublicacao": "2026-11-21T16:31:09.6342013Z",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/officecerto-v1.11.2101/OfficeCerto_Setup_v1.11.2101.exe",
+  "sha256Instalador": "EF5F3FDC16AA6FF502F2314A7C1A16E4802D5F3C214F2E3A07E01E3D99F37BFB",
+  "changelog": "Em Notas, identifica na mesma linha o rascunho que não pôde ser recuperado, preservando seus dados, e recria a cópia ausente de uma nota aberta."
 }

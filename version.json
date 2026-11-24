@@ -1,11 +1,11 @@
 {
-  "version": "1.10.3004",
-  "dataPublicacao": "2026-10-30T12:06:31",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.3004/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "b7569167363eb686b59018ffa37dc364cf4e840e7d184a8ac618f6210bc41a1a",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.3004/VozDigitada_Setup_v1.10.3004.exe",
-  "sha256Instalador": "2dfcf4c9061fce1a4deb2c961871d9c3d955275308a95dcae40a6f30607c5186",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.10.3004/VozDigitada_Update.zip",
-  "sha256": "b7569167363eb686b59018ffa37dc364cf4e840e7d184a8ac618f6210bc41a1a",
-  "changelog": "Corrige o fechamento inesperado ao abrir o HHint e ajusta as dicas para apontarem ao controle, com espaço livre e posicionamento inteligente."
+  "version": "1.11.2401",
+  "dataPublicacao": "2026-11-24T10:20:13",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2401/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "ef448ed05d27e3b92f217a54740856e4f725ecd0772f7181d663861055f3d628",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2401/VozDigitada_Setup_v1.11.2401.exe",
+  "sha256Instalador": "60611db950abc33fc9ca73ca68d8b5b6b1c05ba9c29d7381136e75013738fade",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2401/VozDigitada_Update.zip",
+  "sha256": "ef448ed05d27e3b92f217a54740856e4f725ecd0772f7181d663861055f3d628",
+  "changelog": "Verifica atualizações na virada do dia, a cada sete horas e ao retomar o Windows."
 }

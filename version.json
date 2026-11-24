@@ -1,11 +1,11 @@
 {
-  "version": "1.11.2401",
-  "dataPublicacao": "2026-11-24T10:20:13",
-  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2401/VozDigitada_Update.zip",
-  "sha256PacoteAtualizacao": "ef448ed05d27e3b92f217a54740856e4f725ecd0772f7181d663861055f3d628",
-  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2401/VozDigitada_Setup_v1.11.2401.exe",
-  "sha256Instalador": "60611db950abc33fc9ca73ca68d8b5b6b1c05ba9c29d7381136e75013738fade",
-  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2401/VozDigitada_Update.zip",
-  "sha256": "ef448ed05d27e3b92f217a54740856e4f725ecd0772f7181d663861055f3d628",
-  "changelog": "Verifica atualizações na virada do dia, a cada sete horas e ao retomar o Windows."
+  "version": "1.11.2402",
+  "dataPublicacao": "2026-11-24T10:49:25",
+  "urlPacoteAtualizacao": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2402/VozDigitada_Update.zip",
+  "sha256PacoteAtualizacao": "be3d65564165c76a6b6ea842b77b46c995b74d8f321790123dbc5a94282bb2a3",
+  "urlInstalador": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2402/VozDigitada_Setup_v1.11.2402.exe",
+  "sha256Instalador": "778636bfd230b202dc0c2a632489a28ebd55134b6c08dc7037bd7309e4c361cc",
+  "url": "https://github.com/hetoandrade/hetoandrade.github.io/releases/download/vozdigitada-v1.11.2402/VozDigitada_Update.zip",
+  "sha256": "be3d65564165c76a6b6ea842b77b46c995b74d8f321790123dbc5a94282bb2a3",
+  "changelog": "Validação do canal de atualização do VozDigitada."
 }
